@@ -1,0 +1,105 @@
+.footer {
+  width: 100%;
+  margin: 15rem 0 0 0;
+  padding: 0 7.5%;
+}
+.footerTopGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 3.5rem;
+}
+.footerTopGrid main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.footerTopGrid main > * {
+  margin: 0 0 1rem 0 !important;
+  color: var(--gray800);
+}
+.footerTopGrid main h6 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.footerTopGrid main a {
+  font-size: 1.5rem;
+}
+.footerCenterGrid {
+  border-top: 1px solid var(--gray300);
+  padding: 2.5rem 0;
+  margin: 2.5rem 0 0 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 15rem;
+}
+.footerCenterGridLeft main {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 1rem 0 0 0;
+}
+.footerCenterGridLeft div {
+  width: 100%;
+}
+.footerCenterGridLeft button {
+  margin: 0 0 0 1.5rem;
+}
+.footerCenterGridRight main {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin: 1rem 0 0 0;
+}
+.footerCenterGridRight main a {
+  width: 4.25rem;
+  height: 4.25rem;
+  border: 1px solid var(--gray500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 1.5rem 0 0;
+}
+.footerCenterGridRight main a svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.footerBottomGridParent {
+  width: 100%;
+  background-color: var(--gray800);
+  padding: 2.5rem 7.5%;
+}
+.footerBottomGrid {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.footerBottomGridParent main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 15rem 0 0;
+}
+.footerBottomGridParent main img {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 1.5rem 0 0;
+}
+.footerBottomGridParent main h6 {
+  font-size: 1.65rem;
+  font-weight: 500;
+  color: var(--white);
+}
+.footerBottomGrid a {
+  font-size: 1.5rem;
+  color: var(--white) !important;
+  margin: 0 5rem 0 0;
+}

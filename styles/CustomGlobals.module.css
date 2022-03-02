@@ -1,0 +1,18 @@
+.app h1:not([class]),
+.app h2:not([class]),
+.app h3:not([class]),
+.app h4:not([class]),
+.app h5:not([class]),
+.app h6:not([class]),
+.app p:not([class]),
+.app ul:not([class]) {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.app a {
+  text-decoration: none;
+}
+.app a:hover {
+  color: unset;
+}
