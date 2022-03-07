@@ -5,12 +5,25 @@ import Footer from '../components/Theme/Footer'
 import customGlobals from "../styles/CustomGlobals.module.css"
 import st from "../styles/pages/ProductPage.module.css"
 import { Accordion } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Head from 'next/head'
-import SimilarCobotCard from '../components/Pages/ProductPage/SimilarCobotCard'
+import SimilarProductsCard from '../components/Pages/ProductPage/SimilarProductsCard'
 import FeaturedOnTVCard from '../components/Pages/ProductPage/FeaturedOnTVCard'
 import DownloadCard from '../components/Pages/ProductPage/DownloadCard'
 import FAQCard from '../components/Pages/ProductPage/FAQCard'
+import InTheBoxSection from '../components/Pages/ProductPage/InTheBoxSection'
+import CompareSection from '../components/Pages/ProductPage/CompareSection'
+import UseCaseCombinationSection from '../components/Pages/ProductPage/UseCaseCombinationSection'
+import { Nav } from 'react-bootstrap'
+import ProductDescription from '../components/Pages/ProductPage/ProductDescription'
+import TalkToExpert from '../components/Pages/ProductPage/TalkToExpert'
+import ProductDetailsMenu from '../components/Pages/ProductPage/ProductDetailsMenu'
+import ProductDescriptionAccHeader from '../components/Pages/ProductPage/ProductDescriptionAccHeader'
+import SimilarProductsSection from '../components/Pages/ProductPage/SimilarProductsSection'
+import FAQSection from '../components/Pages/ProductPage/FAQSection'
+import DownloadSection from '../components/Pages/ProductPage/DownloadSection'
+import ProductSpecificationSection from '../components/Pages/ProductPage/ProductSpecificationSection'
+import FeaturedOnTVSection from '../components/Pages/ProductPage/featuredOnTVSection'
+import OverviewSection from '../components/Pages/ProductPage/OverviewSection'
 const ProductPage = () => {
     return (
         <div className={customGlobals.app}>
@@ -82,113 +95,45 @@ const ProductPage = () => {
                             </div>
                         </div>
                         <div className={st.productSectionalDetails}>
-                            <div className={st.productDetailsMenu + " " + "productDetailsMenuAnchor"}>
-                                <nav id="navbar-example2" class="navbar">
-                                    <ul class="nav nav-pills">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" href="#overview">Overview</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#compare" className={st.secondarySectionLink + " " + "nav-link"}>Compare</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#in-the-box" className={st.secondarySectionLink + " " + "nav-link"}>In the box</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#use-case-combination" className={st.secondarySectionLink + " " + "nav-link"}>Use case combination</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#technicalData">Technical Data</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#faq">FAQ</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#similarRobots">Similar cobats</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-
-                            </div>
-                            <div className={st.productDetailsContentContainer} data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+                            <ProductDetailsMenu>
+                                <Nav navbarScroll defaultActiveKey="#overview" id="abc" className='nav-tabs'>
+                                    <Nav.Item>
+                                        <Nav.Link href="#overview">Overview</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                        <Nav.Link href="#compare" className={st.secondarySectionLink}>Compare</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                        <Nav.Link href="#inthebox" className={st.secondarySectionLink}>In the box</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                        <Nav.Link href="#usecasecombination" className={st.secondarySectionLink}>Use case combination</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                        <Nav.Link href="#technicalData">Technical Data</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                        <Nav.Link href="#downloads">Downloads</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                        <Nav.Link href="#faq">FAQ</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                        <Nav.Link href="#similarrobots">Similar cobats</Nav.Link>
+                                    </Nav.Item>
+                                </Nav>
+                            </ProductDetailsMenu>
+                            <div className={st.productDetailsContentContainer} >
                                 <div className={st.overview} id="overview">
                                     <Accordion>
                                         <Accordion.Item>
                                             <Accordion.Header>
-                                                <div className={st.detailsSectionHead}>
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fillRule="evenodd" clipRule="evenodd" d="M11.5257 7.50639C11.5879 7.44401 11.6618 7.39451 11.7432 7.36074C11.8246 7.32696 11.9119 7.30958 12 7.30958C12.0881 7.30958 12.1753 7.32696 12.2567 7.36074C12.3381 7.39451 12.412 7.44401 12.4743 7.50639L20.5132 15.5453C20.639 15.6711 20.7097 15.8417 20.7097 16.0196C20.7097 16.1975 20.639 16.3682 20.5132 16.4939C20.3874 16.6197 20.2168 16.6904 20.0389 16.6904C19.861 16.6904 19.6904 16.6197 19.5646 16.4939L12 8.92795L4.43532 16.4939C4.30953 16.6197 4.13892 16.6904 3.96102 16.6904C3.78313 16.6904 3.61252 16.6197 3.48672 16.4939C3.36093 16.3682 3.29026 16.1975 3.29026 16.0196C3.29026 15.8417 3.36093 15.6711 3.48672 15.5453L11.5257 7.50639Z" fill="#313130" />
-                                                        <path fillRule="evenodd" clipRule="evenodd" d="M4.43532 16.4939C4.30953 16.6197 4.13892 16.6904 3.96102 16.6904C3.78313 16.6904 3.61252 16.6197 3.48672 16.4939C3.36093 16.3682 3.29026 16.1975 3.29026 16.0196C3.29026 15.8417 3.36093 15.6711 3.48672 15.5453L11.5257 7.50639C11.5879 7.44401 11.6618 7.39451 11.7432 7.36074C11.8246 7.32696 11.9119 7.30958 12 7.30958C12.0881 7.30958 12.1753 7.32696 12.2567 7.36074C12.3381 7.39451 12.412 7.44401 12.4743 7.50639L20.5132 15.5453C20.639 15.6711 20.7097 15.8417 20.7097 16.0196C20.7097 16.1975 20.639 16.3682 20.5132 16.4939C20.3874 16.6197 20.2168 16.6904 20.0389 16.6904C19.861 16.6904 19.6904 16.6197 19.5646 16.4939L12 8.92795L4.43532 16.4939ZM12 9.33856L4.64063 16.6992C4.46039 16.8795 4.21592 16.9807 3.96102 16.9807C3.70613 16.9807 3.46167 16.8795 3.28143 16.6992C3.1012 16.519 2.99994 16.2745 2.99994 16.0196C2.99994 15.7647 3.1012 15.5203 3.28143 15.3401L11.3201 7.30136C11.4093 7.21206 11.5154 7.14094 11.6319 7.09258C11.7486 7.04417 11.8737 7.01926 12 7.01926C12.1263 7.01926 12.2513 7.04417 12.368 7.09258C12.4845 7.14094 12.5904 7.2118 12.6796 7.3011M12.6796 7.3011L20.7185 15.3401C20.8988 15.5203 21 15.7648 21 16.0196C21 16.2745 20.8988 16.519 20.7185 16.6992C20.5383 16.8795 20.2938 16.9807 20.0389 16.9807C19.784 16.9807 19.5396 16.8795 19.3593 16.6992L12 9.33856" fill="#313130" />
-                                                    </svg>
-                                                    <h1>Overview</h1>
-                                                </div>
+                                                <ProductDescriptionAccHeader
+                                                    headertext="Overview"
+                                                />
                                             </Accordion.Header>
                                             <Accordion.Body>
-                                                <div className={st.overviewContent}>
-                                                    <div className={st.overviewContentMainGrid}>
-                                                        <div className={st.overviewGrid1}>
-                                                            <div className={st.overviewGrid1Left}>
-                                                                <div className={st.grid1boxOverlay}>
-                                                                    <h1>High payload</h1>
-                                                                    <p>The impressive payload capacity allows for the easy handling of heavy objects up to 25 kg. Stacking andof heavy objects up to 25 kg. Stacking andof heavy objects up to 25 kg. Stacking and palletizing heavy objects in logistics and automation processes becomes child's play.</p>
-                                                                </div>
-                                                                <img src="/assets/img/Robots/rob-1.png" alt="Robot Image" />
-
-                                                            </div>
-                                                            <div className={st.overviewGrid1Right}>
-                                                                <h1>High safety</h1>
-                                                                <p>Guarantees outstanding safety with the industry best collision sensitivity, made possible by 6 torque sensors and a compensation mechanism.</p>
-                                                                <img src="/assets/img/Robots/rob-2.png" alt="Robot Image" />
-                                                            </div>
-                                                        </div>
-                                                        <video controls src="https://unchainedrobotics.de/wp-content/uploads/2020/11/The-new-cobot-H-SERIES-Doosan-Robotics.mp4"></video>
-                                                        <div className={st.overviewGrid2}>
-                                                            <div className={st.overviewGrid1Right}>
-                                                                <h1>Low dead weight low dead</h1>
-                                                                <p>The Cobot has a low tare weight and is therefore only half as heavy as comparable Cobots in its class. This has numerous benefits for payload, speed, and possible deployment areas.</p>
-                                                                <img src="/assets/img/Robots/rob-3.png" alt="Robot Image" />
-                                                            </div>
-                                                            <div className={st.overviewGrid1Left}>
-                                                                <div className={st.grid1boxOverlay}>
-                                                                    <h1>High flexibility</h1>
-                                                                    <p>The shorter cycle time and cost effectiveness maximize efficiency and productivity, ensuring the fastest possible payback.</p>
-                                                                </div>
-                                                                <img src="/assets/img/Robots/rob-4.png" alt="Robot Image" />
-                                                            </div>
-
-                                                        </div>
-                                                        <video controls src="https://unchainedrobotics.de/wp-content/uploads/2020/11/Doosan-H-SERIES-High-Payload-26-Reach-Palletizing.mp4"></video>
-                                                    </div>
-                                                    <div className={st.featuredonTVSection}>
-                                                        <h1 className={st.detailsSubHading}>
-                                                            Featured on Unchained TV
-                                                        </h1>
-                                                        <div className={st.featuredGrid}>
-                                                            <FeaturedOnTVCard
-                                                                img="/assets/img/Robots/rob-1.png"
-                                                                tag="Machine Trending"
-                                                                description="Cobot from Doosan Robotics automates the
-                                                                assembly of vehicle transmissions"
-                                                                time="4:35"
-                                                            />
-                                                            <FeaturedOnTVCard
-                                                                img="/assets/img/Robots/rob-1.png"
-                                                                tag="Assembly"
-                                                                description="Cobot from Doosan Robotics automates the
-                                                                assembly of ve ions"
-                                                                time="4:35"
-                                                            />
-                                                            <FeaturedOnTVCard
-                                                                img="/assets/img/Robots/rob-1.png"
-                                                                tag="Machine Trending"
-                                                                description="Cobot f  Robotics automates the
-                                                                assembly of vehicle transmissions"
-                                                                time="4:35"
-                                                            />
-                                                        </div>
-                                                    </div>
-                                                </div>
-
+                                                <OverviewSection />
                                             </Accordion.Body>
                                         </Accordion.Item>
                                     </Accordion>
@@ -198,141 +143,12 @@ const ProductPage = () => {
                                     <Accordion>
                                         <Accordion.Item>
                                             <Accordion.Header>
-                                                <div className={st.detailsSectionHead}>
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fillRule="evenodd" clipRule="evenodd" d="M11.5257 7.50639C11.5879 7.44401 11.6618 7.39451 11.7432 7.36074C11.8246 7.32696 11.9119 7.30958 12 7.30958C12.0881 7.30958 12.1753 7.32696 12.2567 7.36074C12.3381 7.39451 12.412 7.44401 12.4743 7.50639L20.5132 15.5453C20.639 15.6711 20.7097 15.8417 20.7097 16.0196C20.7097 16.1975 20.639 16.3682 20.5132 16.4939C20.3874 16.6197 20.2168 16.6904 20.0389 16.6904C19.861 16.6904 19.6904 16.6197 19.5646 16.4939L12 8.92795L4.43532 16.4939C4.30953 16.6197 4.13892 16.6904 3.96102 16.6904C3.78313 16.6904 3.61252 16.6197 3.48672 16.4939C3.36093 16.3682 3.29026 16.1975 3.29026 16.0196C3.29026 15.8417 3.36093 15.6711 3.48672 15.5453L11.5257 7.50639Z" fill="#313130" />
-                                                        <path fillRule="evenodd" clipRule="evenodd" d="M4.43532 16.4939C4.30953 16.6197 4.13892 16.6904 3.96102 16.6904C3.78313 16.6904 3.61252 16.6197 3.48672 16.4939C3.36093 16.3682 3.29026 16.1975 3.29026 16.0196C3.29026 15.8417 3.36093 15.6711 3.48672 15.5453L11.5257 7.50639C11.5879 7.44401 11.6618 7.39451 11.7432 7.36074C11.8246 7.32696 11.9119 7.30958 12 7.30958C12.0881 7.30958 12.1753 7.32696 12.2567 7.36074C12.3381 7.39451 12.412 7.44401 12.4743 7.50639L20.5132 15.5453C20.639 15.6711 20.7097 15.8417 20.7097 16.0196C20.7097 16.1975 20.639 16.3682 20.5132 16.4939C20.3874 16.6197 20.2168 16.6904 20.0389 16.6904C19.861 16.6904 19.6904 16.6197 19.5646 16.4939L12 8.92795L4.43532 16.4939ZM12 9.33856L4.64063 16.6992C4.46039 16.8795 4.21592 16.9807 3.96102 16.9807C3.70613 16.9807 3.46167 16.8795 3.28143 16.6992C3.1012 16.519 2.99994 16.2745 2.99994 16.0196C2.99994 15.7647 3.1012 15.5203 3.28143 15.3401L11.3201 7.30136C11.4093 7.21206 11.5154 7.14094 11.6319 7.09258C11.7486 7.04417 11.8737 7.01926 12 7.01926C12.1263 7.01926 12.2513 7.04417 12.368 7.09258C12.4845 7.14094 12.5904 7.2118 12.6796 7.3011M12.6796 7.3011L20.7185 15.3401C20.8988 15.5203 21 15.7648 21 16.0196C21 16.2745 20.8988 16.519 20.7185 16.6992C20.5383 16.8795 20.2938 16.9807 20.0389 16.9807C19.784 16.9807 19.5396 16.8795 19.3593 16.6992L12 9.33856" fill="#313130" />
-                                                    </svg>
-                                                    <h1>Technical Data</h1>
-                                                </div>
+                                                <ProductDescriptionAccHeader
+                                                    headertext="Technical Data"
+                                                />
                                             </Accordion.Header>
                                             <Accordion.Body>
-
-                                                <div className={st.technicalDataContent}>
-                                                    <table>
-                                                        <thead>
-                                                            <tr>
-                                                                <th colSpan={2}>Arm</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Reach</td>
-                                                                <td>1.500 mm</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Max Payload</td>
-                                                                <td>25.000 g</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Weight</td>
-                                                                <td>72.000 g</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                    <table>
-                                                        <thead>
-                                                            <tr>
-                                                                <th colSpan={2}>Performance</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Repeatability</td>
-                                                                <td>0,1 mm</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Linear Speed</td>
-                                                                <td>1 m/s</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Temperature</td>
-                                                                <td>0-45° C</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                    <table>
-                                                        <thead>
-                                                            <tr>
-                                                                <th colSpan={2}>
-                                                                    Joint Movement (Range: ° / Max Speed : ° /s)
-                                                                </th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>J1</td>
-                                                                <td> ±360° / 100° /s</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>J2</td>
-                                                                <td> ±130° / 80° /s</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>J3</td>
-                                                                <td> ±160° / 100° /s</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>J4</td>
-                                                                <td> ±360° / 180° /s</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>J5</td>
-                                                                <td> ±360° / 180° /s</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>J6</td>
-                                                                <td> ±360° / 180° /s</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                    <table>
-                                                        <thead>
-                                                            <tr>
-                                                                <th colSpan={2}>Software & Teaching</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Dart Studio</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Windows-based</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Online and offline programming</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Teach cockpit - Hand guidance</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                    <table>
-                                                        <thead>
-                                                            <tr>
-                                                                <th colSpan={2}>Other Features</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Installation Position</td>
-                                                                <td>Only Floor</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Protection Rating</td>
-                                                                <td>IP 54</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Flange Interfaces</td>
-                                                                <td>Digital I/O 6 In / 6 Out</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>I/O Power Supply</td>
-                                                                <td>DC 24 V / Max. 3A</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
+                                                <ProductSpecificationSection />
                                             </Accordion.Body>
                                         </Accordion.Item>
                                     </Accordion>
@@ -341,17 +157,12 @@ const ProductPage = () => {
                                     <Accordion>
                                         <Accordion.Item>
                                             <Accordion.Header>
-                                                <div className={st.detailsSectionHead}>
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fillRule="evenodd" clipRule="evenodd" d="M11.5257 7.50639C11.5879 7.44401 11.6618 7.39451 11.7432 7.36074C11.8246 7.32696 11.9119 7.30958 12 7.30958C12.0881 7.30958 12.1753 7.32696 12.2567 7.36074C12.3381 7.39451 12.412 7.44401 12.4743 7.50639L20.5132 15.5453C20.639 15.6711 20.7097 15.8417 20.7097 16.0196C20.7097 16.1975 20.639 16.3682 20.5132 16.4939C20.3874 16.6197 20.2168 16.6904 20.0389 16.6904C19.861 16.6904 19.6904 16.6197 19.5646 16.4939L12 8.92795L4.43532 16.4939C4.30953 16.6197 4.13892 16.6904 3.96102 16.6904C3.78313 16.6904 3.61252 16.6197 3.48672 16.4939C3.36093 16.3682 3.29026 16.1975 3.29026 16.0196C3.29026 15.8417 3.36093 15.6711 3.48672 15.5453L11.5257 7.50639Z" fill="#313130" />
-                                                        <path fillRule="evenodd" clipRule="evenodd" d="M4.43532 16.4939C4.30953 16.6197 4.13892 16.6904 3.96102 16.6904C3.78313 16.6904 3.61252 16.6197 3.48672 16.4939C3.36093 16.3682 3.29026 16.1975 3.29026 16.0196C3.29026 15.8417 3.36093 15.6711 3.48672 15.5453L11.5257 7.50639C11.5879 7.44401 11.6618 7.39451 11.7432 7.36074C11.8246 7.32696 11.9119 7.30958 12 7.30958C12.0881 7.30958 12.1753 7.32696 12.2567 7.36074C12.3381 7.39451 12.412 7.44401 12.4743 7.50639L20.5132 15.5453C20.639 15.6711 20.7097 15.8417 20.7097 16.0196C20.7097 16.1975 20.639 16.3682 20.5132 16.4939C20.3874 16.6197 20.2168 16.6904 20.0389 16.6904C19.861 16.6904 19.6904 16.6197 19.5646 16.4939L12 8.92795L4.43532 16.4939ZM12 9.33856L4.64063 16.6992C4.46039 16.8795 4.21592 16.9807 3.96102 16.9807C3.70613 16.9807 3.46167 16.8795 3.28143 16.6992C3.1012 16.519 2.99994 16.2745 2.99994 16.0196C2.99994 15.7647 3.1012 15.5203 3.28143 15.3401L11.3201 7.30136C11.4093 7.21206 11.5154 7.14094 11.6319 7.09258C11.7486 7.04417 11.8737 7.01926 12 7.01926C12.1263 7.01926 12.2513 7.04417 12.368 7.09258C12.4845 7.14094 12.5904 7.2118 12.6796 7.3011M12.6796 7.3011L20.7185 15.3401C20.8988 15.5203 21 15.7648 21 16.0196C21 16.2745 20.8988 16.519 20.7185 16.6992C20.5383 16.8795 20.2938 16.9807 20.0389 16.9807C19.784 16.9807 19.5396 16.8795 19.3593 16.6992L12 9.33856" fill="#313130" />
-                                                    </svg>
-                                                    <h1>Downloads</h1>
-                                                </div>
+                                                <ProductDescriptionAccHeader
+                                                    headertext="Downloads"
+                                                />
                                             </Accordion.Header>
                                             <Accordion.Body>
-
-                                                <div className={st.downloadsContent}>
+                                                {/* <div className={st.downloadsContent}>
                                                     <div className={st.downloadsGrid}>
                                                         <DownloadCard
                                                             img="/assets/img/downloads-1.png"
@@ -368,7 +179,8 @@ const ProductPage = () => {
                                                         <h1>Did not find what you’re looking for? </h1>
                                                         <button className="button button-lg button-primary-gray">Contact us</button>
                                                     </div>
-                                                </div>
+                                                </div> */}
+                                                <DownloadSection />
                                             </Accordion.Body>
                                         </Accordion.Item>
                                     </Accordion>
@@ -378,18 +190,14 @@ const ProductPage = () => {
                                     <Accordion>
                                         <Accordion.Item>
                                             <Accordion.Header>
-                                                <div className={st.detailsSectionHead}>
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fillRule="evenodd" clipRule="evenodd" d="M11.5257 7.50639C11.5879 7.44401 11.6618 7.39451 11.7432 7.36074C11.8246 7.32696 11.9119 7.30958 12 7.30958C12.0881 7.30958 12.1753 7.32696 12.2567 7.36074C12.3381 7.39451 12.412 7.44401 12.4743 7.50639L20.5132 15.5453C20.639 15.6711 20.7097 15.8417 20.7097 16.0196C20.7097 16.1975 20.639 16.3682 20.5132 16.4939C20.3874 16.6197 20.2168 16.6904 20.0389 16.6904C19.861 16.6904 19.6904 16.6197 19.5646 16.4939L12 8.92795L4.43532 16.4939C4.30953 16.6197 4.13892 16.6904 3.96102 16.6904C3.78313 16.6904 3.61252 16.6197 3.48672 16.4939C3.36093 16.3682 3.29026 16.1975 3.29026 16.0196C3.29026 15.8417 3.36093 15.6711 3.48672 15.5453L11.5257 7.50639Z" fill="#313130" />
-                                                        <path fillRule="evenodd" clipRule="evenodd" d="M4.43532 16.4939C4.30953 16.6197 4.13892 16.6904 3.96102 16.6904C3.78313 16.6904 3.61252 16.6197 3.48672 16.4939C3.36093 16.3682 3.29026 16.1975 3.29026 16.0196C3.29026 15.8417 3.36093 15.6711 3.48672 15.5453L11.5257 7.50639C11.5879 7.44401 11.6618 7.39451 11.7432 7.36074C11.8246 7.32696 11.9119 7.30958 12 7.30958C12.0881 7.30958 12.1753 7.32696 12.2567 7.36074C12.3381 7.39451 12.412 7.44401 12.4743 7.50639L20.5132 15.5453C20.639 15.6711 20.7097 15.8417 20.7097 16.0196C20.7097 16.1975 20.639 16.3682 20.5132 16.4939C20.3874 16.6197 20.2168 16.6904 20.0389 16.6904C19.861 16.6904 19.6904 16.6197 19.5646 16.4939L12 8.92795L4.43532 16.4939ZM12 9.33856L4.64063 16.6992C4.46039 16.8795 4.21592 16.9807 3.96102 16.9807C3.70613 16.9807 3.46167 16.8795 3.28143 16.6992C3.1012 16.519 2.99994 16.2745 2.99994 16.0196C2.99994 15.7647 3.1012 15.5203 3.28143 15.3401L11.3201 7.30136C11.4093 7.21206 11.5154 7.14094 11.6319 7.09258C11.7486 7.04417 11.8737 7.01926 12 7.01926C12.1263 7.01926 12.2513 7.04417 12.368 7.09258C12.4845 7.14094 12.5904 7.2118 12.6796 7.3011M12.6796 7.3011L20.7185 15.3401C20.8988 15.5203 21 15.7648 21 16.0196C21 16.2745 20.8988 16.519 20.7185 16.6992C20.5383 16.8795 20.2938 16.9807 20.0389 16.9807C19.784 16.9807 19.5396 16.8795 19.3593 16.6992L12 9.33856" fill="#313130" />
-                                                    </svg>
-                                                    <h1>Frequently Asked Questions</h1>
-                                                </div>
+                                                <ProductDescriptionAccHeader
+                                                    headertext="FAQ"
+                                                />
                                             </Accordion.Header>
                                             <Accordion.Body>
-
                                                 <div className={st.faqContent}>
                                                     <Accordion alwaysOpen>
+                                                        {/* 
                                                         <FAQCard
                                                             eventKey="0"
                                                             question="How can I place an order?"
@@ -405,54 +213,24 @@ const ProductPage = () => {
                                                             question="How can I place an order?"
                                                             answer="To place an order, send us an inquiry through the button at the top of the page or contact us through the chat."
                                                         />
-
+                                                     */}
+                                                        <FAQSection />
                                                     </Accordion>
                                                 </div>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                     </Accordion>
                                 </div>
-                                <div className={st.similarRobots} id="similarRobots">
+                                <div className={st.similarRobots} id="similarrobots">
                                     <Accordion>
                                         <Accordion.Item>
                                             <Accordion.Header>
-                                                <div className={st.detailsSectionHead}>
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fillRule="evenodd" clipRule="evenodd" d="M11.5257 7.50639C11.5879 7.44401 11.6618 7.39451 11.7432 7.36074C11.8246 7.32696 11.9119 7.30958 12 7.30958C12.0881 7.30958 12.1753 7.32696 12.2567 7.36074C12.3381 7.39451 12.412 7.44401 12.4743 7.50639L20.5132 15.5453C20.639 15.6711 20.7097 15.8417 20.7097 16.0196C20.7097 16.1975 20.639 16.3682 20.5132 16.4939C20.3874 16.6197 20.2168 16.6904 20.0389 16.6904C19.861 16.6904 19.6904 16.6197 19.5646 16.4939L12 8.92795L4.43532 16.4939C4.30953 16.6197 4.13892 16.6904 3.96102 16.6904C3.78313 16.6904 3.61252 16.6197 3.48672 16.4939C3.36093 16.3682 3.29026 16.1975 3.29026 16.0196C3.29026 15.8417 3.36093 15.6711 3.48672 15.5453L11.5257 7.50639Z" fill="#313130" />
-                                                        <path fillRule="evenodd" clipRule="evenodd" d="M4.43532 16.4939C4.30953 16.6197 4.13892 16.6904 3.96102 16.6904C3.78313 16.6904 3.61252 16.6197 3.48672 16.4939C3.36093 16.3682 3.29026 16.1975 3.29026 16.0196C3.29026 15.8417 3.36093 15.6711 3.48672 15.5453L11.5257 7.50639C11.5879 7.44401 11.6618 7.39451 11.7432 7.36074C11.8246 7.32696 11.9119 7.30958 12 7.30958C12.0881 7.30958 12.1753 7.32696 12.2567 7.36074C12.3381 7.39451 12.412 7.44401 12.4743 7.50639L20.5132 15.5453C20.639 15.6711 20.7097 15.8417 20.7097 16.0196C20.7097 16.1975 20.639 16.3682 20.5132 16.4939C20.3874 16.6197 20.2168 16.6904 20.0389 16.6904C19.861 16.6904 19.6904 16.6197 19.5646 16.4939L12 8.92795L4.43532 16.4939ZM12 9.33856L4.64063 16.6992C4.46039 16.8795 4.21592 16.9807 3.96102 16.9807C3.70613 16.9807 3.46167 16.8795 3.28143 16.6992C3.1012 16.519 2.99994 16.2745 2.99994 16.0196C2.99994 15.7647 3.1012 15.5203 3.28143 15.3401L11.3201 7.30136C11.4093 7.21206 11.5154 7.14094 11.6319 7.09258C11.7486 7.04417 11.8737 7.01926 12 7.01926C12.1263 7.01926 12.2513 7.04417 12.368 7.09258C12.4845 7.14094 12.5904 7.2118 12.6796 7.3011M12.6796 7.3011L20.7185 15.3401C20.8988 15.5203 21 15.7648 21 16.0196C21 16.2745 20.8988 16.519 20.7185 16.6992C20.5383 16.8795 20.2938 16.9807 20.0389 16.9807C19.784 16.9807 19.5396 16.8795 19.3593 16.6992L12 9.33856" fill="#313130" />
-                                                    </svg>
-                                                    <h1>Similar cobots with reach ≥ 1.200 mm</h1>
-                                                </div>
+                                                <ProductDescriptionAccHeader
+                                                    headertext="Similar Cobots"
+                                                />
                                             </Accordion.Header>
                                             <Accordion.Body>
-                                                <div className={st.similarRobotsContent}>
-                                                    <div className={st.similarRobotsGrid}>
-                                                        <SimilarCobotCard
-                                                            img="/assets/img/Robots/rob-2.png"
-                                                            robotType="Cobot, Dooson"
-                                                            robotName="Doosan Robotics H2017"
-                                                            robotPrice="44.000 €"
-                                                        />
-                                                        <SimilarCobotCard
-                                                            img="/assets/img/Robots/rob-2.png"
-                                                            robotType="Cobot, Dooson"
-                                                            robotName="Doosan   H2017"
-                                                            robotPrice="250-.000 €"
-                                                        />
-                                                        <SimilarCobotCard
-                                                            img="/assets/img/Robots/rob-2.png"
-                                                            robotType="Cobot, Dooson"
-                                                            robotName="Doosan Robotics  "
-                                                            robotPrice="12.000 €"
-                                                        />
-                                                        <SimilarCobotCard
-                                                            img="/assets/img/Robots/rob-2.png"
-                                                            robotType="Cobot, Dooson"
-                                                            robotName="  Robotics H2017"
-                                                            robotPrice="4.000 €"
-                                                        />
-                                                    </div>
-                                                </div>
+                                                <SimilarProductsSection />
                                             </Accordion.Body>
                                         </Accordion.Item>
                                     </Accordion>
@@ -460,175 +238,93 @@ const ProductPage = () => {
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
-                <div className={st.TalkToExpert}>
-                    <div className="box-sm">
-                        <div className={st.TalkToExpertContent}>
-                            <div className={st.tteLeft}>
-                                <h1>Talk to an <br /> automation expert</h1>
-                                <p>Have questions about this product, pricing, or your automation projects? Fill out the form and an automation expert from our team will be in touch within 1x24 hours.
-                                    <br />
-                                    Alternatively, you can contact us through the following:
-                                </p>
-                                <div className={st.talkToPhone}>
-                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M21.4766 17.4293L17.4282 14.7295C16.9145 14.3897 16.2258 14.5015 15.846 14.9865L14.6667 16.5027C14.5152 16.7025 14.2397 16.7605 14.0205 16.6387L13.7962 16.5151C13.0525 16.1097 12.1273 15.6051 10.2631 13.7403C8.39891 11.8754 7.89328 10.9495 7.48796 10.2072L7.36497 9.9829C7.2415 9.7637 7.29837 9.48704 7.49828 9.33428L9.01347 8.15539C9.49828 7.77553 9.61026 7.08707 9.2708 6.57316L6.571 2.52481C6.2231 2.00149 5.52511 1.84439 4.98652 2.16815L3.29364 3.18507C2.76173 3.49778 2.37148 4.00422 2.20474 4.59828C1.59514 6.81944 2.05373 10.6528 7.70064 16.3004C12.1926 20.792 15.5367 21.9999 17.8352 21.9999C18.3642 22.0022 18.8911 21.9334 19.4018 21.7953C19.9959 21.6288 20.5025 21.2385 20.815 20.7064L21.8329 19.0145C22.1571 18.4758 22.0001 17.7774 21.4766 17.4293ZM21.2586 18.6725L20.243 20.3654C20.0186 20.7495 19.6543 21.0318 19.2264 21.1534C17.1759 21.7163 13.5935 21.25 8.17225 15.8288C2.75098 10.4075 2.28473 6.82545 2.8477 4.77463C2.9694 4.34623 3.25212 3.98145 3.63662 3.7567L5.3295 2.74112C5.56319 2.6005 5.86614 2.66866 6.0171 2.89575L7.48367 5.09758L8.71459 6.94376C8.862 7.16667 8.81356 7.46544 8.60327 7.63039L7.08772 8.80928C6.62651 9.16195 6.4948 9.80006 6.77876 10.3065L6.8991 10.5252C7.32509 11.3064 7.85469 12.2783 9.78822 14.2116C11.7217 16.1447 12.6933 16.6744 13.4743 17.1003L13.6932 17.221C14.1996 17.5049 14.8378 17.3732 15.1905 16.912L16.3694 15.3965C16.5343 15.1863 16.833 15.1379 17.056 15.2851L21.104 17.9849C21.3312 18.1358 21.3994 18.4389 21.2586 18.6725Z" fill="#313130" />
-                                        <path d="M13.3336 5.33358C16.4615 5.33706 18.9963 7.8719 18.9998 10.9998C18.9998 11.1839 19.149 11.3331 19.3331 11.3331C19.5172 11.3331 19.6664 11.1839 19.6664 10.9998C19.6625 7.50388 16.8295 4.67082 13.3336 4.66699C13.1495 4.66699 13.0003 4.8162 13.0003 5.00029C13.0003 5.18437 13.1495 5.33358 13.3336 5.33358Z" fill="#313130" />
-                                        <path d="M13.3336 7.33309C15.3575 7.33548 16.9976 8.97558 17 10.9995C17 11.1836 17.1492 11.3328 17.3333 11.3328C17.5173 11.3328 17.6666 11.1836 17.6666 10.9995C17.6638 8.60757 15.7255 6.66924 13.3336 6.6665C13.1495 6.6665 13.0003 6.81571 13.0003 6.9998C13.0003 7.18389 13.1495 7.33309 13.3336 7.33309Z" fill="#313130" />
-                                        <path d="M13.3336 9.33309C14.2535 9.33419 14.999 10.0797 15.0001 10.9996C15.0001 11.1837 15.1494 11.3329 15.3334 11.3329C15.5175 11.3329 15.6667 11.1837 15.6667 10.9996C15.6652 9.7117 14.6215 8.66795 13.3336 8.6665C13.1495 8.6665 13.0003 8.81571 13.0003 8.9998C13.0003 9.18389 13.1495 9.33309 13.3336 9.33309Z" fill="#313130" />
-                                    </svg>
-                                    <main>
-                                        <i>Phone </i>
-                                        <h3>Mladen Milicevic</h3>
-                                        <h4>+49 xx</h4>
-                                        <button className="button button-md button-secondary-gray trailing-icon">Call
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7191 6.16678C10.719 6.06813 10.7383 5.97042 10.776 5.87926C10.8137 5.78809 10.869 5.70526 10.9388 5.6355C11.0085 5.56574 11.0914 5.51043 11.1825 5.47274C11.2737 5.43505 11.3714 5.41571 11.4701 5.41583L17.834 5.41583C17.9327 5.41571 18.0304 5.43504 18.1215 5.47274C18.2127 5.51043 18.2955 5.56574 18.3653 5.6355C18.4351 5.70526 18.4904 5.78809 18.5281 5.87925C18.5658 5.97042 18.5851 6.06813 18.585 6.16678L18.585 12.5307C18.585 12.7299 18.5058 12.9209 18.365 13.0617C18.2242 13.2026 18.0332 13.2817 17.834 13.2817C17.6349 13.2817 17.4438 13.2026 17.303 13.0617C17.1622 12.9209 17.0831 12.7299 17.0831 12.5307L17.0841 6.91666L11.4701 6.91773C11.3714 6.91785 11.2737 6.89851 11.1825 6.86082C11.0914 6.82312 11.0085 6.76781 10.9388 6.69806C10.869 6.6283 10.8137 6.54547 10.776 6.4543C10.7383 6.36314 10.719 6.26543 10.7191 6.16678Z" fill="#313130" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.63641 18.3644C5.49576 18.2237 5.41674 18.033 5.41674 17.834C5.41674 17.6351 5.49576 17.4444 5.63641 17.3037L16.7733 6.16678C16.914 6.02613 17.1048 5.94711 17.3037 5.94711C17.5026 5.94711 17.6933 6.02613 17.834 6.16678C17.9747 6.30744 18.0537 6.4982 18.0537 6.69711C18.0537 6.89603 17.9747 7.08679 17.834 7.22744L6.69707 18.3644C6.55642 18.505 6.36565 18.584 6.16674 18.584C5.96783 18.584 5.77706 18.505 5.63641 18.3644Z" fill="#313130" />
-                                            </svg>
-                                        </button>
-                                    </main>
-                                </div>
-                                <div className={st.talkToPhone}>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5.84211 5.00002H18.1579C18.9117 5.00002 19.6346 5.29502 20.1676 5.82013C20.7006 6.34523 21 7.05742 21 7.80002V16.2C21 16.9426 20.7006 17.6548 20.1676 18.1799C19.6346 18.705 18.9117 19 18.1579 19H5.84211C5.08833 19 4.36543 18.705 3.83243 18.1799C3.29944 17.6548 3 16.9426 3 16.2V7.80002C3 7.05742 3.29944 6.34523 3.83243 5.82013C4.36543 5.29502 5.08833 5.00002 5.84211 5.00002ZM5.84211 5.93336C5.37979 5.93336 4.95537 6.09669 4.62663 6.36829L12 11.0854L19.3734 6.36829C19.0329 6.08681 18.6024 5.93278 18.1579 5.93336H5.84211ZM12 12.1979L4.07432 7.12802C3.99027 7.34239 3.94723 7.57023 3.94737 7.80002V16.2C3.94737 16.6951 4.14699 17.1699 4.50233 17.52C4.85766 17.87 5.33959 18.0667 5.84211 18.0667H18.1579C18.6604 18.0667 19.1423 17.87 19.4977 17.52C19.853 17.1699 20.0526 16.6951 20.0526 16.2V7.80002C20.0526 7.56296 20.0081 7.33616 19.9257 7.12802L12 12.1979Z" fill="#313130" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 12.3166L4.12669 7.28023C4.07406 7.4484 4.04726 7.62358 4.04737 7.79996V16.2C4.04737 16.6681 4.23609 17.1173 4.57251 17.4487C4.90897 17.7802 5.36564 17.9667 5.84211 17.9667H18.1579C18.6344 17.9667 19.091 17.7802 19.4275 17.4487C19.7639 17.1173 19.9526 16.6681 19.9526 16.2V7.80002C19.9526 7.61872 19.9251 7.44404 19.8736 7.28007L12 12.3166ZM19.9257 7.12802C19.9382 7.15971 19.9499 7.19183 19.9607 7.22435C20.0206 7.40545 20.0526 7.59905 20.0526 7.80002V16.2C20.0526 16.6951 19.853 17.1699 19.4977 17.52C19.1423 17.87 18.6604 18.0667 18.1579 18.0667H5.84211C5.33959 18.0667 4.85766 17.87 4.50233 17.52C4.14699 17.1699 3.94737 16.6951 3.94737 16.2V7.80002C3.94725 7.60439 3.97843 7.41018 4.03956 7.2245C4.05023 7.19207 4.06182 7.1599 4.07432 7.12802L12 12.1979L19.9257 7.12802ZM5.84211 4.90002H18.1579C18.9377 4.90002 19.6859 5.2052 20.2378 5.74889C20.7897 6.29263 21.1 7.03041 21.1 7.80002V16.2C21.1 16.9696 20.7897 17.7074 20.2378 18.2512C19.6859 18.7948 18.9377 19.1 18.1579 19.1H5.84211C5.06229 19.1 4.31412 18.7948 3.76225 18.2512C3.21034 17.7074 2.9 16.9696 2.9 16.2V7.80002C2.9 7.03041 3.21034 6.29263 3.76225 5.74889C4.31412 5.2052 5.06229 4.90002 5.84211 4.90002ZM18.1579 5.00002H5.84211C5.08833 5.00002 4.36543 5.29502 3.83243 5.82013C3.29944 6.34523 3 7.05742 3 7.80002V16.2C3 16.9426 3.29944 17.6548 3.83243 18.1799C4.36543 18.705 5.08833 19 5.84211 19H18.1579C18.9117 19 19.6346 18.705 20.1676 18.1799C20.7006 17.6548 21 16.9426 21 16.2V7.80002C21 7.05742 20.7006 6.34523 20.1676 5.82013C19.6346 5.29502 18.9117 5.00002 18.1579 5.00002Z" fill="#313130" />
-                                    </svg>
-                                    <main>
-                                        <i>Email </i>
-                                        <h3>info@unchainedrobotics.de</h3>
-                                        <h4>+49 xx</h4>
-                                        <button className="button button-md button-secondary-gray trailing-icon">Send Email <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7191 6.16678C10.719 6.06813 10.7383 5.97042 10.776 5.87926C10.8137 5.78809 10.869 5.70526 10.9388 5.6355C11.0085 5.56574 11.0914 5.51043 11.1825 5.47274C11.2737 5.43505 11.3714 5.41571 11.4701 5.41583L17.834 5.41583C17.9327 5.41571 18.0304 5.43504 18.1215 5.47274C18.2127 5.51043 18.2955 5.56574 18.3653 5.6355C18.4351 5.70526 18.4904 5.78809 18.5281 5.87925C18.5658 5.97042 18.5851 6.06813 18.585 6.16678L18.585 12.5307C18.585 12.7299 18.5058 12.9209 18.365 13.0617C18.2242 13.2026 18.0332 13.2817 17.834 13.2817C17.6349 13.2817 17.4438 13.2026 17.303 13.0617C17.1622 12.9209 17.0831 12.7299 17.0831 12.5307L17.0841 6.91666L11.4701 6.91773C11.3714 6.91785 11.2737 6.89851 11.1825 6.86082C11.0914 6.82312 11.0085 6.76781 10.9388 6.69806C10.869 6.6283 10.8137 6.54547 10.776 6.4543C10.7383 6.36314 10.719 6.26543 10.7191 6.16678Z" fill="#313130" />
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.63641 18.3644C5.49576 18.2237 5.41674 18.033 5.41674 17.834C5.41674 17.6351 5.49576 17.4444 5.63641 17.3037L16.7733 6.16678C16.914 6.02613 17.1048 5.94711 17.3037 5.94711C17.5026 5.94711 17.6933 6.02613 17.834 6.16678C17.9747 6.30744 18.0537 6.4982 18.0537 6.69711C18.0537 6.89603 17.9747 7.08679 17.834 7.22744L6.69707 18.3644C6.55642 18.505 6.36565 18.584 6.16674 18.584C5.96783 18.584 5.77706 18.505 5.63641 18.3644Z" fill="#313130" />
-                                        </svg>
-                                        </button>
-                                    </main>
-                                </div>
-                            </div>
-                            <div className={st.tteRight}>
-                                <main>
-                                    <h1>Talk to us</h1>
-                                    <div className={st.talkToUsGrid}>
-                                        <div className="inputBox">
-                                            <label htmlFor="model">Name <span>*</span></label>
-                                            <input placeholder='First and last name' type="text" />
-                                        </div>
-                                        <div className="inputBox">
-                                            <label htmlFor="model">Email <span>*</span></label>
-                                            <input placeholder='Email Address' type="text" />
-                                        </div>
-                                        <div className="inputBox">
-                                            <label htmlFor="model">Company</label>
-                                            <input placeholder='Company name' type="text" />
-                                        </div>
-                                        <div className="inputBox">
-                                            <label htmlFor="model">Message <span>*</span></label>
-                                            <input placeholder='Your message to Unchained Robotics' type="text" />
-                                        </div>
-                                    </div>
-
-                                </main>
-                                <main>
-                                    <button className="button button-md button-primary-gray trailing-icon">Send Message <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fillRule="evenodd" clipRule="evenodd" d="M15.219 6.969C15.2887 6.89915 15.3714 6.84374 15.4625 6.80593C15.5537 6.76812 15.6513 6.74866 15.75 6.74866C15.8486 6.74866 15.9463 6.76812 16.0374 6.80593C16.1286 6.84374 16.2113 6.89915 16.281 6.969L20.781 11.469C20.8508 11.5387 20.9063 11.6214 20.9441 11.7125C20.9819 11.8037 21.0013 11.9013 21.0013 12C21.0013 12.0986 20.9819 12.1963 20.9441 12.2874C20.9063 12.3786 20.8508 12.4613 20.781 12.531L16.281 17.031C16.1402 17.1718 15.9492 17.2509 15.75 17.2509C15.5508 17.2509 15.3598 17.1718 15.219 17.031C15.0782 16.8902 14.9991 16.6992 14.9991 16.5C14.9991 16.3008 15.0782 16.1098 15.219 15.969L19.1895 12L15.219 8.031C15.1492 7.96133 15.0937 7.87857 15.0559 7.78745C15.0181 7.69633 14.9987 7.59865 14.9987 7.5C14.9987 7.40135 15.0181 7.30366 15.0559 7.21255C15.0937 7.12143 15.1492 7.03867 15.219 6.969Z" fill="#fff" />
-                                        <path fillRule="evenodd" clipRule="evenodd" d="M3 12C3 11.8011 3.07902 11.6103 3.21967 11.4697C3.36032 11.329 3.55109 11.25 3.75 11.25H19.5C19.6989 11.25 19.8897 11.329 20.0303 11.4697C20.171 11.6103 20.25 11.8011 20.25 12C20.25 12.1989 20.171 12.3897 20.0303 12.5303C19.8897 12.671 19.6989 12.75 19.5 12.75H3.75C3.55109 12.75 3.36032 12.671 3.21967 12.5303C3.07902 12.3897 3 12.1989 3 12Z" fill="#fff" />
-                                    </svg>
-                                    </button>
-                                    <p>This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply</p>
-                                </main>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="box-sm">
-                    <div className={st.richText}>
-                        <p>
-                            H-Series is the most powerful cobot in the market. Outstanding 25
-                            kg payload and 6 torque sensors brings safe work environment for
-                            any kind of application.
-                        </p>
-                        <h6>SUPER SAFE</h6>
-                        <ul>
-                            <li>
-                                <b>Five workspace settings to fully protect the operator</b>
-                                <p>
-                                    Five workspace settings protect the operator’s safety and
-                                    improve work efficiency.
-                                </p>
-                                <ul>
-                                    <li>Collaborate zone</li>
-                                    <li>Collision detection mute zone</li>
-                                    <li>Protected zone</li>
-                                    <li>Limited tool Orientation zone</li>
-                                    <li>Customized collision sensitivity zone</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <b>
-                                    Outstanding product safety certified by international
-                                    organization
-                                </b>
-                                <p>
-                                    Doosan robots have received prestigious safety certifications
-                                    worldwide as well as safety certifications from NRTL in the
-                                    US, CE in Europe and KCs in Korea.
-                                </p>
-                            </li>
-                        </ul>
-                        <h6>SUPER EASY</h6>
-                        <ul>
-                            <li>
-                                <b>One-touch programming in just 20 seconds</b>
-                                <p>
-                                    Doosan robots automatically recognize attached peripherals and
-                                    suggest ideal work process in forms of various templates from
-                                    simple material handling to machine tending. It also provides
-                                    pre-programmed skills, commonly used in the field, which make
-                                    it very easy to teach the robots even for beginners.
-                                </p>
-                            </li>
-                            <li>
-                                <b>Cockpit to quickly and easily teach robots</b>
-                                <p>
-                                    Through the cockpit (Direct teaching button) on Doosan robots,
-                                    it is possible to select various teaching modes as well as to
-                                    save coordinates with simple button operations, allowing easy
-                                    direct teaching.
-                                </p>
-                            </li>
-                        </ul>
-                        <h6>SUPER FLEXIBLE</h6>
-                        <ul>
-                            <li>
-                                <b>Doosan Mate maximizing the utilization of Doosan robots</b>
-                                <p>
-                                    Doosan Mate is comprising of a variety of industry leading
-                                    partner products from grippers to electric tools machines,
-                                    sensors and software, providing the best automation solutions
-                                    optimized for customer needs. All registered products are
-                                    highly compatible with Doosan robots, allowing easy and fast
-                                    set-up and immediate operation.
-                                </p>
-                            </li>
-                            <li>
-                                <b>Convenient communication connections</b>
-                                <p>
-                                    Doosan robot supports the latest communication technologies,
-                                    even without a gateway, allowing seamless connections with
-                                    various types of industrial equipment and systems.
-                                </p>
-                                <p>
-                                    Supported Communications: RS232/485, TCP/IP, Modbus TCP
-                                    (Master/Slave), Modbus RTU (Master), PROFINET IO Device,
-                                    EtherNet/IP Adapter
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <TalkToExpert />
+                <ProductDescription>
+                    <p>
+                        H-Series is the most powerful cobot in the market. Outstanding 25
+                        kg payload and 6 torque sensors brings safe work environment for
+                        any kind of application.
+                    </p>
+                    <h6>SUPER SAFE</h6>
+                    <ul>
+                        <li>
+                            <b>Five workspace settings to fully protect the operator</b>
+                            <p>
+                                Five workspace settings protect the operator’s safety and
+                                improve work efficiency.
+                            </p>
+                            <ul>
+                                <li>Collaborate zone</li>
+                                <li>Collision detection mute zone</li>
+                                <li>Protected zone</li>
+                                <li>Limited tool Orientation zone</li>
+                                <li>Customized collision sensitivity zone</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>
+                                Outstanding product safety certified by international
+                                organization
+                            </b>
+                            <p>
+                                Doosan robots have received prestigious safety certifications
+                                worldwide as well as safety certifications from NRTL in the
+                                US, CE in Europe and KCs in Korea.
+                            </p>
+                        </li>
+                    </ul>
+                    <h6>SUPER EASY</h6>
+                    <ul>
+                        <li>
+                            <b>One-touch programming in just 20 seconds</b>
+                            <p>
+                                Doosan robots automatically recognize attached peripherals and
+                                suggest ideal work process in forms of various templates from
+                                simple material handling to machine tending. It also provides
+                                pre-programmed skills, commonly used in the field, which make
+                                it very easy to teach the robots even for beginners.
+                            </p>
+                        </li>
+                        <li>
+                            <b>Cockpit to quickly and easily teach robots</b>
+                            <p>
+                                Through the cockpit (Direct teaching button) on Doosan robots,
+                                it is possible to select various teaching modes as well as to
+                                save coordinates with simple button operations, allowing easy
+                                direct teaching.
+                            </p>
+                        </li>
+                    </ul>
+                    <h6>SUPER FLEXIBLE</h6>
+                    <ul>
+                        <li>
+                            <b>Doosan Mate maximizing the utilization of Doosan robots</b>
+                            <p>
+                                Doosan Mate is comprising of a variety of industry leading
+                                partner products from grippers to electric tools machines,
+                                sensors and software, providing the best automation solutions
+                                optimized for customer needs. All registered products are
+                                highly compatible with Doosan robots, allowing easy and fast
+                                set-up and immediate operation.
+                            </p>
+                        </li>
+                        <li>
+                            <b>Convenient communication connections</b>
+                            <p>
+                                Doosan robot supports the latest communication technologies,
+                                even without a gateway, allowing seamless connections with
+                                various types of industrial equipment and systems.
+                            </p>
+                            <p>
+                                Supported Communications: RS232/485, TCP/IP, Modbus TCP
+                                (Master/Slave), Modbus RTU (Master), PROFINET IO Device,
+                                EtherNet/IP Adapter
+                            </p>
+                        </li>
+                    </ul>
+                </ProductDescription>
             </div>
             <Footer />
         </div >

@@ -1,0 +1,6 @@
+h1.sectionheading {
+  font-size: 1.85rem;
+  font-weight: 700;
+  padding: 5rem 0 2.5rem 0 !important;
+  color: var(--gray800);
+}

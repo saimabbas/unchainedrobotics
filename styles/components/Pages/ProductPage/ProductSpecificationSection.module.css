@@ -1,0 +1,36 @@
+.faqContent,
+.downloadsContent,
+.technicalDataContent,
+.overviewContent {
+  margin: 0 0 5rem 0;
+}
+
+.technicalDataContent {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 3.5rem;
+}
+.technicalDataContent table,
+.technicalDataContent table * {
+  width: 100%;
+}
+.technicalDataContent thead th {
+  background-color: var(--background1);
+  padding: 1rem 1.5rem;
+  text-align: start;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--gray800);
+  border-bottom: 1px solid #e0e0e0;
+}
+.technicalDataContent td {
+  padding: 1rem 1.5rem;
+  text-align: start;
+  font-size: 1.5rem;
+  width: max-content;
+  font-weight: 400;
+  color: var(--gray800);
+  border-bottom: 1px solid #e0e0e0;
+}

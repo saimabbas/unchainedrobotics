@@ -1,0 +1,34 @@
+.productDetailsMenu {
+  height: max-content;
+  position: sticky;
+  top: 5rem;
+  left: 0;
+}
+.productDetailsMenu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.productDetailsMenu a,
+.productDetailsMenu a:focus {
+  font-size: 1.5rem;
+  color: var(--gray400) !important;
+}
+.productDetailsMenu li {
+  margin: 0 0 1rem 0;
+}
+.productDetailsMenu a:hover {
+  text-decoration: underline;
+  color: var(--gray800);
+}
+.productDetailsMenu a.activeSectionLink {
+  color: var(--gray800);
+  font-weight: 600;
+}
+.productDetailsMenu a.activeSectionLink:hover {
+  text-decoration: none;
+}
+.productDetailsMenu a.secondarySectionLink {
+  padding: 0 0 0 2.5rem !important;
+}

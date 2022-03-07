@@ -1,0 +1,18 @@
+.InTheBoxCard {
+  width: 100%;
+}
+.InTheBoxCard img {
+  width: 100%;
+  object-fit: contain;
+}
+.InTheBoxCard h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 1.5rem 0 1rem 0 !important;
+  color: var(--gray800);
+}
+.InTheBoxCard p {
+  font-size: 1.5rem;
+  color: var(--gray800);
+  font-weight: 400;
+}

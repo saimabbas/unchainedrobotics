@@ -87,14 +87,14 @@
   color: var(--white) !important;
 }
 .takeOurQuiz {
-  color: var(--primary-green);
+  color: var(--green500);
   font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 .takeOurQuiz:hover {
-  color: var(--primary-green) !important;
+  color: var(--green500) !important;
 }
 .takeOurQuiz svg {
   width: 2.25rem;

@@ -1,5 +1,5 @@
 import React from 'react'
-import st from "../../../styles/pages/ProductPage.module.css"
+import st from "../../../styles/components/Pages/ProductPage/FAQCard.module.css"
 import { Accordion } from "react-bootstrap";
 
 const FAQCard = (props) => {
@@ -16,7 +16,7 @@ const FAQCard = (props) => {
             </Accordion.Header>
             <Accordion.Body>
                 <div className={st.faqbody}>
-                    <p>{props.answer}</p>
+                    <p>{props.children}</p>
                 </div>
             </Accordion.Body>
         </Accordion.Item>

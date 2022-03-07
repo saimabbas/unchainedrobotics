@@ -1,6 +1,5 @@
 import React from 'react'
-import st from "../../../styles/pages/ProductPage.module.css"
-
+import st from "../../../styles/components/Pages/ProductPage/FeaturedOnTVCard.module.css"
 const FeaturedOnTVCard = (props) => {
     return (
         <div className={st.featuredGridCard}>
@@ -8,11 +7,13 @@ const FeaturedOnTVCard = (props) => {
                 src={props.img}
                 alt="Robot Image"
             />
-            <span>{props.tag}</span>
-            <p>
-                {props.description}
-            </p>
-            <i>{props.time}</i>
+            <main>
+                <span>{props.tag}</span>
+                <p>
+                    {props.description}
+                </p>
+                <i>{props.time}</i>
+            </main>
         </div>
     )
 }

@@ -1,0 +1,27 @@
+.similarRobotsCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.similarRobotsCard > * {
+  width: 100%;
+  text-align: center;
+  margin: 0 0 1rem 0 !important;
+}
+.similarRobotsCard i {
+  font-size: 1.25rem;
+  color: var(--gray500);
+  font-style: normal;
+}
+.similarRobotsCard h1 {
+  font-size: 1.85rem;
+  color: var(--gray800);
+  font-weight: 600;
+}
+.similarRobotsCard h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--gray800);
+}

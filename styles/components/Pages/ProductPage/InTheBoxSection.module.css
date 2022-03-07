@@ -1,0 +1,16 @@
+.InTheBoxSection {
+  width: 100%;
+}
+.InTheBoxSection > h1 {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--gray800);
+}
+.InTheBoxGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 2.5rem;
+}

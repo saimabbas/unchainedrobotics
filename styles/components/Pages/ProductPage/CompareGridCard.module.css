@@ -1,0 +1,51 @@
+.compareGridCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  transition: var(--trns2);
+  cursor: pointer;
+}
+.compareGridCard main {
+  width: 100%;
+  padding: 1rem 1.5rem;
+}
+.compareGridCard img {
+  width: 100%;
+  object-fit: contain;
+  margin: 0 0 1.5rem 0;
+}
+.compareGridCard h1 {
+  font-size: 1.65rem;
+  font-weight: 600;
+  color: var(--gray800);
+}
+.compareGridCard h2 {
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--gray700);
+  margin: 1.5rem 0 1.5rem 0 !important;
+}
+.compareGridCard h3 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--gray700);
+  margin: 0 0 1rem 0 !important;
+}
+.compareGridCard p {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  min-height: 5rem;
+  width: 100%;
+  padding: 1rem 1.5rem !important;
+  border-bottom: 1px solid var(--gray200);
+  transition: var(--trns2);
+}
+.compareGridCard:hover {
+  box-shadow: var(--card-box-shadow);
+}
+.compareGridCard:hover p {
+  border-bottom: 1px solid transparent;
+}

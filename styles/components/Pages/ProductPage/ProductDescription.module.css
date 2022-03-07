@@ -1,0 +1,21 @@
+.richText {
+  width: 100%;
+  color: var(--gray800);
+}
+.richText p {
+  font-size: 1.5rem;
+}
+.richText h6 {
+  font-size: 1.5rem;
+  margin: 2.5rem 0 !important;
+}
+.richText li {
+  font-size: 1.5rem;
+  list-style-type: disc;
+}
+.richText b {
+  font-weight: 700;
+}
+.richText ul {
+  padding: 0 0 0 5rem !important;
+}

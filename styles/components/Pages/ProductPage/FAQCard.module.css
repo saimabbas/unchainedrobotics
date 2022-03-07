@@ -1,0 +1,35 @@
+.faqItem {
+  width: 100%;
+  padding: 0 0 2.5rem 0;
+}
+.faqItem:not(:last-child) {
+  margin: 0 0 2.5rem 0;
+  border-bottom: 1px solid #e0e0e0 !important;
+}
+.faqheader {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.faqheader h1 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  width: 100%;
+}
+.faqheader svg {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 0 0 1.5rem;
+}
+.faqbody {
+  width: 100%;
+  margin: 1.5rem 0 0 0;
+}
+.faqbody p {
+  font-size: 1.5rem;
+  color: var(--gray800);
+}
+.faqbody a {
+  color: var(--green500);
+}

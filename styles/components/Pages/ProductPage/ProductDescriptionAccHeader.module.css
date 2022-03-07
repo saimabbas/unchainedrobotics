@@ -1,0 +1,18 @@
+.detailsSectionHead {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  border-top: 1px solid #e0e0e0;
+  padding: 2.5rem 0;
+}
+.detailsSectionHead svg {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 0.75rem 0 0;
+}
+.detailsSectionHead h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}

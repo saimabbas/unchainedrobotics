@@ -1,0 +1,96 @@
+.useCaseCombinationContainer {
+  width: 100%;
+  border: 1px solid var(--gray200);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 3fr 1.25fr;
+  grid-template-rows: auto;
+  grid-gap: 0;
+}
+.useCaseCombinationContainer section {
+  width: 100%;
+  padding: 1.5rem 2.5rem 5rem 1.5rem;
+  display: flex;
+  grid-template-columns: 1fr 25px 1fr 25px 1fr;
+  grid-template-rows: auto;
+  grid-gap: 0;
+}
+.useCaseCombinationCard {
+  width: 100%;
+  padding: 1.5rem;
+  transition: var(--trns2);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 0.75rem;
+}
+.useCaseCombinationCard:hover {
+  box-shadow: var(--card-box-shadow);
+  background-color: var(--white);
+}
+.useCaseCombinationCard img {
+  width: 100%;
+}
+.useCaseCombinationCard h1 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 1.5rem 0 !important;
+  color: var(--gray300);
+}
+.useCaseCombinationCard h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--gray700);
+  margin: 0rem 0 !important;
+}
+.useCaseCombinationCard h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--gray700);
+  margin: 1.5rem 0 0 0 !important;
+}
+.useCaseCombinationContainer section > span {
+  margin: 0 1.5rem;
+  font-size: 2.5rem;
+  color: var(--gray700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.useCaseCombinationResult {
+  width: 100%;
+  background-color: var(--gray100);
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.useCaseCombinationResult h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--gray800);
+}
+.useCaseCombinationResult h2 {
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: var(--gray700);
+  margin: 1.5rem 0 5rem 0 !important;
+}
+.useCaseCombinationResult h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--gray800);
+}
+.useCaseCombinationResult h4 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 0.5rem 0 1.5rem 0 !important;
+  color: var(--gray800);
+}
+.useCaseCombinationResult main {
+  width: 100%;
+}

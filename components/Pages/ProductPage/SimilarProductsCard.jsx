@@ -1,7 +1,7 @@
 import React from 'react'
-import st from "../../../styles/pages/ProductPage.module.css"
+import st from "../../../styles/components/Pages/ProductPage/SimilarProductsCard.module.css"
 
-const SimilarCobotCard = (props) => {
+const SimilarProductsCard = (props) => {
     return (
         <div className={st.similarRobotsCard}>
             <img src={props.img} alt="Robot Image" />
@@ -13,4 +13,4 @@ const SimilarCobotCard = (props) => {
     )
 }
 
-export default SimilarCobotCard
+export default SimilarProductsCard

@@ -1,0 +1,16 @@
+.compareSection {
+  width: 100%;
+}
+.compareGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.15fr repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 0;
+}
+.CStabDescription {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--gray700);
+  margin: 0 0 1.5rem 0;
+}

@@ -1,0 +1,26 @@
+.downloadsGridCard {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.downloadsGridCard img {
+  width: max-content;
+  height: 7.5rem;
+  object-fit: contain;
+  margin: 0 1rem 0 0;
+}
+.downloadsGridCard main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.downloadsGridCard main h1 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin: 0 0 0.75rem 0;
+}
+.downloadsGridCard main p {
+  font-size: 1.35rem;
+  color: var(--gray800);
+}

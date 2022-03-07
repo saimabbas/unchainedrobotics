@@ -1,0 +1,41 @@
+.featuredGridCard {
+  padding: 0;
+  transition: var(--trns2);
+  cursor: pointer;
+  border-radius: 1rem;
+}
+.featuredGridCard:hover {
+  box-shadow: var(--card-box-shadow);
+}
+.featuredGridCard main {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+.featuredGridCard img {
+  width: 100%;
+  height: 20rem;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+.featuredGridCard span {
+  width: max-content;
+  font-size: 1.25rem;
+  background-color: var(--background1);
+  color: var(--gray800);
+  margin: 1.5rem 0;
+  display: block;
+  padding: 0.25rem 1rem;
+  border-radius: 1000px;
+  font-weight: 500;
+}
+.featuredGridCard p {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--gray800);
+}
+.featuredGridCard i {
+  font-size: 1.25rem;
+  font-style: normal;
+  margin: 1rem 0 0 0;
+  display: block;
+  color: var(--gray400);
+}

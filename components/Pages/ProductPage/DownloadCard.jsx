@@ -1,6 +1,5 @@
 import React from 'react'
-import st from "../../../styles/pages/ProductPage.module.css"
-
+import st from "../../../styles/components/Pages/ProductPage/DownloadCard.module.css"
 const DownloadCard = (props) => {
     return (
         <div className={st.downloadsGridCard}>
