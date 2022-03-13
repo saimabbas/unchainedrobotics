@@ -316,7 +316,7 @@ select {
 }
 .button-primary-gray:focus {
   background-color: var(--gray700);
-  box-shadow: 0 0 0 0.5rem var(--gray400);
+  box-shadow: 0 0 0 0.35rem var(--gray400);
 }
 .button-primary-gray:disabled {
   background-color: var(--gray400);
@@ -330,7 +330,7 @@ select {
 }
 .button-primary-red:focus {
   background-color: #fc5a5a;
-  box-shadow: 0 0 0 0.5rem #fdacac;
+  box-shadow: 0 0 0 0.35rem #fdacac;
 }
 .button-primary-red:disabled {
   background-color: #fdacac;
@@ -344,7 +344,7 @@ select {
 }
 .button-primary-green:focus {
   background-color: #1fdb84;
-  box-shadow: 0 0 0 0.5rem #8fedc1;
+  box-shadow: 0 0 0 0.35rem #8fedc1;
 }
 .button-primary-green:disabled {
   background-color: #8fedc1;
@@ -360,7 +360,7 @@ select {
   background-color: var(--gray100);
 }
 .button-secondary-gray:focus {
-  box-shadow: 0 0 0 0.5rem var(--gray300);
+  box-shadow: 0 0 0 0.35rem var(--gray300);
   background-color: var(--gray100);
 }
 .button-secondary-gray:disabled {
@@ -376,7 +376,7 @@ select {
 }
 .button-secondary-red:focus {
   background-color: #fff5f5;
-  box-shadow: 0 0 0 0.5rem #fdacac;
+  box-shadow: 0 0 0 0.35rem #fdacac;
 }
 .button-secondary-red:disabled {
   color: #fdacac;
@@ -391,7 +391,7 @@ select {
 }
 .button-secondary-green:focus {
   background-color: #ebfff5;
-  box-shadow: 0 0 0 0.5rem #8fedc1;
+  box-shadow: 0 0 0 0.35rem #8fedc1;
 }
 .button-secondary-green:disabled {
   color: #8fedc1;
@@ -407,7 +407,7 @@ select {
   background-color: var(--gray100);
 }
 .button-tertiary-gray:focus {
-  box-shadow: 0 0 0 0.5rem var(--gray300);
+  box-shadow: 0 0 0 0.35rem var(--gray300);
   background-color: var(--gray100);
 }
 .button-tertiary-gray:disabled {
@@ -423,7 +423,7 @@ select {
 }
 .button-tertiary-red:focus {
   background-color: #fff5f5;
-  box-shadow: 0 0 0 0.5rem #fdacac;
+  box-shadow: 0 0 0 0.35rem #fdacac;
 }
 .button-tertiary-red:disabled {
   color: #fdacac;
@@ -438,7 +438,7 @@ select {
 }
 .button-tertiary-green:focus {
   background-color: #ebfff5;
-  box-shadow: 0 0 0 0.5rem #8fedc1;
+  box-shadow: 0 0 0 0.35rem #8fedc1;
 }
 .button-tertiary-green:disabled {
   color: #8fedc1;

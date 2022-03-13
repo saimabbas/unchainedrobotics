@@ -7,16 +7,8 @@ import "swiper/css/thumbs";
 import { Swiper, SwiperSlide } from "swiper/react";
 // import required modules
 import { FreeMode, Thumbs } from "swiper";
-
-import {
-    Magnifier,
-    GlassMagnifier,
-    SideBySideMagnifier,
-    PictureInPictureMagnifier,
-    MOUSE_ACTIVATION,
-    TOUCH_ACTIVATION
-} from "react-image-magnifiers";
-
+import InnerImageZoom from 'react-inner-image-zoom'
+import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css'
 const ProductThumbsGallery = () => {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
@@ -31,17 +23,10 @@ const ProductThumbsGallery = () => {
                 >
                     <SwiperSlide>
                         <div className={st.tgTopBoxImg}>
-                            {/* <Magnifier
-                                imageSrc="/assets/img/Robots/rob-2.png"
-                                imageAlt="Example"
-                                largeImageSrc="/assets/img/Robots/rob-2-large.png" // Optional
-                                mouseActivation={MOUSE_ACTIVATION.DOUBLE_CLICK} // Optional
-                                touchActivation={TOUCH_ACTIVATION.DOUBLE_TAP} // Optional
-                            /> */}
-                            <GlassMagnifier
-                                imageSrc="/assets/img/Robots/rob-2.png"
-                                imageAlt="Example"
-                                largeImageSrc="/assets/img/Robots/rob-2-large.png" // Optional
+                            <InnerImageZoom
+                                src="/assets/img/Robots/rob-2.png"
+                                zoomSrc="/assets/img/Robots/rob-2-large.png"
+                                zoomType="hover"
                             />
                         </div>
                     </SwiperSlide>
