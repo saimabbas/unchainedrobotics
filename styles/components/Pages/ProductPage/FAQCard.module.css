@@ -33,3 +33,8 @@
 .faqbody a {
   color: var(--green500);
 }
+@media screen and (max-width: 650px) {
+  .faqItem {
+    padding: 0 0 2rem 0;
+  }
+}

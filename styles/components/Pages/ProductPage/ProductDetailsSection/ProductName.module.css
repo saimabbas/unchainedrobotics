@@ -1,0 +1,11 @@
+.productName {
+  font-size: 3.25rem;
+  font-weight: 500;
+  width: 90%;
+}
+@media screen and (max-width: 850px) {
+  .productName {
+    font-size: 2.75rem;
+    font-weight: 600;
+  }
+}

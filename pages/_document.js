@@ -4,7 +4,11 @@ export default function Document() {
   return (
     <Html>
       <Head />
-      <body data-spy="scroll" data-target="#abc" data-offset="150">
+      <body
+        data-spy="scroll"
+        data-target="#productPageLeftMenu"
+        data-offset="0"
+      >
         <Main />
         <NextScript />
       </body>

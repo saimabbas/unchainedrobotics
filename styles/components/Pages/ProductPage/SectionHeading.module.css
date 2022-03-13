@@ -4,3 +4,8 @@ h1.sectionheading {
   padding: 5rem 0 2.5rem 0 !important;
   color: var(--gray800);
 }
+@media screen and (max-width: 850px) {
+  h1.sectionheading {
+    padding: 3.5rem 0 2.5rem 0 !important;
+  }
+}

@@ -9,6 +9,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  padding: 0;
 }
 .productDetailsMenu a,
 .productDetailsMenu a:focus {
@@ -31,4 +32,9 @@
 }
 .productDetailsMenu a.secondarySectionLink {
   padding: 0 0 0 2.5rem !important;
+}
+@media screen and (max-width: 1050px) {
+  .productDetailsMenu {
+    display: none;
+  }
 }

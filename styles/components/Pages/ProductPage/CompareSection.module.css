@@ -4,7 +4,7 @@
 .compareGrid {
   width: 100%;
   display: grid;
-  grid-template-columns: 1.15fr repeat(4, 1fr);
+  grid-template-columns: 1.15fr 1fr;
   grid-template-rows: auto;
   grid-gap: 0;
 }
@@ -13,4 +13,19 @@
   font-weight: 400;
   color: var(--gray700);
   margin: 0 0 1.5rem 0;
+}
+.compareGridCardBox {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 0;
+}
+@media screen and (max-width: 650px) {
+  .compareGridCardBox {
+    display: none;
+  }
+  .compareGrid {
+    grid-template-columns: 1fr 1.5fr;
+  }
 }

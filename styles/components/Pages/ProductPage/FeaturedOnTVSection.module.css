@@ -3,5 +3,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 1.5rem;
+  grid-gap: 2.5rem;
+}
+@media screen and (max-width: 1050px) {
+  .featuredGrid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
 }

@@ -39,3 +39,14 @@
   display: block;
   color: var(--gray400);
 }
+@media screen and (max-width: 850px) {
+  .featuredGridCard img {
+    height: 15rem;
+  }
+  .featuredGridCard span {
+    font-size: 1.15rem;
+  }
+  .featuredGridCard p {
+    font-size: 1.35rem;
+  }
+}

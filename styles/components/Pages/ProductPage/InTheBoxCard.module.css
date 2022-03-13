@@ -16,3 +16,11 @@
   color: var(--gray800);
   font-weight: 400;
 }
+@media screen and (max-width: 650px) {
+  .InTheBoxCard h1 {
+    font-size: 1.5rem;
+  }
+  .InTheBoxCard p {
+    font-size: 1.25rem;
+  }
+}

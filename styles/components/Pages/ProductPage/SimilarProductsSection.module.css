@@ -5,3 +5,15 @@
   grid-template-rows: auto;
   grid-gap: 3.5rem;
 }
+@media screen and (max-width: 1050px) {
+  .similarRobotsGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2.5rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .similarRobotsGrid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2.5rem;
+  }
+}

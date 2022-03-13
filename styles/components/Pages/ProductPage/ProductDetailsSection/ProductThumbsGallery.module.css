@@ -1,0 +1,41 @@
+.productThumbsGallery {
+  width: 100%;
+}
+.productBoxTop {
+  padding: 2.5rem;
+  width: 100%;
+  height: 40rem;
+  border-radius: 1rem;
+  box-shadow: var(--card-box-shadow);
+  margin: 0 0 2.5rem 0;
+  background-color: var(--white);
+}
+.tgTopBoxImg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.productBoxBottom {
+  width: 100%;
+}
+.tgBottomBoxImg {
+  width: 7.5rem;
+  height: 7.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+}
+@media screen and (max-width: 850px) {
+  .productBoxTop {
+    height: unset;
+    max-height: 35rem;
+    margin: 0 0 2rem 0;
+  }
+  .productThumbsGallery {
+    margin: 0 0 2.5rem 0;
+  }
+}

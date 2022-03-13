@@ -81,11 +81,27 @@
   left: 50%;
   transform: translate(-50%, 0%);
 }
-
 .overviewGrid2 {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-gap: 2.5rem;
+}
+@media screen and (max-width: 850px) {
+  .overviewGrid1 {
+    grid-template-columns: 1fr;
+  }
+  .overviewGrid2 {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 850px) {
+  .overviewGrid1,
+  .overviewGrid2 {
+    display: none;
+  }
+  .overviewContentMainGrid video:nth-last-of-type(2) {
+    display: none;
+  }
 }

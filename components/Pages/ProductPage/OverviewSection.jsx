@@ -3,41 +3,65 @@ import st from "../../../styles/components/Pages/ProductPage/OverviewSection.mod
 import CompareSection from './CompareSection'
 import FeaturedOnTVSection from './featuredOnTVSection'
 import InTheBoxSection from './InTheBoxSection'
+import OverviewCard from './OverviewCard'
 import UseCaseCombinationSection from './UseCaseCombinationSection'
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { FreeMode } from "swiper";
+import 'swiper/css';
+import "swiper/css/free-mode";
 
 const OverviewSection = () => {
+    SwiperCore.use([FreeMode]);
     return (
         <div className={st.overviewContent}>
-            <div className={st.overviewContentMainGrid}>
+            <div className={st.overviewContentMainGrid} id="overview">
+                <Swiper
+                    slidesPerView={1.25}
+                    freeMode={true}
+                    spaceBetween={15}
+                >
+                    <SwiperSlide>
+                        <OverviewCard
+                            heading="High safety 1"
+                            subheading="Guarantees outstanding safety with the industry best collision sensitivity, made possible by 6 torque sensors and a compensation mechanism."
+                            img="/assets/img/Robots/rob-1.png"
+                            className='overview-card-bg'
+                        />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <OverviewCard
+                            heading="High safety 1"
+                            subheading="Guarantees outstanding safety with the industry best collision sensitivity, made possible by 6 torque sensors and a compensation mechanism."
+                            img="/assets/img/Robots/rob-2.png"
+                        />
+                    </SwiperSlide>
+                </Swiper>
                 <div className={st.overviewGrid1}>
-                    <div className={st.overviewGrid1Left}>
-                        <div className={st.grid1boxOverlay}>
-                            <h1>High payload</h1>
-                            <p>The impressive payload capacity allows for the easy handling of heavy objects up to 25 kg. Stacking andof heavy objects up to 25 kg. Stacking andof heavy objects up to 25 kg. Stacking and palletizing heavy objects in logistics and automation processes becomes child's play.</p>
-                        </div>
-                        <img src="/assets/img/Robots/rob-1.png" alt="Robot Image" />
-
-                    </div>
-                    <div className={st.overviewGrid1Right}>
-                        <h1>High safety</h1>
-                        <p>Guarantees outstanding safety with the industry best collision sensitivity, made possible by 6 torque sensors and a compensation mechanism.</p>
-                        <img src="/assets/img/Robots/rob-2.png" alt="Robot Image" />
-                    </div>
+                    <OverviewCard
+                        heading="High safety 1"
+                        subheading="Guarantees outstanding safety with the industry best collision sensitivity, made possible by 6 torque sensors and a compensation mechanism."
+                        img="/assets/img/Robots/rob-1.png"
+                        className='overview-card-bg'
+                    />
+                    <OverviewCard
+                        heading="High safety 1"
+                        subheading="Guarantees outstanding safety with the industry best collision sensitivity, made possible by 6 torque sensors and a compensation mechanism."
+                        img="/assets/img/Robots/rob-2.png"
+                    />
                 </div>
                 <video controls src="https://unchainedrobotics.de/wp-content/uploads/2020/11/The-new-cobot-H-SERIES-Doosan-Robotics.mp4"></video>
                 <div className={st.overviewGrid2}>
-                    <div className={st.overviewGrid1Right}>
-                        <h1>Low dead weight low dead</h1>
-                        <p>The Cobot has a low tare weight and is therefore only half as heavy as comparable Cobots in its class. This has numerous benefits for payload, speed, and possible deployment areas.</p>
-                        <img src="/assets/img/Robots/rob-3.png" alt="Robot Image" />
-                    </div>
-                    <div className={st.overviewGrid1Left}>
-                        <div className={st.grid1boxOverlay}>
-                            <h1>High flexibility</h1>
-                            <p>The shorter cycle time and cost effectiveness maximize efficiency and productivity, ensuring the fastest possible payback.</p>
-                        </div>
-                        <img src="/assets/img/Robots/rob-4.png" alt="Robot Image" />
-                    </div>
+                    <OverviewCard
+                        heading="High safety 2"
+                        subheading="Guarantees outstanding safety with the industry best collision sensitivity, made possible by 6 torque sensors and a compensation mechanism."
+                        img="/assets/img/Robots/rob-2.png"
+                    />
+                    <OverviewCard
+                        heading="High safety 1"
+                        subheading="Guarantees outstanding safety with the industry best collision sensitivity, made possible by 6 torque sensors and a compensation mechanism."
+                        img="/assets/img/Robots/rob-1.png"
+                        className='overview-card-bg'
+                    />
                 </div>
                 <video controls src="https://unchainedrobotics.de/wp-content/uploads/2020/11/Doosan-H-SERIES-High-Payload-26-Reach-Palletizing.mp4"></video>
             </div>

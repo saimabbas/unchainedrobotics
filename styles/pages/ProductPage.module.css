@@ -4,14 +4,14 @@
 .productGrid {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 40rem 1fr;
   grid-template-rows: auto;
   grid-gap: 5rem;
   margin: 5rem 0;
 }
 .productDetailsHead {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   width: 100%;
 }
@@ -41,10 +41,6 @@
   width: 2.5rem;
   height: 2.5rem;
   cursor: pointer;
-}
-.productDetailsHead h1 {
-  font-size: 3.25rem;
-  font-weight: 500;
 }
 .productDescription {
   font-size: 1.35rem;
@@ -105,7 +101,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-gap: 1rem;
+  grid-gap: 1.5rem;
   margin: 2.5rem 0;
 }
 .learnMoreTag {
@@ -118,13 +114,15 @@
 }
 .learnMoreTag main {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
 }
 .learnMoreTag main svg {
-  width: 2.5rem;
-  height: 2.5rem;
+  min-width: 3rem;
+  max-width: 3rem;
+  min-height: 3rem;
+  max-height: 3rem;
   margin: 0 0.75rem 0 0;
 }
 .learnMoreTag main p {
@@ -145,7 +143,7 @@
   display: grid;
   grid-template-columns: 25rem 1fr;
   grid-template-rows: max-content;
-  grid-gap: 5rem;
+  grid-gap: 0;
   position: relative;
 }
 a.secondarySectionLink {
@@ -153,9 +151,9 @@ a.secondarySectionLink {
 }
 .productDetailsContentContainer {
   width: 100%;
-  display: grid;
+  /*   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: auto; */
 }
 .detailsSubHading {
   width: 100%;
@@ -198,4 +196,33 @@ a.secondarySectionLink {
 .technicalDataContent,
 .overviewContent {
   margin: 0 0 5rem 0;
+}
+@media screen and (max-width: 1050px) {
+  .productGrid {
+    grid-gap: 2.5rem;
+  }
+  .productSectionalDetails {
+    display: block;
+  }
+}
+@media screen and (max-width: 850px) {
+  .productGrid {
+    display: unset;
+  }
+  .learnMoreTag {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .learnMoreTag main {
+    margin: 0 0 1.5rem 0;
+  }
+  .descLinksBox {
+    display: none;
+  }
+  .productPage {
+    padding: 2rem 0 0 0;
+  }
+  .addToCompare {
+    margin: 0 0 2.5rem 0;
+  }
 }

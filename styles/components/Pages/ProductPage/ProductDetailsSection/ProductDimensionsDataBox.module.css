@@ -1,0 +1,19 @@
+.ProductDimensionsDataBox {
+  margin: 0 2.5rem 0 0;
+  width: max-content;
+}
+.ProductDimensionsDataBox span {
+  font-size: 1.25rem;
+  color: var(--gray500);
+}
+.ProductDimensionsDataBox p {
+  font-size: 2rem;
+  color: var(--gray800);
+  font-weight: 500;
+}
+@media screen and (max-width: 850px) {
+  .ProductDimensionsDataBox p {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+}

@@ -34,3 +34,11 @@
   color: var(--gray800);
   border-bottom: 1px solid #e0e0e0;
 }
+@media screen and (max-width: 650px) {
+  .technicalDataContent thead th {
+    font-size: 1.5rem;
+  }
+  .technicalDataContent td {
+    font-size: 1.35rem;
+  }
+}

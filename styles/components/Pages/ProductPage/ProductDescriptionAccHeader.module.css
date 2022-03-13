@@ -16,3 +16,11 @@
   font-size: 2.25rem;
   font-weight: 700;
 }
+@media screen and (max-width: 850px) {
+  .detailsSectionHead {
+    padding: 2rem 0;
+  }
+  .detailsSectionHead h1 {
+    font-size: 2rem;
+  }
+}

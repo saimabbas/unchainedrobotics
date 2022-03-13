@@ -1,0 +1,24 @@
+.productPrice {
+  display: inline-flex;
+  align-items: center;
+}
+.productPrice h6 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--gray800);
+}
+.productPrice span {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--gray500);
+  margin: 0 0 0 1.5rem;
+}
+@media screen and (max-width: 650px) {
+  .productPrice h6 {
+    font-size: 2.75rem;
+    font-weight: 600;
+  }
+  .productPrice {
+    margin: 2.5rem 0 2.5rem 0;
+  }
+}

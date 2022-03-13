@@ -7,24 +7,31 @@ const UseCaseCombinationContainer = () => {
             <section>
                 <div className={st.useCaseCombinationCard}>
                     <img src="/assets/img/Robots/rob-2.png" alt="Robot Image" />
-                    <h1>Cobot, Doosan</h1>
-                    <h2>Doosan Robotics H2515</h2>
-                    <h3>50.500 €</h3>
+                    <main>
+                        <h1>Cobot, Doosan</h1>
+                        <h2>Doosan Robotics H2515</h2>
+                        <h3>50.500 €</h3>
+                    </main>
                 </div>
                 <span>+</span>
                 <div className={st.useCaseCombinationCard}>
                     <img src="/assets/img/Robots/rob-2.png" alt="Robot Image" />
-                    <h1>Cobot, Doosan</h1>
-                    <h2>Doosan Robotics H2515</h2>
-                    <h3>50.500 €</h3>
+                    <main>
+                        <h1>Cobot, Doosan</h1>
+                        <h2>Doosan Robotics H2515</h2>
+                        <h3>50.500 €</h3>
+                    </main>
                 </div>
                 <span>+</span>
                 <div className={st.useCaseCombinationCard}>
                     <img src="/assets/img/Robots/rob-2.png" alt="Robot Image" />
-                    <h1>Cobot, Doosan</h1>
-                    <h2>Doosan Robotics H2515</h2>
-                    <h3>50.500 €</h3>
+                    <main>
+                        <h1>Cobot, Doosan</h1>
+                        <h2>Doosan Robotics H2515</h2>
+                        <h3>50.500 €</h3>
+                    </main>
                 </div>
+
             </section>
             <div className={st.useCaseCombinationResult}>
                 <main>

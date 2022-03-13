@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import BreadCrumbs from '../components/Theme/BreadCrumbs'
 import Header from '../components/Theme/Header'
 import Footer from '../components/Theme/Footer'
@@ -6,13 +6,6 @@ import customGlobals from "../styles/CustomGlobals.module.css"
 import st from "../styles/pages/ProductPage.module.css"
 import { Accordion } from "react-bootstrap";
 import Head from 'next/head'
-import SimilarProductsCard from '../components/Pages/ProductPage/SimilarProductsCard'
-import FeaturedOnTVCard from '../components/Pages/ProductPage/FeaturedOnTVCard'
-import DownloadCard from '../components/Pages/ProductPage/DownloadCard'
-import FAQCard from '../components/Pages/ProductPage/FAQCard'
-import InTheBoxSection from '../components/Pages/ProductPage/InTheBoxSection'
-import CompareSection from '../components/Pages/ProductPage/CompareSection'
-import UseCaseCombinationSection from '../components/Pages/ProductPage/UseCaseCombinationSection'
 import { Nav } from 'react-bootstrap'
 import ProductDescription from '../components/Pages/ProductPage/ProductDescription'
 import TalkToExpert from '../components/Pages/ProductPage/TalkToExpert'
@@ -22,13 +15,28 @@ import SimilarProductsSection from '../components/Pages/ProductPage/SimilarProdu
 import FAQSection from '../components/Pages/ProductPage/FAQSection'
 import DownloadSection from '../components/Pages/ProductPage/DownloadSection'
 import ProductSpecificationSection from '../components/Pages/ProductPage/ProductSpecificationSection'
-import FeaturedOnTVSection from '../components/Pages/ProductPage/featuredOnTVSection'
 import OverviewSection from '../components/Pages/ProductPage/OverviewSection'
+import Scrollspy from 'react-scrollspy'
+import ProductName from '../components/Pages/ProductPage/ProductDetailsSection/ProductName'
+import ProductBookmark from '../components/Pages/ProductPage/ProductDetailsSection/ProductBookmark'
+import ProductDimensionsDataBox from '../components/Pages/ProductPage/ProductDetailsSection/ProductDimensionsDataBox'
+import ProductBriefDescription from '../components/Pages/ProductPage/ProductDetailsSection/ProductDescription'
+import ProductPrice from '../components/Pages/ProductPage/ProductDetailsSection/ProductPrice'
+import ProductModalSelect from '../components/Pages/ProductPage/ProductDetailsSection/ProductModalSelect'
+import ProductAddToCartBtn from '../components/Pages/ProductPage/ProductDetailsSection/ProductAddToCartBtn'
+import EnquireNowBtn from '../components/Pages/ProductPage/ProductDetailsSection/EnquireNowBtn'
+import ProductThumbsGallery from '../components/Pages/ProductPage/ProductDetailsSection/ProductThumbsGallery'
 const ProductPage = () => {
+    useEffect(() => {
+        return null
+    }, [])
+
     return (
         <div className={customGlobals.app}>
             <Header />
             <Head>
+                {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> */}
+                {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js" integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> */}
                 <title>Product Details</title>
             </Head>
             <div className={st.productPage}>
@@ -36,29 +44,33 @@ const ProductPage = () => {
                     <div className="box-sm">
                         <BreadCrumbs />
                         <div className={st.productGrid}>
-                            <div className={st.productGridLeft}></div>
+                            <div className={st.productGridLeft}>
+                                <ProductThumbsGallery />
+                            </div>
                             <div className={st.productGridRight}>
                                 <div className={st.productDetailsHead}>
-                                    <h1>Doosan Robotics H2515</h1>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M17.3333 21.1666C16.9812 21.1669 16.6433 21.0279 16.3933 20.78L12 16.38L7.64 20.7266C7.45556 20.9238 7.21562 21.0603 6.95192 21.1181C6.68822 21.1759 6.41318 21.1523 6.16317 21.0505C5.91317 20.9486 5.69998 20.7732 5.5518 20.5475C5.40363 20.3219 5.32745 20.0565 5.33333 19.7866V4.16665C5.33333 3.81302 5.47381 3.47389 5.72386 3.22384C5.97391 2.97379 6.31304 2.83331 6.66667 2.83331H17.3333C17.687 2.83331 18.0261 2.97379 18.2761 3.22384C18.5262 3.47389 18.6667 3.81302 18.6667 4.16665V19.8333C18.6667 20.1869 18.5262 20.5261 18.2761 20.7761C18.0261 21.0262 17.687 21.1666 17.3333 21.1666ZM17.3333 19.8333V4.16665H6.66667V19.7866L12 14.5L17.3333 19.8333Z" fill="#313130" />
-                                    </svg>
+                                    <ProductName
+                                        productname="Doosan Robotics H2515"
+                                    />
+                                    <ProductBookmark />
                                 </div>
                                 <div className={st.textDetailsBoxParent}>
-                                    <div className={st.textDetailsBox}>
-                                        <span>RANGE</span>
-                                        <p>1.500 mm</p>
-                                    </div>
-                                    <div className={st.textDetailsBox}>
-                                        <span>PAYLOAD</span>
-                                        <p>25 kg</p>
-                                    </div>
+                                    <ProductDimensionsDataBox
+                                        dataheading="RANGE"
+                                        datavalue="1.500 mm"
+                                    />
+                                    <ProductDimensionsDataBox
+                                        dataheading="PAYLOAD"
+                                        datavalue="25 kg"
+                                    />
                                 </div>
-                                <p className={st.productDescription}>This new workhorse from Doosan Robotics is one of the most powerful robots on the market. The H2515 transports products weighing up to 25 kg and has a long reach of 1500 mm and is ideal for handling heavy objects! With its 6 torque sensors, this Cobot greatly expands the range of applications. </p>
-                                <div className={st.productPrice}>
-                                    <h6>50.500 €</h6>
-                                    <span>excl. MwSt</span>
-                                </div>
+                                <ProductBriefDescription
+                                    description="This new workhorse from Doosan Robotics is one of the most powerful robots on the market. The H2515 transports products weighing up to 25 kg and has a long reach of 1500 mm and is ideal for handling heavy objects! With its 6 torque sensors, this Cobot greatly expands the range of applications. "
+                                />
+
+                                <ProductPrice
+                                    price="50.500"
+                                />
                                 <div className={st.descLinksBox}>
                                     <a href="#">Discussion (6)</a>
                                     <span>|</span>
@@ -70,18 +82,10 @@ const ProductPage = () => {
                                     </svg>
                                     <a href="#">Add to compare</a>
                                 </h6>
-                                <div className="inputBox">
-                                    <label htmlFor="model">Model</label>
-                                    <select name="model" id="model">
-                                        <option value="">Choose an option</option>
-                                        <option value="">Model 1</option>
-                                        <option value="">Model 2</option>
-                                        <option value="">Model 3</option>
-                                    </select>
-                                </div>
+                                <ProductModalSelect />
                                 <div className={st.descBtnBox}>
-                                    <button className='button button-lg button-secondary-gray width-100'>Add to cart</button>
-                                    <button className='button button-lg button-primary-gray width-100'>Add to cart</button>
+                                    <ProductAddToCartBtn />
+                                    <EnquireNowBtn />
                                 </div>
                                 <div className={st.learnMoreTag}>
                                     <main>
@@ -96,35 +100,35 @@ const ProductPage = () => {
                         </div>
                         <div className={st.productSectionalDetails}>
                             <ProductDetailsMenu>
-                                <Nav navbarScroll defaultActiveKey="#overview" id="abc" className='nav-tabs'>
-                                    <Nav.Item>
-                                        <Nav.Link href="#overview">Overview</Nav.Link>
-                                    </Nav.Item>
-                                    <Nav.Item>
-                                        <Nav.Link href="#compare" className={st.secondarySectionLink}>Compare</Nav.Link>
-                                    </Nav.Item>
-                                    <Nav.Item>
-                                        <Nav.Link href="#inthebox" className={st.secondarySectionLink}>In the box</Nav.Link>
-                                    </Nav.Item>
-                                    <Nav.Item>
-                                        <Nav.Link href="#usecasecombination" className={st.secondarySectionLink}>Use case combination</Nav.Link>
-                                    </Nav.Item>
-                                    <Nav.Item>
-                                        <Nav.Link href="#technicalData">Technical Data</Nav.Link>
-                                    </Nav.Item>
-                                    <Nav.Item>
-                                        <Nav.Link href="#downloads">Downloads</Nav.Link>
-                                    </Nav.Item>
-                                    <Nav.Item>
-                                        <Nav.Link href="#faq">FAQ</Nav.Link>
-                                    </Nav.Item>
-                                    <Nav.Item>
-                                        <Nav.Link href="#similarrobots">Similar cobats</Nav.Link>
-                                    </Nav.Item>
-                                </Nav>
+                                <Scrollspy offset={-25} items={['overview', 'compare', 'inthebox', 'usecasecombination', 'technicalData', 'downloads', 'faq', 'similarrobots']} currentClassName="active">
+                                    <li>
+                                        <a href="#overview">Overview</a>
+                                    </li>
+                                    <li>
+                                        <a href="#compare" className={st.secondarySectionLink}>Compare</a>
+                                    </li>
+                                    <li>
+                                        <a href="#inthebox" className={st.secondarySectionLink}>In the box</a>
+                                    </li>
+                                    <li>
+                                        <a href="#usecasecombination" className={st.secondarySectionLink}>Use case combination</a>
+                                    </li>
+                                    <li>
+                                        <a href="#technicalData">Technical Data</a>
+                                    </li>
+                                    <li>
+                                        <a href="#downloads">Downloads</a>
+                                    </li>
+                                    <li>
+                                        <a href="#faq">FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#similarrobots">Similar cobats</a>
+                                    </li>
+                                </Scrollspy>
                             </ProductDetailsMenu>
                             <div className={st.productDetailsContentContainer} >
-                                <div className={st.overview} id="overview">
+                                <div className={st.overview} >
                                     <Accordion>
                                         <Accordion.Item>
                                             <Accordion.Header>
