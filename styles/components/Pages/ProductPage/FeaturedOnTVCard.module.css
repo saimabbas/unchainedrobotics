@@ -19,7 +19,7 @@
 .featuredGridCard span {
   width: max-content;
   font-size: 1.25rem;
-  background-color: var(--background1);
+  background-color: var(--blue100);
   color: var(--gray800);
   margin: 1.5rem 0;
   display: block;
@@ -48,5 +48,12 @@
   }
   .featuredGridCard p {
     font-size: 1.35rem;
+  }
+
+  .featuredGridCard:hover {
+    box-shadow: unset;
+  }
+  .featuredGridCard main {
+    padding: 0;
   }
 }
