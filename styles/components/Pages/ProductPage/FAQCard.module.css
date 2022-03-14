@@ -37,4 +37,7 @@
   .faqItem {
     padding: 0 0 2rem 0;
   }
+  .faqheader h1 {
+    font-size: 1.65rem;
+  }
 }

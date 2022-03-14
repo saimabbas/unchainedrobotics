@@ -24,3 +24,11 @@
   font-size: 1.35rem;
   color: var(--gray800);
 }
+@media screen and (max-width: 650px) {
+  .downloadsGridCard img {
+    width: max-content;
+    height: 8.5rem;
+    object-fit: contain;
+    margin: 0 2rem 0 0;
+  }
+}
