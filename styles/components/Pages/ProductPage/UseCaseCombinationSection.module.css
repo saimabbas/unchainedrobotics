@@ -22,10 +22,13 @@
   margin: 0 1.5rem 0 0;
   background-color: transparent;
 }
-.uccSwiperBtnBox button img {
+.uccSwiperBtnBox button svg {
   width: 2.5rem;
 }
 .uccSwiper button:hover {
   background-color: var(--gray800) !important;
   color: var(--white);
+}
+.uccSwiper button:hover > svg path {
+  fill: #fff !important;
 }

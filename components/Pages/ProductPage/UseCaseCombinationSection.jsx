@@ -9,7 +9,8 @@ import SwiperCore, { Navigation } from "swiper";
 import 'swiper/css';
 import "swiper/css/navigation";
 import "swiper/css/free-mode";
-
+import ArrowLeft from "../../../public/assets/icons/ArrowLeft"
+import ArrowRight from "../../../public/assets/icons/ArrowRight"
 const UseCaseCombinationSection = () => {
     SwiperCore.use([Navigation]);
     return (
@@ -78,9 +79,11 @@ const UseCaseCombinationSection = () => {
                                 </Swiper>
                                 <div className={st.uccSwiperBtnBox}>
                                     <button className="uccSwiperPrev">
-                                        <img src="/assets/icons/arrow-left.svg" alt="arrow-left" />
+                                        <ArrowLeft color="#313130" />
                                     </button>
-                                    <button className="uccSwiperNext"><img src="/assets/icons/arrow-right.svg" alt="arrow-right" /></button>
+                                    <button className="uccSwiperNext">
+                                        <ArrowRight color="#313130" />
+                                    </button>
                                 </div>
                             </div>
                         </Tab.Pane>
@@ -108,9 +111,11 @@ const UseCaseCombinationSection = () => {
                                 </Swiper>
                                 <div className={st.uccSwiperBtnBox}>
                                     <button className="uccSwiperPrev">
-                                        <img src="/assets/icons/arrow-left.svg" alt="arrow-left" />
+                                        <ArrowLeft color="#313130" />
                                     </button>
-                                    <button className="uccSwiperNext"><img src="/assets/icons/arrow-right.svg" alt="arrow-right" /></button>
+                                    <button className="uccSwiperNext">
+                                        <ArrowRight color="#313130" />
+                                    </button>
                                 </div>
                             </div>
                         </Tab.Pane>
@@ -138,9 +143,11 @@ const UseCaseCombinationSection = () => {
                                 </Swiper>
                                 <div className={st.uccSwiperBtnBox}>
                                     <button className="uccSwiperPrev">
-                                        <img src="/assets/icons/arrow-left.svg" alt="arrow-left" />
+                                        <ArrowLeft color="#313130" />
                                     </button>
-                                    <button className="uccSwiperNext"><img src="/assets/icons/arrow-right.svg" alt="arrow-right" /></button>
+                                    <button className="uccSwiperNext">
+                                        <ArrowRight color="#313130" />
+                                    </button>
                                 </div>
                             </div>
                         </Tab.Pane>
