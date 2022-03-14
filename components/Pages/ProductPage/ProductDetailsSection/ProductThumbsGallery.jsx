@@ -31,10 +31,22 @@ const ProductThumbsGallery = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className={st.tgTopBoxImg}><img src="/assets/img/Robots/rob-2.png" /></div>
+                        <div className={st.tgTopBoxImg}>
+                            <InnerImageZoom
+                                src="/assets/img/Robots/rob-2.png"
+                                zoomSrc="/assets/img/Robots/rob-2-large.png"
+                                zoomType="hover"
+                            />
+                        </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className={st.tgTopBoxImg}><img src="/assets/img/Robots/rob-2.png" /></div>
+                        <div className={st.tgTopBoxImg}>
+                            <InnerImageZoom
+                                src="/assets/img/Robots/rob-2.png"
+                                zoomSrc="/assets/img/Robots/rob-2-large.png"
+                                zoomType="hover"
+                            />
+                        </div>
                     </SwiperSlide>
                 </Swiper>
             </div>

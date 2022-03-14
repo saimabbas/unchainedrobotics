@@ -17,6 +17,23 @@ const CompareSection = () => {
             <div className="ds-tabs">
                 <Tab.Container defaultActiveKey="a1">
                     <Nav variant="tabs" >
+                        <Swiper
+                            slidesPerView={"auto"}
+                            freeMode={true}
+                            spaceBetween={0}
+                            className="ds-tabs-nav"
+                        >
+                            <SwiperSlide>
+                                <Nav.Item>
+                                    <Nav.Link eventKey="a1">Same brand</Nav.Link>
+                                </Nav.Item>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <Nav.Item>
+                                    <Nav.Link eventKey="a2">Other cobots</Nav.Link>
+                                </Nav.Item>
+                            </SwiperSlide>
+                        </Swiper>
                         <Nav.Item>
                             <Nav.Link eventKey="a1">Same brand</Nav.Link>
                         </Nav.Item>
@@ -133,6 +150,7 @@ const CompareSection = () => {
                                 <Swiper
                                     slidesPerView={1.35}
                                     freeMode={true}
+                                    className={st.compareGridHeadingsMob}
                                 >
                                     <SwiperSlide>
                                         <CompareGridCard

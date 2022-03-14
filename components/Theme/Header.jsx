@@ -62,7 +62,7 @@ const Header = () => {
               <span className={st.headerLinksMob}>
                 <Link href="#">
                   <a className={st.headerLink}>
-                    <Search color="#313130" />
+                    <Search color="#fff" />
                     <i>Search</i>
                   </a>
                 </Link>
@@ -79,7 +79,7 @@ const Header = () => {
               <span className={st.headerLinksMob}>
                 <Link href="#">
                   <a className={st.headerLink}>
-                    <Menu color="#313130" />
+                    <Menu color="#fff" />
                     <i>Menu</i>
                   </a>
                 </Link>

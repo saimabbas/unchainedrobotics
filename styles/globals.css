@@ -265,6 +265,7 @@ textarea {
   font-size: 1.5rem !important;
   color: var(--gray800);
   outline: 0;
+  background-color: var(--white);
 }
 select {
   color: var(--gray500);
@@ -696,7 +697,7 @@ li.active a {
 .iiz {
   width: 100%;
   height: 100%;
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: center;
 }
@@ -731,5 +732,8 @@ li.active a {
   }
   .ds-tabs-nav {
     display: block;
+  }
+  .ds-tabs .nav > .nav-item {
+    display: none;
   }
 }
