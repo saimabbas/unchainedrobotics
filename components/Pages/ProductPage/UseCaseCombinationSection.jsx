@@ -43,7 +43,7 @@ const UseCaseCombinationSection = () => {
                             </SwiperSlide>
                         </Swiper>
 
-                        {/* <Nav.Item>
+                        <Nav.Item>
                             <Nav.Link eventKey="1">Palletizing</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
@@ -51,7 +51,7 @@ const UseCaseCombinationSection = () => {
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link eventKey="3">Heavy Object Handling</Nav.Link>
-                        </Nav.Item> */}
+                        </Nav.Item>
                     </Nav>
                     <Tab.Content>
                         <Tab.Pane eventKey="1">

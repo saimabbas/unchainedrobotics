@@ -28,7 +28,6 @@ import EnquireNowBtn from "../components/Pages/ProductPage/ProductDetailsSection
 import ProductThumbsGallery from "../components/Pages/ProductPage/ProductDetailsSection/ProductThumbsGallery";
 import Plus from "../public/assets/icons/Plus";
 import Handshake from "../public/assets/icons/Handshake";
-import FeaturedOnTVSection from "../components/Pages/ProductPage/featuredOnTVSection";
 const ProductPage = () => {
   useEffect(() => {
     return null;

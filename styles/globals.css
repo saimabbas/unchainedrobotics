@@ -656,6 +656,9 @@ select {
   max-width: 100%;
   overflow: hidden;
 }
+.ds-tabs-nav {
+  display: none;
+}
 
 .ucc-swiper-container .swiper-slide:last-child {
   display: none !important; /* DO NOT REMOVE THIS */
@@ -690,6 +693,13 @@ select {
 li.active a {
   color: var(--gray800) !important;
 }
+.iiz {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @media screen and (max-width: 650px) {
   .box-sm {
     padding: 0 2rem;
@@ -718,5 +728,8 @@ li.active a {
   } */
   .ds-tabs .nav-tabs .nav-item {
     width: auto !important;
+  }
+  .ds-tabs-nav {
+    display: block;
   }
 }
