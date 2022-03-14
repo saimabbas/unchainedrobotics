@@ -19,6 +19,7 @@ const OverviewSection = () => {
                     slidesPerView={1.25}
                     freeMode={true}
                     spaceBetween={15}
+                    className={st.overviewSwiperMob}
                 >
                     <SwiperSlide>
                         <OverviewCard

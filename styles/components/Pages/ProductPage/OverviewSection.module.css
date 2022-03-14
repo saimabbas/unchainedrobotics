@@ -88,6 +88,9 @@
   grid-template-rows: auto;
   grid-gap: 2.5rem;
 }
+.overviewSwiperMob {
+  display: none;
+}
 @media screen and (max-width: 850px) {
   .overviewGrid1 {
     grid-template-columns: 1fr;
@@ -103,5 +106,10 @@
   }
   .overviewContentMainGrid video:nth-last-of-type(2) {
     display: none;
+  }
+}
+@media screen and (max-width: 850px) {
+  .overviewSwiperMob {
+    display: block;
   }
 }
