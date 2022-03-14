@@ -21,11 +21,17 @@
   grid-template-rows: auto;
   grid-gap: 0;
 }
+.compareGridHeadingsMob {
+  display: none;
+}
 @media screen and (max-width: 650px) {
   .compareGridCardBox {
     display: none;
   }
   .compareGrid {
     grid-template-columns: 1fr 1.5fr;
+  }
+  .compareGridHeadingsMob {
+    display: block;
   }
 }

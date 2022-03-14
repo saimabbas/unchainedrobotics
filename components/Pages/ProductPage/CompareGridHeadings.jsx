@@ -1,5 +1,5 @@
 import React from 'react'
-import st from '../../../styles/components/Pages/ProductPage/compareGridHeadings.module.css'
+import st from '../../../styles/components/Pages/ProductPage/CompareGridHeadings.module.css'
 const CompareGridHeadings = () => {
     return (
         <div className={st.compareGridHeadings}>

@@ -31,6 +31,7 @@ const CompareSection = () => {
                                 <Swiper
                                     slidesPerView={1.35}
                                     freeMode={true}
+                                    className={st.compareGridHeadingsMob}
                                 >
                                     <SwiperSlide>
                                         <CompareGridCard
