@@ -694,7 +694,7 @@ li.active a {
   .box-sm {
     padding: 0 2rem;
   }
-  .ds-tabs .nav-tabs {
+  /* .ds-tabs .nav-tabs {
     flex-direction: column;
   }
   .ds-tabs .nav-tabs .nav-link::after {
@@ -708,8 +708,15 @@ li.active a {
   .ds-tabs .nav-tabs {
     border-left: 1px solid var(--gray200) !important;
     border-bottom: 0px solid var(--gray200) !important;
+  } */
+  .ds-tabs-nav .swiper-slide {
+    display: block !important;
+    width: min-content !important;
   }
-  #overview .swiper {
-    width: calc(100vw - 4rem) !important;
+  /*  .ds-tabs-nav .swiper-wrapper {
+    justify-content: flex-start;
+  } */
+  .ds-tabs .nav-tabs .nav-item {
+    width: auto !important;
   }
 }

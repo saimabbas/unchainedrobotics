@@ -5,13 +5,13 @@ import UseCaseCombinationContainer from './UseCaseCombinationContainer';
 import { Tabs } from 'react-bootstrap'
 import { Tab, Nav } from 'react-bootstrap'
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { FreeMode, Navigation } from "swiper";
+import SwiperCore, { Navigation } from "swiper";
 import 'swiper/css';
 import "swiper/css/navigation";
 import "swiper/css/free-mode";
 
 const UseCaseCombinationSection = () => {
-    SwiperCore.use([Navigation, FreeMode]);
+    SwiperCore.use([Navigation]);
     return (
         <div className={st.UseCaseCombinationSection} id='usecasecombination'>
             <SectionHeading
@@ -20,9 +20,11 @@ const UseCaseCombinationSection = () => {
             <div className="ds-tabs">
                 <Tab.Container defaultActiveKey="1">
                     <Nav variant="tabs" >
-                        {/* <Swiper
-                            sliderPerView={2.75}
+                        <Swiper
+                            slidesPerView={"auto"}
                             freeMode={true}
+                            spaceBetween={0}
+                            className="ds-tabs-nav"
                         >
                             <SwiperSlide>
                                 <Nav.Item>
@@ -39,8 +41,9 @@ const UseCaseCombinationSection = () => {
                                     <Nav.Link eventKey="3">Heavy Object Handling</Nav.Link>
                                 </Nav.Item>
                             </SwiperSlide>
-                        </Swiper> */}
-                        <Nav.Item>
+                        </Swiper>
+
+                        {/* <Nav.Item>
                             <Nav.Link eventKey="1">Palletizing</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
@@ -48,7 +51,7 @@ const UseCaseCombinationSection = () => {
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link eventKey="3">Heavy Object Handling</Nav.Link>
-                        </Nav.Item>
+                        </Nav.Item> */}
                     </Nav>
                     <Tab.Content>
                         <Tab.Pane eventKey="1">

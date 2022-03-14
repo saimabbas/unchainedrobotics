@@ -5,7 +5,6 @@ import { Tab, Nav } from 'react-bootstrap'
 import CompareGridHeadings from './CompareGridHeadings'
 import CompareGridCard from './CompareGridCard'
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { FreeMode } from "swiper";
 import 'swiper/css';
 import "swiper/css/free-mode";
 
