@@ -1,0 +1,21 @@
+.allProductsSliderCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.allProductsSliderCard img {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0 1.5rem 0;
+}
+.allProductsSliderCard p {
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--dark2);
+}
+.allProductsSliderCard:hover p {
+  text-decoration: underline;
+}

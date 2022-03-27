@@ -58,7 +58,10 @@
   justify-content: flex-start;
   margin: 1rem 0 0 0;
 }
-.footerCenterGridRight main a {
+.footerCenterGridRight main > * {
+  margin: 0 1.5rem 0 0;
+}
+/* .footerCenterGridRight main a {
   width: 4.25rem;
   height: 4.25rem;
   border: 1px solid var(--gray500);
@@ -71,7 +74,7 @@
 .footerCenterGridRight main a svg {
   width: 2.5rem;
   height: 2.5rem;
-}
+} */
 .footerBottomGridParent {
   width: 100%;
   background-color: var(--gray800);

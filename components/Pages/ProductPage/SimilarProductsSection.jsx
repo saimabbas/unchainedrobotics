@@ -6,28 +6,34 @@ const SimilarProductsSection = () => {
         <div className={st.similarRobotsContent}>
             <div className={st.similarRobotsGrid}>
                 <SimilarProductsCard
-                    img="/assets/img/Robots/rob-2.png"
+                    hoverImg="/assets/img/Robots/rob-2.png"
+                    defaultImg="/assets/img/Robots/rob-3.png"
                     robotType="Cobot, Dooson"
                     robotName="Doosan Robotics H2017"
-                    robotPrice="44.000 €"
+                    singlePrice="44.000 €"
+                    isSale={true}
                 />
                 <SimilarProductsCard
-                    img="/assets/img/Robots/rob-2.png"
+                    hoverImg="/assets/img/Robots/rob-2.png"
+                    defaultImg="/assets/img/Robots/rob-3.png"
                     robotType="Cobot, Dooson"
-                    robotName="Doosan   H2017"
-                    robotPrice="250-.000 €"
+                    robotName="Doosan Robotics H2017"
+                    variablePrice="28.900,00€ – 32.000,00€"
                 />
                 <SimilarProductsCard
-                    img="/assets/img/Robots/rob-2.png"
+                    hoverImg="/assets/img/Robots/rob-2.png"
+                    defaultImg="/assets/img/Robots/rob-3.png"
                     robotType="Cobot, Dooson"
-                    robotName="Doosan Robotics  "
-                    robotPrice="12.000 €"
+                    robotName="Doosan Robotics H2017"
+                    beforeSalePrice="44.000 €"
+                    afterSalePrice="40.000 €"
                 />
                 <SimilarProductsCard
-                    img="/assets/img/Robots/rob-2.png"
+                    hoverImg="/assets/img/Robots/rob-2.png"
+                    defaultImg="/assets/img/Robots/rob-3.png"
                     robotType="Cobot, Dooson"
-                    robotName="  Robotics H2017"
-                    robotPrice="4.000 €"
+                    robotName="Doosan Robotics H2017 can be a very long"
+                    singlePrice="44.000 €"
                 />
             </div>
         </div>

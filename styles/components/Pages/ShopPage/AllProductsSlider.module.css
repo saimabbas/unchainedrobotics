@@ -1,0 +1,22 @@
+.allProductsSlider {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 2.5rem;
+}
+.ALSnextBox {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  z-index: 1002;
+}
+.ALSprevBox {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(50%, -50%);
+  z-index: 1002;
+}

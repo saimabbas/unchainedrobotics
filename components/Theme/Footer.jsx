@@ -76,12 +76,8 @@ const Footer = () => {
               <div className="inputBox">
                 <label htmlFor="">Connect with us</label>
                 <main>
-                  <a>
-                    <LinkedIn color="#313130" />
-                  </a>
-                  <a>
-                    <Facebook color="#313130" />
-                  </a>
+                  <button className="button btn-icon-md btn-icon-gray"><a href=""><LinkedIn color="#313130" /></a></button>
+                  <button className="button btn-icon-md btn-icon-gray"><a href=""><Facebook color="#313130" /></a></button>
                 </main>
               </div>
             </div>

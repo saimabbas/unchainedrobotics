@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProductModalSelect = () => {
     return (
-        <div className="inputBox">
+        <div className="ds-select">
             <label htmlFor="model">Model</label>
             <select name="model" id="model">
                 <option value="">Choose an option</option>

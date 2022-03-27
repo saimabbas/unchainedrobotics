@@ -172,24 +172,7 @@ const ProductPage = () => {
                         <ProductDescriptionAccHeader headertext="Downloads" />
                       </Accordion.Header>
                       <Accordion.Body>
-                        {/* <div className={st.downloadsContent}>
-                                                    <div className={st.downloadsGrid}>
-                                                        <DownloadCard
-                                                            img="/assets/img/downloads-1.png"
-                                                            heading="Doosan H2515 Datasheet"
-                                                            subHeading="Download the Doosan Robots datasheet here"
-                                                        />
-                                                        <DownloadCard
-                                                            img="/assets/img/downloads-2.png"
-                                                            heading="Doosan H2515 Datasheet"
-                                                            subHeading="Download the Doosan Robots datasheet here"
-                                                        />
-                                                    </div>
-                                                    <div className={st.didntFindBox}>
-                                                        <h1>Did not find what you’re looking for? </h1>
-                                                        <button className="button button-lg button-primary-gray">Contact us</button>
-                                                    </div>
-                                                </div> */}
+
                         <DownloadSection />
                       </Accordion.Body>
                     </Accordion.Item>
@@ -204,23 +187,6 @@ const ProductPage = () => {
                       <Accordion.Body>
                         <div className={st.faqContent}>
                           <Accordion alwaysOpen>
-                            {/* 
-                                                        <FAQCard
-                                                            eventKey="0"
-                                                            question="How can I place an order?"
-                                                            answer="To place an order, send us an inquiry through the button at the top of the page or contact us through the chat."
-                                                        />
-                                                        <FAQCard
-                                                            eventKey="1"
-                                                            question="What is Unchained Robotics?"
-                                                            answer="Unchained Robotics is the biggest marketplace for all things automation. We have over 36 brands with 9 different categories such as cobots, grippers, cameras, starter kits, end-of-arm accessories, teaching kits, turnkey solutions, cobot platforms, and even services. For more information, check out our About page."
-                                                        />
-                                                        <FAQCard
-                                                            eventKey="2"
-                                                            question="How can I place an order?"
-                                                            answer="To place an order, send us an inquiry through the button at the top of the page or contact us through the chat."
-                                                        />
-                                                     */}
                             <FAQSection />
                           </Accordion>
                         </div>

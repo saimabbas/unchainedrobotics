@@ -1,0 +1,64 @@
+.ShopPageGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 35rem 1fr;
+  grid-template-rows: auto;
+  grid-gap: 5rem;
+  min-height: 150vh;
+}
+.ShopPageGridLeft {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.ShopPageGridLeft > * {
+  width: 100%;
+  margin: 0 0 2.5rem 0;
+  /*   padding: 0 0 1.5rem 0;
+  border-bottom: 1px solid var(--gray300); */
+}
+.ShopPageHeading {
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  color: var(--gray700);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 3.5rem 0;
+}
+.ShopPageHeading span {
+  display: flex;
+  margin: 0 0 0 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--gray300);
+}
+
+.sortByBox {
+  width: 100%;
+  margin: 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.sortByBox select {
+  max-width: 25rem;
+}
+.sortByBox label {
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin: 0 1.5rem 0 0;
+  color: var(--gray800);
+}
+.productsGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin: 0 0 5rem 0;
+  grid-gap: 1.5rem;
+}

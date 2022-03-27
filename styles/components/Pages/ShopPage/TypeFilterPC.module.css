@@ -1,0 +1,28 @@
+.TypeFilterPC {
+  width: 100%;
+}
+.filterHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.filterHeader h6 {
+  font-size: 1.75rem;
+  color: var(--gray800);
+  font-weight: 500;
+}
+.filterHeader svg {
+  width: 2rem;
+}
+.typeFilterAccBody {
+  width: 100%;
+  margin: 1.5rem 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+}
+.typeFilterAccBody label {
+  font-size: 1.35rem;
+}

@@ -1,0 +1,40 @@
+.categoriesFilterPC {
+  width: 100%;
+}
+.filterHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.filterHeader h6 {
+  font-size: 1.75rem;
+  color: var(--gray800);
+  font-weight: 500;
+}
+.filterHeader svg {
+  width: 2rem;
+}
+.categoriesAccBody {
+  width: 100%;
+  margin: 1.5rem 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+}
+.categoriesAccBody a i {
+  font-size: 1.4rem;
+  color: var(--gray800);
+  font-weight: 400;
+  font-style: normal;
+}
+.categoriesAccBody a:hover i {
+  text-decoration: underline;
+}
+.categoriesAccBody a span {
+  font-size: 1.4rem;
+  margin: 0 0 0 1rem;
+  font-weight: 400;
+  color: var(--gray300);
+}

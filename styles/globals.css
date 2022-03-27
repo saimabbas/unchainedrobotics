@@ -125,14 +125,14 @@ body {
   width: 100%;
   max-width: 100%;
   position: relative;
-  background-color: var(--gray50) !important;
+  background-color: var(--white) !important;
 }
 .app {
   width: 100%;
 }
 .box-sm {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1350px;
   margin: 0 auto;
   padding: 0 3.5rem;
 }
@@ -168,6 +168,17 @@ h6 {
 }
 svg {
   object-fit: contain;
+}
+.ds-overflow::-webkit-scrollbar {
+  width: 0.75rem;
+}
+.ds-overflow::-webkit-scrollbar-track {
+  border-radius: 1000px;
+  background-color: transparent;
+}
+.ds-overflow::-webkit-scrollbar-thumb {
+  border-radius: 1000px;
+  background-color: var(--gray800);
 }
 .width-100 {
   width: 100%;
@@ -256,7 +267,6 @@ label {
   width: 100%;
 }
 .inputBox input,
-select,
 textarea {
   width: 100% !important;
   border: 1px solid var(--gray300);
@@ -267,10 +277,57 @@ textarea {
   outline: 0;
   background-color: var(--white);
 }
-select {
-  color: var(--gray500);
+.ds-input {
+  width: 100% !important;
+  border: 0;
+  border-bottom: 1px solid var(--gray300);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  font-size: 1.5rem;
+  color: var(--gray800);
+  outline: 0;
+  background-color: var(--blue100);
+  transition: var(--trns1);
+  position: relative;
+  height: 4rem;
 }
-
+.ds-input:hover {
+  color: var(--gray700);
+}
+.ds-input:focus {
+  box-shadow: 0 0 0 0.25rem #8fedc1;
+}
+.ds-input-icon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--blue100);
+  border: 0;
+  border-bottom: 1px solid var(--gray300);
+  height: 4rem;
+  border-radius: 0.75rem 0.75rem 0 0;
+  transition: var(--trns2);
+}
+.ds-input-icon svg {
+  width: 2rem;
+}
+.ds-input-icon input {
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  background-color: transparent;
+  font-size: 1.5rem;
+  color: var(--gray800);
+  font-weight: 400;
+}
+.ds-input-icon input::placeholder {
+  color: var(--gray300);
+}
+.ds-input-icon:focus-within {
+  box-shadow: 0 0 0 0.25rem #8fedc1;
+  border-bottom: 1px solid transparent;
+}
 /* Buttons */
 .button {
   width: max-content;
@@ -290,18 +347,22 @@ select {
 .button-sm {
   font-size: 1.2rem;
   padding: 0.4rem 1.6rem;
+  font-weight: 400;
 }
 .button-md {
   font-size: 1.4rem;
   padding: 0.6rem 1.6rem;
+  font-weight: 500;
 }
 .button-lg {
   font-size: 1.6rem;
   padding: 0.75rem 3rem;
+  font-weight: 600;
 }
 .button-xl {
   font-size: 1.6rem;
   padding: 1.2rem 3rem;
+  font-weight: 600;
 }
 /* Full With Button */
 .button.width-100 {
@@ -352,49 +413,61 @@ select {
 }
 
 /* Secondary Buttons  */
-.button-secondary-gray {
-  background-color: var(--white);
+.button-secondary-gray,
+.btn-icon-gray {
+  background-color: transparent;
   color: var(--gray800);
   border: 1px solid var(--gray300);
 }
-.button-secondary-gray:hover {
-  background-color: var(--gray100);
+.button-secondary-gray:hover,
+.btn-icon-gray:hover {
+  background-color: var(--gray200) !important;
 }
-.button-secondary-gray:focus {
-  box-shadow: 0 0 0 0.35rem var(--gray300);
-  background-color: var(--gray100);
+.button-secondary-gray:focus,
+.btn-icon-gray:focus {
+  box-shadow: 0 0 0 0.35rem var(--gray300) !important;
+  background-color: var(--gray100) !important;
 }
-.button-secondary-gray:disabled {
+.button-secondary-gray:disabled,
+.btn-icon-gray:disabled {
   color: var(--gray300);
 }
-.button-secondary-red {
-  background-color: var(--white);
-  color: var(--primary-red);
-  border: 1px solid var(--primary-red);
+.button-secondary-red,
+.btn-icon-red {
+  background-color: transparent;
+  color: var(--red500);
+  border: 1px solid var(--red500);
 }
-.button-secondary-red:hover {
+.button-secondary-red:hover,
+.btn-icon-red:hover {
   background-color: #fff5f5;
 }
-.button-secondary-red:focus {
+.button-secondary-red:focus,
+.btn-icon-red:focus {
   background-color: #fff5f5;
   box-shadow: 0 0 0 0.35rem #fdacac;
 }
-.button-secondary-red:disabled {
+.button-secondary-red:disabled,
+.btn-icon-red:disabled {
   color: #fdacac;
 }
-.button-secondary-green {
-  background-color: var(--white);
+.button-secondary-green,
+.btn-icon-green {
+  background-color: transparent;
   color: #1bc074;
   border: 1px solid #1bc074;
 }
-.button-secondary-green:hover {
+.button-secondary-green:hover,
+.btn-icon-green:hover {
   background-color: #ebfff5;
 }
-.button-secondary-green:focus {
+.button-secondary-green:focus,
+.btn-icon-green:focus {
   background-color: #ebfff5;
   box-shadow: 0 0 0 0.35rem #8fedc1;
 }
-.button-secondary-green:disabled {
+.button-secondary-green:disabled,
+.btn-icon-green:disabled {
   color: #8fedc1;
 }
 
@@ -447,8 +520,8 @@ select {
 
 /* Buttons - Leading Icon */
 .leading-icon.button-sm svg {
-  width: 2rem;
-  height: 2rem;
+  width: 1.75rem;
+  height: 1.75rem;
   margin: 0 0.75rem 0 0;
 }
 .leading-icon.button-md svg {
@@ -457,8 +530,8 @@ select {
   margin: 0 0.75rem 0 0;
 }
 .leading-icon.button-lg svg {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.25rem;
+  height: 2.25rem;
   margin: 0 1rem 0 0;
 }
 .leading-icon.button-xl svg {
@@ -543,7 +616,70 @@ select {
 .button-link-green.button-lg {
   padding: 0;
 }
-
+.btn-icon-sm {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-icon-sm svg {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+.btn-icon-md {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-icon-md svg {
+  width: 2rem;
+  height: 2rem;
+}
+.btn-icon-lg {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-icon-lg svg {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+.btn-icon-gray svg {
+  fill: var(--gray800) !important;
+}
+.btn-icon-red svg {
+  fill: var(--red600) !important;
+}
+.btn-icon-green svg {
+  fill: var(--green700) !important;
+}
+.btn-icon-gray:hover {
+  background-color: var(--white);
+}
+/* Input Form Fields */
+.checkbox {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.checkbox input {
+  zoom: 1.35;
+  margin: 0.25rem 1rem 0 0;
+}
+.checkbox label {
+  font-size: 1.5rem;
+  color: var(--gray800);
+  font-weight: 400;
+}
 /* Bootstrap Styling Overrides [Do not change these] */
 .accordion-button:not(.collapsed) {
   color: unset !important;
@@ -567,6 +703,12 @@ select {
   border: 0 !important;
   box-shadow: unset !important;
 }
+.accordion-button svg {
+  transition: var(--trns2);
+}
+.accordion-button.collapsed svg {
+  transform: rotate(90deg);
+}
 .nav-link {
   padding: 0 !important;
   color: unset !important;
@@ -581,7 +723,6 @@ select {
   color: var(--gray800) !important;
   font-weight: 600 !important;
   background-color: unset !important;
-  /* padding: 0 !important; */
 }
 .ds-tabs .nav-tabs {
   border-bottom: 1px solid var(--gray200) !important;
@@ -660,7 +801,6 @@ select {
 .ds-tabs-nav {
   display: none;
 }
-
 .ucc-swiper-container .swiper-slide:last-child {
   display: none !important; /* DO NOT REMOVE THIS */
 }
@@ -679,6 +819,10 @@ select {
 .swiper {
   overflow-x: hidden !important;
   max-width: 100%;
+}
+.ALSprevBtn.swiper-button-disabled,
+.ALSnextBtn.swiper-button-disabled {
+  display: none !important;
 }
 /* Others */
 .overview-card-bg img {
@@ -701,32 +845,23 @@ li.active a {
   align-items: center;
   justify-content: center;
 }
+.rc-slider-handle {
+  border: 2px solid var(--green300) !important;
+}
+.rc-slider-track {
+  background-color: var(--green300) !important;
+}
+.rc-slider-handle-dragging {
+  box-shadow: 0 0 0 5px var(--green200) !important;
+}
 @media screen and (max-width: 650px) {
   .box-sm {
     padding: 0 2rem;
   }
-  /* .ds-tabs .nav-tabs {
-    flex-direction: column;
-  }
-  .ds-tabs .nav-tabs .nav-link::after {
-    bottom: unset;
-    top: 0;
-    left: 0;
-    width: 4px;
-    height: 100%;
-    border-radius: 0 15rem 15rem 0;
-  }
-  .ds-tabs .nav-tabs {
-    border-left: 1px solid var(--gray200) !important;
-    border-bottom: 0px solid var(--gray200) !important;
-  } */
   .ds-tabs-nav .swiper-slide {
     display: block !important;
     width: min-content !important;
   }
-  /*  .ds-tabs-nav .swiper-wrapper {
-    justify-content: flex-start;
-  } */
   .ds-tabs .nav-tabs .nav-item {
     width: auto !important;
   }

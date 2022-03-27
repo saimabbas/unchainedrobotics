@@ -1,13 +1,9 @@
-.productPage {
-  padding: 2.5rem 0 0 0;
-}
 .productGrid {
   width: 100%;
   display: grid;
   grid-template-columns: 40rem 1fr;
   grid-template-rows: auto;
   grid-gap: 5rem;
-  margin: 5rem 0;
 }
 .productDetailsHead {
   display: flex;

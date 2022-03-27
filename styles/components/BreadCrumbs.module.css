@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: flex-start;
   width: 100%;
+  margin: 2.5rem 0 5rem 0;
 }
 .breadcrumbs a {
   font-size: 1.5rem;

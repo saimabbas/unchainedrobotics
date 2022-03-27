@@ -1,0 +1,22 @@
+.takeOutQuizBanner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray50);
+  padding: 5rem;
+}
+.takeOutQuizBanner main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 1000rem;
+  background-color: var(--gray700);
+  padding: 1rem 2.5rem;
+}
+.takeOutQuizBanner main p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--white);
+}
