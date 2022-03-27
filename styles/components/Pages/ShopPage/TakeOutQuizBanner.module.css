@@ -20,3 +20,18 @@
   font-weight: 600;
   color: var(--white);
 }
+@media screen and (max-width: 1150px) {
+  .takeOutQuizBanner main {
+    flex-direction: column;
+    border-radius: 2.5rem;
+    align-items: center;
+    text-align: center;
+    padding: 2.5rem;
+  }
+  .takeOutQuizBanner main p {
+    margin: 0 0 2.5rem 0 !important;
+  }
+  .takeOutQuizBanner {
+    padding: 1.5rem;
+  }
+}

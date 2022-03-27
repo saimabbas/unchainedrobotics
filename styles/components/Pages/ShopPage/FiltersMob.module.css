@@ -1,0 +1,82 @@
+.FiltersMob {
+  width: 100%;
+  padding: 0 0 10rem 0;
+}
+.filtersMobHead {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  position: sticky;
+  top: 0rem;
+  padding: 2.5rem 0;
+  background-color: var(--white);
+  z-index: 10;
+}
+.filtersMobHead svg {
+  width: 1.5rem;
+  height: auto;
+}
+.filtersMobHead h1 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.filtersMobGrid {
+  width: 100%;
+}
+.filtersMobGrid > * {
+  margin: 0 0 2.5rem 0;
+}
+.filterBtnBox {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: var(--white);
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1.5rem;
+}
+.filterBtnBox main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.filterBtnBox button {
+  width: 100%;
+}
+.filterBtnBox main:nth-child(1) button {
+  text-decoration: underline;
+}
+.sortModalMOB {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 10000;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.sortModalMOBBox {
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 1.5rem 1.5rem 0 0;
+  padding: 0 0 10rem 0;
+}
+.sortModalMOBGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1.5rem;
+}

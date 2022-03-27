@@ -17,13 +17,15 @@ const PriceFilterPC = () => {
                     </Accordion.Header>
                     <Accordion.Body>
                         <div className={st.priceFilterAccBody}>
-                            <Slider
-                                range
-                                defaultValue={[20, 50]}
-                                min={25}
-                                max={35}
-                                allowCross={false}
-                            />
+                            <div className={st.rcSlider}>
+                                <Slider
+                                    range
+                                    defaultValue={[20, 50]}
+                                    min={25}
+                                    max={35}
+                                    allowCross={false}
+                                />
+                            </div>
                             <div className={st.priceRangeBox}>
                                 <span>
                                     <i>€</i> <input defaultValue={0} className='ds-input' type="number" />

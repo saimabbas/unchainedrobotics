@@ -148,7 +148,7 @@ input {
   font-size: 1.5rem;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   cursor: pointer;
 }
 li {
@@ -179,6 +179,23 @@ svg {
 .ds-overflow::-webkit-scrollbar-thumb {
   border-radius: 1000px;
   background-color: var(--gray800);
+}
+.ds-indicator {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background-color: var(--green300);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(150%, -50%);
+}
+.ds-chip {
+  width: max-content;
+  font-size: 1.5rem;
+  background-color: var(--blue100);
+  padding: 0.65rem 1.75rem;
+  border-radius: 1000px;
 }
 .width-100 {
   width: 100%;
@@ -308,7 +325,7 @@ textarea {
   border-bottom: 1px solid var(--gray300);
   height: 4rem;
   border-radius: 0.75rem 0.75rem 0 0;
-  transition: var(--trns2);
+  transition: var(--trns1);
 }
 .ds-input-icon svg {
   width: 2rem;
@@ -623,6 +640,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--white);
 }
 .btn-icon-sm svg {
   width: 1.75rem;
@@ -635,6 +653,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--white);
 }
 .btn-icon-md svg {
   width: 2rem;
@@ -647,6 +666,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--white);
 }
 .btn-icon-lg svg {
   width: 2.25rem;
@@ -673,7 +693,7 @@ textarea {
 }
 .checkbox input {
   zoom: 1.35;
-  margin: 0.25rem 1rem 0 0;
+  margin: 0.15rem 1rem 0 0;
 }
 .checkbox label {
   font-size: 1.5rem;
@@ -853,6 +873,19 @@ li.active a {
 }
 .rc-slider-handle-dragging {
   box-shadow: 0 0 0 5px var(--green200) !important;
+}
+.ds-product-categories-slider {
+  display: none;
+  margin: 2.5rem 0;
+}
+.ds-product-categories-slider .swiper-slide {
+  display: block !important;
+  width: min-content !important;
+}
+@media screen and (max-width: 850px) {
+  .ds-product-categories-slider {
+    display: block;
+  }
 }
 @media screen and (max-width: 650px) {
   .box-sm {

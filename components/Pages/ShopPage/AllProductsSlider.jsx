@@ -13,13 +13,21 @@ const AllProductsSlider = () => {
     return (
         <div className={st.allProductsSlider}>
             <Swiper
-                slidesPerView={6.75}
+                slidesPerView={4.75}
                 freeMode={true}
                 navigation={{
                     nextEl: ".ALSnextBtn",
                     prevEl: ".ALSprevBtn",
                 }}
                 spaceBetween={20}
+                breakpoints={{
+                    1000: {
+                        slidesPerView: 5.75
+                    },
+                    1150: {
+                        slidesPerView: 6.75
+                    },
+                }}
                 className='all-products-slider swiper'
             >
                 <SwiperSlide>
