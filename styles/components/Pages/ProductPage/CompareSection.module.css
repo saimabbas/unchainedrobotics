@@ -8,6 +8,9 @@
   grid-template-rows: auto;
   grid-gap: 0;
 }
+.compareGrid > * {
+  padding: 0 0 1.5rem 0;
+}
 .CStabDescription {
   font-size: 1.5rem;
   font-weight: 400;
@@ -21,9 +24,9 @@
   grid-template-rows: auto;
   grid-gap: 0;
 }
-.compareGridHeadingsMob {
+/* .compareGridHeadingsMob {
   display: none;
-}
+} */
 @media screen and (max-width: 650px) {
   .compareGridCardBox {
     display: none;

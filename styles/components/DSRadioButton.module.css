@@ -1,0 +1,61 @@
+.DSRadioButton {
+  width: 1.75rem;
+  height: 1.75rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.DSRadioButton > span {
+  width: 1rem;
+  height: 1rem;
+  transition: var(--trns1);
+  position: absolute;
+  top: 53.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--green500);
+  opacity: 0;
+  border-radius: 50%;
+}
+.DSRadioButton > input {
+  appearance: none;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 1px solid var(--gray400);
+  border-radius: 0.3rem;
+  transition: var(--trns1);
+  cursor: pointer;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  zoom: 1;
+  border-radius: 50%;
+}
+.DSRadioButton > input:checked + span {
+  opacity: 1;
+}
+.DSRadioButton > input:hover {
+  border: 1px solid var(--green500);
+  background-color: var(--green100);
+}
+.DSRadioButton > input:checked {
+  border: 1px solid var(--green500);
+  background-color: var(--green100);
+}
+.DSRadioButton > input:focus {
+  box-shadow: 0 0 0 0.25rem #8fedc1;
+  border: 1px solid var(--green500);
+}
+.DSRadioButton > input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: var(--gray100);
+}
+.DSRadioButton > input:disabled:hover {
+  background-color: var(--gray100);
+  border: 1px solid var(--gray400);
+  opacity: 0.5;
+}

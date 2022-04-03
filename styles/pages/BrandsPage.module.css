@@ -1,0 +1,239 @@
+.BrandPageGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25rem 1fr;
+  grid-template-rows: auto;
+  grid-gap: 5rem;
+  min-height: 150vh;
+}
+.BrandPageGridLeft {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.BrandPageGridLeft > * {
+  width: 100%;
+  margin: 0 0 2.5rem 0;
+}
+.brandsProductDetailsBox {
+  margin: 5rem 0 0 0;
+}
+.productsGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin: 0 0 5rem 0;
+  grid-gap: 1.5rem;
+}
+.sortByBox {
+  width: 100%;
+  margin: 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.sortByBox select {
+  max-width: 25rem;
+}
+.sortByBox label {
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin: 0 1.5rem 0 0;
+  color: var(--gray800);
+}
+.brandPageThreeCards {
+  width: 100%;
+}
+.brandPageThreeCards > h2,
+.brandUseCases > h2,
+.aboutBrand > h2 {
+  text-align: center;
+  margin: 0 0 2.5rem 0;
+}
+.brandPageThreeCardsGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 5rem;
+}
+.brandPageThreeCardsGrid > div {
+  transition: var(--trns2);
+}
+.brandPageThreeCardsGrid > div:hover {
+  transform: translate(0, -1rem);
+}
+.aboutBrand {
+  width: 100%;
+}
+.aboutBrandSpecsGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 2.5rem;
+}
+.aboutBrandSpecsGrid main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.aboutBrandSpecsGrid main p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--gray300);
+  margin: 0 0 0.5rem 0;
+}
+.aboutBrandSpecsGrid main h6 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--gray700);
+}
+.aboutBrandTextBox {
+  width: 100%;
+  margin: 5rem 0 0 0;
+}
+.aboutBrandTextBox h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--gray800);
+  margin: 0 0 2.5rem 0 !important;
+  text-align: center;
+}
+.aboutBrandTextBox p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--gray700);
+  margin: 0 0 1.5rem 0 !important ;
+}
+.brandPageContentBox {
+  width: 100%;
+}
+.brandPageContentBox > * {
+  margin: 0 0 7.5rem 0;
+}
+.useCaseGrdBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--grd-green-200-white);
+  padding: 5rem;
+  border-radius: 1.5rem;
+}
+.useCaseGrdBoxLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.useCaseGrdBoxLeft h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--gray800);
+}
+.useCaseGrdBoxLeft p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--gray800);
+  margin: 2.5rem 0 !important;
+  max-width: 35rem;
+}
+.useCaseGrdBoxRight img {
+  width: 25rem;
+  object-fit: contain;
+}
+.ProductsUsingBoxGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 3.5rem;
+}
+@media screen and (max-width: 1150px) {
+  .productsGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .productsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 850px) {
+  .BrandPageGrid {
+    grid-template-columns: 1fr;
+    padding: 0 0 2.5rem 0;
+  }
+  .BrandPageGridLeft {
+    display: none;
+  }
+  .BrandPageGridRight {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: max-content;
+  }
+  .brandsProductDetailsBox {
+    margin: 0;
+  }
+  .brandPageThreeCardsGrid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2.5rem;
+  }
+  .aboutBrandSpecsGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2.5rem;
+  }
+  .aboutBrandTextBox h1 {
+    font-size: 3rem;
+  }
+  .ProductsUsingBoxGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2.5rem;
+  }
+  .sortByBox {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .useCaseGrdBox {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    border-radius: 1rem;
+  }
+  .useCaseGrdBox > * {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .useCaseGrdBoxLeft p {
+    max-width: 100%;
+  }
+  .aboutBrandSpecsGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1.5rem;
+  }
+  .aboutBrandTextBox h1 {
+    font-size: 2.5rem;
+  }
+  .brandPageThreeCardsGrid {
+    grid-template-columns: 1fr;
+    grid-gap: 2.5rem;
+  }
+}

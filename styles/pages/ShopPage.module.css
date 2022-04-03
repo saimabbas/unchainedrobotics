@@ -16,8 +16,6 @@
 .ShopPageGridLeft > * {
   width: 100%;
   margin: 0 0 2.5rem 0;
-  /*   padding: 0 0 1.5rem 0;
-  border-bottom: 1px solid var(--gray300); */
 }
 .ShopPageHeading {
   width: 100%;

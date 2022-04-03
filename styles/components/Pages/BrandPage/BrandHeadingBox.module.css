@@ -1,0 +1,43 @@
+.brandBox {
+  width: 100%;
+  margin: 0 0 5rem 0;
+}
+.brandBox p {
+  font-size: 1.65rem;
+  font-weight: 400;
+  color: var(--gray700);
+  width: 100%;
+  text-align: center;
+  margin: 2.5rem 0 0 0 !important;
+}
+.brandBox p span {
+  font-weight: 800;
+}
+.brandBox main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.brandBox img {
+  height: 5rem;
+  object-fit: contain;
+}
+.brandBox div {
+  width: 1px;
+  height: 5rem;
+  background-color: var(--gray300);
+  margin: 0 5rem;
+  display: flex;
+}
+.brandBox h6 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--gray700);
+}
+@media screen and (max-width: 850px) {
+  .brandBox {
+    width: 100%;
+    margin: 3.5rem 0;
+  }
+}

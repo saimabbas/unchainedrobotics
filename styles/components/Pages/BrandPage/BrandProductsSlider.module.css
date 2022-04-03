@@ -1,0 +1,9 @@
+.shopPageTabsSliderBox {
+  display: grid;
+  grid-auto-columns: 1fr;
+}
+@media screen and (max-width: 850px) {
+  .shopPageTabsSliderBox {
+    margin: 0 0 2.5rem 0;
+  }
+}

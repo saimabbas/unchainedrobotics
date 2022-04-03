@@ -44,6 +44,7 @@
   color: var(--gray800);
   font-style: normal;
   margin: 0 1rem 0 0;
+  font-weight: 500;
 }
 .priceRangeBox input {
   text-align: center;

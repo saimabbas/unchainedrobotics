@@ -29,10 +29,6 @@ import ProductThumbsGallery from "../components/Pages/ProductPage/ProductDetails
 import Plus from "../public/assets/icons/Plus";
 import Handshake from "../public/assets/icons/Handshake";
 const ProductPage = () => {
-  useEffect(() => {
-    return null;
-  }, []);
-
   return (
     <div className={customGlobals.app}>
       <Header />
@@ -172,7 +168,6 @@ const ProductPage = () => {
                         <ProductDescriptionAccHeader headertext="Downloads" />
                       </Accordion.Header>
                       <Accordion.Body>
-
                         <DownloadSection />
                       </Accordion.Body>
                     </Accordion.Item>

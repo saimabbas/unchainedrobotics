@@ -1,9 +1,7 @@
-import React from 'react'
-import st from "../../../styles/components/Pages/ProductPage/SectionHeading.module.css"
+import React from "react";
+import st from "../../../styles/components/Pages/ProductPage/SectionHeading.module.css";
 const SectionHeading = (props) => {
-    return (
-        <h1 className={st.sectionheading}>{props.headingtext}</h1>
-    )
-}
+  return <h2 className={st.sectionheading}>{props.headingtext}</h2>;
+};
 
-export default SectionHeading
+export default SectionHeading;

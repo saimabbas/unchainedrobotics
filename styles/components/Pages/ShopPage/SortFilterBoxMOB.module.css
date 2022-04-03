@@ -1,0 +1,35 @@
+.sortFilterBox {
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 0;
+  width: 100%;
+  margin: 0 0 2.5rem 0;
+  border-top: 1px solid var(--gray300);
+  border-bottom: 1px solid var(--gray300);
+}
+.sortFilterBox main {
+  font-size: 1.65rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+}
+.sortFilterBox main span {
+  width: max-content;
+  position: relative;
+}
+.sortFilterBox main svg {
+  width: auto;
+  height: 2rem;
+  margin: 0 1.5rem 0 0;
+}
+.sortFilterBox main:nth-child(1) {
+  border-right: 1px solid var(--gray300);
+}
+@media screen and (max-width: 850px) {
+  .sortFilterBox {
+    display: grid;
+  }
+}

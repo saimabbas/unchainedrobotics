@@ -79,4 +79,5 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-gap: 1.5rem;
+  padding: 0.5rem 0 0 0;
 }

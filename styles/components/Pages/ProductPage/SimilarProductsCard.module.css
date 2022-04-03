@@ -136,8 +136,8 @@
   margin: 0 1rem 0 0;
   display: none;
 }
-.similarRobotsCard:hover > .compareBox main span,
-.similarRobotsCard:hover > .wishlistBox main span {
+.compareBox main:hover span,
+.wishlistBox main:hover span {
   display: block;
 }
 @media screen and (max-width: 1150px) {

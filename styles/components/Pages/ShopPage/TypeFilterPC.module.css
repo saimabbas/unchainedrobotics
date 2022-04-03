@@ -23,6 +23,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-gap: 1rem;
+  padding: 0 0 0 0.5rem;
 }
 .typeFilterAccBody label {
   font-size: 1.35rem;
