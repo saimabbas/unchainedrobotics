@@ -1,697 +1,657 @@
-
 .productsGrid {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    margin: 0 0 5rem 0;
-    grid-gap: 1.5rem;
-  }
-  .homeshop
-  {
-      width: 100%;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    margin: 5rem 0 8rem 0;
-    grid-gap: 1.5rem;
-  }
-  .homecontent h2
-  {
-      font-size: 1.7rem;
-      color: var(--gray800);
-      font-weight: 600;
-      width: 75%;
-  }
-  .homemainicon
-  {
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-  }
-  .homeicon
-  {
-      min-width: 4rem;
-      min-height: 4rem;
-      max-height: 4rem;
-      max-width: 4rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-image: var(--grd-green-300-50);
-      border-radius: 50%;
-  }
-  .homemainicon h3
-  {
-    font-size: 1.6rem;
-    color: var(--gray800);
-      margin: 0 0 0 1.5rem !important;
-      font-weight: 400;
-  }
-  .trendingproducts
-  {
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      width: 100%;
-      margin: 0 0 5rem 0;
-  }
-  .trendingproducts h4
-  {
-    font-size: 2.4rem;
-    color: var(--gray800);
-    font-weight: 700;
-  }
-  .trendingproductsbtn
-  {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      margin: 5rem 0 10rem 0;
-  }
-  .topbrandsgrid
-  {
-    width: 100%;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    margin: 0 0 5rem 0;
-    grid-gap: 1.5rem;  
-  }
-  .topbrandmaingrid
-  {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      position: relative;
-      border-radius: 0 0 0.75rem 0.75rem;
-      cursor: pointer;
-  }
-  .topbrandmaingrid:hover
-  {
-    box-shadow: var(--card-box-shadow);
-    transition: var(--trns2);
-  }
-  .topbrandmaingrid img
-  {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 0.75rem 0.75rem 0 0;
-  }
-  .topbrandmaingrid h4
-  {
-    font-size: 1.7rem;
-    color: var(--gray800);
-    font-weight: 700;
-    margin: 8rem 0 0 0 !important;
-  }
-  .topbrandmaingrid h5
-  {
-    font-size: 1.6rem;
-    color: var(--gray300);
-    font-weight: 400;
-    margin: 2rem 0 !important;
-  }
-  .innertopbrand
-  {
-      position: absolute;
-      top: 50%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin: 0 0 5rem 0;
+  grid-gap: 1.5rem;
+}
+.homeshop {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin: 5rem 0 8rem 0;
+  grid-gap: 1.5rem;
+}
+.homecontent h2 {
+  font-size: 1.7rem;
+  color: var(--gray800);
+  font-weight: 600;
+  width: 75%;
+}
+.homemainicon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.homeicon {
+  min-width: 4rem;
+  min-height: 4rem;
+  max-height: 4rem;
+  max-width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: var(--grd-green-300-50);
+  border-radius: 50%;
+}
+.homemainicon h3 {
+  font-size: 1.6rem;
+  color: var(--gray800);
+  margin: 0 0 0 1.5rem !important;
+  font-weight: 400;
+}
+.trendingproducts {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0 0 5rem 0;
+}
+.trendingproducts h4 {
+  font-size: 2.4rem;
+  color: var(--gray800);
+  font-weight: 700;
+}
+.trendingproductsbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 5rem 0 10rem 0;
+}
+.topbrandsgrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin: 0 0 5rem 0;
+  grid-gap: 1.5rem;
+}
+.topbrandmaingrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  border-radius: 0 0 0.75rem 0.75rem;
+  cursor: pointer;
+}
+.topbrandmaingrid:hover {
+  box-shadow: var(--card-box-shadow);
+  transition: var(--trns2);
+}
+.topbrandmaingrid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+.topbrandmaingrid h4 {
+  font-size: 1.7rem;
+  color: var(--gray800);
+  font-weight: 700;
+  margin: 8rem 0 0 0 !important;
+}
+.topbrandmaingrid h5 {
+  font-size: 1.6rem;
+  color: var(--gray300);
+  font-weight: 400;
+  margin: 2rem 0 !important;
+}
+.innertopbrand {
+  position: absolute;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
   width: 20rem;
-    height: 12rem;
+  height: 12rem;
   border-radius: 4px;
   background-color: var(--white);
   box-shadow: var(--card-box-shadow);
-  }
-  .topbrandmaingrid .innertopbrand img
-  {
-      width: 14rem;
-      height: 100%;
-      object-fit: contain;
-      border-radius: 0;
-      margin: 0;
-  }
-  .homeecosystem
-  {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #00150B;
-      padding: 8rem;
-  }
-  .homeecoleft
-  {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 50%;
-  }
-  .homeecoleft img
-  {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-  }
-  .homeecoright
-  {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      width: 45%;
-  }
-  .homeecoright h5
-  {
-      font-size: 3.2rem;
-      font-weight: 700;
-      color: var(--white);
-  }
-  .homeecoright p
-  {
-      font-size: 1.6rem;
-      font-weight: 400;
-      color: var(--white);
-      margin: 5rem 0 0 0 !important;
-  }
-  .findrobot
-  {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      /* background-image: var(--grd-green-300-50); */
-      background-color: rgba(54, 255, 154, 0.1);;
-      padding: 5rem 0 0 0;
-      margin: 5rem 0;
-  }
-  .findrobot h3
-  {
-      font-size: 3.2rem;
-      font-weight: 700;
-      color: var(--gray800);
-      text-align: center;
-  }
-  .findrobot p
-  {
-      font-size: 1.6rem;
-      font-weight: 400;
-      color: var(--gray800);
-      margin: 2.5rem 0 !important;
-      text-align: center;
-      width: 45%;
-  }
-  .findrobot img
-  {
-     width: 50%;
-     height: 100%;
-     margin: 7rem auto 0 auto;
-     object-fit: contain;
-  }
-  .sayingaboutus
-  {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      width: 100%;
-      margin: 10rem 0 4rem 0;
-  }
-  .sayingleft
-  {
-      width: 40%;
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      flex-direction: column;
-  }
-  .sayingleft h4
-  {
-    font-size: 2.4rem;
-    color: var(--gray800);
-    font-weight: 700;   
-  }
-  .sayingleft img.colimg
-  {
-      width: 2rem;
-      height: 2rem;
-      object-fit: contain;
-      margin: 5rem 0 2rem 0;
-  }
-  .sayingleft p
-  {
-    font-size: 1.6rem;
-    color: var(--gray800);
-    font-weight: 400;   
-  }
-  .sayingleft img 
-  {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      margin: 5rem 0 0 0;
-  }
-  .sayingRight
-  {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 50%;
-  }
-  .sayingRight img
-  {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-  }
-  .mobsaying
-  {
-      display: none;
-  }
-  .howitworks
-  {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin: 5rem 0;
-      padding: 6rem 0 8rem 0;
-      border-top: 1px solid var(--gray200);
-      border-bottom: 1px solid var(--gray200);
-      position: relative;
-  }
-  .hiwleft
-  {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      width: 45%;
-      position: sticky;
-      top: 6rem;
-  }
-  .hiwleft img
-{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
-.hiwright
-{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 50%;
+.topbrandmaingrid .innertopbrand img {
+  width: 14rem;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 0;
+  margin: 0;
 }
-.hiwright h4
-{
-    font-size: 3.2rem;
-    font-weight: 700;
-    color: var(--gray800);
+.homeecosystem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00150b;
+  padding: 8rem;
 }
-.hiwright h5
-{
-    font-size: 4.8rem;
-    font-weight: 700;
-    -webkit-text-stroke: 1px var(--gray800);
-    color: transparent;
+.homeecoleft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
 }
-.hiwright p
-{
-    font-size: 1.6rem;
-    font-weight: 500;
-    color: var(--gray800);
-    margin: 2rem 0 !important;
-    width: 85%;
+.homeecoleft img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.switchbox
-{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
+.homeecoright {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 45%;
 }
-.switchbox p
-{
-    font-size: 1.6rem;
-    color: var(--gray500);
-    font-weight: 500;
+.homeecoright h5 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--white);
 }
-.hiwgrid
-{
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    grid-template-rows: auto;
-    grid-gap: 0 1.75rem;
-    width: 100%;
+.homeecoright p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--white);
+  margin: 5rem 0 0 0 !important;
 }
-.hiwlinecir
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.findrobot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  /* background-image: var(--grd-green-300-50); */
+  background-color: rgba(54, 255, 154, 0.1);
+  padding: 5rem 0 0 0;
+  margin: 5rem 0;
 }
-.hiwcir
-{
-    min-width: 2.5rem;
-    min-height: 2.5rem;
-    max-width: 2.5rem;
-    max-height: 2.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid var(--gray200);
-    border-radius: 50%;
-}
-.hiwinnercir
-{
-    min-width: 1.5rem;
-    min-height: 1.5rem;
-    max-width: 1.5rem;
-    max-height: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--gray200);
-    border-radius: 50%;   
-}
-.hiwline
-{
-    width: 0.15rem;
-    height: 100%;
-    background-color: var(--gray200);
-}
-.hiwghead
-{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 0.5rem 0 0 0;
-}
-.hiwghead h6
-{
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--gray800);
-}
-.hiwghead p
-{
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: var(--gray800);
-}
-.hiwright span
-{
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--gray800);
-    margin: 3rem 0 0 0;
-}
-.heromain
-{
-    margin: 5rem 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    box-shadow: var(--card-box-shadow);
-    border-radius: 0.75rem;
-}
-.heroleft
-{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    height: 100%;
-    width: 20%;
-}
-.herolcontent
-{
-    height: 100%;
-    padding: 2rem;
-    width: 100%;
-}
-.hlcicon
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 20%;
-}
-.hlcicon h6
-{
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: var(--gray700);
-}
-.heroright
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    background-image: var(--grd-green-300-50);
-    height: 100%;
-    border-radius: 0 0.75rem 0.75rem 0;
-}
-.heroslide
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
-    padding: 3rem 0;
-}
-.herosldleft
-{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 40%;
-}
-.herosldleft h3
-{
-  font-size: 3rem;
+.findrobot h3 {
+  font-size: 3.2rem;
+  font-weight: 700;
   color: var(--gray800);
-  font-weight: 700;  
+  text-align: center;
 }
-.herosldleft p
-{
+.findrobot p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--gray800);
+  margin: 2.5rem 0 !important;
+  text-align: center;
+  width: 45%;
+}
+.findrobot img {
+  width: 50%;
+  height: 100%;
+  margin: 7rem auto 0 auto;
+  object-fit: contain;
+}
+.sayingaboutus {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin: 10rem 0 4rem 0;
+}
+.sayingleft {
+  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.sayingleft h4 {
+  font-size: 2.4rem;
+  color: var(--gray800);
+  font-weight: 700;
+}
+.sayingleft img.colimg {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  margin: 5rem 0 2rem 0;
+}
+.sayingleft p {
   font-size: 1.6rem;
   color: var(--gray800);
-  font-weight: 400; 
-  margin: 2rem 0 !important; 
+  font-weight: 400;
 }
-.herosldright
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.sayingleft img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 5rem 0 0 0;
+}
+.sayingRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.sayingRight img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mobsaying {
+  display: none;
+}
+.howitworks {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 5rem 0;
+  padding: 6rem 0 8rem 0;
+  border-top: 1px solid var(--gray200);
+  border-bottom: 1px solid var(--gray200);
+  position: relative;
+}
+.hiwleft {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 45%;
+  position: sticky;
+  top: 6rem;
+}
+.hiwleft img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hiwright {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 50%;
+}
+.hiwright h4 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--gray800);
+}
+.hiwright h5 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  -webkit-text-stroke: 1px var(--gray800);
+  color: transparent;
+}
+.hiwright p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--gray800);
+  margin: 2rem 0 !important;
+  width: 85%;
+}
+.switchbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin: 2.5rem 0 5rem 0;
+}
+.switchbox h6 {
+  font-size: 1.6rem;
+  color: var(--gray800);
+  font-weight: 600;
+  transition: var(--trns2);
+}
+.hiwgrid {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: auto;
+  grid-gap: 0 1.75rem;
+  width: 100%;
+}
+.hiwlinecir {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hiwcir {
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+  max-width: 2.5rem;
+  max-height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--gray200);
+  border-radius: 50%;
+}
+.hiwinnercir {
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  max-width: 1.5rem;
+  max-height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray200);
+  border-radius: 50%;
+}
+.hiwline {
+  width: 0.15rem;
+  height: 100%;
+  background-color: var(--gray200);
+}
+.hiwghead {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.5rem 0 0 0;
+}
+.hiwghead h6 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--gray800);
+}
+.hiwghead p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--gray800);
+}
+.hiwright span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--gray800);
+  margin: 3rem 0 0 0;
+}
+.heromain {
+  margin: 5rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: var(--card-box-shadow);
+  border-radius: 0.75rem;
+  /* display: grid;
+  grid-template-columns: 25rem 1fr;
+  grid-template-rows: auto;
+  grid-gap: 2.5rem; */
+}
+.heroleft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 25%;
+  position: relative;
+}
+.herolcontent {
+  height: 100%;
+  width: 100%;
+  padding: 1rem 0;
+}
+.hlcicon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12.5%;
+  padding: 0.5rem 2.5rem;
+  transition: var(--trns2);
+  cursor: pointer;
+}
+.htcIconLinksBox {
+  width: max-content;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(100%, 0);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #fff;
+  z-index: 10;
+  height: 100%;
+  display: none;
+  padding: 1rem 0;
+}
+.hlcicon:hover > .htcIconLinksBox {
+  display: flex;
+}
+.htcIconLinksBox a {
+  height: 12.5%;
+  padding: 0.5rem 2.5rem;
+  transition: var(--trns2);
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--gray700);
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.htcIconLinksBox a:hover {
+  background-color: var(--gray100);
+  color: var(--green700) !important;
+  font-weight: 600;
+}
+.hlcicon:hover {
+  background-color: var(--gray100);
+}
+.hlcicon svg {
+  opacity: 0;
+  width: 2.25rem;
+  transition: var(--trns2);
+}
+.hlcicon:hover svg {
+  opacity: 1;
+}
+.hlcicon h6 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--gray700);
+}
+.sliderBanner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: 1;
+}
+.hlcicon:hover h6 {
+  color: var(--green700);
+  font-weight: 600;
+}
+.heroright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  /* background-image: var(--grd-green-300-50); */
+  height: 100%;
+  border-radius: 0 0.75rem 0.75rem 0;
+}
+.heroslide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+.herosldleft {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 40%;
+  position: relative;
+  z-index: 2;
+}
+.herosldleft h3 {
+  font-size: 3rem;
+  color: var(--gray800);
+  font-weight: 700;
+}
+.herosldleft p {
+  font-size: 1.6rem;
+  color: var(--gray800);
+  font-weight: 400;
+  margin: 2rem 0 !important;
+}
+.herosldright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  z-index: 2;
+  position: relative;
+}
+.herosldright img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* RESPONSIVENESS  */
+
+@media screen and (max-width: 850px) {
+  .homecontent h2 {
+    width: 100%;
+  }
+  .homeshop {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .productsGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .topbrandsgrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .homeecosystem {
+    padding: 4rem;
+  }
+  .homeecoright h5 {
+    font-size: 2.75rem;
+  }
+  .homeecoright p {
+    font-size: 1.4rem;
+    margin: 3rem 0 0 0 !important;
+  }
+  .findrobot h3 {
+    font-size: 2.75rem;
+  }
+  .findrobot p {
+    font-size: 1.4rem;
+    width: 60%;
+  }
+  .findrobot img {
+    width: 60%;
+  }
+  .sayingleft {
     width: 45%;
+  }
+  .sayingleft img.colimg {
+    margin: 3rem 0 1.5rem 0;
+  }
+  .sayingleft p {
+    font-size: 1.4rem;
+  }
+  .sayingleft img {
+    margin: 3.5rem 0 0 0;
+  }
 }
-.herosldright img
-{
+
+@media screen and (max-width: 600px) {
+  .homeshop {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .homemainicon {
+    align-items: center;
+  }
+  .homecontent h2 {
+    width: 50%;
+    margin: 0 auto !important;
+    line-height: 1.5;
+  }
+  .trendingproducts {
+    justify-content: center;
+  }
+  .productsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .topbrandsgrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .innertopbrand {
+    width: 13rem;
+    height: 8rem;
+  }
+  .topbrandmaingrid .innertopbrand img {
+    width: 8rem;
+  }
+  .homeecosystem {
+    flex-direction: column-reverse;
+    padding: 2rem;
+  }
+  .homeecoleft {
+    width: 100%;
+  }
+  .homeecoright {
+    width: 100%;
+  }
+  .homeecoright h5 {
+    font-size: 2.15rem;
+    line-height: 1.5;
+    text-align: center;
+    width: 100%;
+  }
+  .homeecoright p {
+    margin: 2.5rem 0 0 0 !important;
+    text-align: center;
+    width: 95%;
+  }
+  .homeecoleft img {
+    margin: 3rem 0 0 0;
+  }
+  .findrobot h3 {
+    font-size: 2.15rem;
+  }
+  .findrobot p {
+    font-size: 1.4rem;
+    width: 80%;
+  }
+  .sayingaboutus {
+    flex-direction: column;
+  }
+  .sayingleft {
+    width: 100%;
+  }
+  .sayingleft h4 {
+    font-size: 2.15rem;
+  }
+  .sayingleft img.colimg {
+    margin: 3rem 0 1.5rem 0;
+  }
+  .sayingleft p {
+    font-size: 1.6rem;
+    color: var(--gray800);
+    font-weight: 400;
+  }
+  .sayingleft img {
+    margin: 3rem 0 0 0;
+  }
+  .sayingRight {
+    width: 100%;
+    margin: 5rem 0 0 0;
+  }
+  .sayingRight img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+  .tabsaying {
+    display: none;
+  }
+  .mobsaying {
+    display: block;
+  }
 }
-
-
-
-
-
-
-
-  /* RESPONSIVENESS  */
-
-  @media screen and (max-width: 850px) {
-    .homecontent h2
-    {
-        width: 100%;
-    } 
-    .homeshop
-    {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .productsGrid {
-        grid-template-columns: 1fr 1fr 1fr;
-      }
-      .topbrandsgrid
-  {
-      grid-template-columns: 1fr 1fr 1fr;
-  }
-  .homeecosystem
-  {
-      padding: 4rem;
-  }
-  .homeecoright h5
-  {
-      font-size: 2.75rem;
-  }
-  .homeecoright p
-  {
-      font-size: 1.4rem;
-      margin: 3rem 0 0 0 !important;
-  }
-  .findrobot h3
-  {
-      font-size: 2.75rem;
-  }
-  .findrobot p
-  {
-      font-size: 1.4rem;
-      width: 60%;
-  }
-  .findrobot img
-  {
-     width: 60%;
-  }
-  .sayingleft
-  {
-      width: 45%;
-  }
-  .sayingleft img.colimg
-  {
-      margin: 3rem 0 1.5rem 0;
-  }
-  .sayingleft p
-  {
-    font-size: 1.4rem; 
-  }
-  .sayingleft img 
-  {
-      margin: 3.5rem 0 0 0;
-  }
-  }
-
-
-  @media screen and (max-width: 600px) {
-    .homeshop
-    {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    .homemainicon
-    {
-        align-items: center;
-    }
-    .homecontent h2
-    {
-        width: 50%;
-        margin: 0 auto !important;
-        line-height: 1.5;
-    } 
-    .trendingproducts
-    {
-        justify-content: center;
-    }
-    .productsGrid {
-        grid-template-columns: 1fr 1fr;
-      }
-      .topbrandsgrid
-  {
-      grid-template-columns: 1fr 1fr;
-  }
-  .innertopbrand
-  {
-  width: 13rem;
-    height: 8rem;
-  }
-  .topbrandmaingrid .innertopbrand img
-  {
-      width: 8rem;
-  }
-  .homeecosystem
-  {
-      flex-direction: column-reverse;
-      padding: 2rem;
-  }
-  .homeecoleft
-  {
-      width: 100%;
-  }
-  .homeecoright
-  {
-      width: 100%;
-  }
-  .homeecoright h5
-  {
-      font-size: 2.15rem;
-      line-height: 1.5;
-      text-align: center;
-      width: 100%;
-  }
-  .homeecoright p
-  {
-      margin: 2.5rem 0 0 0 !important;
-      text-align: center;
-      width: 95%;
-  }
-  .homeecoleft img
-  {
-      margin: 3rem 0 0 0;
-  }
-  .findrobot h3
-  {
-      font-size: 2.15rem;
-  }
-  .findrobot p
-  {
-      font-size: 1.4rem;
-      width: 80%;
-  }
-  .sayingaboutus
-  {
-      flex-direction: column;
-  }
-  .sayingleft
-  {
-      width: 100%;
-  }
-  .sayingleft h4
-  {
-    font-size: 2.15rem;  
-  }
-  .sayingleft img.colimg
-  {
-      margin: 3rem 0 1.5rem 0;
-  }
-  .sayingleft p
-  {
-    font-size: 1.6rem;
-    color: var(--gray800);
-    font-weight: 400;   
-  }
-  .sayingleft img 
-  {
-      margin: 3rem 0 0 0;
-  }
-  .sayingRight
-  {
-      width: 100%;
-      margin: 5rem 0 0 0;
-  }
-  .sayingRight img
-  {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-  }
-  .tabsaying
-  {
-      display: none;
-  }
-  .mobsaying
-  {
-      display: block;
-  }
-  }
