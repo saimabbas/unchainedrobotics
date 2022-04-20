@@ -362,12 +362,13 @@
   margin: 3rem 0 0 0;
 }
 .heromain {
-  margin: 5rem 0;
+  /* margin: 5rem 0; */
   width: 100%;
   display: flex;
   justify-content: space-between;
   box-shadow: var(--card-box-shadow);
   border-radius: 0.75rem;
+  background-color: var(--white);
   /* display: grid;
   grid-template-columns: 25rem 1fr;
   grid-template-rows: auto;
@@ -509,6 +510,11 @@
   height: 100%;
   object-fit: cover;
 }
+.herobgcolor
+{
+    background-color: #FAFBFC;
+    padding: 5rem 0 10rem 0;
+}
 
 /* RESPONSIVENESS  */
 
@@ -568,7 +574,7 @@
     align-items: center;
   }
   .homecontent h2 {
-    width: 50%;
+    width: 70%;
     margin: 0 auto !important;
     line-height: 1.5;
   }
@@ -653,5 +659,49 @@
   }
   .mobsaying {
     display: block;
+  }
+  .heroleft
+  {
+      display: none;
+  }
+  .heroright 
+  {
+      width: 100%;
+  }
+  .herobgcolor
+  {
+      padding: 5rem 0;
+  }
+  .herobgcolor .box-sm 
+  {
+      padding: 0!important;
+  }
+  .heroslide
+  {
+      width: 100%;
+      padding: 2rem;
+  }
+  .herosldleft
+  {
+      width: 50%;
+  }
+  .herosldleft p 
+  {
+      display: none;
+  }
+  .herosldleft h3 
+  {
+      font-size: 1.8rem;
+  }
+  .herosldleft button 
+  {
+      font-size: 1.25rem;
+      margin: 1rem 0 0 0;
+      width: 100%;
+      padding: 0.75rem 1rem;
+  }
+  .herosldright
+  {
+      width: 50%;
   }
 }

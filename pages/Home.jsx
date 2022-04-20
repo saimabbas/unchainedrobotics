@@ -5,8 +5,11 @@ import Footer from "../components/Theme/Footer";
 import st from "../styles/pages/Home.module.css";
 import customGlobals from "../styles/CustomGlobals.module.css";
 import SimilarProductsCard from "../components/Pages/ProductPage/SimilarProductsCard";
-import Cart from "../public/assets/icons/Cart";
+import ColoredCart from "../public/assets/icons/ColoredCart";
+import ColoredConsultation from "../public/assets/icons/ColoredConsultation";
+import ColoredShipping from "../public/assets/icons/ColoredShipping";
 import ArrowRight from "../public/assets/icons/ArrowRight";
+import ChevronRight from "../public/assets/icons/ChevronRight";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination } from "swiper";
 import "swiper/css";
@@ -38,274 +41,279 @@ const Home = () => {
         <title>Brand Page</title>
       </Head>
       <div className={st.HomePage}>
-        <div className="box-sm">
-          <div className={st.heromain}>
-            <div className={st.heroleft}>
-              <div className={st.herolcontent}>
-                <div className={st.hlcicon}>
-                  <h6>Cobots</h6>
-                  <ArrowRight color="#1bc074" />
-                  <div className={st.htcIconLinksBox}>
-                    <a href="#">All Cobots 1</a>
-                    <a href="#">Universal Robots cobots</a>
-                    <a href="#">Omron cobots</a>
-                    <a href="#">Yuanda Robotics cobots</a>
-                    <a href="#">Doosan cobots</a>
-                    <a href="#">Denso cobots</a>
-                    <a href="#">Dobot cobots</a>
-                    <a href="#">Hanwha cobots</a>
+        <div className={st.herobgcolor}>
+          <div className="box-sm">
+            <div className={st.heromain}>
+              <div className={st.heroleft}>
+                <div className={st.herolcontent}>
+                  <div className={st.hlcicon}>
+                    <h6>Cobots</h6>
+                    <ChevronRight color="#1bc074" />
+                    <div className={st.htcIconLinksBox}>
+                      <a href="#">All Cobots 1</a>
+                      <a href="#">Universal Robots cobots</a>
+                      <a href="#">Omron cobots</a>
+                      <a href="#">Yuanda Robotics cobots</a>
+                      <a href="#">Doosan cobots</a>
+                      <a href="#">Denso cobots</a>
+                      <a href="#">Dobot cobots</a>
+                      <a href="#">Hanwha cobots</a>
+                    </div>
                   </div>
-                </div>
-                <div className={st.hlcicon}>
-                  <h6>Grippers</h6>
-                  <ArrowRight color="#1bc074" />
-                  <div className={st.htcIconLinksBox}>
-                    <a href="#">All Cobots 2</a>
-                    <a href="#">Universal Robots cobots</a>
-                    <a href="#">Omron cobots</a>
-                    <a href="#">Yuanda Robotics cobots</a>
-                    <a href="#">Doosan cobots</a>
-                    <a href="#">Denso cobots</a>
-                    <a href="#">Dobot cobots</a>
-                    <a href="#">Hanwha cobots</a>
+                  <div className={st.hlcicon}>
+                    <h6>Grippers</h6>
+                    <ChevronRight color="#1bc074" />
+                    <div className={st.htcIconLinksBox}>
+                      <a href="#">All Cobots 2</a>
+                      <a href="#">Universal Robots cobots</a>
+                      <a href="#">Omron cobots</a>
+                      <a href="#">Yuanda Robotics cobots</a>
+                      <a href="#">Doosan cobots</a>
+                      <a href="#">Denso cobots</a>
+                      <a href="#">Dobot cobots</a>
+                      <a href="#">Hanwha cobots</a>
+                    </div>
                   </div>
-                </div>
-                <div className={st.hlcicon}>
-                  <h6>Cameras</h6>
-                  <ArrowRight color="#1bc074" />
-                  <div className={st.htcIconLinksBox}>
-                    <a href="#">All Cobots 3</a>
-                    <a href="#">Universal Robots cobots</a>
-                    <a href="#">Omron cobots</a>
-                    <a href="#">Yuanda Robotics cobots</a>
-                    <a href="#">Doosan cobots</a>
-                    <a href="#">Denso cobots</a>
-                    <a href="#">Dobot cobots</a>
-                    <a href="#">Hanwha cobots</a>
+                  <div className={st.hlcicon}>
+                    <h6>Cameras</h6>
+                    <ChevronRight color="#1bc074" />
+                    <div className={st.htcIconLinksBox}>
+                      <a href="#">All Cobots 3</a>
+                      <a href="#">Universal Robots cobots</a>
+                      <a href="#">Omron cobots</a>
+                      <a href="#">Yuanda Robotics cobots</a>
+                      <a href="#">Doosan cobots</a>
+                      <a href="#">Denso cobots</a>
+                      <a href="#">Dobot cobots</a>
+                      <a href="#">Hanwha cobots</a>
+                    </div>
                   </div>
-                </div>
-                <div className={st.hlcicon}>
-                  <h6>Starter Kits</h6>
-                  <ArrowRight color="#1bc074" />
-                  <div className={st.htcIconLinksBox}>
-                    <a href="#">All Cobots 4</a>
-                    <a href="#">Universal Robots cobots</a>
-                    <a href="#">Omron cobots</a>
-                    <a href="#">Yuanda Robotics cobots</a>
-                    <a href="#">Doosan cobots</a>
-                    <a href="#">Denso cobots</a>
-                    <a href="#">Dobot cobots</a>
-                    <a href="#">Hanwha cobots</a>
+                  <div className={st.hlcicon}>
+                    <h6>Starter Kits</h6>
+                    <ChevronRight color="#1bc074" />
+                    <div className={st.htcIconLinksBox}>
+                      <a href="#">All Cobots 4</a>
+                      <a href="#">Universal Robots cobots</a>
+                      <a href="#">Omron cobots</a>
+                      <a href="#">Yuanda Robotics cobots</a>
+                      <a href="#">Doosan cobots</a>
+                      <a href="#">Denso cobots</a>
+                      <a href="#">Dobot cobots</a>
+                      <a href="#">Hanwha cobots</a>
+                    </div>
                   </div>
-                </div>
-                <div className={st.hlcicon}>
-                  <h6>End of Arm Accessories</h6>
-                  <ArrowRight color="#1bc074" />
-                  <div className={st.htcIconLinksBox}>
-                    <a href="#">All Cobots 5</a>
-                    <a href="#">Universal Robots cobots</a>
-                    <a href="#">Omron cobots</a>
-                    <a href="#">Yuanda Robotics cobots</a>
-                    <a href="#">Doosan cobots</a>
-                    <a href="#">Denso cobots</a>
-                    <a href="#">Dobot cobots</a>
-                    <a href="#">Hanwha cobots</a>
+                  <div className={st.hlcicon}>
+                    <h6>End of Arm Accessories</h6>
+                    <ChevronRight color="#1bc074" />
+                    <div className={st.htcIconLinksBox}>
+                      <a href="#">All Cobots 5</a>
+                      <a href="#">Universal Robots cobots</a>
+                      <a href="#">Omron cobots</a>
+                      <a href="#">Yuanda Robotics cobots</a>
+                      <a href="#">Doosan cobots</a>
+                      <a href="#">Denso cobots</a>
+                      <a href="#">Dobot cobots</a>
+                      <a href="#">Hanwha cobots</a>
+                    </div>
                   </div>
-                </div>
-                <div className={st.hlcicon}>
-                  <h6>Teaching Kits</h6>
-                  <ArrowRight color="#1bc074" />
-                  <div className={st.htcIconLinksBox}>
-                    <a href="#">All Cobots 6</a>
-                    <a href="#">Universal Robots cobots</a>
-                    <a href="#">Omron cobots</a>
-                    <a href="#">Yuanda Robotics cobots</a>
-                    <a href="#">Doosan cobots</a>
-                    <a href="#">Denso cobots</a>
-                    <a href="#">Dobot cobots</a>
-                    <a href="#">Hanwha cobots</a>
+                  <div className={st.hlcicon}>
+                    <h6>Teaching Kits</h6>
+                    <ChevronRight color="#1bc074" />
+                    <div className={st.htcIconLinksBox}>
+                      <a href="#">All Cobots 6</a>
+                      <a href="#">Universal Robots cobots</a>
+                      <a href="#">Omron cobots</a>
+                      <a href="#">Yuanda Robotics cobots</a>
+                      <a href="#">Doosan cobots</a>
+                      <a href="#">Denso cobots</a>
+                      <a href="#">Dobot cobots</a>
+                      <a href="#">Hanwha cobots</a>
+                    </div>
                   </div>
-                </div>
-                <div className={st.hlcicon}>
-                  <h6>Teaching Kits</h6>
-                  <ArrowRight color="#1bc074" />
-                  <div className={st.htcIconLinksBox}>
-                    <a href="#">All Cobots 7</a>
-                    <a href="#">Universal Robots cobots</a>
-                    <a href="#">Omron cobots</a>
-                    <a href="#">Yuanda Robotics cobots</a>
-                    <a href="#">Doosan cobots</a>
-                    <a href="#">Denso cobots</a>
-                    <a href="#">Dobot cobots</a>
-                    <a href="#">Hanwha cobots</a>
+                  <div className={st.hlcicon}>
+                    <h6>Teaching Kits</h6>
+                    <ChevronRight color="#1bc074" />
+                    <div className={st.htcIconLinksBox}>
+                      <a href="#">All Cobots 7</a>
+                      <a href="#">Universal Robots cobots</a>
+                      <a href="#">Omron cobots</a>
+                      <a href="#">Yuanda Robotics cobots</a>
+                      <a href="#">Doosan cobots</a>
+                      <a href="#">Denso cobots</a>
+                      <a href="#">Dobot cobots</a>
+                      <a href="#">Hanwha cobots</a>
+                    </div>
                   </div>
-                </div>
-                <div className={st.hlcicon}>
-                  <h6>Cobot Base</h6>
-                  <ArrowRight color="#1bc074" />
-                  <div className={st.htcIconLinksBox}>
-                    <a href="#">All Cobots 8</a>
-                    <a href="#">Universal Robots cobots</a>
-                    <a href="#">Omron cobots</a>
-                    <a href="#">Yuanda Robotics cobots</a>
-                    <a href="#">Doosan cobots</a>
-                    <a href="#">Denso cobots</a>
-                    <a href="#">Dobot cobots</a>
-                    <a href="#">Hanwha cobots</a>
+                  <div className={st.hlcicon}>
+                    <h6>Cobot Base</h6>
+                    <ChevronRight color="#1bc074" />
+                    <div className={st.htcIconLinksBox}>
+                      <a href="#">All Cobots 8</a>
+                      <a href="#">Universal Robots cobots</a>
+                      <a href="#">Omron cobots</a>
+                      <a href="#">Yuanda Robotics cobots</a>
+                      <a href="#">Doosan cobots</a>
+                      <a href="#">Denso cobots</a>
+                      <a href="#">Dobot cobots</a>
+                      <a href="#">Hanwha cobots</a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className={st.heroright}>
-              <div className="hero-right-swiper">
-                <Swiper
-                  pagination={true}
-                  modules={[Pagination]}
-                  className="mySwiper"
-                >
-                  <SwiperSlide>
-                    <div className={st.heroslide}>
-                      <img
-                        className={st.sliderBanner}
-                        src="/assets/img/sliderbanner1.png"
-                        alt="#"
-                      />
-                      <div className={st.herosldleft}>
-                        <h3>
-                          The biggest <br /> marketplace for <br /> cobots
-                        </h3>
-                        <p>
-                          Discover, price, compare and purchase from over 20
-                          brands of cobots and equipments.
-                        </p>
-                        <button className="button button-lg button-primary-gray trailing-icon">
-                          Browse now <ArrowRight color="#fff" />{" "}
-                        </button>
+              <div className={st.heroright}>
+                <div className="hero-right-swiper">
+                  <Swiper
+                    pagination={true}
+                    modules={[Pagination]}
+                    className="mySwiper"
+                  >
+                    <SwiperSlide>
+                      <div className={st.heroslide}>
+                        <img
+                          className={st.sliderBanner}
+                          src="/assets/img/sliderbanner1.png"
+                          alt="#"
+                        />
+                        <div className={st.herosldleft}>
+                          <h3>
+                            The biggest <br /> marketplace for <br /> cobots
+                          </h3>
+                          <p>
+                            Discover, price, compare and purchase from over 20
+                            brands of cobots and equipments.
+                          </p>
+                          <button className="button button-lg button-primary-gray trailing-icon">
+                            Browse now <ArrowRight color="#fff" />{" "}
+                          </button>
+                        </div>
+                        <div className={st.herosldright}>
+                          <img src="/assets/img/sliderimg1.png" alt="" />
+                        </div>
                       </div>
-                      <div className={st.herosldright}>
-                        <img src="/assets/img/sliderimg1.png" alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className={st.heroslide}>
+                        <img
+                          className={st.sliderBanner}
+                          src="/assets/img/sliderbanner1.png"
+                          alt="#"
+                        />
+                        <div className={st.herosldleft}>
+                          <h3>
+                            The biggest <br /> marketplace for <br /> cobots
+                          </h3>
+                          <p>
+                            Discover, price, compare and purchase from over 20
+                            brands of cobots and equipments.
+                          </p>
+                          <button className="button button-lg button-primary-gray trailing-icon">
+                            Browse now <ArrowRight color="#fff" />{" "}
+                          </button>
+                        </div>
+                        <div className={st.herosldright}>
+                          <img src="/assets/img/sliderimg1.png" alt="" />
+                        </div>
                       </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className={st.heroslide}>
-                      <img
-                        className={st.sliderBanner}
-                        src="/assets/img/sliderbanner1.png"
-                        alt="#"
-                      />
-                      <div className={st.herosldleft}>
-                        <h3>
-                          The biggest <br /> marketplace for <br /> cobots
-                        </h3>
-                        <p>
-                          Discover, price, compare and purchase from over 20
-                          brands of cobots and equipments.
-                        </p>
-                        <button className="button button-lg button-primary-gray trailing-icon">
-                          Browse now <ArrowRight color="#fff" />{" "}
-                        </button>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className={st.heroslide}>
+                        <img
+                          className={st.sliderBanner}
+                          src="/assets/img/sliderbanner1.png"
+                          alt="#"
+                        />
+                        <div className={st.herosldleft}>
+                          <h3>
+                            The biggest <br /> marketplace for <br /> cobots
+                          </h3>
+                          <p>
+                            Discover, price, compare and purchase from over 20
+                            brands of cobots and equipments.
+                          </p>
+                          <button className="button button-lg button-primary-gray trailing-icon">
+                            Browse now <ArrowRight color="#fff" />{" "}
+                          </button>
+                        </div>
+                        <div className={st.herosldright}>
+                          <img src="/assets/img/sliderimg1.png" alt="" />
+                        </div>
                       </div>
-                      <div className={st.herosldright}>
-                        <img src="/assets/img/sliderimg1.png" alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className={st.heroslide}>
+                        <img
+                          className={st.sliderBanner}
+                          src="/assets/img/sliderbanner1.png"
+                          alt="#"
+                        />
+                        <div className={st.herosldleft}>
+                          <h3>
+                            The biggest <br /> marketplace for <br /> cobots
+                          </h3>
+                          <p>
+                            Discover, price, compare and purchase from over 20
+                            brands of cobots and equipments.
+                          </p>
+                          <button className="button button-lg button-primary-gray trailing-icon">
+                            Browse now <ArrowRight color="#fff" />{" "}
+                          </button>
+                        </div>
+                        <div className={st.herosldright}>
+                          <img src="/assets/img/sliderimg1.png" alt="" />
+                        </div>
                       </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className={st.heroslide}>
-                      <img
-                        className={st.sliderBanner}
-                        src="/assets/img/sliderbanner1.png"
-                        alt="#"
-                      />
-                      <div className={st.herosldleft}>
-                        <h3>
-                          The biggest <br /> marketplace for <br /> cobots
-                        </h3>
-                        <p>
-                          Discover, price, compare and purchase from over 20
-                          brands of cobots and equipments.
-                        </p>
-                        <button className="button button-lg button-primary-gray trailing-icon">
-                          Browse now <ArrowRight color="#fff" />{" "}
-                        </button>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className={st.heroslide}>
+                        <img
+                          className={st.sliderBanner}
+                          src="/assets/img/sliderbanner1.png"
+                          alt="#"
+                        />
+                        <div className={st.herosldleft}>
+                          <h3>
+                            The biggest <br /> marketplace for <br /> cobots
+                          </h3>
+                          <p>
+                            Discover, price, compare and purchase from over 20
+                            brands of cobots and equipments.
+                          </p>
+                          <button className="button button-lg button-primary-gray trailing-icon">
+                            Browse now <ArrowRight color="#fff" />{" "}
+                          </button>
+                        </div>
+                        <div className={st.herosldright}>
+                          <img src="/assets/img/sliderimg1.png" alt="" />
+                        </div>
                       </div>
-                      <div className={st.herosldright}>
-                        <img src="/assets/img/sliderimg1.png" alt="" />
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className={st.heroslide}>
-                      <img
-                        className={st.sliderBanner}
-                        src="/assets/img/sliderbanner1.png"
-                        alt="#"
-                      />
-                      <div className={st.herosldleft}>
-                        <h3>
-                          The biggest <br /> marketplace for <br /> cobots
-                        </h3>
-                        <p>
-                          Discover, price, compare and purchase from over 20
-                          brands of cobots and equipments.
-                        </p>
-                        <button className="button button-lg button-primary-gray trailing-icon">
-                          Browse now <ArrowRight color="#fff" />{" "}
-                        </button>
-                      </div>
-                      <div className={st.herosldright}>
-                        <img src="/assets/img/sliderimg1.png" alt="" />
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className={st.heroslide}>
-                      <img
-                        className={st.sliderBanner}
-                        src="/assets/img/sliderbanner1.png"
-                        alt="#"
-                      />
-                      <div className={st.herosldleft}>
-                        <h3>
-                          The biggest <br /> marketplace for <br /> cobots
-                        </h3>
-                        <p>
-                          Discover, price, compare and purchase from over 20
-                          brands of cobots and equipments.
-                        </p>
-                        <button className="button button-lg button-primary-gray trailing-icon">
-                          Browse now <ArrowRight color="#fff" />{" "}
-                        </button>
-                      </div>
-                      <div className={st.herosldright}>
-                        <img src="/assets/img/sliderimg1.png" alt="" />
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                </Swiper>
+                    </SwiperSlide>
+                  </Swiper>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+        <div className="box-sm">
+
           <div className={st.homeshop}>
             <div className={st.homecontent}>
               <h2>Why shop at Unchained Robotics</h2>
             </div>
             <div className={st.homemainicon}>
               <div className={st.homeicon}>
-                <Cart color="red" />
+                <ColoredCart />
               </div>
               <h3>Large collection of robot brands</h3>
             </div>
             <div className={st.homemainicon}>
               <div className={st.homeicon}>
-                <Cart color="red" />
+                <ColoredConsultation />
               </div>
               <h3>Large collection of robot brands</h3>
             </div>
             <div className={st.homemainicon}>
               <div className={st.homeicon}>
-                <Cart color="red" />
+                <ColoredShipping />
               </div>
               <h3>Large collection of robot brands</h3>
             </div>
