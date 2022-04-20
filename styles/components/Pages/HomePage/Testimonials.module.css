@@ -1,0 +1,98 @@
+.sayingaboutus {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin: 10rem 0 4rem 0;
+}
+.sayingleft {
+  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.sayingleft h4 {
+  font-size: 2.4rem;
+  color: var(--gray800);
+  font-weight: 700;
+}
+.sayingleft img.colimg {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  margin: 5rem 0 2rem 0;
+}
+.sayingleft p {
+  font-size: 1.6rem;
+  color: var(--gray800);
+  font-weight: 400;
+}
+.sayingleft img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 5rem 0 0 0;
+}
+.sayingRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.sayingRight img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mobsaying {
+  display: none;
+}
+@media screen and (max-width: 850px) {
+  .sayingleft {
+    width: 45%;
+  }
+  .sayingleft img.colimg {
+    margin: 3rem 0 1.5rem 0;
+  }
+  .sayingleft p {
+    font-size: 1.4rem;
+  }
+  .sayingleft img {
+    margin: 3.5rem 0 0 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  .mobsaying {
+    display: block;
+  }
+  .sayingaboutus {
+    flex-direction: column;
+  }
+  .sayingleft {
+    width: 100%;
+  }
+  .sayingleft h4 {
+    font-size: 2.15rem;
+  }
+  .sayingleft img.colimg {
+    margin: 3rem 0 1.5rem 0;
+  }
+  .sayingleft p {
+    font-size: 1.6rem;
+    color: var(--gray800);
+    font-weight: 400;
+  }
+  .sayingleft img {
+    margin: 3rem 0 0 0;
+  }
+  .sayingRight {
+    width: 100%;
+    margin: 5rem 0 0 0;
+  }
+  .sayingRight img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

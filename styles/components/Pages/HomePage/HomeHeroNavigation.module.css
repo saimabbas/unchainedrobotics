@@ -1,0 +1,71 @@
+.herolcontent {
+  height: 100%;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.hlcicon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12.5%;
+  padding: 0.5rem 2.5rem;
+  transition: var(--trns2);
+  cursor: pointer;
+}
+.hlcicon:hover > .htcIconLinksBox {
+  display: flex;
+}
+.hlcicon:hover {
+  background-color: var(--gray100);
+}
+.hlcicon svg {
+  opacity: 0;
+  width: 2.25rem;
+  transition: var(--trns2);
+}
+.hlcicon:hover svg {
+  opacity: 1;
+}
+.hlcicon h6 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--gray700);
+}
+.hlcicon:hover h6 {
+  color: var(--green700);
+  font-weight: 600;
+}
+
+.htcIconLinksBox {
+  width: max-content;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(100%, 0);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #fff;
+  z-index: 10;
+  height: 100%;
+  display: none;
+  padding: 1rem 0;
+}
+.htcIconLinksBox a {
+  height: 12.5%;
+  padding: 0.5rem 2.5rem;
+  transition: var(--trns2);
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--gray700);
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.htcIconLinksBox a:hover {
+  background-color: var(--gray100);
+  color: var(--green700) !important;
+  font-weight: 600;
+}

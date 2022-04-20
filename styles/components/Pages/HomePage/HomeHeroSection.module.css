@@ -1,0 +1,119 @@
+.heromain {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: var(--card-box-shadow);
+  border-radius: 0.75rem;
+  background-color: var(--white);
+}
+.heroleft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 25%;
+  position: relative;
+}
+.heroright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  /* background-image: var(--grd-green-300-50); */
+  height: 100%;
+  border-radius: 0 0.75rem 0.75rem 0;
+}
+.heroslide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.5rem 5rem;
+}
+.sliderBanner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: 1;
+}
+.herosldleft {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 55%;
+  position: relative;
+  z-index: 2;
+}
+.herosldleft h3 {
+  font-size: 3rem;
+  color: var(--gray800);
+  font-weight: 700;
+  width: 100%;
+}
+.herosldleft p {
+  font-size: 1.6rem;
+  color: var(--gray800);
+  font-weight: 400;
+  margin: 2rem 0 !important;
+}
+.herosldright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  z-index: 2;
+  position: relative;
+}
+.herosldright img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 1000px) {
+  .heroleft {
+    display: none;
+  }
+  .heroright {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .herosldright {
+    width: 35%;
+  }
+  .herosldright img {
+    min-height: 15rem;
+  }
+  .heroslide {
+    width: 100%;
+    padding: 2rem;
+  }
+  .herosldleft {
+    width: 65%;
+  }
+  .herosldleft p {
+    display: none;
+  }
+  .herosldleft h3 {
+    margin: 0 0 1.5rem 0 !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .herosldright {
+    width: 35%;
+  }
+  .herosldright img {
+    min-height: unset;
+  }
+  .heroleft {
+    display: none;
+  }
+  .heroright {
+    width: 100%;
+  }
+}
