@@ -1,0 +1,188 @@
+.ProductDetailContent {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 35rem;
+    grid-template-rows: auto;
+    grid-gap: 5rem;
+    min-height: 150vh;
+    margin: 5rem 0 0 0;
+}
+.ProductDetailRight
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.ProductDetailRight h6 
+{
+    font-size: 1.8rem;
+    color: var(--gray700);
+    font-weight: 700;
+    margin: 0 0 2rem 0 !important;
+}
+.ProductDetailOptions
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+}
+.ProductDetailLeft
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+.ProductVideoInfo
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 5rem 0 0 0;  
+}
+.ProductVideoInfo p 
+{
+    font-size: 1.4rem;
+    color: var(--gray800);
+    font-weight: 700;
+    margin: 0 0 2rem 0 !important;
+}
+.ProductVideoInfobox
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 5rem;
+}
+.ProductTooltip
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column; 
+    margin: 5rem 0;  
+}
+.ProductTooltip p 
+{
+    font-size: 1.4rem;
+    color: var(--gray800);
+    font-weight: 700;
+    margin: 0 0 2rem 0 !important;
+}
+.ProductMainTooltip
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.MessageTooltip button
+{
+    background-color: transparent;
+    border: unset;
+}
+.MessageTooltip button:hover 
+{
+    background-color: transparent;
+}
+.ProductYoutubeVideo
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.ProductYouVideo
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 47rem;
+    position: relative;
+}
+.ProductYouVideo video 
+{
+    width: 100%;
+    height: 100%;
+}
+.ProductVideoButton
+{
+    background-color: rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;    
+}
+.ProductVideoButton button
+{
+  min-width: 6.5rem;
+  min-height: 6.5rem;
+  max-width: 6.5rem;
+  max-height: 6.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--green300);
+  border: 5px solid var(--green200);
+  border-radius: 50%;
+}
+.ProductYoutubetext
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.ProductYoutubetext span 
+{
+    width: max-content;
+    font-size: 1.25rem;
+    background-color: var(--blue100);
+    color: var(--gray800);
+    margin: 1.5rem 0;
+    display: block;
+    padding: 0.25rem 1rem;
+    border-radius: 1000px;
+    font-weight: 500;
+}
+.ProductYoutubetext h6 
+{
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--gray700);
+}
+
+@media screen and (max-width: 850px) {
+    .ProductDetailContent {
+        grid-template-columns: 1fr;
+    }
+    .ProductDetailOptions
+{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+  }
+  @media screen and (max-width: 450px) {
+    .ProductDetailContent {
+        grid-template-columns: 1fr;
+    }
+    .ProductDetailOptions
+{
+    grid-template-columns: 1fr 1fr;
+}
+.ProductVideoInfobox
+{
+    grid-template-columns: 1fr 1fr;
+}
+.ProductYouVideo
+{
+    height: 25rem;
+}
+  }

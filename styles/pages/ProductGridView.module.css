@@ -1,0 +1,82 @@
+.productgridhead
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+.productgridhead h6 
+{
+    font-size: 3rem;
+    color: var(--gray700);
+    font-weight: 700;
+}
+.productgridhead h6 span 
+{
+    font-size: 1.6rem;
+    color: var(--gray300);
+    font-weight: 400;
+}
+.brandPageContentBox {
+    width: 100%;
+}
+.brandPageContentBox > * {
+    margin: 0 0 7.5rem 0;
+}
+.BrandPageGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25rem 1fr;
+    grid-template-rows: auto;
+    grid-gap: 5rem;
+    min-height: 150vh;
+    margin: 5rem 0 0 0;
+}
+.BrandPageGridLeft {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+  .BrandPageGridLeft > * {
+    width: 100%;
+    margin: 0 0 2.5rem 0;
+}
+.sortByBox {
+    width: 100%;
+    margin: 0 0 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.sortByBox select {
+    max-width: 25rem;
+}
+.sortByBox label {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin: 0 1.5rem 0 0;
+    color: var(--gray800);
+}
+.productgridbox
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 5rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 1150px) {
+    .productgridbox
+    {
+        grid-gap: 4rem 2rem;
+    }
+  }
+  @media screen and (max-width: 850px) {
+    .productgridbox
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+  }

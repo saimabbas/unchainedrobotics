@@ -45,7 +45,7 @@ const Home = () => {
     <div className={customGlobals.app}>
       <Header />
       <Head>
-        <title>Brand Page</title>
+        <title>Home Page</title>
       </Head>
       <div className={st.HomePage}>
         <div className={st.herobgcolor}>

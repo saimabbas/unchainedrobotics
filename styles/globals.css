@@ -702,10 +702,16 @@ textarea {
   margin: 0.15rem 0 0 0;
 }
 .checkbox > label {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: var(--gray800);
   font-weight: 400;
   margin: 0 0 0 1rem;
+}
+.checkbox > label span {
+  font-size: 1.4rem;
+  margin: 0 0 0 1rem;
+  font-weight: 400;
+  color: var(--gray300);
 }
 /* Bootstrap Styling Overrides [Do not change these] */
 .accordion-button:not(.collapsed) {
