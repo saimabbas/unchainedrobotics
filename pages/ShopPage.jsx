@@ -22,6 +22,8 @@ import "swiper/css/navigation";
 import "swiper/css/free-mode";
 import SortModalMOB from "../components/Pages/ShopPage/SortModalMOB";
 import SortFilterBoxMOB from "../components/Pages/ShopPage/SortFilterBoxMOB";
+import Search from "../public/assets/icons/Search";
+import DSCheckBox from "../components/Theme/DSCheckBox";
 const ShopPage = () => {
   const [sortMob, setSortMob] = useState(false);
   return (
@@ -36,16 +38,41 @@ const ShopPage = () => {
           <div className={st.ShopPageGrid}>
             <div className={st.ShopPageGridLeft}>
               <CategoriesFilterPC filterName="Categories">
-                <a href="#"><i>Cobots</i> <span>2</span></a>
-                <a href="#"><i>Grippers</i> <span>21</span></a>
-                <a href="#"><i>Cameras</i> <span>17</span></a>
-                <a href="#"><i>Starter kit</i> <span>4</span></a>
-                <a href="#"><i>Turnkey solutions</i> <span>5</span></a>
-                <a href="#"><i>Industrial robots</i><span>14</span></a>
-                <a href="#"><i>Autonomous mobile robots</i><span></span></a>
-                <a href="#"><i>End of arm accessories</i><span>7</span></a>
-                <a href="#"><i>Conveyor belts</i><span>4</span></a>
-                <a href="#"><i>Robot software</i><span>2</span></a>
+                <a href="#">
+                  <i>Cobots</i> <span>2</span>
+                </a>
+                <a href="#">
+                  <i>Grippers</i> <span>21</span>
+                </a>
+                <a href="#">
+                  <i>Cameras</i> <span>17</span>
+                </a>
+                <a href="#">
+                  <i>Starter kit</i> <span>4</span>
+                </a>
+                <a href="#">
+                  <i>Turnkey solutions</i> <span>5</span>
+                </a>
+                <a href="#">
+                  <i>Industrial robots</i>
+                  <span>14</span>
+                </a>
+                <a href="#">
+                  <i>Autonomous mobile robots</i>
+                  <span></span>
+                </a>
+                <a href="#">
+                  <i>End of arm accessories</i>
+                  <span>7</span>
+                </a>
+                <a href="#">
+                  <i>Conveyor belts</i>
+                  <span>4</span>
+                </a>
+                <a href="#">
+                  <i>Robot software</i>
+                  <span>2</span>
+                </a>
               </CategoriesFilterPC>
               <BrandsFilterPC brandName="Brands">
                 <div className="ds-input-icon">

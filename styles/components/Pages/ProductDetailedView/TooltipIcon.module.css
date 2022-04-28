@@ -1,0 +1,35 @@
+.LinkTooltip {
+  position: relative;
+  cursor: pointer;
+  margin: 0 2.5rem 0 0;
+}
+.LinkTooltipBox {
+  width: max-content;
+  font-size: 1.5rem;
+  color: var(--white);
+  background-color: var(--gray800);
+  padding: 1rem 1.5rem;
+  position: absolute;
+  bottom: -1.5rem;
+  left: -0.25rem;
+  transform: translate(0, 100%);
+  border-radius: 0.5rem;
+  opacity: 0;
+  transition: var(--trns2);
+}
+.LinkTooltip:hover .LinkTooltipBox {
+  opacity: 1;
+}
+.LinkTooltipBox::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 0.75rem solid transparent;
+  border-right: 0.75rem solid transparent;
+  border-top: 0.75rem solid transparent;
+  border-bottom: 0.75rem solid var(--gray800);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0.75rem, -99%);
+}
