@@ -4,13 +4,6 @@ const FeaturedOnTVCard = (props) => {
   return (
     <div className={st.featuredGridCard}>
       <img src={props.img} alt="Robot Image" />
-      <iframe
-        src={props.iframe}
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
       <main>
         <span>{props.tag}</span>
         <p>{props.description}</p>

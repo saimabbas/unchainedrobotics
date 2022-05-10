@@ -323,7 +323,30 @@
 {
  border: 1px solid var(--green700);
 }
-
+.PassendeBox
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 8rem 0 0 0;
+}
+.PassendeBox p 
+{
+    font-size: 2.4rem;
+    color: var(--gray800);
+    font-weight: 700;
+}
+.PassendeGrid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2.5rem;
+    width: 75%;
+    margin: 4rem auto 15rem auto;
+}
 
 @media screen and (max-width: 1140px) {
     .ConfiguratorSteps
@@ -350,6 +373,10 @@
     {
         width: 65%;
     }
+    .PassendeGrid
+    {
+        width: 85%;
+    }
     
 }
 
@@ -367,6 +394,10 @@
     .WelcharGrid 
     {
         width: 86%;
+    }
+    .PassendeGrid
+    {
+        width: 95%;
     }
     
 }
@@ -441,5 +472,10 @@
     .WGMaincontent 
     {
         width: 16.5rem !important;
+    }
+    .PassendeGrid
+    {
+        width: 100%;
+        grid-template-columns: 1fr;
     }
 }
