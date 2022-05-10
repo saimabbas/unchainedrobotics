@@ -3,7 +3,7 @@ import Head from "next/head";
 import BreadCrumbs from "../components/Theme/BreadCrumbs";
 import Header from "../components/Theme/Header";
 import customGlobals from "../styles/CustomGlobals.module.css";
-import FeaturedOnTVCard from "../components/Pages/ProductPage/FeaturedOnTVCard";
+import ProductDetailCard from "../components/Pages/ProductPage/ProductDetailCard";
 import Footer from "../components/Theme/Footer";
 import st from "../styles/pages/ProductDetailView.module.css";
 import SimilarProductsCard from "../components/Pages/ProductPage/SimilarProductsCard";
@@ -44,11 +44,6 @@ const ProductDetailView = () => {
                     allowfullscreen
                   ></iframe>
                   {/* <video src="/assets/img/robo-vid.mp4"></video> */}
-                  <div className={st.ProductVideoButton}>
-                    <button>
-                      <Youtube color="#fff" />
-                    </button>
-                  </div>
                 </div>
                 <div className={st.ProductYoutubetext}>
                   <span>Palletizing</span>
@@ -101,20 +96,20 @@ const ProductDetailView = () => {
             <div className={st.ProductDetailRight}>
               <h6>You might be interested in...</h6>
               <div className={st.ProductDetailOptions}>
-                <FeaturedOnTVCard
-                  img="/assets/img/Robots/rob-1.png"
+                <ProductDetailCard
+                  iframe="https://www.youtube.com/embed/rbki4HR41-4"
                   tag="Palletizing"
                   description="Palletizing ... "
                   time="4:35"
                 />
-                <FeaturedOnTVCard
-                  img="/assets/img/Robots/rob-1.png"
+                <ProductDetailCard
+                  iframe="https://www.youtube.com/embed/rbki4HR41-4"
                   tag="Use Case X"
                   description="UR10 Cobot Solves Labor Shortage and Automates Production"
                   time="4:35"
                 />
-                <FeaturedOnTVCard
-                  img="/assets/img/Robots/rob-1.png"
+                <ProductDetailCard
+                  iframe="https://www.youtube.com/embed/rbki4HR41-4"
                   tag="Use Case Y"
                   description="Maintenance free UR cobots operate continuously in harsh environment"
                   time="4:35"

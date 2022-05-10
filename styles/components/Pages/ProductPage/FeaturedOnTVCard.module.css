@@ -16,6 +16,12 @@
   border-radius: 1rem;
   object-fit: cover;
 }
+.featuredGridCard iframe {
+  width: 100%;
+  height: 20rem;
+  border-radius: 1rem;
+  object-fit: cover;
+}
 .featuredGridCard span {
   width: max-content;
   font-size: 1.25rem;

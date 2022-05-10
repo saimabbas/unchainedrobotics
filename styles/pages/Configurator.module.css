@@ -1,0 +1,444 @@
+.Configurator
+{
+    background: var(--gray100);
+}
+.ConfiguratorSteps
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1.5rem;
+    padding: 3rem 5rem;
+}
+.configuratorGreen
+{
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green700);
+    border-radius: 10px;
+}
+.configuratorGrey
+{
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray200);
+    border-radius: 10px;
+}
+.WelcharOptions
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 8rem 0 0 0;
+}
+.WelcharGrid{
+    width: 55%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2.5rem 1rem;
+    margin: 3rem auto 15rem auto;
+}
+.WGMainBox
+{
+    width: 100%;
+}
+.WGMainBox input 
+{
+    display: none;
+}
+.WGMainBox label .WGMaincontent 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 14.5rem;
+    background: #fff;
+    border-radius: 4px;
+    transition: var(--trns3);
+    padding: 2rem 4rem;
+    height: 16.5rem;
+ border: 3px solid transparent;
+ cursor: pointer;
+
+}
+.WGMaincontent img 
+{
+  height: 100%;
+  width: 6.5rem;
+  object-fit: contain;
+}
+.WGMaincontent h6 
+{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--gray700);
+    margin: 3.5rem 0 0 0 !important;
+    text-align: center;
+}
+.WGMainBox label .WGMaincontent:hover 
+{
+    box-shadow: var(--card-box-shadow);
+    transition: var(--trns3);
+} 
+.WGMainBox input:checked + label .WGMaincontent 
+{
+ border: 3px solid var(--green700);
+}
+.WelcharOptions p 
+{
+    font-size: 1.8rem;
+    color: var(--gray700);
+    font-weight: 400;
+}
+.ConfiguratorFooter
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 5rem;
+    background-color: var(--white);
+}
+.ConfiFooterbtn
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+.ConfiFooterbtn span 
+{
+    font-size: 1.6rem;
+    color: var(--gray800);
+    font-weight: 400;
+    text-decoration: underline;
+    margin: 0 3rem 0 0;
+}
+.ConfiFooterbtn button
+{
+    font-size: 1.6rem;
+    color: var(--white);
+    font-weight: 400;
+}
+.ConfiFooterbtn button svg 
+{
+    width: 1.5rem !important;
+}
+
+
+.UMMainBox label .UMMaincontent 
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 25rem;
+    background: #fff;
+    border-radius: 4px;
+    transition: var(--trns3);
+    padding: 2rem;
+    height: 22rem;
+ border: 3px solid transparent;
+ cursor: pointer;
+}
+.UMMaincontent img 
+{
+  height: 6.5rem;
+  width: 6.5rem;
+  object-fit: contain;
+}
+.UMPara 
+{
+    margin: 1.5rem 0 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+.UMMaincontent h6 
+{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--gray700);
+    margin: 0 0 1.5rem 0 !important;
+}
+.UMMaincontent p 
+{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--gray700);
+}
+.UMMainBox label .UMMaincontent:hover 
+{
+    box-shadow: var(--card-box-shadow);
+    transition: var(--trns3);
+} 
+.UMMainBox input:checked + label .UMMaincontent 
+{
+ border: 3px solid var(--green700);
+}
+.UMGrid{
+    width: 65%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2.5rem 1rem;
+    margin: 3rem auto 15rem auto;
+}
+.UMMainBox
+{
+    width: 100%;
+}
+.UMMainBox input 
+{
+    display: none;
+}
+.ConfiguratorFooterUM
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 5rem;
+    background-color: var(--white);
+}
+.ConfiFooterbtnUM
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+.ConfiFooterbtnUM span 
+{
+    font-size: 1.6rem;
+    color: var(--gray800);
+    font-weight: 400;
+    text-decoration: underline;
+    margin: 0 3rem 0 0;
+}
+.ConfiFooterbtnUM button
+{
+    font-size: 1.6rem;
+    color: var(--white);
+    font-weight: 400;
+}
+.ConfiFooterbtnUM button svg 
+{
+    width: 1.5rem !important;
+}
+.ConfiguratorFooterUM button.leading-icon.button-lg svg
+{
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+}
+
+.WieGrid{
+    width: 45%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem 2.5rem ;
+    margin: 3rem auto 15rem auto;
+}
+.WieMainBox
+{
+    width: 100%;
+}
+.WieMainBox input 
+{
+    display: none;
+}
+.WieMainBox label .WieMaincontent 
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 28rem;
+    background: #fff;
+    border-radius: 4px;
+    transition: var(--trns3);
+    padding: 2rem;
+    height: 7rem;
+ border: 3px solid transparent;
+ cursor: pointer;
+}
+.WieCircle
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 2.15rem;
+    min-width: 2.15rem;
+    max-width: 2.15rem;
+    max-height: 2.15rem;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid var(--gray400);
+}
+.WieInnerCircle
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 1.05rem;
+    min-width: 1.05rem;
+    max-width: 1.05rem;
+    max-height: 1.05rem;
+    background-color: transparent;
+    border-radius: 50%;
+}
+.WieMaincontent span 
+{
+    font-size: 1.6rem;
+    color: var(--gray700);
+    font-weight: 500;
+    margin: 0 0 0 1.5rem;
+}
+.WieMainBox label .UMMaincontent:hover 
+{
+    box-shadow: var(--card-box-shadow);
+    transition: var(--trns3);
+} 
+.WieMainBox input:checked + label .WieMaincontent 
+{
+ border: 3px solid var(--green700);
+}
+.WieMainBox input:checked + label .WieInnerCircle
+{
+ background-color: var(--green700);
+}
+.WieMainBox input:checked + label .WieCircle
+{
+ border: 1px solid var(--green700);
+}
+
+
+@media screen and (max-width: 1140px) {
+    .ConfiguratorSteps
+    {
+        padding: 3rem 2rem;
+    }  
+    .ConfiguratorFooterUM
+    {
+        padding: 3rem 2rem;
+    }
+    .ConfiguratorFooter
+    {
+        padding: 3rem 2rem;
+    }
+    .WieGrid 
+    {
+        width: 62%;
+    }
+    .UMGrid
+    {
+        width: 82%;
+    }
+    .WelcharGrid 
+    {
+        width: 65%;
+    }
+    
+}
+
+
+@media screen and (max-width: 850px) {
+    .WieGrid 
+    {
+        width: 84%;
+    }
+    .UMGrid
+    {
+        width: 82%;
+        grid-template-columns: 1fr 1fr;
+    }
+    .WelcharGrid 
+    {
+        width: 86%;
+    }
+    
+}
+
+@media screen and (max-width: 650px) {
+    .WieGrid 
+    {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-gap: 2.5rem;
+    }
+    .WieMainBox label 
+    {
+        width: 100%;
+    }
+    .WieMaincontent
+    {
+        width: 100% !important;
+    }
+    .WelcharOptions
+    {
+     margin: 3rem 0 0 0;
+     text-align: center;
+    }
+    .UMGrid
+    {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    .configuratorGreen
+    {
+        height: 0.5rem;
+    }
+    .configuratorGrey
+    {
+        height: 0.5rem;
+    }
+    .UMMaincontent 
+    {
+        flex-direction: row !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .UMMaincontent img 
+    {
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+    .UMPara 
+    {
+        margin: 0 0 0 2rem;
+        text-align: left;
+    }
+    .UMPara h6 
+    {
+        margin: 0 0 0.5rem 0!important;
+    }
+    .UMMainBox label 
+    {
+        width: 100%;
+    }
+    .WelcharGrid 
+    {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+    .WGMainBox label 
+    {
+        width: 100%;
+    }
+    .WGMaincontent 
+    {
+        width: 95% !important;
+    }
+}

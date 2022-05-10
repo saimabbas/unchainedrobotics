@@ -1,9 +1,9 @@
 import React from "react";
 import st from "../../../styles/components/Pages/ProductPage/FeaturedOnTVCard.module.css";
-const FeaturedOnTVCard = (props) => {
+
+const ProductDetailCard = (props) => {
   return (
     <div className={st.featuredGridCard}>
-      <img src={props.img} alt="Robot Image" />
       <iframe
         src={props.iframe}
         title="YouTube video player"
@@ -20,4 +20,4 @@ const FeaturedOnTVCard = (props) => {
   );
 };
 
-export default FeaturedOnTVCard;
+export default ProductDetailCard;
