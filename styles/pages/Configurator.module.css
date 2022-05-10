@@ -433,12 +433,13 @@
         width: 100%;
         grid-template-columns: 1fr 1fr;
     }
-    .WGMainBox label 
+    .WGMaincontent img 
     {
-        width: 100%;
+        width: 5.5rem;
+        height: 5.5rem;
     }
     .WGMaincontent 
     {
-        width: 95% !important;
+        width: 16.5rem !important;
     }
 }
