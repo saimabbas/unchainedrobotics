@@ -147,6 +147,10 @@
   flex-direction: column;
   align-items: flex-start;
 }
+.similarRobotsCard .varientBox label 
+{
+  margin: 0 0 1rem 0;
+}
 @media screen and (max-width: 1150px) {
   .similarRobotsCard {
     padding: 1.5rem;

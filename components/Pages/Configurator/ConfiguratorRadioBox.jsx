@@ -7,7 +7,7 @@ const ConfiguratorRadioBox = (props) => {
       <input type="checkbox" name="abcID" id={props.cardID} />
       <label htmlFor={props.cardID}>
         <div className={st.WieMaincontent}>
-          <div className={st.WieCirclse}>
+          <div className={st.WieCircle}>
             <div className={st.WieInnerCircle}></div>
           </div>
           <span>{props.cardTitle}</span>

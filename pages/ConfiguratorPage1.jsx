@@ -26,34 +26,34 @@ const ConfiguratorPage1 = () => {
                 cardID="ConfiguratorSmallCardID1"
               />
               <ConfiguratorSmallCard
-                cardImg="/assets/img/autoMobile.png"
-                cardTitle="AutoMobile"
-                cardID="ConfiguratorSmallCardID1"
+                cardImg="/assets/img/pharma.png"
+                cardTitle="Pharma"
+                cardID="ConfiguratorSmallCardID2"
               />
               <ConfiguratorSmallCard
-                cardImg="/assets/img/autoMobile.png"
-                cardTitle="AutoMobile"
-                cardID="ConfiguratorSmallCardID1"
+                cardImg="/assets/img/electrotech.png"
+                cardTitle="Elektro-technik"
+                cardID="ConfiguratorSmallCardID3"
               />
               <ConfiguratorSmallCard
-                cardImg="/assets/img/autoMobile.png"
-                cardTitle="AutoMobile"
-                cardID="ConfiguratorSmallCardID1"
+                cardImg="/assets/img/setting.png"
+                cardTitle="Maschinen-bau"
+                cardID="ConfiguratorSmallCardID4"
               />
               <ConfiguratorSmallCard
-                cardImg="/assets/img/autoMobile.png"
-                cardTitle="AutoMobile"
-                cardID="ConfiguratorSmallCardID1"
+                cardImg="/assets/img/leben.png"
+                cardTitle="Lebensmittel"
+                cardID="ConfiguratorSmallCardID5"
               />
               <ConfiguratorSmallCard
-                cardImg="/assets/img/autoMobile.png"
-                cardTitle="AutoMobile"
-                cardID="ConfiguratorSmallCardID1"
+                cardImg="/assets/img/chemie.png"
+                cardTitle="Chemie"
+                cardID="ConfiguratorSmallCardID6"
               />
               <ConfiguratorSmallCard
-                cardImg="/assets/img/autoMobile.png"
-                cardTitle="AutoMobile"
-                cardID="ConfiguratorSmallCardID1"
+                cardImg="/assets/img/druck.png"
+                cardTitle="Druck"
+                cardID="ConfiguratorSmallCardID7"
               />
             </div>
           </div>

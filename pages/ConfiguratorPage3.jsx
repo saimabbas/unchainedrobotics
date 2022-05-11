@@ -31,32 +31,32 @@ const ConfiguratorPage3 = () => {
                 cardID="ConfiguratorRadioBoxID1"
               />
               <ConfiguratorRadioBox
-                cardTitle="Bis 0,5 kg"
-                cardID="ConfiguratorRadioBoxID1"
+                cardTitle="6,5kg – 8,5kg"
+                cardID="ConfiguratorRadioBoxID2"
               />
               <ConfiguratorRadioBox
-                cardTitle="Bis 0,5 kg"
-                cardID="ConfiguratorRadioBoxID1"
+                cardTitle="0,5kg – 2,5kg"
+                cardID="ConfiguratorRadioBoxID3"
               />
               <ConfiguratorRadioBox
-                cardTitle="Bis 0,5 kg"
-                cardID="ConfiguratorRadioBoxID1"
+                cardTitle="8,5kg – 9,5kg"
+                cardID="ConfiguratorRadioBoxID4"
               />
               <ConfiguratorRadioBox
-                cardTitle="Bis 0,5 kg"
-                cardID="ConfiguratorRadioBoxID1"
+                cardTitle="2,5kg - 4,5kg"
+                cardID="ConfiguratorRadioBoxID5"
               />
               <ConfiguratorRadioBox
-                cardTitle="Bis 0,5 kg"
-                cardID="ConfiguratorRadioBoxID1"
+                cardTitle="9,5kg – 11,5kg"
+                cardID="ConfiguratorRadioBoxID6"
               />
               <ConfiguratorRadioBox
-                cardTitle="Bis 0,5 kg"
-                cardID="ConfiguratorRadioBoxID1"
+                cardTitle="4,5kg – 6,5kg"
+                cardID="ConfiguratorRadioBoxID7"
               />
               <ConfiguratorRadioBox
-                cardTitle="Bis 0,5 kg"
-                cardID="ConfiguratorRadioBoxID1"
+                cardTitle="11,5kg – 14,5kg"
+                cardID="ConfiguratorRadioBoxID8"
               />
             </div>
           </div>

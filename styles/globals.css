@@ -993,3 +993,38 @@ li.active a {
   .swiper-pagination-bullet.swiper-pagination-bullet-active {
   opacity: 1 !important;
 }
+.leading-icon.button-md.vorsvg svg {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  margin: 0 1.5rem 0 0 !important;
+}
+.leading-icon.button-md.vorsvg
+{
+  padding: 0.5rem 3.5rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+@media screen and (max-width: 650px) {
+.leading-icon.button-md.vorsvg
+{
+  border-radius: 50% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 !important;
+  min-width: 4rem;
+  max-width: 4rem;
+  min-height: 4rem;
+  max-height: 4rem;
+}
+.leading-icon.button-md.vorsvg span 
+{
+  display: none;
+}
+.leading-icon.button-md.vorsvg svg
+{
+  margin: 0 !important;
+}
+}

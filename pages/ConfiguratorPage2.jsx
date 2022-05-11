@@ -29,28 +29,27 @@ const ConfiguratorPage2 = () => {
                 cardDescription="Prozess der Maschinenbeladung, z.B. Verpackungsanlage"
               />
               <ConfiguratorBigCard
-                cardID="ConfiguratorBigCardID1"
-                cardImg="/assets/img/FeaturedIcon.png"
-                cardTitle="Maschinenbestückung"
-                cardDescription="Prozess der Maschinenbeladung, z.B. Verpackungsanlage"
+                cardID="ConfiguratorBigCardID2"
+                cardImg="/assets/img/FeaturedIcon1.png"
+                cardTitle="Materialentfernung"
+                cardDescription="Entgraten, Schleifen, Polieren, Bohren, Fräsen"
               />
               <ConfiguratorBigCard
-                cardID="ConfiguratorBigCardID1"
-                cardImg="/assets/img/FeaturedIcon.png"
-                cardTitle="Maschinenbestückung"
-                cardDescription="Prozess der Maschinenbeladung, z.B. Verpackungsanlage"
+                cardID="ConfiguratorBigCardID3"
+                cardImg="/assets/img/FeaturedIcon2.png"
+                cardTitle="Materialhandhabung"
+                cardDescription="Transferieren, Sortieren, Verpacken, Palettieren"
               />
               <ConfiguratorBigCard
-                cardID="ConfiguratorBigCardID1"
-                cardImg="/assets/img/FeaturedIcon.png"
-                cardTitle="Maschinenbestückung"
-                cardDescription="Prozess der Maschinenbeladung, z.B. Verpackungsanlage"
+                cardID="ConfiguratorBigCardID4"
+                cardImg="/assets/img/FeaturedIcon3.png"
+                cardTitle="Mantage"
+                cardDescription="Einfügen, Montage, Positio-nierung, Schraubendrehen, Mutterndrehen"
               />
               <ConfiguratorBigCard
-                cardID="ConfiguratorBigCardID1"
-                cardImg="/assets/img/FeaturedIcon.png"
-                cardTitle="Maschinenbestückung"
-                cardDescription="Prozess der Maschinenbeladung, z.B. Verpackungsanlage"
+                cardID="ConfiguratorBigCardID5"
+                cardImg="/assets/img/FeaturedIcon4.png"
+                cardTitle="Andere"
               />
             </div>
           </div>

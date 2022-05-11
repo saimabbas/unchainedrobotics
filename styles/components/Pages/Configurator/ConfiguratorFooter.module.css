@@ -18,9 +18,17 @@
   padding: 2.5rem 5rem;
 }
 
-.ConfiguratorFooterUM button.leading-icon.button-lg svg {
+.ConfiguratorFooterUM button.leading-icon.button-md svg {
   width: 1.5rem !important;
   height: 1.5rem !important;
+}
+.leading-icon.button-md.vorsvg svg {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+}
+.leading-icon.button-md.vorsvg
+{
+  padding: 0.5rem 2.5rem !important;
 }
 .ConfiFooterbtn {
   display: flex;
@@ -73,4 +81,17 @@
   .ConfiguratorFooter {
     padding: 3rem 2rem;
   }
+}
+
+@media screen and (max-width: 650px) {
+  .ConfiFooterbtn button {
+  padding: 0.5rem 1rem;
+}
+.ConfiFooterbtn span {
+  margin: 0 1.15rem 0 0;
+}
+.leading-icon.button-md.vorsvg
+{
+  display: none !important;
+}
 }

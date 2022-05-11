@@ -8,21 +8,21 @@ const ConfiguratorFooter = (props) => {
   return (
     <div className={st.ConfiguratorFooter}>
       {props.previousButton ? (
-        <button className="button button-lg button-secondary-gray leading-icon">
+        <button className="button button-md button-secondary-gray leading-icon vorsvg">
           <ChevronLeft />
-          Vorherige
+          <span>Vorherige</span>
         </button>
       ) : null}
       {props.againButton ? (
-        <button className="button button-lg button-secondary-gray leading-icon">
+        <button className="button button-md button-secondary-gray leading-icon vorsvg">
           <Reload />
-          Erneut konfigurieren
+          <span>Erneut konfigurieren</span>
         </button>
       ) : null}
       <div className={st.ConfiFooterbtn}>
         {props.skipButton ? <span>Überspringen</span> : null}
         {props.nextButton ? (
-          <button className="button button-lg button-primary-green trailing-icon">
+          <button className="button button-md button-primary-green trailing-icon">
             Nächste
             <ChevronRight color="#fff" />
           </button>
