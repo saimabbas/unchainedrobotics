@@ -924,6 +924,9 @@ li.active a {
   position: relative;
   overflow: hidden;
 }
+.configuratorActiveStep {
+  background-color: var(--green700) !important;
+}
 @media screen and (max-width: 850px) {
   .ds-product-categories-slider {
     display: block;

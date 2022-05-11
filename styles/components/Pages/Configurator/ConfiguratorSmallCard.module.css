@@ -1,0 +1,49 @@
+.WGMainBox {
+  width: 100%;
+}
+.WGMainBox input {
+  display: none;
+}
+.WGMainBox label .WGMaincontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 14.5rem;
+  background: #fff;
+  border-radius: 4px;
+  transition: var(--trns2);
+  padding: 2rem 4rem;
+  height: 16.5rem;
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+.WGMainBox label .WGMaincontent:hover {
+  box-shadow: var(--card-box-shadow);
+  transition: var(--trns3);
+}
+.WGMainBox input:checked + label .WGMaincontent {
+  border: 3px solid var(--green700);
+}
+
+.WGMaincontent img {
+  height: 100%;
+  width: 6.5rem;
+  object-fit: contain;
+}
+.WGMaincontent h6 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--gray700);
+  margin: 3.5rem 0 0 0 !important;
+  text-align: center;
+}
+@media screen and (max-width: 650px) {
+  .WGMaincontent img {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+  .WGMaincontent {
+    width: 16.5rem !important;
+  }
+}

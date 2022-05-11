@@ -7,6 +7,7 @@ import ChevronRight from "../public/assets/icons/ChevronRight";
 import ChevronLeft from "../public/assets/icons/ChevronLeft";
 import SimilarProductsCard from "../components/Pages/ProductPage/SimilarProductsCard";
 import Reload from "../public/assets/icons/Reload";
+import ConfiguratorFooter from "../components/Pages/Configurator/ConfiguratorFooter";
 
 const ConfiguratorPage4 = () => {
   return (
@@ -33,6 +34,7 @@ const ConfiguratorPage4 = () => {
                 robotType="Greifer, OnRobot"
                 robotName="OnRobot VG10"
                 singlePrice="3.915,00€"
+                varient={true}
               />
               <SimilarProductsCard
                 hoverImg="/assets/img/Robots/rob-2.png"
@@ -46,18 +48,12 @@ const ConfiguratorPage4 = () => {
         </div>
       </div>
 
-      <div className={st.ConfiguratorFooterUM}>
-        <button className="button button-lg button-secondary-gray leading-icon">
-          <Reload />
-          Erneut konfigurieren
-        </button>
-        <div className={st.ConfiFooterbtnUM}>
-          <button className="button button-lg button-primary-green trailing-icon">
-            Nächste
-            <ChevronRight color="#fff" />
-          </button>
-        </div>
-      </div>
+      <ConfiguratorFooter
+        againButton={true}
+        previousButton={false}
+        skipButton={false}
+        nextButton={true}
+      />
     </div>
   );
 };

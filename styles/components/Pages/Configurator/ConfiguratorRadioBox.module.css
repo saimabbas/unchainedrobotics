@@ -1,0 +1,65 @@
+.WieMainBox {
+  width: 100%;
+}
+.WieMainBox input {
+  display: none;
+}
+.WieMainBox label .WieMaincontent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 28rem;
+  background: #fff;
+  border-radius: 4px;
+  transition: var(--trns2);
+  padding: 2rem;
+  height: 7rem;
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+
+.WieMaincontent span {
+  font-size: 1.6rem;
+  color: var(--gray700);
+  font-weight: 500;
+  margin: 0 0 0 1.5rem;
+}
+.WieCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 2.15rem;
+  min-width: 2.15rem;
+  max-width: 2.15rem;
+  max-height: 2.15rem;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--gray400);
+  transition: var(--trns2);
+}
+.WieInnerCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 1.05rem;
+  min-width: 1.05rem;
+  max-width: 1.05rem;
+  max-height: 1.05rem;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: var(--trns2);
+}
+.WieMainBox input:checked + label .WieMaincontent {
+  border: 3px solid var(--green700);
+}
+.WieMainBox input:checked + label .WieInnerCircle {
+  background-color: var(--green700);
+}
+.WieMainBox input:checked + label .WieCircle {
+  border: 1px solid var(--green700);
+}
+@media screen and (max-width: 650px) {
+  .WieMainBox label {
+    width: 100%;
+  }
+}

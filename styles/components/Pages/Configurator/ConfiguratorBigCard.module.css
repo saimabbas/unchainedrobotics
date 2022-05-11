@@ -1,0 +1,79 @@
+.UMMainBox label .UMMaincontent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 25rem;
+  background: #fff;
+  border-radius: 4px;
+  transition: var(--trns2);
+  padding: 2rem;
+  height: 22rem;
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+
+.UMMainBox label .UMMaincontent:hover {
+  box-shadow: var(--card-box-shadow);
+  transition: var(--trns3);
+}
+.UMMainBox input:checked + label .UMMaincontent {
+  border: 3px solid var(--green700);
+}
+.UMMainBox {
+  width: 100%;
+}
+.UMMainBox input {
+  display: none;
+}
+
+.UMMaincontent img {
+  height: 6.5rem;
+  width: 6.5rem;
+  object-fit: contain;
+}
+.UMMaincontent h6 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--gray700);
+  margin: 0 0 1.5rem 0 !important;
+}
+.UMMaincontent p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--gray700);
+}
+
+.WieMainBox label .UMMaincontent:hover {
+  box-shadow: var(--card-box-shadow);
+  transition: var(--trns3);
+}
+.UMPara {
+  margin: 1.5rem 0 0 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+@media screen and (max-width: 650px) {
+  .UMMaincontent {
+    flex-direction: row !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .UMMaincontent img {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+  .UMMainBox label {
+    width: 100%;
+  }
+  .UMPara {
+    margin: 0 0 0 2rem;
+    text-align: left;
+  }
+  .UMPara h6 {
+    margin: 0 0 0.5rem 0 !important;
+  }
+}

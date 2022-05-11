@@ -1,0 +1,76 @@
+.ConfiguratorFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 5rem;
+  background-color: var(--white);
+  position: fixed;
+  bottom: 0;
+  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.035);
+}
+
+.ConfiguratorFooterUM {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2.5rem 5rem;
+}
+
+.ConfiguratorFooterUM button.leading-icon.button-lg svg {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+}
+.ConfiFooterbtn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.ConfiFooterbtn span {
+  font-size: 1.6rem;
+  color: var(--gray800);
+  font-weight: 400;
+  text-decoration: underline;
+  margin: 0 3rem 0 0;
+}
+.ConfiFooterbtn button {
+  font-size: 1.6rem;
+  color: var(--white);
+  font-weight: 400;
+  padding: 0.5rem 3.5rem;
+}
+.ConfiFooterbtn button svg {
+  width: 1.5rem !important;
+}
+.ConfiFooterbtnUM {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+.ConfiFooterbtnUM span {
+  font-size: 1.6rem;
+  color: var(--gray800);
+  font-weight: 400;
+  text-decoration: underline;
+  margin: 0 3rem 0 0;
+}
+.ConfiFooterbtnUM button {
+  font-size: 1.6rem;
+  color: var(--white);
+  font-weight: 400;
+}
+.ConfiFooterbtnUM button svg {
+  width: 1.5rem !important;
+}
+
+@media screen and (max-width: 1140px) {
+  .ConfiguratorFooterUM {
+    padding: 3rem 2rem;
+  }
+  .ConfiguratorFooter {
+    padding: 3rem 2rem;
+  }
+}
