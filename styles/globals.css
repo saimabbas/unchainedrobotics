@@ -760,6 +760,10 @@ textarea {
 .shop-page-tabs-slider .nav-tabs {
   border-bottom: 0px solid var(--gray200) !important;
 }
+.ds-tabs
+{
+ width: 100%;
+}
 .ds-tabs .nav-tabs {
   border-bottom: 1px solid var(--gray200) !important;
   margin: 0 0 2.5rem 0;
@@ -951,6 +955,13 @@ li.active a {
   }
   .ds-tabs .nav > .nav-item {
     display: none;
+  }
+  .ds-tabs.dstabs1 .nav > .nav-item {
+    display: flex;
+  }
+  .ds-tabs.dstabs1 .nav-tabs .nav-link {
+    font-size: 1.3rem;
+    padding: 0.85rem 0.5rem !important;
   }
 }
 .switchbox-con .form-switch {

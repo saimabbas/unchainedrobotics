@@ -1,4 +1,4 @@
-import Page from "./ConfiguratorPage4";
+import Page from "./ConfiguratorPage5";
 
 export default function Home() {
   return <Page />;

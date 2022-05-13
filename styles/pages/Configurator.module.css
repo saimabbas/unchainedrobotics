@@ -127,3 +127,481 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+
+/* PAGE 5  */
+.KonfiHeading
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 8rem 0;
+}
+.KonfiHeadingLeft
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.KonfiHeadingLeft h4
+{
+font-size: 2.4rem;
+color: var(--gray800);
+font-weight: 700;
+margin: 0 0 2rem 0 !important;
+}
+.KonfiHeadingLeft p
+{
+font-size: 1.4rem;
+color: var(--gray700);
+font-weight: 400;
+}
+.KonfiHeadingRight
+{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+.KonfiHeadingRight span 
+{
+  font-size: 1.4rem;
+  color: var(--gray800);
+  font-weight: 400; 
+  margin: 0 6rem 0rem 0;
+}
+.KonfiHeadingRight span svg 
+{
+  font-size: 1.85rem;
+  color: var(--gray800);
+  margin: 0 1rem 0 0;
+}
+.KonfiHeadingRight button 
+{
+  padding: 0.75rem 2.15rem;
+}
+
+
+
+.KonfiMainBox
+{
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+width: 100%;
+padding: 0 0 15rem 0;
+}
+.KonfiMainLeft
+{
+  width: 65%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+
+/* KONFI COMPONENT 2 */
+.MitBoxContent
+{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  flex-direction: column;
+}
+.MitFirstBox
+{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+.MitBoxContent h3 
+{
+  font-size: 2.5rem;
+  color: var(--gray800);
+  font-weight: 700;
+  margin: 0 0 2.5rem 0 !important;
+}
+.MitBoxProduct
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0 0 2rem 0;
+  padding: 0 0 2rem 0;
+  border-bottom: 1px solid var(--gray200);
+}
+.MitBoxProduct1
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0 0 2rem 0;
+  padding: 0 0 2rem 0;
+}
+.MitBoxProLeft
+{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 60%;
+}
+.MitBoxProLeft img 
+{
+  width: 8rem;
+  height: 8rem;
+}
+.MitBoxProPara
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 0 0 2rem;
+}
+.MitBoxProPara h4 
+{
+  font-size: 1.75rem;
+  color: var(--gray700);
+  font-weight: 500;
+}
+.MitBoxProPara p 
+{
+  font-size: 1.4rem;
+  color: var(--gray500);
+  font-weight: 400;
+  margin: 1rem 0 0 0 !important;
+}
+.MitBoxProPara1
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.MitBoxProPara1 h4 
+{
+  font-size: 1.75rem;
+  color: var(--gray700);
+  font-weight: 500;
+}
+.MitBoxProRight
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 23%;
+}
+.MitBoxProRight h5
+{
+  font-size: 1.6rem;
+  color: var(--gray700);
+  font-weight: 500;
+  text-align: left !important;
+  width: 100%;
+  margin: 0 0 1rem 0 !important;
+}
+.MitBoxParaRight
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.MitBoxParaRight h6 
+{
+  font-size: 1.5rem;
+  color: var(--gray400);
+  font-weight: 400; 
+}
+.MitBoxParaRight svg 
+{
+  width: 7rem;
+  margin: 0 0 0.5rem 0;
+  cursor: pointer;
+}
+.MitLastBox
+{
+  padding: 2rem;
+  background-color: #FAFBFC;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+.MitLastBox h3 
+{
+  font-size: 2.5rem;
+  color: var(--gray800);
+  font-weight: 700;
+  margin: 0 0 2.5rem 0 !important;
+}
+.MitLastTot
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 1.5rem 0;
+  border-bottom: 1px solid var(--gray200);
+  margin: 0 0 1.5rem 0 !important;
+  width: 100%;
+}
+.MitLastTot h6 
+{
+  color: var(--gray700);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.MitLastTot p
+{
+  color: var(--gray700);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.MitLastTot h4 
+{
+  color: var(--gray800);
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+.MitLastTot1
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.MitLastTot1 h6 
+{
+  color: var(--gray700);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.MitLastTot1 h4 
+{
+  color: var(--gray800);
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+.MitLastBox span
+{
+  font-size: 1.3rem;
+  color: var(--gray400);
+  font-weight: 400;
+  text-align: right;
+  width: 100%;
+}
+
+
+/* KONFI COMPONENT 3  */
+.KonfiMainRight
+{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 30%;
+  flex-direction: column;
+  padding: 3rem;
+  background-color: #FAFBFC;
+  margin: 3rem 0 0 0;
+}
+.KonfiMainRight h2
+{
+  font-size: 2.7rem;
+  color: var(--gray700);
+  font-weight: 700;
+  margin: 0 0 1.5rem 0 !important;
+}
+.KonfiMainRight p
+{
+  font-size: 1.5rem;
+  color: var(--gray700);
+  font-weight: 500;
+  margin: 0 0 1.5rem 0 !important;
+}
+.KofiRightInput {
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0 0 1.5rem 0;
+}
+.KofiRightInput label 
+{
+  color: var(--gray800);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0 0 0.65rem 0;
+}
+.KofiRightInput input
+{
+  width: 100% !important;
+  border: 0;
+  border: 1px solid var(--gray300);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--gray800);
+  outline: 0;
+  background-color: #fff;
+  transition: var(--trns1);
+  position: relative;
+  height: 4rem;
+}
+.KofiRightInput input:hover {
+  color: var(--gray700);
+}
+.KofiRightInput input:focus {
+  box-shadow: 0 0 0 0.25rem #8fedc1;
+}
+.KofiRightInput textarea
+{
+  width: 100% !important;
+  border: 0;
+  border: 1px solid var(--gray300);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--gray800);
+  outline: 0;
+  background-color: #fff;
+  transition: var(--trns1);
+  position: relative;
+  height: 10rem;
+}
+.KofiRightInput textarea:hover {
+  color: var(--gray700);
+}
+.KofiRightInput textarea:focus {
+  box-shadow: 0 0 0 0.25rem #8fedc1;
+}
+.KonfiMainRight span
+{
+  font-size: 1.25rem;
+  color: #fff;
+  font-weight: 400;
+  margin: 0 0 2rem 0 !important;
+  padding: 0.35rem 1.95rem;
+  background-color: var(--gray800);
+  border-radius: 1000px;
+}
+.KonfiMainRight h6
+{
+  font-size: 1.25rem;
+  color: var(--gray500);
+  font-weight: 400;
+  margin: 0 0 1.5rem 0 !important;
+}
+.KonfiMainRight h6 span
+{
+  color: var(--green500);
+  padding: 0;
+  background-color: unset;
+  border-radius: unset;
+  margin: 0;
+}
+
+
+
+/* RESPONSIVENESS OF KONFI  */
+@media screen and (max-width: 1040px) {
+  .MitBoxProRight
+  {
+    width: 27%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .KonfiMainBox
+  {
+    flex-direction: column;
+  }
+  .KonfiMainLeft
+  {
+    width: 100%;
+  }
+  .KonfiMainRight
+  {
+    width: 100%;
+  }
+  .KonfiHeading
+{
+  flex-direction: column;
+  justify-content: center;
+}
+.KonfiHeadingLeft
+{
+  width: 100%;
+  margin: 0 0 2rem 0;
+  justify-content: center;
+  align-items: center;
+}
+.KonfiHeadingLeft h4 
+{
+  margin: 0 0 1rem 0!important;
+}
+.KonfiHeadingRight
+{
+  width: 100%;
+  margin: 0 0 1rem 0;
+  justify-content: center;
+}
+}
+
+@media screen and (max-width: 650px) {
+  .KonfiHeading
+  {
+    padding: 8rem 0 4rem 0;
+  }
+  .KonfiHeadingLeft h4 
+{
+  font-size: 2.15rem;
+}
+.KonfiHeadingRight span {
+  font-size: 1.4rem;
+  color: var(--gray800);
+  font-weight: 400;
+  margin: 0 2.5rem 0rem 0;
+}
+.MitBoxContent h3 {
+  font-size: 2rem;
+  }
+  .MitBoxProPara h4 {
+    font-size: 1.4rem;
+  }
+  .MitBoxProPara1 h4 {
+    font-size: 1.4rem;
+  }
+  .MitBoxProPara p {
+    font-size: 1.25rem;
+  }
+  .MitBoxProRight h5 {
+    font-size: 1.35rem;
+  }
+  .MitBoxParaRight h6 {
+    font-size: 1.25rem;
+  }
+  .MitBoxParaRight svg {
+    width: 2rem;
+  }
+  .MitLastTot1 h4 {
+    font-size: 2rem;
+}
+.KonfiMainRight
+{ 
+  padding: 2rem;
+}
+}
