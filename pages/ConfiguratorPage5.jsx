@@ -3,15 +3,25 @@ import Head from "next/head";
 import Header from "../components/Theme/Header";
 import customGlobals from "../styles/CustomGlobals.module.css";
 import st from "../styles/pages/Configurator.module.css";
-import ChevronRight from "../public/assets/icons/ChevronRight";
+import Envelope from "../public/assets/icons/Envelope";
 import Cross from "../public/assets/icons/Cross";
 import SimilarProductsCard from "../components/Pages/ProductPage/SimilarProductsCard";
 import Cart from "../public/assets/icons/Cart";
 import ConfiguratorFooter from "../components/Pages/Configurator/ConfiguratorFooter";
-import { MdOutlinePrint, MdBookmarkBorder } from "react-icons/md";
+import {
+  MdOutlinePrint,
+  MdBookmarkBorder,
+  MdMailOutline,
+} from "react-icons/md";
 import { Tab, Nav } from "react-bootstrap";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/free-mode";
 
 const ConfiguratorPage5 = () => {
+  SwiperCore.use([Navigation]);
   return (
     <div className={customGlobals.app}>
       <Header />
@@ -30,7 +40,7 @@ const ConfiguratorPage5 = () => {
                 <MdOutlinePrint /> Print
               </span>
               <span>
-                <MdOutlinePrint /> Email
+                <MdMailOutline /> Email
               </span>
               <button className="button button-sm button-secondary-green leading-icon">
                 <Cart />
@@ -43,13 +53,33 @@ const ConfiguratorPage5 = () => {
               <div className="ds-tabs dstabs1">
                 <Tab.Container defaultActiveKey="a1">
                   <Nav variant="tabs">
+                    <Swiper
+                      slidesPerView={"auto"}
+                      freeMode={true}
+                      spaceBetween={0}
+                      className="ds-tabs-nav"
+                    >
+                      <SwiperSlide>
+                        <Nav.Item>
+                          <Nav.Link eventKey="a1">
+                            Mit Engineering-Unterstützung
+                          </Nav.Link>
+                        </Nav.Item>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <Nav.Item>
+                          <Nav.Link eventKey="a2">Do It Yourself</Nav.Link>
+                        </Nav.Item>
+                      </SwiperSlide>
+                    </Swiper>
+
                     <Nav.Item>
                       <Nav.Link eventKey="a1">
                         Mit Engineering-Unterstützung
                       </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="a2">Do it Yourself</Nav.Link>
+                      <Nav.Link eventKey="a2">Do It Yourself</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content>
