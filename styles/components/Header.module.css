@@ -32,70 +32,9 @@
   grid-template-rows: auto;
   grid-gap: 2.5rem;
 }
-.headerSearchBar {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0.15rem 1.5rem;
-  border: 1px solid var(--gray500);
-  border-radius: 0.75rem 0.75rem 0 0;
-}
-.headerSearchBar i {
-  font-size: 2.75rem;
-  color: var(--gray500);
-}
-.headerSearchBar input {
-  width: 100%;
-  padding: 0.25rem 1.5rem;
-  background-color: transparent;
-  font-size: 1.35rem;
-  color: var(--white);
-  font-weight: 400;
-}
-.headerSearchBar input::placeholder {
-  color: var(--gray500);
-}
-.headerLink {
-  width: max-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--white);
-  font-size: 1.5rem;
-}
-.headerLink:hover {
-  color: var(--white) !important;
-}
-.headerLink svg {
-  width: 2rem;
-  height: 2rem;
-  margin: 0 0.5rem 0 0;
-}
-.headerLink i {
-  font-style: normal;
-}
-.headerContentBottom {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.headerContentBottom ul {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.headerContentBottom ul li a {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  color: var(--white);
-  font-size: 1.5rem;
-  margin: 0 3.5rem 0 0;
-}
-.headerContentBottom ul li a:hover {
-  color: var(--white) !important;
-}
+
+
+
 .takeOurQuiz {
   color: var(--green500);
   font-size: 1.5rem;
@@ -115,11 +54,7 @@
 .takeOurQuiz p {
   text-decoration: underline;
 }
-.headerContentBottom ul li svg {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin: 0 0 0 0.5rem;
-}
+
 .takeOurQuiz:hover > svg {
   transform: translate(0.5rem, 0);
 }
@@ -161,4 +96,402 @@
   .headerContentTop main {
     grid-gap: 1.5rem;
   }
+}
+
+
+
+/* MAIN MENU HEADER  */
+.MainMenuHeader
+{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem 0;
+}
+.MainMenuTopHeader
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.MMTopRightHeader
+{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.MMTopRightHeader h6 
+{
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--gray800);
+  margin: 0 0 0 2.75rem !important;
+}
+
+/* MAIN MENU COMPONENT 2 */
+
+.MainMenuCenterHeader
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+.MMCenterLeftHeader
+{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 75%;
+}
+.MMCenterLeftHeader .HeaderMenuIcon 
+{
+  font-size: 5rem;
+  color: var(--gray800);
+  margin: 0 2.5rem 0 0;
+  cursor: pointer;
+}
+.headerContentBottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.headerContentBottom ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.headerContentBottom ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--gray800);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0 2.5rem 0 0;
+}
+.headerContentBottom ul li svg {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 0 0 0.5rem;
+}
+.headerSearchBar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--gray300);
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+.headerSearchBar i {
+  font-size: 2.75rem;
+  color: var(--gray500);
+  margin: 0 !important;
+}
+.headerSearchBar input {
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  background-color: transparent;
+  font-size: 1.35rem;
+  color: var(--gray500);
+  font-weight: 400;
+}
+.headerSearchBar input::placeholder {
+  color: var(--gray500);
+}
+.headerLinksPC,
+.headerLinksBoth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headerLink {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray800);
+  font-size: 1.5rem;
+}
+.headerLink:hover {
+  color: var(--gray800) !important;
+}
+.headerLink svg {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 0.5rem 0 0;
+}
+.headerLink i {
+  font-style: normal;
+  font-weight: 500;
+}
+.MMCenterRightHeader
+{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 20%;
+}
+.MMCenterRightHeader span 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 2rem !important;
+}
+.RessourcenOptions {
+  width: max-content;
+  position: absolute;
+  top: 0;
+  transform: translate(0%, 18%);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #fff;
+  z-index: 10;
+  display: none;
+  padding: 1rem 0;
+}
+.RessourcenOptions a {
+  height: 12.5%;
+  padding: 0.5rem 2.5rem;
+  transition: var(--trns2);
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--gray700);
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.headerContentBottom ul li.MMCRessourcen
+{
+  position: relative;
+}
+.MMCRessourcen:hover >.RessourcenOptions {
+  display: flex !important;
+}
+.MMCRessourcen:hover {
+  color: var(--green700) !important;
+}
+.headerLink:hover
+{
+  color: var(--green700) !important;
+}
+.headerLink svg 
+{
+  color: var(--gray800);
+}
+.headerLink:hover > * 
+{
+  color: var(--green700) !important;
+}
+.MMCLanguage .headerLink 
+{
+  position: relative;
+}
+.LanguageOptions {
+  width: max-content;
+  position: absolute;
+  top: 2%;
+  transform: translate(0%, -2%);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #fff;
+  z-index: 10;
+  display: none;
+  padding: 1rem 0;
+}
+.LanguageOptions a {
+  height: 12.5%;
+  padding: 0.5rem 2.5rem;
+  transition: var(--trns2);
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--gray700);
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.MMCLanguage:hover >.LanguageOptions {
+  display: flex !important;
+}
+.MMCLanguage:hover
+{
+  color: var(--green700) !important;
+}
+.CartOptions
+{
+  width: max-content;
+  position: absolute;
+  top: 2%;
+  transform: translate(-90%, -4%);
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fff;
+  z-index: 10;
+  display: none;
+  padding: 1.5rem; 
+}
+.MMCCart:hover >.CartOptions {
+  display: flex !important;
+}
+.CartOptions h4 
+{
+  font-size: 1.95rem;
+  color: var(--gray800);
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.CartCenterContent
+{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 6rem 0 15rem 0;
+  height: 20rem;
+  overflow-y: scroll;
+}
+.CCCProduct
+{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid var(--gray200);
+  padding: 1.5rem 0;
+}
+.CCCProduct img 
+{
+  width: 7rem;
+  height: 7rem;
+}
+.CCCProductInfo
+{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 0 2rem;
+}
+.CCCProductInfo h5 
+{
+font-size: 1.6rem;
+color: var(--gray800);
+font-weight: 700;
+}
+.CCCProductInfo h6
+{
+font-size: 1.4rem;
+color: var(--gray700);
+font-weight: 400;
+margin: 0.5rem 0 0 0 !important;
+}
+.CCCProductInfo h6 span
+{
+color: var(--gray400);
+margin: 0 !important;
+    display: unset;
+     justify-content:unset; 
+     align-items: unset;
+}
+.CCCProduct svg 
+{
+  font-size: 4rem;
+  color: var(--gray800);
+}
+.CartBottomContent
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 12rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 2rem 0;
+}
+.CBCinfo
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.CBCinfo h6 
+{
+  font-size: 1.6rem;
+  color: var(--gray800);
+  font-weight: 500;
+}
+.CBCinfo h3 
+{
+  font-size: 1.8rem;
+  color: var(--gray800);
+  font-weight: 700;
+}
+.CartBottomContent button 
+{
+  width: 100%;
+  margin: 1.5rem 0 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN MENU COMPONENT 3  */
+.MainMenuBottomHeader
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+  background: var(--gray900);
+}
+.MainMenuBottomHeader h5 
+{
+  font-size: 1.4rem;
+  color: var(--white);
+  font-weight: 400;
+  margin: 0 3rem 0 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.MainMenuBottomHeader .MMBottomActive
+{
+  padding: 0.65rem 0.85rem;
+  background-color: var(--gray800);
+  border-radius: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
