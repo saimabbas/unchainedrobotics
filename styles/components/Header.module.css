@@ -148,11 +148,12 @@
   align-items: center;
   width: 75%;
 }
-.MMCenterLeftHeader .HeaderMenuIcon 
+.MMCenterLeftHeader svg
 {
-  font-size: 5rem;
+  width: 3rem;
+  height: 2rem;
   color: var(--gray800);
-  margin: 0 2.5rem 0 0;
+  margin: 0 2rem 0 0;
   cursor: pointer;
 }
 .headerContentBottom {
@@ -254,7 +255,7 @@
   justify-content: flex-start;
   background-color: #fff;
   z-index: 10;
-  display: none;
+  display: flex;
   padding: 1rem 0;
 }
 .RessourcenOptions a {
@@ -272,9 +273,6 @@
 .headerContentBottom ul li.MMCRessourcen
 {
   position: relative;
-}
-.MMCRessourcen:hover >.RessourcenOptions {
-  display: flex !important;
 }
 .MMCRessourcen:hover {
   color: var(--green700) !important;
@@ -305,7 +303,7 @@
   justify-content: flex-start;
   background-color: #fff;
   z-index: 10;
-  display: none;
+  display: flex;
   padding: 1rem 0;
 }
 .LanguageOptions a {
@@ -319,9 +317,6 @@
   width: 100%;
   display: flex;
   align-items: center;
-}
-.MMCLanguage:hover >.LanguageOptions {
-  display: flex !important;
 }
 .MMCLanguage:hover
 {
@@ -338,11 +333,8 @@
   justify-content: flex-start;
   background-color: #fff;
   z-index: 10;
-  display: none;
+  display: flex;
   padding: 1.5rem; 
-}
-.MMCCart:hover >.CartOptions {
-  display: flex !important;
 }
 .CartOptions h4 
 {
@@ -468,12 +460,16 @@ margin: 0 !important;
 /* MAIN MENU COMPONENT 3  */
 .MainMenuBottomHeader
 {
+  padding: 1rem 0;
+  background: var(--gray900);
+  width: 100%;
+}
+.MainMenuBottomContent
+{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 1rem 0;
-  background: var(--gray900);
 }
 .MainMenuBottomHeader h5 
 {
