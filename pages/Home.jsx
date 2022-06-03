@@ -203,7 +203,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className={st.MainMenuBottomDropdown}>
+      {/* <div className={st.MainMenuBottomDropdown}>
         <div className={st.MMBottomDropdownContent}>
           <div className={st.MMBottomTopContent1}>
             <div className={st.MMBGridContent}>
@@ -766,7 +766,7 @@ const Home = () => {
             </Tab.Container>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

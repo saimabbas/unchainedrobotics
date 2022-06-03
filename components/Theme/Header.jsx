@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import st from "../../styles/components/Header.module.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,8 +14,14 @@ import Menu from "../../public/assets/icons/Menu";
 import Search from "../../public/assets/icons/Search";
 import BookmarkOutlined from "../../public/assets/icons/BookmarkOutlined";
 import Envelope from "../../public/assets/icons/Envelope";
-
+import { Dropdown } from "react-bootstrap";
+import $ from "jquery";
 const Header = () => {
+  /* if (!$(".dropdown.show").classList.contains("show")) {
+    document.body.classList.add("no-scroll");
+  } else {
+    document.body.classList.remove("no-scroll");
+  } */
   return (
     <header className={st.MainMenuHeader}>
       <div className="box-lg">
@@ -32,21 +38,62 @@ const Header = () => {
             <div className={st.headerContentBottom}>
               <ul>
                 <li className={st.MMCRessourcen}>
-                  <a href="#">
-                    Ressourcen
-                    <ChevronDown color="#313130" />
-                  </a>
-                  <div className={st.RessourcenOptions}>
-                    <a href="#">UnchainedTV</a>
-                    <a href="#">Konfigurator</a>
-                    <a href="#">Whitepaper</a>
-                    <a href="#">Case Studies</a>
-                    <a href="#">Roboter ROI-Berechnung</a>
-                    <a href="#">Robotics News</a>
-                    <a href="#">FAQ</a>
+                  <div className="dropdown-reset">
+                    <Dropdown>
+                      <Dropdown.Toggle id="dropdown-basic">
+                        <p className={st.MMCRessourcen}>
+                          Ressourcen
+                          <ChevronDown color="#313130" />
+                        </p>
+                      </Dropdown.Toggle>
+
+                      <Dropdown.Menu>
+                        <div className={st.RessourcenOptions}>
+                          <Dropdown.Item eventKey="1">
+                            UnchainedTV
+                          </Dropdown.Item>
+                          <Dropdown.Item eventKey="2">
+                            Konfigurator
+                          </Dropdown.Item>
+                          <Dropdown.Item eventKey="3">Whitepaper</Dropdown.Item>
+                          <Dropdown.Item eventKey="4">
+                            Case Studies
+                          </Dropdown.Item>
+                          <Dropdown.Item eventKey="5">
+                            Roboter ROI-Berechnung
+                          </Dropdown.Item>
+                          <Dropdown.Item eventKey="6">
+                            Robotics News
+                          </Dropdown.Item>
+                          <Dropdown.Item eventKey="7">FAQ</Dropdown.Item>
+                        </div>
+                      </Dropdown.Menu>
+                    </Dropdown>
                   </div>
                 </li>
                 <li className={st.MMCRessourcen}>
+                  <div className="dropdown-reset">
+                    <Dropdown>
+                      <Dropdown.Toggle id="dropdown-basic">
+                        <p className={st.MMCRessourcen}>
+                          Unternehmen
+                          <ChevronDown color="#313130" />
+                        </p>
+                      </Dropdown.Toggle>
+
+                      <Dropdown.Menu>
+                        <div className={st.RessourcenOptions}>
+                          <Dropdown.Item eventKey="1">About</Dropdown.Item>
+                          <Dropdown.Item eventKey="2">Blog</Dropdown.Item>
+                          <Dropdown.Item eventKey="3">Kontakt</Dropdown.Item>
+                          <Dropdown.Item eventKey="4">Presse</Dropdown.Item>
+                          <Dropdown.Item eventKey="5">Karriere</Dropdown.Item>
+                        </div>
+                      </Dropdown.Menu>
+                    </Dropdown>
+                  </div>
+                </li>
+                {/* <li className={st.MMCRessourcen}>
                   <a href="#">
                     Unternehmen
                     <ChevronDown color="#313130" />
@@ -58,7 +105,7 @@ const Header = () => {
                     <a href="#">Presse</a>
                     <a href="#">Karriere</a>
                   </div>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className={st.headerSearchBar}>
@@ -82,7 +129,33 @@ const Header = () => {
           </div>
           <div className={st.MMCenterRightHeader}>
             <span className={st.headerLinksPC}>
-              <div className={st.MMCLanguage}>
+              <div className="dropdown-reset">
+                <a className={st.headerLink}>
+                  <Globe color="#313130" />
+                  <i>DE</i>
+                </a>
+                {/* <Dropdown> */}
+                {/* <Dropdown.Toggle id="dropdown-basic">
+                    <a className={st.headerLink}>
+                      <Globe color="#313130" />
+                      <i>DE</i>
+                    </a>
+                  </Dropdown.Toggle> */}
+                <div className="dropdown-reset-content">
+                  <div className={st.RessourcenOptions}>
+                    <Dropdown.Item eventKey="1">DE (Deutsch)</Dropdown.Item>
+                    <Dropdown.Item eventKey="2">EN (English)</Dropdown.Item>
+                  </div>
+                </div>
+                {/* <Dropdown.Menu>
+                  <div className={st.RessourcenOptions}>
+                    <Dropdown.Item eventKey="1">DE (Deutsch)</Dropdown.Item>
+                    <Dropdown.Item eventKey="2">EN (English)</Dropdown.Item>
+                  </div>
+                </Dropdown.Menu> */}
+                {/* </Dropdown> */}
+              </div>
+              {/* <div className={st.MMCLanguage}>
                 <a className={st.headerLink}>
                   <Globe color="#313130" />
                   <i>DE</i>
@@ -91,7 +164,7 @@ const Header = () => {
                   <a href="#">DE (Deutsch)</a>
                   <a href="#">EN (English)</a>
                 </div>
-              </div>
+              </div> */}
             </span>
             <span className={st.headerLinksPC}>
               <Link href="#">
@@ -109,63 +182,100 @@ const Header = () => {
             </span>
             <span className={st.headerLinksBoth}>
               <div className={st.MMCCart}>
-                <a className={st.headerLink}>
+                {/* <a className={st.headerLink}>
                   <Cart color="#313130" />
-                </a>
-                <div className={st.CartOptions}>
-                  <h4>Cart</h4>
-                  <div className={st.CartCenterContent}>
-                    <div className={st.CCCProduct}>
-                      <img src="/assets/img/AddToCart.png" alt="Product Img" />
-                      <div className={st.CCCProductInfo}>
-                        <h5>Doosan Robotics M1013</h5>
-                        <h6>
-                          32,000 € <span>excl. MwSt.</span>
-                        </h6>
+                </a> */}
+                <div className="dropdown-reset">
+                  <Dropdown>
+                    <Dropdown.Toggle id="dropdown-basic">
+                      <a className={st.headerLink}>
+                        <Cart color="#313130" />
+                      </a>
+                    </Dropdown.Toggle>
+
+                    <Dropdown.Menu>
+                      <div
+                        className={
+                          st.RessourcenOptions + " " + st.RessourcenOptionsCart
+                        }
+                      >
+                        <div className={st.CartOptions}>
+                          <h4>Cart</h4>
+                          <div className={st.CartCenterContentBox}>
+                            <div
+                              className={
+                                st.CartCenterContent + " " + "ds-overflow"
+                              }
+                            >
+                              <div className={st.CCCProduct}>
+                                <img
+                                  src="/assets/img/AddToCart.png"
+                                  alt="Product Img"
+                                />
+                                <div className={st.CCCProductInfo}>
+                                  <h5>Doosan Robotics M1013</h5>
+                                  <h6>
+                                    32,000 € <span>excl. MwSt.</span>
+                                  </h6>
+                                </div>
+                                <Cross />
+                              </div>
+                              <div className={st.CCCProduct}>
+                                <img
+                                  src="/assets/img/AddToCart.png"
+                                  alt="Product Img"
+                                />
+                                <div className={st.CCCProductInfo}>
+                                  <h5>Doosan Robotics M1013</h5>
+                                  <h6>
+                                    32,000 € <span>excl. MwSt.</span>
+                                  </h6>
+                                </div>
+                                <Cross />
+                              </div>
+                              <div className={st.CCCProduct}>
+                                <img
+                                  src="/assets/img/AddToCart.png"
+                                  alt="Product Img"
+                                />
+                                <div className={st.CCCProductInfo}>
+                                  <h5>Doosan Robotics M1013</h5>
+                                  <h6>
+                                    32,000 € <span>excl. MwSt.</span>
+                                  </h6>
+                                </div>
+                                <Cross />
+                              </div>
+                              <div className={st.CCCProduct}>
+                                <img
+                                  src="/assets/img/AddToCart.png"
+                                  alt="Product Img"
+                                />
+                                <div className={st.CCCProductInfo}>
+                                  <h5>Doosan Robotics M1013</h5>
+                                  <h6>
+                                    32,000 € <span>excl. MwSt.</span>
+                                  </h6>
+                                </div>
+                                <Cross />
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className={st.CartBottomContent}>
+                            <div className={st.CBCinfo}>
+                              <h6>Total</h6>
+                              <h3>96,900 €</h3>
+                            </div>
+                            <button className="button button-lg button-primary-gray leading-icon">
+                              <Envelope color="#fff" />
+                              Enquire about cart
+                            </button>
+                          </div>
+                        </div>
                       </div>
-                      <Cross />
-                    </div>
-                    <div className={st.CCCProduct}>
-                      <img src="/assets/img/AddToCart.png" alt="Product Img" />
-                      <div className={st.CCCProductInfo}>
-                        <h5>Doosan Robotics M1013</h5>
-                        <h6>
-                          32,000 € <span>excl. MwSt.</span>
-                        </h6>
-                      </div>
-                      <Cross />
-                    </div>
-                    <div className={st.CCCProduct}>
-                      <img src="/assets/img/AddToCart.png" alt="Product Img" />
-                      <div className={st.CCCProductInfo}>
-                        <h5>Doosan Robotics M1013</h5>
-                        <h6>
-                          32,000 € <span>excl. MwSt.</span>
-                        </h6>
-                      </div>
-                      <Cross />
-                    </div>
-                    <div className={st.CCCProduct}>
-                      <img src="/assets/img/AddToCart.png" alt="Product Img" />
-                      <div className={st.CCCProductInfo}>
-                        <h5>Doosan Robotics M1013</h5>
-                        <h6>
-                          32,000 € <span>excl. MwSt.</span>
-                        </h6>
-                      </div>
-                      <Cross />
-                    </div>
-                  </div>
-                  <div className={st.CartBottomContent}>
-                    <div className={st.CBCinfo}>
-                      <h6>Total</h6>
-                      <h3>96,900 €</h3>
-                    </div>
-                    <button className="button button-lg button-primary-gray leading-icon">
-                      <Envelope color="#fff" />
-                      Enquire about cart
-                    </button>
-                  </div>
+                    </Dropdown.Menu>
+                  </Dropdown>
                 </div>
               </div>
             </span>
@@ -405,13 +515,61 @@ const Header = () => {
       <div className={st.MainMenuBottomHeader}>
         <div className="box-lg">
           <div className={st.MainMenuBottomContent}>
-            <h5 className={st.MMBottomActive}>Roboter</h5>
-            <h5>End of Arm</h5>
-            <h5>Vision</h5>
-            <h5>Turnkey & Pakete</h5>
-            <h5>Dienstleistungen</h5>
-            <h5>Alle Produkte</h5>
-            <h5>Hersteller</h5>
+            <div className="dropdown-reset header-megadropdown">
+              <Dropdown>
+                <Dropdown.Toggle id="dropdown-basic">
+                  <h5 className="header-menu-link">Roboter</h5>
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                  <div className={st.MainMenuBottomDropdown}>
+                    <div className={st.MMBottomDropdownContent}>
+                      <div className={st.MMBottomTopContent}>
+                        <div className={st.MMBGridContent}>
+                          <img src="/assets/img/CobotsImg.png" alt="" />
+                          <div className={st.MMBGridRight}>
+                            <h6>Cobots</h6>
+                            <p>Cobot mit ≤ 3 kg Nutzlast</p>
+                            <p>Cobot mit 3-10 kg Nutzlast</p>
+                            <p>Cobot mit 10-25 kg Nutzlast</p>
+                            <p>Cobot mit 25 kg Nutzlast</p>
+                          </div>
+                        </div>
+                        <div className={st.MMBGridContent}>
+                          <img src="/assets/img/RoboterImg.png" alt="" />
+                          <div className={st.MMBGridRight}>
+                            <h6>Industrial Roboter</h6>
+                          </div>
+                        </div>
+                      </div>
+                      <div className={st.MMBottomLastContent}>
+                        <h5>BELIEBTE MARKEN</h5>
+                        <div className={st.MMBottomLastImg}>
+                          <div className={st.MMBottomImgBox}>
+                            <img src="/assets/img/DropDownImg.png" alt="" />
+                          </div>
+                          <div className={st.MMBottomImgBox}>
+                            <img src="/assets/img/DropDown2.png" alt="" />
+                          </div>
+                          <div className={st.MMBottomImgBox}>
+                            <img src="/assets/img/DropDown3.png" alt="" />
+                          </div>
+                          <div className={st.MMBottomImgBox}>
+                            <img src="/assets/img/DropDown4.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Dropdown.Menu>
+              </Dropdown>
+            </div>
+            <h5 className="header-menu-link">End of Arm</h5>
+            <h5 className="header-menu-link">Vision</h5>
+            <h5 className="header-menu-link">Turnkey & Pakete</h5>
+            <h5 className="header-menu-link">Dienstleistungen</h5>
+            <h5 className="header-menu-link">Alle Produkte</h5>
+            <h5 className="header-menu-link">Hersteller</h5>
           </div>
         </div>
       </div>
