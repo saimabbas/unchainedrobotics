@@ -1,0 +1,456 @@
+.PressHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 10rem auto;
+}
+.PressHeadingLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 35%;
+}
+.PressHeadingLeft h6 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #313130;
+  margin: 1rem 0 !important;
+}
+.PressHeadingLeft h4 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #313130;
+}
+.PressHeadingLeft p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #828282;
+}
+.PressHeadingRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 38%;
+}
+.PHRsub {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 25%;
+}
+.PHRsub img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.PHRpara {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 70%;
+}
+.PHRpara h5 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #313130;
+  margin: 0.25rem 0 !important;
+}
+.PHRpara span {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #bdbdbd;
+}
+.PHRpara h6 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #313130;
+}
+.PHRpara .PHRBtn {
+  margin: 3rem 0 0 0 !important;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+}
+.PressMainBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+  margin: 10rem auto;
+}
+.productSectionalDetails {
+  width: 20%;
+}
+.PressMainBoxRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 73%;
+}
+.Unsere {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 60%;
+  margin: 0 auto 0 0;
+  flex-direction: column;
+}
+.Unsere h5 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #313130;
+}
+.Unsere p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #4f4f4f;
+  margin: 4rem 0 0 0 !important;
+  line-height: 20px;
+}
+.productSectionalDetails {
+  width: 20%;
+  display: grid;
+  grid-template-columns: 25rem 1fr;
+  grid-template-rows: max-content;
+  grid-gap: 0;
+  position: relative;
+}
+a.secondarySectionLink {
+  padding: 0 0 0 2.5rem !important;
+}
+.PMRobotics {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  margin: 8rem 0 !important;
+}
+.PMRobotics h5 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #313130;
+}
+.PMRImgBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  margin: 4rem 0 20rem 0 !important;
+  position: relative;
+  z-index: 5;
+}
+.PMRImgBox img {
+  width: 38%;
+  height: 70%;
+}
+.PMRPara {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0px 51px 80px rgba(0, 0, 0, 0.04),
+    0px 15.375px 24.1177px rgba(0, 0, 0, 0.0260636),
+    0px 6.38599px 10.0172px rgba(0, 0, 0, 0.02),
+    0px 2.30969px 3.62304px rgba(0, 0, 0, 0.0139364);
+  position: absolute;
+  bottom: -15rem;
+  right: 7rem;
+  z-index: 6;
+  background-color: #fff;
+  width: 58%;
+}
+.PMRPara h5 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #313130;
+}
+.PMRParaMain {
+  margin: 2rem 0 !important;
+  z-index: 2;
+  position: relative;
+}
+.PMRParaMain p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #4f4f4f;
+  line-height: 26px;
+}
+.PMRParaMain svg {
+  width: 4.5rem;
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  z-index: -5;
+}
+.PMRPara h6 {
+  font-size: 1.6rem;
+  color: #1fdb84;
+  font-weight: 400;
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+.PMRPara h6 svg {
+  margin: 0 1rem 0 0;
+  width: 1.5rem;
+  transform: unset;
+}
+.Unter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  flex-direction: column;
+  margin: 5rem 0 !important;
+}
+.Unter h5 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #313130;
+}
+.UnterGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 5rem 4rem;
+  margin: 4rem 0 0 0 !important;
+}
+.UnterMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.UnterMain span {
+  color: #1bc074;
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+.UnterMain p {
+  color: #4f4f4f;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.Bildmarke {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  margin: 2rem 0 !important;
+}
+.Bildmarke h5 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #313130;
+}
+.Bildmarke img {
+  margin: 3rem 0 2.5rem 0 !important;
+  width: 15rem;
+  height: 4rem;
+}
+.Bildmarke button {
+  width: 27%;
+}
+.Bildergal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  margin: 8rem 0 !important;
+}
+.Bildergal h5 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #313130;
+}
+.BildergalContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 3rem 0 0 0 !important;
+  width: 100%;
+}
+.BildergalContent p {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 2rem 0 !important;
+  color: #4f4f4f;
+}
+.BilderFlex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+.BilderFContent {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 20%;
+  margin: 0 3rem 0 0;
+}
+.BilderFContent img {
+  width: 100%;
+  height: 17rem;
+  object-fit: cover;
+}
+.BilderFContent h6 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #4f4f4f;
+  margin: 1.5rem 0 0 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.BilderFContent h6 svg {
+  margin: 0 0.5rem 0 0;
+  width: 2rem;
+}
+.BildergalContent button {
+  width: 23%;
+  margin: 4rem 0 0 0 !important;
+}
+.MladenMili {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  margin: 3rem 0 !important;
+}
+.MladenMili p {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 2rem 0 !important;
+  color: #4f4f4f;
+}
+.MladenGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  width: 100%;
+  grid-gap: 3rem;
+}
+.MladenGContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.MladenGContent img {
+  height: 37rem;
+  width: 100%;
+  object-fit: cover;
+}
+.MladenGContent h6 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #4f4f4f;
+  margin: 1.5rem 0 0 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.MladenGContent h6 svg {
+  margin: 0 0.5rem 0 0;
+  width: 2rem;
+}
+.MladenMili button {
+  width: 23%;
+  margin: 4rem 0 0 0 !important;
+}
+.MladenGFContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.MGFMainBox {
+  margin: 0 0 1.5rem 0 !important;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.MGFMainBox img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+.MGFMainBox h6 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #4f4f4f;
+  margin: 1.5rem 0 0 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.MGFMainBox h6 svg {
+  margin: 0 0.5rem 0 0;
+  width: 2rem;
+}
+.Pressespiegel {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  margin: 5rem 0 !important;
+}
+.Pressespiegel h5 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #313130;
+  margin: 0 0 2rem 0 !important;
+}
+.PresseInnerBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  padding: 2.5rem 0 !important;
+  border-bottom: 1px solid #e0e0e0;
+}
+.PresseInnerBox h6 {
+  text-decoration: underline !important;
+  color: #1fdb84;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0 0 1.5rem 0 !important;
+  cursor: pointer;
+}
+.PresseInnerBox p {
+  font-size: 1.6rem;
+  color: #828282;
+  font-weight: 400;
+}
+.Pressespiegel h3 {
+  font-size: 1.6rem;
+  color: #1fdb84;
+  font-weight: 400;
+  text-decoration: underline !important;
+  cursor: pointer;
+  margin: 3rem 0 0 0 !important;
+}
+.Pressespiegel h3 svg {
+  margin: 0 1rem 0 0;
+  width: 1.5rem;
+}

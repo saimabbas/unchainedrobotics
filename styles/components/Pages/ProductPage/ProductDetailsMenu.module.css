@@ -16,6 +16,16 @@
   font-size: 1.5rem;
   color: var(--gray400) !important;
 }
+.productDetailsMenu a:hover {
+  color: #313130 !important;
+}
+.productDetailsMenu h6,
+.productDetailsMenu h6:focus {
+  font-size: 1rem;
+  color: #bdbdbd !important;
+  font-weight: 400;
+  text-transform: uppercase;
+}
 .productDetailsMenu li {
   margin: 0 0 1rem 0;
 }

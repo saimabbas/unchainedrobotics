@@ -1,0 +1,506 @@
+.AboutMainBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6rem auto;
+  width: 90%;
+}
+.AboutMainLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 40%;
+}
+.AboutMainRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.AboutMainRight .DeskTeamImg {
+  width: 100%;
+  height: 100%;
+}
+.AboutMainLeft h6 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #828282;
+}
+.AboutMainLeft h4 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #313130;
+}
+.AboutMainLeft p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #4f4f4f;
+  margin: 1.5rem 0 0 0 !important;
+}
+.UnserPara {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 90%;
+  margin: 6rem auto;
+}
+.UnserPara h4 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #313130;
+}
+.AboutMainBox1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin: 1rem 0 0 0;
+}
+.AboutMainLeft1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 38%;
+}
+.AboutMainLeft1 h4 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #313130;
+}
+.AboutMainLeft1 p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #4f4f4f;
+  margin: 1.5rem 0 0 0 !important;
+}
+.AboutMainRight1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 53%;
+}
+.AboutMainRight1 p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #4f4f4f;
+  margin: 1.5rem 0 0 0 !important;
+}
+.AboutMainRight1 h5 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #4f4f4f;
+  margin: 1.5rem 0 0 0 !important;
+}
+.AboutGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 2rem;
+  margin: 17rem auto !important;
+  width: 90%;
+}
+.AboutGridContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.AboutGridContent h4 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #313130;
+}
+.AboutGridContent p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #4f4f4f;
+  margin: 1.5rem 0 0 0 !important;
+  width: 100%;
+}
+.AboutGridBox {
+  padding: 2.5rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  cursor: pointer;
+}
+.AboutGridBox:hover {
+  box-shadow: 0px 51px 80px rgba(0, 0, 0, 0.04),
+    0px 15.375px 24.1177px rgba(0, 0, 0, 0.0260636),
+    0px 6.38599px 10.0172px rgba(0, 0, 0, 0.02),
+    0px 2.30969px 3.62304px rgba(0, 0, 0, 0.0139364);
+}
+.AGIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 4.5rem;
+  min-height: 4.5rem;
+  max-width: 4.5rem;
+  max-height: 4.5rem;
+  border-radius: 50%;
+  background: linear-gradient(37.78deg, #36ff9a -193.78%, #ebfff5 68%);
+}
+.AboutGridBox h6 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #313130;
+  margin: 2.5rem 0 !important;
+}
+.AboutGridBox p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #4f4f4f;
+  width: 85%;
+}
+.AboutFeatured {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.AFeaturedleft {
+  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.AFeaturedleft h4 {
+  font-size: 2.4rem;
+  color: var(--gray800);
+  font-weight: 700;
+}
+.AFeaturedleft img.colimg {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  margin: 3rem 0;
+}
+.AFeaturedleft p {
+  font-size: 1.6rem;
+  color: var(--gray800);
+  font-weight: 400;
+}
+.AFeaturedRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+.AFeaturedRight img {
+  width: 100%;
+  height: 100%;
+}
+.ChatBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 17rem auto;
+  width: 90%;
+}
+.ChatLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 40%;
+}
+.ChatLeft p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #4f4f4f;
+  margin: 1.5rem 0 !important;
+  width: 90%;
+}
+.ChatLeft h4 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #313130;
+}
+.ChatPoints {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1.25rem 0 0 0 !important;
+}
+.ChatPointsCir {
+  min-height: 2.5rem;
+  min-width: 2.5rem;
+  max-width: 2.5rem;
+  max-height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: linear-gradient(
+    163.74deg,
+    rgba(54, 255, 154, 0.1) 37.01%,
+    rgba(255, 255, 255, 0) 88.71%
+  );
+}
+.ChatPoints h6 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #4f4f4f;
+  margin: 0 0 0 1.5rem !important;
+}
+.ChatLeft button {
+  margin: 2.5rem 0 !important;
+}
+.ChatLeft h5 {
+  color: #313130;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+.ChatLeft h5 svg {
+  margin: 0 0 0 0.5rem !important;
+}
+.ChatRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.ChatRight img {
+  width: 60%;
+  height: 100%;
+}
+.ProductsSwiper {
+  width: 90%;
+  margin: 17rem auto;
+}
+.UseCaseCombinationSection {
+  width: 100%;
+}
+.uccSwiper {
+  width: 100%;
+}
+.uccSwiperBtnBox {
+  width: 100%;
+  margin: 1.5rem 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.uccSwiperBtnBox button {
+  width: 4.25rem;
+  height: 4.25rem;
+  border: 1px solid var(--gray500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 1.5rem 0 0;
+  background-color: transparent;
+}
+.uccSwiperBtnBox button svg {
+  width: 2.5rem;
+}
+.uccSwiper button:hover {
+  background-color: var(--gray800) !important;
+  color: var(--white);
+}
+.uccSwiper button:hover > svg path {
+  fill: #fff !important;
+}
+.UseCaseCombinationSection h4 {
+  font-size: 2.4rem;
+  color: #313130;
+  font-weight: 700;
+  margin: 0 0 3rem 0 !important;
+}
+.KonfiTabContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 3rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  min-height: 36rem;
+  margin: 3rem 0 !important;
+}
+.KonfiTabLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 50%;
+}
+.KonfiTabLeft h5 {
+  font-size: 2rem;
+  color: #313130;
+  font-weight: 700;
+}
+.KonfiTabLeft p {
+  font-size: 1.6rem;
+  color: #4f4f4f;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 2rem 0 !important;
+}
+.KonfiTabLeft h6 {
+  font-size: 1.4rem;
+  color: #4f4f4f;
+  font-weight: 700;
+  line-height: 26px;
+}
+.KonfiTabLeft h6 span {
+  font-size: 1.4rem;
+  color: #4f4f4f;
+  font-weight: 400;
+  margin: 0 0 0 1rem;
+}
+.KonfiTabRight {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.KonfiTabRight img {
+  width: 75%;
+  height: 100%;
+}
+.MobTeamImg {
+  display: none;
+}
+.MobAboutGrid {
+  display: none;
+}
+@media screen and (max-width: 1040px) {
+  .AboutMainBox {
+    width: 100%;
+  }
+  .UnserPara {
+    width: 100%;
+  }
+  .AboutGrid {
+    width: 100%;
+  }
+  .AboutGridBox {
+    padding: 1rem;
+  }
+  .ProductsSwiper {
+    width: 100%;
+  }
+  .KonfiTabContent {
+    min-height: 42rem;
+  }
+  .AboutFeatured {
+    width: 100%;
+  }
+  .ChatBox {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .AboutMainBox {
+    flex-direction: column;
+    margin: 5rem 0;
+  }
+  .AboutMainLeft {
+    width: 100%;
+  }
+  .AboutMainRight {
+    width: 100%;
+    margin: 6rem 0 0 0 !important;
+  }
+  .AboutMainBox1 {
+    flex-direction: column;
+  }
+  .AboutMainLeft1 {
+    width: 100%;
+  }
+  .AboutMainRight1 {
+    width: 100%;
+    margin: 2rem 0 0 0 !important;
+  }
+  .AboutGrid {
+    display: none;
+  }
+  .ProductsSwiper {
+    width: 100%;
+    margin: 0;
+  }
+  .KonfiTabContent {
+    flex-direction: column;
+  }
+  .KonfiTabLeft {
+    width: 100%;
+  }
+  .KonfiTabRight {
+    width: 100%;
+    margin: 6rem 0 0 0 !important;
+  }
+  .AboutFeatured {
+    flex-direction: column;
+    margin: 4rem 0;
+  }
+  .AFeaturedleft {
+    width: 100%;
+  }
+  .AFeaturedRight {
+    width: 100%;
+    margin: 6rem 0 0 0 !important;
+  }
+  .ChatBox {
+    flex-direction: column;
+    margin: 10rem 0;
+  }
+  .ChatLeft {
+    width: 100%;
+  }
+  .ChatRight {
+    width: 100%;
+    margin: 6rem 0 0 0 !important;
+  }
+  .DeskTeamImg {
+    display: none;
+  }
+  .MobTeamImg {
+    display: block;
+  }
+  .AboutMainRight .MobTeamImg {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .MobAboutGrid {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .MobAboutGrid h4 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #313130;
+  }
+  .MobAboutGrid p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #4f4f4f;
+    margin: 1.5rem 0 0 0 !important;
+    width: 100%;
+  }
+  .MobAboutSwiper {
+    margin: 6rem 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  .AboutMainRight .MobTeamImg {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
