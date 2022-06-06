@@ -454,3 +454,156 @@ a.secondarySectionLink {
   margin: 0 1rem 0 0;
   width: 1.5rem;
 }
+
+@media screen and (max-width: 1040px) {
+  .PressHeading {
+    width: 100%;
+  }
+  .PressHeadingLeft {
+    width: 40%;
+  }
+  .PressMainBox {
+    width: 100%;
+  }
+  .PressMainBox .productSectionalDetails {
+    width: 30%;
+  }
+  .PressMainBox .productSectionalDetails .ProductDetailsMenu {
+    display: block !important;
+    width: 100%;
+  }
+  .Unsere {
+    width: 90%;
+  }
+  .PMRPara {
+    padding: 2rem 2.5rem;
+  }
+  .Bildmarke button {
+    width: 32%;
+  }
+  .BildergalContent button {
+    width: 32%;
+  }
+  .MladenMili button {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .PressHeading {
+    flex-direction: column;
+  }
+  .PressHeadingLeft {
+    width: 100%;
+  }
+  .PressHeadingRight {
+    width: 100%;
+    margin: 5rem 0 0 0 !important;
+  }
+  .PHRpara .PHRBtn {
+    margin: 6rem auto 0 0 !important;
+    width: 70%;
+  }
+  .PressMainBoxRight {
+    width: 100%;
+  }
+  .PressMainBox .productSectionalDetails {
+    display: none;
+  }
+  .Unsere {
+    width: 90%;
+  }
+  .PMRPara {
+    padding: 2rem 2.5rem;
+  }
+  .Bildmarke button {
+    width: 32%;
+  }
+  .BildergalContent button {
+    width: 32%;
+  }
+  .MladenMili button {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .PressHeading {
+    margin: 0 !important;
+  }
+  .PressHeadingLeft h4 {
+    font-size: 2.4rem;
+  }
+  .UnterGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .UnterGrid .UnterMain:nth-child(5) {
+    display: none;
+  }
+  .UnterGrid .UnterMain:nth-child(8) {
+    display: none;
+  }
+  .PressHeadingRight {
+    flex-direction: column;
+  }
+  .PHRsub {
+    width: 50%;
+    margin: 0 0 2rem 0 !important;
+  }
+  .PHRpara {
+    width: 100%;
+  }
+  .PHRpara .PHRBtn {
+    margin: 2rem auto 0 0 !important;
+    width: 100%;
+  }
+  .PMRobotics {
+    margin: 4rem 0 !important;
+  }
+  .PMRImgBox {
+    margin: 2rem 0 !important;
+  }
+  .PMRImgBox img {
+    width: 100%;
+    height: 50%;
+  }
+  .PMRPara {
+    position: unset;
+    width: 100%;
+    margin: 4rem 0 0 0;
+  }
+  .Unter {
+    margin: 3rem 0 !important;
+  }
+  .Bildmarke button {
+    width: 70%;
+  }
+  .BildergalContent button {
+    width: 70%;
+  }
+  .MladenMili button {
+    width: 70%;
+  }
+  .Bildergal {
+    margin: 4rem 0 !important;
+  }
+  .MladenGrid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
+  .BilderFlex {
+    flex-direction: column;
+  }
+  .BilderFContent {
+    width: 100%;
+  }
+  .BilderFContent img {
+    height: 100%;
+  }
+  .BilderFlex .BilderFContent:nth-child(2) {
+    display: none;
+  }
+  .BilderFlex .BilderFContent:nth-child(3) {
+    display: none;
+  }
+}
