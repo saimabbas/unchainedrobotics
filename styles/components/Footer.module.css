@@ -28,8 +28,7 @@
 .footerTopGrid main a {
   font-size: 1.5rem;
 }
-.FooterNewInputBox
-{
+.FooterNewInputBox {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -38,7 +37,7 @@
 }
 .footerCenterGrid {
   padding: 2.5rem 0;
-  margin: 2.5rem 0 0 0;
+  margin: 2.5rem 0 0 0 !important;
   width: 75%;
   grid-gap: 2.5rem;
 }
@@ -50,12 +49,10 @@
   flex-direction: row;
   margin: 1rem 0 0 0;
 }
-.footerCenterGridLeft main input 
-{
+.footerCenterGridLeft main input {
   width: 65% !important;
 }
-.footerCenterGridLeft main button
-{
+.footerCenterGridLeft main button {
   width: 30%;
   color: var(--white) !important;
 }
@@ -65,8 +62,7 @@
 .footerCenterGridLeft button {
   margin: 0 0 0 1.5rem;
 }
-.footerCenterGridRight
-{
+.footerCenterGridRight {
   margin: 2rem 0 0 0;
 }
 .footerCenterGridRight main {
@@ -111,6 +107,20 @@
   color: var(--white) !important;
   margin: 0 5rem 0 0;
 }
+@media screen and (max-width: 1040px) {
+  .footerCenterGrid {
+    width: 95% !important;
+  }
+  .footerCenterGridLeft main input {
+    width: 60% !important;
+  }
+  .footerCenterGridLeft main button {
+    width: 35%;
+  }
+  .footerBottomGridParent {
+    margin: 0 7rem 0 0;
+  }
+}
 @media screen and (max-width: 1000px) {
   .footerCenterGrid {
     grid-template-columns: 2fr 1fr;
@@ -121,7 +131,7 @@
     grid-template-columns: 3fr 1fr;
   }
   .footerTopGrid {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1.75fr 1fr 1fr;
     grid-gap: 2.5rem;
   }
   .footerBottomGrid {
@@ -133,13 +143,25 @@
   .footerBottomGrid > * {
     margin: 0 0 1.5rem 0 !important;
   }
+  .footer {
+    padding: 0 4.5%;
+  }
+  .footerCenterGridLeft main {
+    flex-direction: column;
+  }
+  .footerCenterGridLeft main input {
+    width: 100% !important;
+  }
+  .footerCenterGridLeft main button {
+    width: 50%;
+  }
 }
 @media screen and (max-width: 650px) {
   .footerTopGrid {
     grid-template-columns: 1fr 1fr;
   }
   .footerCenterGrid {
-    grid-template-columns: 1fr;
+    padding: 0 !important;
   }
   .footerCenterGridLeft main {
     flex-direction: column;
@@ -148,5 +170,15 @@
   }
   .footerCenterGridLeft button {
     margin: 1.5rem 0 0 0;
+  }
+  .footerBottomRightBox {
+    display: flex;
+    flex-direction: column;
+  }
+  .footerBottomRightBox a {
+    margin: 0 0 1.25rem 0 !important;
+  }
+  .footerBottomGridParent {
+    padding: 2.5rem 4.5% 0.5rem 4.5%;
   }
 }

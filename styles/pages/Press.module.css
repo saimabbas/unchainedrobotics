@@ -492,6 +492,7 @@ a.secondarySectionLink {
 @media screen and (max-width: 850px) {
   .PressHeading {
     flex-direction: column;
+    margin: 0 0 10rem 0 !important;
   }
   .PressHeadingLeft {
     width: 100%;

@@ -128,7 +128,7 @@ const Header = () => {
             </div>
           </div>
           <div className={st.MMCenterRightHeader}>
-            <span className={st.headerLinksPC}>
+            <span className={st.headerLinksBoth}>
               <div className="dropdown-reset">
                 <a className={st.headerLink}>
                   <Globe color="#313130" />
@@ -166,14 +166,14 @@ const Header = () => {
                 </div>
               </div> */}
             </span>
-            <span className={st.headerLinksPC}>
+            <span className={st.headerLinksBoth}>
               <Link href="#">
                 <a className={st.headerLink}>
                   <User color="#313130" />
                 </a>
               </Link>
             </span>
-            <span className={st.headerLinksPC}>
+            <span className={st.headerLinksBoth}>
               <Link href="#">
                 <a className={st.headerLink}>
                   <BookmarkOutlined color="#313130" />
@@ -288,7 +288,7 @@ const Header = () => {
             <div className={st.HeaderMobTopBox}>
               <img src="/assets/img/logo-black.svg" alt="Logo Black" />
               <div className={st.MMCenterRightHeader}>
-                <span className={st.headerLinksPC}>
+                <span className={st.headerLinksBoth}>
                   <div className={st.MMCLanguage}>
                     <a className={st.headerLink}>
                       <Globe color="#313130" />
@@ -296,14 +296,14 @@ const Header = () => {
                     </a>
                   </div>
                 </span>
-                <span className={st.headerLinksPC}>
+                <span className={st.headerLinksBoth}>
                   <Link href="#">
                     <a className={st.headerLink}>
                       <User color="#313130" />
                     </a>
                   </Link>
                 </span>
-                <span className={st.headerLinksPC}>
+                <span className={st.headerLinksBoth}>
                   <Link href="#">
                     <a className={st.headerLink}>
                       <BookmarkOutlined color="#313130" />
