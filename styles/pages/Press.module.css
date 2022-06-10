@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 100%;
   margin: 10rem auto;
 }
 .PressHeadingLeft {
@@ -76,10 +76,14 @@
   width: 100%;
 }
 .PressMainBox {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  width: 90%;
+  align-items: flex-start; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10rem;
   margin: 10rem auto;
 }
 .productSectionalDetails {
@@ -90,14 +94,18 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 73%;
+  width: 100%;
+}
+.PressMainBoxRight > div {
+  padding: 2.5rem 0 0 0;
+  margin: 0 0 5rem 0;
 }
 .Unsere {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   width: 60%;
-  margin: 0 auto 0 0;
+  padding: 3.5rem 0 0 0;
   flex-direction: column;
 }
 .Unsere h5 {
@@ -113,11 +121,11 @@
   line-height: 20px;
 }
 .productSectionalDetails {
-  width: 20%;
-  display: grid;
-  grid-template-columns: 25rem 1fr;
-  grid-template-rows: max-content;
-  grid-gap: 0;
+  width: 100%;
+  /* display: grid;
+  grid-template-columns:   1fr;
+  grid-template-rows: auto;
+  grid-gap: 0; */
   position: relative;
 }
 a.secondarySectionLink {
@@ -129,7 +137,6 @@ a.secondarySectionLink {
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
-  margin: 8rem 0 !important;
 }
 .PMRobotics h5 {
   font-size: 2.4rem;
@@ -139,7 +146,7 @@ a.secondarySectionLink {
 .PMRImgBox {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: flex-end;
   flex-direction: column;
   width: 100%;
   margin: 4rem 0 20rem 0 !important;
@@ -147,8 +154,12 @@ a.secondarySectionLink {
   z-index: 5;
 }
 .PMRImgBox img {
-  width: 38%;
-  height: 70%;
+  width: 35rem;
+  height: 35rem;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .PMRPara {
   display: flex;
@@ -161,12 +172,13 @@ a.secondarySectionLink {
     0px 15.375px 24.1177px rgba(0, 0, 0, 0.0260636),
     0px 6.38599px 10.0172px rgba(0, 0, 0, 0.02),
     0px 2.30969px 3.62304px rgba(0, 0, 0, 0.0139364);
-  position: absolute;
+  /* position: absolute;
   bottom: -15rem;
-  right: 7rem;
+  right: 7rem; */
   z-index: 6;
   background-color: #fff;
-  width: 58%;
+  width: 65%;
+  transform: translate(0, 25rem);
 }
 .PMRPara h5 {
   font-size: 2.4rem;
@@ -209,7 +221,6 @@ a.secondarySectionLink {
   align-items: flex-start;
   width: 100%;
   flex-direction: column;
-  margin: 5rem 0 !important;
 }
 .Unter h5 {
   font-size: 2.4rem;
@@ -245,7 +256,6 @@ a.secondarySectionLink {
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
-  margin: 2rem 0 !important;
 }
 .Bildmarke h5 {
   font-size: 2.4rem;
@@ -266,7 +276,6 @@ a.secondarySectionLink {
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
-  margin: 8rem 0 !important;
 }
 .Bildergal h5 {
   font-size: 2.4rem;
@@ -330,7 +339,6 @@ a.secondarySectionLink {
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
-  margin: 3rem 0 !important;
 }
 .MladenMili p {
   font-size: 2rem;
@@ -412,7 +420,6 @@ a.secondarySectionLink {
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
-  margin: 5rem 0 !important;
 }
 .Pressespiegel h5 {
   font-size: 2.4rem;

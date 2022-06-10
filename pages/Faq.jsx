@@ -7,6 +7,7 @@ import customGlobals from "../styles/CustomGlobals.module.css";
 import ArrowRight from "../public/assets/icons/ArrowRight";
 import ProductDetailsMenu from "../components/Pages/ProductPage/ProductDetailsMenu";
 import ProductDescriptionAccHeader from "../components/Pages/ProductPage/ProductDescriptionAccHeader";
+import FAQCard from "../components/Pages/ProductPage/FAQCard";
 import FAQSection from "../components/Pages/ProductPage/FAQSection";
 import Scrollspy from "react-scrollspy";
 import { Accordion } from "react-bootstrap";
@@ -62,7 +63,16 @@ const Faq = () => {
                 <h4>Step by Step</h4>
                 <div className={st.faqContent}>
                   <Accordion alwaysOpen>
-                    <FAQSection />
+                    <FAQCard eventKey="0" question="How can I place an order?">
+                      To place an order, send us an <a href="#">inquiry</a>{" "}
+                      through the button at the top of the page or contact us
+                      through the chat.
+                    </FAQCard>
+                    <FAQCard eventKey="0" question="How can I place an order?">
+                      To place an order, send us an <a href="#">inquiry</a>{" "}
+                      through the button at the top of the page or contact us
+                      through the chat.
+                    </FAQCard>
                   </Accordion>
                 </div>
               </div>
