@@ -13,7 +13,7 @@
 }
 .productDetailsMenu a,
 .productDetailsMenu a:focus {
-  font-size: 1.5rem;
+  font-size: 1.65rem;
   color: var(--gray400) !important;
 }
 .productDetailsMenu a:hover {
@@ -21,7 +21,7 @@
 }
 .productDetailsMenu h6,
 .productDetailsMenu h6:focus {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #bdbdbd !important;
   font-weight: 400;
   text-transform: uppercase;

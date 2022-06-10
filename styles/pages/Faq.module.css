@@ -26,7 +26,7 @@
   cursor: pointer;
 }
 .MainFaqSection {
-/*   display: flex;
+  /*   display: flex;
   justify-content: space-between;
   align-items: flex-start; */
   width: 100%;
@@ -53,10 +53,61 @@
 }
 .productDetailsContentContainer {
   width: 100%;
+  margin: 0 0 4rem 0 !important;
 }
 .productDetailsContentContainer h4 {
   font-size: 2.4rem;
   font-weight: 700;
   color: #313130;
-  margin: 4rem 0 !important;
+  margin: 0 0 4rem 0 !important;
+}
+.Faqcardli {
+  list-style: disc;
+  margin: 1rem 0 0 0;
+  color: var(--gray800);
+  list-style-type: disc !important;
+}
+.Faqcardli li {
+  margin: 0 0 0.25rem 0;
+}
+.FaqHeading span br {
+  display: none;
+}
+@media screen and (max-width: 1040px) {
+  .FaqHeading h6 {
+    width: 55%;
+  }
+  .MainFaqSection {
+    grid-gap: 2rem;
+  }
+  .FaqSectionLeft .productSectionalDetails .ProductDetailsMenu {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .FaqHeading {
+    margin-top: 0;
+  }
+  .FaqHeading h6 {
+    width: 80%;
+  }
+  .MainFaqSection {
+    grid-gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+  .FaqSectionLeft {
+    margin: 0 0 4rem 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  .FaqHeading {
+    width: 100%;
+  }
+  .FaqHeading h6 {
+    width: 100%;
+  }
+  .FaqHeading span br {
+    display: block;
+  }
 }

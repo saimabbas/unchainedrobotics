@@ -28,6 +28,7 @@ const Faq = () => {
             questions.
             <br /> <br /> Don’t find your answer here?
             <span>
+              <br />
               Contact us <ArrowRight color="#4F4F4F" />
             </span>
           </h6>
@@ -63,12 +64,47 @@ const Faq = () => {
                 <h4>Step by Step</h4>
                 <div className={st.faqContent}>
                   <Accordion alwaysOpen>
-                    <FAQCard eventKey="0" question="How can I place an order?">
+                    <FAQCard
+                      eventKey="0"
+                      question="What are the 5 steps of automation?"
+                    >
+                      The 5 steps of automation are:
+                      <ul className={st.Faqcardli}>
+                        <li>The three R’s - Research, Robot, ROI</li>
+                        <li>Designing a concept</li>
+                        <li>Production and Setup</li>
+                        <li>The Handover</li>
+                        <li>Use and Services</li>
+                      </ul>
+                    </FAQCard>
+                    <FAQCard
+                      eventKey="1"
+                      question="What are the three R’s of automation?"
+                    >
                       To place an order, send us an <a href="#">inquiry</a>{" "}
                       through the button at the top of the page or contact us
                       through the chat.
                     </FAQCard>
-                    <FAQCard eventKey="0" question="How can I place an order?">
+                    <FAQCard
+                      eventKey="2"
+                      question="What needs to be prepared when designing a concept? "
+                    >
+                      To place an order, send us an <a href="#">inquiry</a>{" "}
+                      through the button at the top of the page or contact us
+                      through the chat.
+                    </FAQCard>
+                    <FAQCard
+                      eventKey="3"
+                      question="How do I get started with production and setup?"
+                    >
+                      To place an order, send us an <a href="#">inquiry</a>{" "}
+                      through the button at the top of the page or contact us
+                      through the chat.
+                    </FAQCard>
+                    <FAQCard
+                      eventKey="4"
+                      question="What is the handover process?"
+                    >
                       To place an order, send us an <a href="#">inquiry</a>{" "}
                       through the button at the top of the page or contact us
                       through the chat.
@@ -82,7 +118,51 @@ const Faq = () => {
                 <h4>Industry-related</h4>
                 <div className={st.faqContent}>
                   <Accordion alwaysOpen>
-                    <FAQSection />
+                    <FAQCard
+                      eventKey="5"
+                      question="What are the 5 steps of automation?"
+                    >
+                      The 5 steps of automation are:
+                      <ul className={st.Faqcardli}>
+                        <li>The three R’s - Research, Robot, ROI</li>
+                        <li>Designing a concept</li>
+                        <li>Production and Setup</li>
+                        <li>The Handover</li>
+                        <li>Use and Services</li>
+                      </ul>
+                    </FAQCard>
+                    <FAQCard
+                      eventKey="6"
+                      question="What are the three R’s of automation?"
+                    >
+                      To place an order, send us an <a href="#">inquiry</a>{" "}
+                      through the button at the top of the page or contact us
+                      through the chat.
+                    </FAQCard>
+                    <FAQCard
+                      eventKey="7"
+                      question="What needs to be prepared when designing a concept? "
+                    >
+                      To place an order, send us an <a href="#">inquiry</a>{" "}
+                      through the button at the top of the page or contact us
+                      through the chat.
+                    </FAQCard>
+                    <FAQCard
+                      eventKey="8"
+                      question="How do I get started with production and setup?"
+                    >
+                      To place an order, send us an <a href="#">inquiry</a>{" "}
+                      through the button at the top of the page or contact us
+                      through the chat.
+                    </FAQCard>
+                    <FAQCard
+                      eventKey="9"
+                      question="What is the handover process?"
+                    >
+                      To place an order, send us an <a href="#">inquiry</a>{" "}
+                      through the button at the top of the page or contact us
+                      through the chat.
+                    </FAQCard>
                   </Accordion>
                 </div>
               </div>
@@ -92,7 +172,51 @@ const Faq = () => {
                 <h4>Process-related</h4>
                 <div className={st.faqContent}>
                   <Accordion alwaysOpen>
-                    <FAQSection />
+                    <FAQCard
+                      eventKey="10"
+                      question="What are the 5 steps of automation?"
+                    >
+                      The 5 steps of automation are:
+                      <ul className={st.Faqcardli}>
+                        <li>The three R’s - Research, Robot, ROI</li>
+                        <li>Designing a concept</li>
+                        <li>Production and Setup</li>
+                        <li>The Handover</li>
+                        <li>Use and Services</li>
+                      </ul>
+                    </FAQCard>
+                    <FAQCard
+                      eventKey="11"
+                      question="What are the three R’s of automation?"
+                    >
+                      To place an order, send us an <a href="#">inquiry</a>{" "}
+                      through the button at the top of the page or contact us
+                      through the chat.
+                    </FAQCard>
+                    <FAQCard
+                      eventKey="12"
+                      question="What needs to be prepared when designing a concept? "
+                    >
+                      To place an order, send us an <a href="#">inquiry</a>{" "}
+                      through the button at the top of the page or contact us
+                      through the chat.
+                    </FAQCard>
+                    <FAQCard
+                      eventKey="13"
+                      question="How do I get started with production and setup?"
+                    >
+                      To place an order, send us an <a href="#">inquiry</a>{" "}
+                      through the button at the top of the page or contact us
+                      through the chat.
+                    </FAQCard>
+                    <FAQCard
+                      eventKey="14"
+                      question="What is the handover process?"
+                    >
+                      To place an order, send us an <a href="#">inquiry</a>{" "}
+                      through the button at the top of the page or contact us
+                      through the chat.
+                    </FAQCard>
                   </Accordion>
                 </div>
               </div>

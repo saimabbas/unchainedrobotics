@@ -13,6 +13,8 @@ import Scrollspy from "react-scrollspy";
 import Commas from "../public/assets/icons/Commas";
 import ArrowDown from "../public/assets/icons/ArrowDown";
 import Download from "../public/assets/icons/Download";
+import ArrowUp from "../public/assets/icons/ArrowUp";
+import Downloadsm from "../public/assets/icons/Downloadsm";
 
 const Press = () => {
   const [mladenExtraText, setMladenExtraText] = useState(false);
@@ -186,7 +188,7 @@ const Press = () => {
                         setMladenExtraText(false);
                       }}
                     >
-                      <ArrowDown /> Hide Text
+                      <ArrowUp /> Hide Text
                     </h6>
                   ) : (
                     <h6
@@ -248,7 +250,7 @@ const Press = () => {
                         setKevinExtraText(false);
                       }}
                     >
-                      <ArrowDown /> Hide Text
+                      <ArrowUp /> Hide Text
                     </h6>
                   ) : (
                     <h6
@@ -309,19 +311,19 @@ const Press = () => {
                   <div className={st.BilderFContent}>
                     <img src="/assets/img/About.png" alt="" />
                     <h6>
-                      <Download /> Download
+                      <Downloadsm /> Download
                     </h6>
                   </div>
                   <div className={st.BilderFContent}>
                     <img src="/assets/img/About.png" alt="" />
                     <h6>
-                      <Download /> Download
+                      <Downloadsm /> Download
                     </h6>
                   </div>
                   <div className={st.BilderFContent}>
                     <img src="/assets/img/About.png" alt="" />
                     <h6>
-                      <Download /> Download
+                      <Downloadsm /> Download
                     </h6>
                   </div>
                 </div>
@@ -337,26 +339,26 @@ const Press = () => {
                 <div className={st.MladenGContent}>
                   <img src="/assets/img/Mladen_1.png" alt="" />
                   <h6>
-                    <Download /> Download
+                    <Downloadsm /> Download
                   </h6>
                 </div>
                 <div className={st.MladenGContent}>
                   <img src="/assets/img/Mladen_2.png" alt="" />
                   <h6>
-                    <Download /> Download
+                    <Downloadsm /> Download
                   </h6>
                 </div>
                 <div className={st.MladenGFContent}>
                   <div className={st.MGFMainBox}>
                     <img src="/assets/img/Mladen_3.png" alt="" />
                     <h6>
-                      <Download /> Download
+                      <Downloadsm /> Download
                     </h6>
                   </div>
                   <div className={st.MGFMainBox}>
                     <img src="/assets/img/Mladen_4.png" alt="" />
                     <h6>
-                      <Download /> Download
+                      <Downloadsm /> Download
                     </h6>
                   </div>
                 </div>
@@ -372,26 +374,26 @@ const Press = () => {
                 <div className={st.MladenGContent}>
                   <img src="/assets/img/Mladen_12.png" alt="" />
                   <h6>
-                    <Download /> Download
+                    <Downloadsm /> Download
                   </h6>
                 </div>
                 <div className={st.MladenGContent}>
                   <img src="/assets/img/Mladen_22.png" alt="" />
                   <h6>
-                    <Download /> Download
+                    <Downloadsm /> Download
                   </h6>
                 </div>
                 <div className={st.MladenGFContent}>
                   <div className={st.MGFMainBox}>
                     <img src="/assets/img/Mladen_32.png" alt="" />
                     <h6>
-                      <Download /> Download
+                      <Downloadsm /> Download
                     </h6>
                   </div>
                   <div className={st.MGFMainBox}>
                     <img src="/assets/img/Mladen_42.png" alt="" />
                     <h6>
-                      <Download /> Download
+                      <Downloadsm /> Download
                     </h6>
                   </div>
                 </div>
@@ -439,7 +441,7 @@ const Press = () => {
                     setPressespiegelCards(false);
                   }}
                 >
-                  <ArrowDown /> Hide Cards
+                  <ArrowUp /> Hide Cards
                 </h3>
               ) : (
                 <h3

@@ -178,7 +178,7 @@ a.secondarySectionLink {
   z-index: 6;
   background-color: #fff;
   width: 65%;
-  transform: translate(0, 25rem);
+  transform: translate(0, 18rem);
 }
 .PMRPara h5 {
   font-size: 2.4rem;
@@ -327,7 +327,7 @@ a.secondarySectionLink {
 }
 .BilderFContent h6 svg {
   margin: 0 0.5rem 0 0;
-  width: 2rem;
+  width: 2.25rem;
 }
 .BildergalContent button {
   width: 23%;
@@ -376,11 +376,14 @@ a.secondarySectionLink {
 }
 .MladenGContent h6 svg {
   margin: 0 0.5rem 0 0;
-  width: 2rem;
+  width: 2.25rem;
 }
 .MladenMili button {
   width: 23%;
   margin: 4rem 0 0 0 !important;
+  align-items: flex-end !important;
+  display: flex;
+  justify-content: center;
 }
 .MladenGFContent {
   display: flex;
@@ -412,7 +415,7 @@ a.secondarySectionLink {
 }
 .MGFMainBox h6 svg {
   margin: 0 0.5rem 0 0;
-  width: 2rem;
+  width: 2.25rem;
 }
 .Pressespiegel {
   display: flex;
@@ -472,9 +475,6 @@ a.secondarySectionLink {
   .PressMainBox {
     width: 100%;
   }
-  .PressMainBox .productSectionalDetails {
-    width: 30%;
-  }
   .PressMainBox .productSectionalDetails .ProductDetailsMenu {
     display: block !important;
     width: 100%;
@@ -486,13 +486,16 @@ a.secondarySectionLink {
     padding: 2rem 2.5rem;
   }
   .Bildmarke button {
-    width: 32%;
+    width: 40%;
   }
   .BildergalContent button {
     width: 32%;
   }
   .MladenMili button {
     width: 32%;
+  }
+  .PressMainBox {
+    grid-gap: 5rem;
   }
 }
 
@@ -513,7 +516,7 @@ a.secondarySectionLink {
     width: 70%;
   }
   .PressMainBoxRight {
-    width: 100%;
+    width: 17%;
   }
   .PressMainBox .productSectionalDetails {
     display: none;
@@ -536,6 +539,9 @@ a.secondarySectionLink {
 }
 
 @media screen and (max-width: 650px) {
+  .PressMainBoxRight {
+    width: 8.5%;
+  }
   .PressHeading {
     margin: 0 !important;
   }
@@ -569,7 +575,7 @@ a.secondarySectionLink {
     margin: 4rem 0 !important;
   }
   .PMRImgBox {
-    margin: 2rem 0 !important;
+    margin: 2rem 0 20rem 0 !important;
   }
   .PMRImgBox img {
     width: 100%;
@@ -578,7 +584,7 @@ a.secondarySectionLink {
   .PMRPara {
     position: unset;
     width: 100%;
-    margin: 4rem 0 0 0;
+    margin: 5rem 0 0 0;
   }
   .Unter {
     margin: 3rem 0 !important;
