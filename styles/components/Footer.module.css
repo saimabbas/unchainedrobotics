@@ -181,4 +181,9 @@
   .footerBottomGridParent {
     padding: 2.5rem 4.5% 0.5rem 4.5%;
   }
+  .FooterEmail {
+    grid-column: 1 / 3;
+    order: 3;
+    margin-bottom: 2rem;
+  }
 }

@@ -360,7 +360,7 @@ a.secondarySectionLink {
   flex-direction: column;
 }
 .MladenGContent img {
-  height: 37rem;
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }
@@ -397,10 +397,11 @@ a.secondarySectionLink {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
+  width: 100%;
 }
 .MGFMainBox img {
   width: 100%;
-  height: 12rem;
+  height: 100%;
   object-fit: cover;
 }
 .MGFMainBox h6 {
@@ -500,6 +501,9 @@ a.secondarySectionLink {
 }
 
 @media screen and (max-width: 850px) {
+  .PressMainBox {
+    grid-template-columns: 1fr;
+  }
   .PressHeading {
     flex-direction: column;
     margin: 0 0 10rem 0 !important;
@@ -514,9 +518,6 @@ a.secondarySectionLink {
   .PHRpara .PHRBtn {
     margin: 6rem auto 0 0 !important;
     width: 70%;
-  }
-  .PressMainBoxRight {
-    width: 17%;
   }
   .PressMainBox .productSectionalDetails {
     display: none;
@@ -539,9 +540,6 @@ a.secondarySectionLink {
 }
 
 @media screen and (max-width: 650px) {
-  .PressMainBoxRight {
-    width: 8.5%;
-  }
   .PressHeading {
     margin: 0 !important;
   }
@@ -619,5 +617,8 @@ a.secondarySectionLink {
   }
   .BilderFlex .BilderFContent:nth-child(3) {
     display: none;
+  }
+  .MladenGFContent {
+    grid-column: 1/3;
   }
 }

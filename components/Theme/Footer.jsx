@@ -9,7 +9,7 @@ const Footer = () => {
       <footer className={st.footer}>
         <div className="box-slg">
           <div className={st.footerTopGrid}>
-            <main>
+            <main className={st.FooterEmail}>
               <div className={st.footerCenterGrid}>
                 <div className={st.footerCenterGridLeft}>
                   <div className="inputBox">
@@ -46,7 +46,7 @@ const Footer = () => {
                 </div>
               </div>
             </main>
-            <main>
+            <main className={st.FooterLink1}>
               <h6>Resources</h6>
               <a href="#">Unchained.TV</a>
               <a href="#">Configurator</a>
@@ -55,7 +55,7 @@ const Footer = () => {
               <a href="#">Case Studies</a>
               <a href="#">FAQ</a>
             </main>
-            <main>
+            <main className={st.FooterLink2}>
               <h6>Unternehmen</h6>
               <a href="#">About</a>
               <a href="#">Blog</a>

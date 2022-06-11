@@ -1,4 +1,4 @@
-import Page from "./Faq";
+import Page from "./Press";
 
 export default function Home() {
   return <Page />;

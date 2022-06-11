@@ -772,7 +772,7 @@
   }
   .HeaderMobDropdownOpt {
     padding: 2rem 0;
-    display: flex;
+    display: none;
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
@@ -837,7 +837,7 @@
     margin: 0 0 0 2rem !important;
   }
   .HeaderMobBackIconOpt {
-    display: flex;
+    display: none;
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
