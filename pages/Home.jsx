@@ -163,7 +163,7 @@ const Home = () => {
       </div>
 
       <Footer />
-      <div className={st.MainMenuBottomDropdown}>
+      {/* <div className={st.MainMenuBottomDropdown}>
         <div className={st.MMBottomDropdownContent}>
           <div className={st.MMBottomTopContent}>
             <div className={st.MMBGridContent}>
@@ -201,7 +201,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* <div className={st.MainMenuBottomDropdown}>
         <div className={st.MMBottomDropdownContent}>
@@ -767,6 +767,90 @@ const Home = () => {
           </div>
         </div>
       </div> */}
+      <div className={st.SearchBarResultBox}>
+        <div className={st.SearchBarResultContent}>
+          <h5>16 RESULTS</h5>
+          <div className={st.SearchBarResultsScroll + " " + "ds-overflow"}>
+            <div className={st.SBRMainBox}>
+              <img src="/assets/img/R1.png" alt="" />
+              <div className={st.SBRMainPara}>
+                <h6>OnRobot 3FG15</h6>
+                <p>3,530 €</p>
+              </div>
+            </div>
+            <div className={st.SBRMainBox}>
+              <img src="/assets/img/R2.png" alt="" />
+              <div className={st.SBRMainPara}>
+                <h6>OnRobot 3FG15</h6>
+                <p>3,530 €</p>
+              </div>
+            </div>
+            <div className={st.SBRMainBox}>
+              <img src="/assets/img/R3.png" alt="" />
+              <div className={st.SBRMainPara}>
+                <h6>OnRobot 3FG15</h6>
+                <p>3,530 €</p>
+              </div>
+            </div>
+            <div className={st.SBRMainBox}>
+              <img src="/assets/img/R4.png" alt="" />
+              <div className={st.SBRMainPara}>
+                <h6>OnRobot 3FG15</h6>
+                <p>3,530 €</p>
+              </div>
+            </div>
+            <div className={st.SBRMainBox}>
+              <img src="/assets/img/R5.png" alt="" />
+              <div className={st.SBRMainPara}>
+                <h6>OnRobot 3FG15</h6>
+                <p>3,530 €</p>
+              </div>
+            </div>
+            <div className={st.SBRMainBox}>
+              <img src="/assets/img/R1.png" alt="" />
+              <div className={st.SBRMainPara}>
+                <h6>OnRobot 3FG15</h6>
+                <p>3,530 €</p>
+              </div>
+            </div>
+            <div className={st.SBRMainBox}>
+              <img src="/assets/img/R2.png" alt="" />
+              <div className={st.SBRMainPara}>
+                <h6>OnRobot 3FG15</h6>
+                <p>3,530 €</p>
+              </div>
+            </div>
+            <div className={st.SBRMainBox}>
+              <img src="/assets/img/R3.png" alt="" />
+              <div className={st.SBRMainPara}>
+                <h6>OnRobot 3FG15</h6>
+                <p>3,530 €</p>
+              </div>
+            </div>
+            <div className={st.SBRMainBox}>
+              <img src="/assets/img/R4.png" alt="" />
+              <div className={st.SBRMainPara}>
+                <h6>OnRobot 3FG15</h6>
+                <p>3,530 €</p>
+              </div>
+            </div>
+            <div className={st.SBRMainBox}>
+              <img src="/assets/img/R5.png" alt="" />
+              <div className={st.SBRMainPara}>
+                <h6>OnRobot 3FG15</h6>
+                <p>3,530 €</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={st.SearchNotFoundBox}>
+        <div className={st.SearchNotFoundContent}>
+          <img src="/assets/img/Robot2.png" alt="" />
+          <h5>No results for ‘KUKA’</h5>
+          <p>Try a different search term or check the spelling.</p>
+        </div>
+      </div>
     </div>
   );
 };

@@ -130,9 +130,6 @@
   }
 }
 
-
-
-
 /* MAIN MENU BOTTOM DROPDOWN  */
 /* 
 .MainMenuBottomDropdown
@@ -411,3 +408,110 @@ margin: 0 0 1.5rem 0 !important;
   font-weight: 500;
   margin: 0 2rem 0 0 !important;
 } */
+
+/* SEARCH BAR RESULT BOX  */
+
+.SearchBarResultBox {
+  width: 77rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.SearchBarResultContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+}
+.SearchBarResultContent h5 {
+  font-size: 1.2rem;
+  color: #828282;
+  font-weight: 400;
+}
+.SearchBarResultsScroll {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow-y: scroll;
+  max-height: 55rem;
+  margin: 2rem 0;
+  width: 100%;
+}
+.SBRMainBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  cursor: pointer;
+  padding: 2rem 0 0 0;
+}
+.SBRMainBox:hover {
+  box-shadow: 0px 51px 80px rgba(0, 0, 0, 0.04),
+    0px 15.375px 24.1177px rgba(0, 0, 0, 0.0260636),
+    0px 6.38599px 10.0172px rgba(0, 0, 0, 0.02),
+    0px 2.30969px 3.62304px rgba(0, 0, 0, 0.0139364);
+}
+.SBRMainBox img {
+  width: 10rem;
+  height: 10rem;
+}
+.SBRMainPara {
+  margin: 0 0 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.SBRMainPara h6 {
+  font-size: 1.6rem;
+  color: #313130;
+  font-weight: 400;
+  text-decoration: underline !important;
+}
+.SBRMainPara p {
+  font-size: 1.6rem;
+  color: #313130;
+  font-weight: 700;
+  margin: 0.65rem 0 0 0 !important;
+}
+
+/* SEARCH NOT FOUND  */
+.SearchNotFoundBox {
+  width: 77rem;
+  height: 42rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.SearchNotFoundContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.SearchNotFoundContent img {
+  width: 15rem;
+  height: 15rem;
+}
+.SearchNotFoundContent h5 {
+  margin: 3rem 0 2rem 0 !important;
+  font-size: 1.8rem;
+  color: #313130;
+  font-weight: 500;
+}
+.SearchNotFoundContent p {
+  font-size: 1.6rem;
+  color: #828282;
+  font-weight: 400;
+  width: 30%;
+  text-align: center;
+}

@@ -98,7 +98,7 @@ const ConfiguratorPage5 = () => {
                               <h5>39.050,00€</h5>
                               <div className={st.MitBoxParaRight}>
                                 <h6>excl. MwSt.</h6>
-                                <Cross />
+                                <Cross color="#BDBDBD" />
                               </div>
                             </div>
                           </div>
@@ -114,7 +114,7 @@ const ConfiguratorPage5 = () => {
                               <h5>39.050,00€</h5>
                               <div className={st.MitBoxParaRight}>
                                 <h6>excl. MwSt.</h6>
-                                <Cross />
+                                <Cross color="#BDBDBD" />
                               </div>
                             </div>
                           </div>
@@ -130,7 +130,7 @@ const ConfiguratorPage5 = () => {
                               <h5>39.050,00€</h5>
                               <div className={st.MitBoxParaRight}>
                                 <h6>excl. MwSt.</h6>
-                                <Cross />
+                                <Cross color="#BDBDBD" />
                               </div>
                             </div>
                           </div>
@@ -147,7 +147,7 @@ const ConfiguratorPage5 = () => {
                               <h5>approx 10.000,00€</h5>
                               <div className={st.MitBoxParaRight}>
                                 <h6>excl. MwSt.</h6>
-                                <Cross />
+                                <Cross color="#BDBDBD" />
                               </div>
                             </div>
                           </div>
@@ -163,7 +163,7 @@ const ConfiguratorPage5 = () => {
                               <h5>20.000,00€</h5>
                               <div className={st.MitBoxParaRight}>
                                 <h6>excl. MwSt.</h6>
-                                <Cross />
+                                <Cross color="#BDBDBD" />
                               </div>
                             </div>
                           </div>

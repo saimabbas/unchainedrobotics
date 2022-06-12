@@ -168,7 +168,7 @@
   align-items: center;
   justify-content: flex-start;
 }
-.headerContentBottom ul li a  {
+.headerContentBottom ul li a {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -198,9 +198,12 @@
   color: var(--gray500);
   margin: 0 !important;
 }
+.headerSearchBar svg {
+  margin: 0 1rem 0 0;
+}
 .headerSearchBar input {
   width: 100%;
-  padding: 0.25rem 1.5rem;
+  padding: 0.25rem 1.5rem 0.25rem 0;
   background-color: transparent;
   font-size: 1.35rem;
   color: var(--gray500);
@@ -247,7 +250,7 @@
   align-items: center;
   margin: 0 0 0 2rem !important;
 }
-.RessourcenOptionsBox{
+.RessourcenOptionsBox {
   width: 100%;
   position: absolute;
   top: 0;
@@ -256,7 +259,8 @@
   padding: 2.5rem 0 0 0;
   display: none;
 }
-.MMCRessourcen:hover > .RessourcenOptionsBox ,.MMCRessourcen:hover > .RessourcenOptionsCart {
+.MMCRessourcen:hover > .RessourcenOptionsBox,
+.MMCRessourcen:hover > .RessourcenOptionsCart {
   display: block;
 }
 .MMCRessourcen:hover > a {
@@ -297,7 +301,7 @@
   position: relative;
   cursor: pointer;
 }
-.RessourcenOptions:hover  {
+.RessourcenOptions:hover {
   color: var(--green700) !important;
 }
 .headerLink:hover {
@@ -490,7 +494,7 @@
 }
 
 /* MAIN MENU BOTTOM DROPDOWN  */
-.HMegaDropDown{
+.HMegaDropDown {
   width: max-content;
   cursor: pointer;
 }
