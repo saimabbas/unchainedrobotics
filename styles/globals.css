@@ -901,6 +901,10 @@ background-color: unset !important;
   justify-content: center;
   align-items: center;
 }
+.remove-sticky-p{
+  position: sticky;
+  top: 0;
+}
 /* Swiper */
 .ucc-swiper-container .swiper-slide {
   display: block !important;
