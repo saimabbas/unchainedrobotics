@@ -111,8 +111,12 @@
   flex-direction: column;
   width: 100%;
   padding: 2rem 0 0 0;
-  position: relative;
+  position: sticky;
+  top: 0;
+  left: 0;
   height: 16.75rem;
+  z-index: 10000;
+  background-color: #fff;
 }
 .MainMenuTopHeader {
   display: flex;
@@ -148,8 +152,8 @@
   width: 75%;
 }
 .MMCenterLeftHeader svg {
-  width: 3rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   color: var(--gray800);
   margin: 0 2rem 0 0;
   cursor: pointer;
@@ -164,7 +168,7 @@
   align-items: center;
   justify-content: flex-start;
 }
-.headerContentBottom ul li p {
+.headerContentBottom ul li a  {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -243,6 +247,21 @@
   align-items: center;
   margin: 0 0 0 2rem !important;
 }
+.RessourcenOptionsBox{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 2.5rem 0 0 0;
+  display: none;
+}
+.MMCRessourcen:hover > .RessourcenOptionsBox ,.MMCRessourcen:hover > .RessourcenOptionsCart {
+  display: block;
+}
+.MMCRessourcen:hover > a {
+  color: var(--green700);
+}
 .RessourcenOptions {
   width: max-content;
   flex-direction: column;
@@ -254,8 +273,14 @@
   padding: 1rem 0;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.07);
 }
-.RessourcenOptions.RessourcenOptionsCart {
-  padding: 0;
+.RessourcenOptionsCart {
+  width: max-content;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 2.5rem 0 0 0;
+  display: none;
 }
 .RessourcenOptions a {
   padding: 0.5rem 2.5rem;
@@ -268,10 +293,11 @@
   display: flex;
   align-items: center;
 }
-.headerContentBottom ul li.MMCRessourcen {
+.MMCRessourcen {
   position: relative;
+  cursor: pointer;
 }
-.RessourcenOptions:hover {
+.RessourcenOptions:hover  {
   color: var(--green700) !important;
 }
 .headerLink:hover {
@@ -433,6 +459,7 @@
   background: var(--gray900);
   width: 100%;
   position: relative;
+  height: 5rem;
 }
 .MainMenuBottomContent {
   display: flex;
@@ -463,20 +490,33 @@
 }
 
 /* MAIN MENU BOTTOM DROPDOWN  */
+.HMegaDropDown{
+  width: max-content;
+  cursor: pointer;
+}
 .MainMenuBottomDropdown {
-  width: 100vw;
+  width: 100%;
   max-width: 100vw;
-  height: calc(100vh - 18.75rem);
+  height: 100vh;
   background-color: rgba(1, 21, 11, 0.2);
-  display: flex;
   justify-content: center;
   align-items: flex-start;
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
-  transform: translate(0, 100%);
   z-index: 10000;
-  /* display: none; */
+  display: none;
+  padding: 5rem 0 0 0;
+}
+.HMegaDropDown:hover > .MainMenuBottomDropdown {
+  display: flex;
+}
+.HMegaDropDown:hover > h5 {
+  background-color: var(--gray800);
+}
+.HMegaDropDown > h5 {
+  z-index: 10001;
+  position: relative;
 }
 .MMBottomDropdownContent {
   width: max-content;

@@ -887,15 +887,6 @@ transform: rotate(180deg);
 .dropdown-reset .dropdown-item:focus, .dropdown-reset .dropdown-item:hover{
 background-color: unset !important;
 }
-.header-megadropdown.dropdown-reset .dropdown{
-position: unset;
-}
-.header-megadropdown.dropdown-reset .dropdown-menu {
-  transform: translate(0%, 5.25rem) !important;
-}
-.header-megadropdown.dropdown-reset .btn-check:active+.btn-primary h5, .header-megadropdown.dropdown-reset .btn-check:checked+.btn-primary h5, .header-megadropdown.dropdown-reset .btn-primary.active h5, .header-megadropdown.dropdown-reset .btn-primary:active h5, .header-megadropdown.dropdown-reset .show>.btn-primary.dropdown-toggle h5{
-  background-color: var(--gray800);
-}
 .dropdown-reset .dropdown .dropdown-menu{
   display: none !important;
 }
