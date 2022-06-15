@@ -1009,6 +1009,7 @@ const Header = () => {
                   </div>
                 </div>
               </div>
+              <div className={st.MainMenuBottomBackDrop}></div>
             </div>
             <div className={st.HMegaDropDown}>
               <h5 className="header-menu-link">End of Arm</h5>
@@ -1062,6 +1063,7 @@ const Header = () => {
                   </div>
                 </div>
               </div>
+              <div className={st.MainMenuBottomBackDrop}></div>
             </div>
             <div className={st.HMegaDropDown}>
               <h5 className="header-menu-link">Vision</h5>
@@ -1103,6 +1105,7 @@ const Header = () => {
                   </div>
                 </div>
               </div>
+              <div className={st.MainMenuBottomBackDrop}></div>
             </div>
             <div className={st.HMegaDropDown}>
               <h5 className="header-menu-link">Turnkey & Pakete</h5>
@@ -1139,6 +1142,7 @@ const Header = () => {
                   </div>
                 </div>
               </div>
+              <div className={st.MainMenuBottomBackDrop}></div>
             </div>
             <div className={st.HMegaDropDown}>
               <h5 className="header-menu-link">Dienstleistungen</h5>
@@ -1173,6 +1177,7 @@ const Header = () => {
                   </div>
                 </div>
               </div>
+              <div className={st.MainMenuBottomBackDrop}></div>
             </div>
             <div className={st.HMegaDropDown}>
               <h5 className="header-menu-link">Alle Produkte</h5>
@@ -1303,6 +1308,7 @@ const Header = () => {
                   </div>
                 </div>
               </div>
+              <div className={st.MainMenuBottomBackDrop}></div>
             </div>
             <div className={st.HMegaDropDown}>
               <h5 className="header-menu-link">Hersteller</h5>
@@ -1348,6 +1354,7 @@ const Header = () => {
                   </div>
                 </div>
               </div>
+              <div className={st.MainMenuBottomBackDrop}></div>
             </div>
           </div>
         </div>
@@ -1535,13 +1542,15 @@ const Header = () => {
           }}
         />
       ) : null}
-      {SeaMobModal ? (
-        <SearchMobModal
-          closelanmobModal={() => {
-            setSearchMobModal(false);
-          }}
-        />
-      ) : null}
+      <div className={st.SMMModal}>
+        {SeaMobModal ? (
+          <SearchMobModal
+            closelanmobModal={() => {
+              setSearchMobModal(false);
+            }}
+          />
+        ) : null}
+      </div>
     </header>
   );
 };
