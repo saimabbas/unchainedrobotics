@@ -68,8 +68,7 @@
   align-items: center;
   justify-content: center;
 }
-.headerSearchBarBox
-{
+.headerSearchBarBox {
   width: 100%;
   position: relative;
   z-index: 100005;
@@ -773,7 +772,7 @@
   display: flex;
   position: relative;
 }
-.MMBottomDropdownContent1Box{
+.MMBottomDropdownContent1Box {
   width: 100%;
   position: absolute;
   top: 11.75rem;
@@ -943,7 +942,7 @@
   }
   .HeaderMobDropdownOpt {
     padding: 2rem 0;
-    display: none;
+    display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
@@ -1008,7 +1007,7 @@
     margin: 0 0 0 2rem !important;
   }
   .HeaderMobBackIconOpt {
-    display: none;
+    display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;

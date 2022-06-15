@@ -371,39 +371,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="box-sm">
-        <div className={st.HeaderMobDropdownOpt}>
-          <div className={st.HeaderMobDDContent}>
-            <h6>Produkte</h6>
-            <ChevronRight color="#313130" />
-          </div>
-          <div className={st.HeaderMobDDContent}>
-            <h6>Hersteller</h6>
-            <ChevronRight color="#313130" />
-          </div>
-          <div className={st.HeaderMobDDContent}>
-            <h6>Industrien</h6>
-            <ChevronRight color="#313130" />
-          </div>
-          <div className={st.HeaderMobDDContent}>
-            <h6>Ressourcen</h6>
-            <ChevronRight color="#313130" />
-          </div>
-          <div className={st.HeaderMobDDContent1}>
-            <h6>Unternehmen</h6>
-            <ChevronRight color="#313130" />
-          </div>
-          <div className={st.HeaderMobDDContent}>
-            <h6>UnchainedTV</h6>
-          </div>
-          <div className={st.HeaderMobDDContent}>
-            <h6>Konfigurator</h6>
-          </div>
-          <div className={st.HeaderMobDDContent}>
-            <h6>Integration Service</h6>
-          </div>
-        </div>
-      </div>
       <div className={st.MainMenuBottomDropdown}>
         <div className={st.MMBottomDropdownContent}>
           <div className={st.MMBottomTopContent1}>
@@ -970,142 +937,6 @@ const Header = () => {
         </div>
       ) : null}
 
-      <div className={st.HeaderMobBackIconOpt}>
-        <div className={st.HeaderMobBackOpt}>
-          <div className="box-sm">
-            <div className={st.HeaderMobBackOptContent}>
-              <ChevronLeft color="#313130" />
-              <h6>Zurück</h6>
-            </div>
-          </div>
-        </div>
-        <div className={st.HeaderMobSelectedOptContent}>
-          <div className="box-sm">
-            <div className={st.HeaderMobSelectedOpt}>
-              <h6>Produkte</h6>
-              <div className={st.HeaderMobSelectedContent}>
-                <h5>Alle Produkte</h5>
-                <ArrowRight color="#313130" />
-              </div>
-            </div>
-            <div className={st.HeaderMobDropdownOpt}>
-              <h4>Komponenten</h4>
-              <div className={st.HeaderMobDDContent}>
-                <h6>Roboter</h6>
-                <ChevronRight color="#313130" />
-              </div>
-              <div className={st.HeaderMobDDContent}>
-                <h6>End of Arm</h6>
-                <ChevronRight color="#313130" />
-              </div>
-              <div className={st.HeaderMobDDContent}>
-                <h6>Vision</h6>
-                <ChevronRight color="#313130" />
-              </div>
-              <div className={st.HeaderMobDDContent}>
-                <h6>Materialbereitstellung</h6>
-                <ChevronRight color="#313130" />
-              </div>
-              <div className={st.HeaderMobDDContent}>
-                <h6>Sicherheitstechnik</h6>
-                <ChevronRight color="#313130" />
-              </div>
-              <div className={st.HeaderMobDDContent}>
-                <h6>Tragestruktur</h6>
-                <ChevronRight color="#313130" />
-              </div>
-              <div className={st.HeaderMobDDContent}>
-                <h6>Steuerungstechnik</h6>
-                <ChevronRight color="#313130" />
-              </div>
-              <div className={st.HeaderMobDDContent}>
-                <h6>Teaching Kit</h6>
-                <ChevronRight color="#313130" />
-              </div>
-              <h4>Lösungen</h4>
-              <div className={st.HeaderMobDDContent}>
-                <h6>Turnkey & Pakete</h6>
-                <ChevronRight color="#313130" />
-              </div>
-              <div className={st.HeaderMobDDContent}>
-                <h6>Dienstleistungen</h6>
-                <ChevronRight color="#313130" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className={st.HeaderMobBackIconOpt}>
-        <div className={st.HeaderMobBackOpt}>
-          <div className="box-sm">
-            <div className={st.HeaderMobBackOptContent}>
-              <ChevronLeft color="#313130" />
-              <h6>Zurück</h6>
-            </div>
-          </div>
-        </div>
-        <div className={st.HeaderMobSelectedOptContent}>
-          <div className="box-sm">
-            <div className={st.HeaderMobSelectedOpt}>
-              <h6>End of Arm</h6>
-              <div className={st.HeaderMobSelectedContent}>
-                <h5>Alle End of Arm</h5>
-                <ArrowRight color="#313130" />
-              </div>
-              <div className={st.HeaderMobSelectedContent}>
-                <h5>Greifer</h5>
-                <ArrowRight color="#313130" />
-              </div>
-              <div className={st.HeaderMobSelectedContent}>
-                <h5>Effektor</h5>
-                <ArrowRight color="#313130" />
-              </div>
-              <div className={st.HeaderMobSelectedContent}>
-                <h5>Accessories</h5>
-                <ArrowRight color="#313130" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className={st.HeaderMobBackIconOpt}>
-        <div className={st.HeaderMobBackOpt}>
-          <div className="box-sm">
-            <div className={st.HeaderMobBackOptContent}>
-              <ChevronLeft color="#313130" />
-              <h6>Zurück</h6>
-            </div>
-          </div>
-        </div>
-        <div className={st.HeaderMobSelectedOptContent}>
-          <div className="box-sm">
-            <div className={st.HeaderMobSelectedOpt}>
-              <h6>Ressourcen</h6>
-              <div className={st.HeaderMobSelectedContent}>
-                <h5>UnchainedTV</h5>
-              </div>
-              <div className={st.HeaderMobSelectedContent}>
-                <h5>Konfigurator</h5>
-              </div>
-              <div className={st.HeaderMobSelectedContent}>
-                <h5>Whitepaper</h5>
-              </div>
-              <div className={st.HeaderMobSelectedContent}>
-                <h5>Case Studies</h5>
-              </div>
-              <div className={st.HeaderMobSelectedContent}>
-                <h5>Roboter ROI-Berechnung</h5>
-              </div>
-              <div className={st.HeaderMobSelectedContent}>
-                <h5>Robotics News</h5>
-              </div>
-              <div className={st.HeaderMobSelectedContent}>
-                <h5>FAQ</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div className={st.MainMenuBottomHeader}>
         <div className="bodx-lg">
           <div className={st.MainMenuBottomContent}>
@@ -1488,6 +1319,178 @@ const Header = () => {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* MOBILE HEADER  */}
+
+      <div className="box-sm">
+        <div className={st.HeaderMobDropdownOpt}>
+          <div className={st.HeaderMobDDContent}>
+            <h6>Produkte</h6>
+            <ChevronRight color="#313130" />
+          </div>
+          <div className={st.HeaderMobDDContent}>
+            <h6>Hersteller</h6>
+            <ChevronRight color="#313130" />
+          </div>
+          <div className={st.HeaderMobDDContent}>
+            <h6>Industrien</h6>
+            <ChevronRight color="#313130" />
+          </div>
+          <div className={st.HeaderMobDDContent}>
+            <h6>Ressourcen</h6>
+            <ChevronRight color="#313130" />
+          </div>
+          <div className={st.HeaderMobDDContent1}>
+            <h6>Unternehmen</h6>
+            <ChevronRight color="#313130" />
+          </div>
+          <div className={st.HeaderMobDDContent}>
+            <h6>UnchainedTV</h6>
+          </div>
+          <div className={st.HeaderMobDDContent}>
+            <h6>Konfigurator</h6>
+          </div>
+          <div className={st.HeaderMobDDContent}>
+            <h6>Integration Service</h6>
+          </div>
+        </div>
+      </div>
+      <div className={st.HeaderMobBackIconOpt}>
+        <div className={st.HeaderMobBackOpt}>
+          <div className="box-sm">
+            <div className={st.HeaderMobBackOptContent}>
+              <ChevronLeft color="#313130" />
+              <h6>Zurück</h6>
+            </div>
+          </div>
+        </div>
+        <div className={st.HeaderMobSelectedOptContent}>
+          <div className="box-sm">
+            <div className={st.HeaderMobSelectedOpt}>
+              <h6>Produkte</h6>
+              <div className={st.HeaderMobSelectedContent}>
+                <h5>Alle Produkte</h5>
+                <ArrowRight color="#313130" />
+              </div>
+            </div>
+            <div className={st.HeaderMobDropdownOpt}>
+              <h4>Komponenten</h4>
+              <div className={st.HeaderMobDDContent}>
+                <h6>Roboter</h6>
+                <ChevronRight color="#313130" />
+              </div>
+              <div className={st.HeaderMobDDContent}>
+                <h6>End of Arm</h6>
+                <ChevronRight color="#313130" />
+              </div>
+              <div className={st.HeaderMobDDContent}>
+                <h6>Vision</h6>
+                <ChevronRight color="#313130" />
+              </div>
+              <div className={st.HeaderMobDDContent}>
+                <h6>Materialbereitstellung</h6>
+                <ChevronRight color="#313130" />
+              </div>
+              <div className={st.HeaderMobDDContent}>
+                <h6>Sicherheitstechnik</h6>
+                <ChevronRight color="#313130" />
+              </div>
+              <div className={st.HeaderMobDDContent}>
+                <h6>Tragestruktur</h6>
+                <ChevronRight color="#313130" />
+              </div>
+              <div className={st.HeaderMobDDContent}>
+                <h6>Steuerungstechnik</h6>
+                <ChevronRight color="#313130" />
+              </div>
+              <div className={st.HeaderMobDDContent}>
+                <h6>Teaching Kit</h6>
+                <ChevronRight color="#313130" />
+              </div>
+              <h4>Lösungen</h4>
+              <div className={st.HeaderMobDDContent}>
+                <h6>Turnkey & Pakete</h6>
+                <ChevronRight color="#313130" />
+              </div>
+              <div className={st.HeaderMobDDContent}>
+                <h6>Dienstleistungen</h6>
+                <ChevronRight color="#313130" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={st.HeaderMobBackIconOpt}>
+        <div className={st.HeaderMobBackOpt}>
+          <div className="box-sm">
+            <div className={st.HeaderMobBackOptContent}>
+              <ChevronLeft color="#313130" />
+              <h6>Zurück</h6>
+            </div>
+          </div>
+        </div>
+        <div className={st.HeaderMobSelectedOptContent}>
+          <div className="box-sm">
+            <div className={st.HeaderMobSelectedOpt}>
+              <h6>End of Arm</h6>
+              <div className={st.HeaderMobSelectedContent}>
+                <h5>Alle End of Arm</h5>
+                <ArrowRight color="#313130" />
+              </div>
+              <div className={st.HeaderMobSelectedContent}>
+                <h5>Greifer</h5>
+                <ArrowRight color="#313130" />
+              </div>
+              <div className={st.HeaderMobSelectedContent}>
+                <h5>Effektor</h5>
+                <ArrowRight color="#313130" />
+              </div>
+              <div className={st.HeaderMobSelectedContent}>
+                <h5>Accessories</h5>
+                <ArrowRight color="#313130" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={st.HeaderMobBackIconOpt}>
+        <div className={st.HeaderMobBackOpt}>
+          <div className="box-sm">
+            <div className={st.HeaderMobBackOptContent}>
+              <ChevronLeft color="#313130" />
+              <h6>Zurück</h6>
+            </div>
+          </div>
+        </div>
+        <div className={st.HeaderMobSelectedOptContent}>
+          <div className="box-sm">
+            <div className={st.HeaderMobSelectedOpt}>
+              <h6>Ressourcen</h6>
+              <div className={st.HeaderMobSelectedContent}>
+                <h5>UnchainedTV</h5>
+              </div>
+              <div className={st.HeaderMobSelectedContent}>
+                <h5>Konfigurator</h5>
+              </div>
+              <div className={st.HeaderMobSelectedContent}>
+                <h5>Whitepaper</h5>
+              </div>
+              <div className={st.HeaderMobSelectedContent}>
+                <h5>Case Studies</h5>
+              </div>
+              <div className={st.HeaderMobSelectedContent}>
+                <h5>Roboter ROI-Berechnung</h5>
+              </div>
+              <div className={st.HeaderMobSelectedContent}>
+                <h5>Robotics News</h5>
+              </div>
+              <div className={st.HeaderMobSelectedContent}>
+                <h5>FAQ</h5>
               </div>
             </div>
           </div>
