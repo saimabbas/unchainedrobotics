@@ -20,7 +20,7 @@ import { Tab, Nav } from "react-bootstrap";
 const Header = () => {
   const [showMainDrop, setShowMainDrop] = useState(false);
   return (
-    <header className={st.MainMenuHeader}>
+    <header className={st.MainMenuHeader + " " + "headerMain"}>
       <div className="box-lg">
         <div className={st.MainMenuTopHeader}>
           <img src="/assets/img/logo-black.svg" alt="Logo Black" />
@@ -35,6 +35,7 @@ const Header = () => {
               <div
                 onClick={() => {
                   setShowMainDrop(false);
+                  $(".headerMain").addClass("remove-sticky-p");
                 }}
               >
                 <Cross className={st.HeaderMenuIcon} color="#313130" />
@@ -43,6 +44,7 @@ const Header = () => {
               <div
                 onClick={() => {
                   setShowMainDrop(true);
+                  $(".headerMain").removeClass("remove-sticky-p");
                 }}
               >
                 <Menu className={st.HeaderMenuIcon} color="#313130" />
@@ -86,23 +88,113 @@ const Header = () => {
                 </li>
               </ul>
             </div>
-            <div className={st.headerSearchBar}>
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M13.7492 5.18126C12.7343 4.50429 11.5414 4.14355 10.3215 4.14467C8.68914 4.15355 7.12628 4.80632 5.97256 5.9611C4.81883 7.11588 4.16749 8.67933 4.1601 10.3117C4.1601 11.5316 4.52193 12.7242 5.19982 13.7385C5.87771 14.7527 6.84119 15.5432 7.9684 16.0098C9.0956 16.4764 10.3359 16.5982 11.5323 16.3598C12.7287 16.1214 13.8276 15.5334 14.6898 14.6704C15.5521 13.8074 16.139 12.708 16.3763 11.5113C16.6136 10.3147 16.4907 9.07453 16.0231 7.94776C15.5554 6.82098 14.7641 5.85822 13.7492 5.18126ZM6.25383 4.22402C7.45786 3.41951 8.8734 2.99011 10.3215 2.99011C12.2633 2.99011 14.1255 3.76149 15.4986 5.13455C16.8717 6.50761 17.643 8.36987 17.643 10.3117C17.643 11.7597 17.2136 13.1753 16.4091 14.3793C15.6046 15.5833 14.4612 16.5218 13.1233 17.0759C11.7855 17.6301 10.3134 17.7751 8.89311 17.4926C7.47286 17.21 6.16829 16.5127 5.14435 15.4888C4.12041 14.4649 3.4231 13.1603 3.14059 11.74C2.85809 10.3198 3.00308 8.84767 3.55723 7.50983C4.11138 6.17199 5.04981 5.02852 6.25383 4.22402ZM16.6856 15.8704L20.8364 20.0493C20.8885 20.1019 20.9298 20.1641 20.9579 20.2326C20.9859 20.3011 21.0003 20.3744 21 20.4484C20.9997 20.5224 20.9849 20.5956 20.9563 20.6639C20.9278 20.7321 20.8861 20.7941 20.8335 20.8463C20.781 20.8984 20.7188 20.9397 20.6503 20.9678C20.5818 20.9958 20.5085 21.0102 20.4345 21.0099C20.3605 21.0096 20.2873 20.9948 20.219 20.9662C20.1507 20.9377 20.0888 20.896 20.0366 20.8434L15.8859 16.6645L16.6856 15.8704Z"
-                  fill="#828282"
-                />
-              </svg>
+            <div className={st.headerSearchBarBox}>
+              <div className={st.headerSearchBar}>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M13.7492 5.18126C12.7343 4.50429 11.5414 4.14355 10.3215 4.14467C8.68914 4.15355 7.12628 4.80632 5.97256 5.9611C4.81883 7.11588 4.16749 8.67933 4.1601 10.3117C4.1601 11.5316 4.52193 12.7242 5.19982 13.7385C5.87771 14.7527 6.84119 15.5432 7.9684 16.0098C9.0956 16.4764 10.3359 16.5982 11.5323 16.3598C12.7287 16.1214 13.8276 15.5334 14.6898 14.6704C15.5521 13.8074 16.139 12.708 16.3763 11.5113C16.6136 10.3147 16.4907 9.07453 16.0231 7.94776C15.5554 6.82098 14.7641 5.85822 13.7492 5.18126ZM6.25383 4.22402C7.45786 3.41951 8.8734 2.99011 10.3215 2.99011C12.2633 2.99011 14.1255 3.76149 15.4986 5.13455C16.8717 6.50761 17.643 8.36987 17.643 10.3117C17.643 11.7597 17.2136 13.1753 16.4091 14.3793C15.6046 15.5833 14.4612 16.5218 13.1233 17.0759C11.7855 17.6301 10.3134 17.7751 8.89311 17.4926C7.47286 17.21 6.16829 16.5127 5.14435 15.4888C4.12041 14.4649 3.4231 13.1603 3.14059 11.74C2.85809 10.3198 3.00308 8.84767 3.55723 7.50983C4.11138 6.17199 5.04981 5.02852 6.25383 4.22402ZM16.6856 15.8704L20.8364 20.0493C20.8885 20.1019 20.9298 20.1641 20.9579 20.2326C20.9859 20.3011 21.0003 20.3744 21 20.4484C20.9997 20.5224 20.9849 20.5956 20.9563 20.6639C20.9278 20.7321 20.8861 20.7941 20.8335 20.8463C20.781 20.8984 20.7188 20.9397 20.6503 20.9678C20.5818 20.9958 20.5085 21.0102 20.4345 21.0099C20.3605 21.0096 20.2873 20.9948 20.219 20.9662C20.1507 20.9377 20.0888 20.896 20.0366 20.8434L15.8859 16.6645L16.6856 15.8704Z"
+                    fill="#828282"
+                  />
+                </svg>
 
-              <input placeholder="Suche" type="text" />
+                <input placeholder="Suche" type="text" />
+              </div>
+              {/* <div className={st.SearchBarResultBox}>
+                <div className={st.SearchBarResultContent}>
+                  <h5>16 RESULTS</h5>
+                  <div
+                    className={st.SearchBarResultsScroll + " " + "ds-overflow"}
+                  >
+                    <div className={st.SBRMainBox}>
+                      <img src="/assets/img/R1.png" alt="" />
+                      <div className={st.SBRMainPara}>
+                        <h6>OnRobot 3FG15</h6>
+                        <p>3,530 €</p>
+                      </div>
+                    </div>
+                    <div className={st.SBRMainBox}>
+                      <img src="/assets/img/R2.png" alt="" />
+                      <div className={st.SBRMainPara}>
+                        <h6>OnRobot 3FG15</h6>
+                        <p>3,530 €</p>
+                      </div>
+                    </div>
+                    <div className={st.SBRMainBox}>
+                      <img src="/assets/img/R3.png" alt="" />
+                      <div className={st.SBRMainPara}>
+                        <h6>OnRobot 3FG15</h6>
+                        <p>3,530 €</p>
+                      </div>
+                    </div>
+                    <div className={st.SBRMainBox}>
+                      <img src="/assets/img/R4.png" alt="" />
+                      <div className={st.SBRMainPara}>
+                        <h6>OnRobot 3FG15</h6>
+                        <p>3,530 €</p>
+                      </div>
+                    </div>
+                    <div className={st.SBRMainBox}>
+                      <img src="/assets/img/R5.png" alt="" />
+                      <div className={st.SBRMainPara}>
+                        <h6>OnRobot 3FG15</h6>
+                        <p>3,530 €</p>
+                      </div>
+                    </div>
+                    <div className={st.SBRMainBox}>
+                      <img src="/assets/img/R1.png" alt="" />
+                      <div className={st.SBRMainPara}>
+                        <h6>OnRobot 3FG15</h6>
+                        <p>3,530 €</p>
+                      </div>
+                    </div>
+                    <div className={st.SBRMainBox}>
+                      <img src="/assets/img/R2.png" alt="" />
+                      <div className={st.SBRMainPara}>
+                        <h6>OnRobot 3FG15</h6>
+                        <p>3,530 €</p>
+                      </div>
+                    </div>
+                    <div className={st.SBRMainBox}>
+                      <img src="/assets/img/R3.png" alt="" />
+                      <div className={st.SBRMainPara}>
+                        <h6>OnRobot 3FG15</h6>
+                        <p>3,530 €</p>
+                      </div>
+                    </div>
+                    <div className={st.SBRMainBox}>
+                      <img src="/assets/img/R4.png" alt="" />
+                      <div className={st.SBRMainPara}>
+                        <h6>OnRobot 3FG15</h6>
+                        <p>3,530 €</p>
+                      </div>
+                    </div>
+                    <div className={st.SBRMainBox}>
+                      <img src="/assets/img/R5.png" alt="" />
+                      <div className={st.SBRMainPara}>
+                        <h6>OnRobot 3FG15</h6>
+                        <p>3,530 €</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> */}
+              {/* <div className={st.SearchBarResultBox}>
+                <div className={st.SearchNotFoundBox}>
+                  <div className={st.SearchNotFoundContent}>
+                    <img src="/assets/img/Robot2.png" alt="" />
+                    <h5>No results for ‘KUKA’</h5>
+                    <p>Try a different search term or check the spelling.</p>
+                  </div>
+                </div>
+              </div> */}
             </div>
           </div>
           <div className={st.MMCenterRightHeader}>
@@ -637,241 +729,243 @@ const Header = () => {
         </div>
       </div>
       {showMainDrop ? (
-        <div className={st.MMBottomDropdownContent1}>
-          <div className={st.MMBottomDropdownTabs2 + " " + "MMBottomDDTab2b"}>
-            <Tab.Container defaultActiveKey="a1">
-              <Nav variant="tabs">
-                <Nav.Item>
-                  <Nav.Link eventKey="a1">Produkte</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="a2">Hersteller</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="a3">Industrien</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="a4">Ressourcen</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="a5">Unternehmen</Nav.Link>
-                </Nav.Item>
-              </Nav>
-              <Tab.Content>
-                <Tab.Pane eventKey="a1">
-                  <div className={st.ProdukteMainContent}>
-                    <div className={st.ProdukteContent}>
-                      <div className={st.ProdukteLeftContent}>
-                        <h4>Komponenten</h4>
-                        <div className={st.MMBottomTopContent2}>
-                          <div className={st.MMBGridContent}>
-                            <div className={st.MMBGridRight}>
-                              <h6>Roboter</h6>
-                              <p>Cobots</p>
-                              <p>Industrial Roboter</p>
+        <div className={st.MMBottomDropdownContent1Box}>
+          <div className={st.MMBottomDropdownContent1}>
+            <div className={st.MMBottomDropdownTabs2 + " " + "MMBottomDDTab2b"}>
+              <Tab.Container defaultActiveKey="a1">
+                <Nav variant="tabs">
+                  <Nav.Item>
+                    <Nav.Link eventKey="a1">Produkte</Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link eventKey="a2">Hersteller</Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link eventKey="a3">Industrien</Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link eventKey="a4">Ressourcen</Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link eventKey="a5">Unternehmen</Nav.Link>
+                  </Nav.Item>
+                </Nav>
+                <Tab.Content>
+                  <Tab.Pane eventKey="a1">
+                    <div className={st.ProdukteMainContent}>
+                      <div className={st.ProdukteContent}>
+                        <div className={st.ProdukteLeftContent}>
+                          <h4>Komponenten</h4>
+                          <div className={st.MMBottomTopContent2}>
+                            <div className={st.MMBGridContent}>
+                              <div className={st.MMBGridRight}>
+                                <h6>Roboter</h6>
+                                <p>Cobots</p>
+                                <p>Industrial Roboter</p>
+                              </div>
+                            </div>
+                            <div className={st.MMBGridContent}>
+                              <div className={st.MMBGridRight}>
+                                <h6>End of Arm</h6>
+                                <p>Greifer</p>
+                                <p>Effektor</p>
+                                <p>Accessories</p>
+                              </div>
+                            </div>
+                            <div className={st.MMBGridContent}>
+                              <div className={st.MMBGridRight}>
+                                <h6>Vision</h6>
+                                <p>Kamera</p>
+                                <p>Inspektions- lösungen</p>
+                              </div>
+                            </div>
+                            <div className={st.MMBGridContent}>
+                              <div className={st.MMBGridRight}>
+                                <h6>Software</h6>
+                                <p>Maintenance</p>
+                                <p>Monitoring</p>
+                                <p>Simulation</p>
+                                <p>SDK</p>
+                                <p>PLC</p>
+                                <p>App</p>
+                              </div>
+                            </div>
+                            <div className={st.MMBGridContent}>
+                              <div className={st.MMBGridRight}>
+                                <h6>Materialbereit- stellung</h6>
+                                <p>Materialzuführung</p>
+                              </div>
+                            </div>
+                            <div className={st.MMBGridContent}>
+                              <div className={st.MMBGridRight}>
+                                <h6>Sicherheits- technik</h6>
+                                <p>Schalter</p>
+                                <p>Lichtgitter</p>
+                                <p>Messgerät</p>
+                                <p>Radarsensor</p>
+                              </div>
+                            </div>
+                            <div className={st.MMBGridContent}>
+                              <div className={st.MMBGridRight}>
+                                <h6>Tragestruktur</h6>
+                                <p>Sockel</p>
+                              </div>
+                            </div>
+                            <div className={st.MMBGridContent}>
+                              <div className={st.MMBGridRight}>
+                                <h6>Steuerungs- technik</h6>
+                                <p>Industrie PC</p>
+                              </div>
+                            </div>
+                            <div className={st.MMBGridContent}>
+                              <div className={st.MMBGridRight}>
+                                <h6>Teaching Kit</h6>
+                              </div>
                             </div>
                           </div>
-                          <div className={st.MMBGridContent}>
-                            <div className={st.MMBGridRight}>
-                              <h6>End of Arm</h6>
-                              <p>Greifer</p>
-                              <p>Effektor</p>
-                              <p>Accessories</p>
+                        </div>
+                        <div className={st.ProdukteRightContent}>
+                          <h4>Lösungen</h4>
+                          <div className={st.MMBottomTopContent}>
+                            <div className={st.MMBGridContent}>
+                              <div className={st.MMBGridRight}>
+                                <h6>Turnkey Pakete</h6>
+                                <p>Palletierer</p>
+                                <p>Depalettierer</p>
+                                <p>Case Erector</p>
+                                <p>Starter Kits</p>
+                              </div>
                             </div>
-                          </div>
-                          <div className={st.MMBGridContent}>
-                            <div className={st.MMBGridRight}>
-                              <h6>Vision</h6>
-                              <p>Kamera</p>
-                              <p>Inspektions- lösungen</p>
-                            </div>
-                          </div>
-                          <div className={st.MMBGridContent}>
-                            <div className={st.MMBGridRight}>
-                              <h6>Software</h6>
-                              <p>Maintenance</p>
-                              <p>Monitoring</p>
-                              <p>Simulation</p>
-                              <p>SDK</p>
-                              <p>PLC</p>
-                              <p>App</p>
-                            </div>
-                          </div>
-                          <div className={st.MMBGridContent}>
-                            <div className={st.MMBGridRight}>
-                              <h6>Materialbereit- stellung</h6>
-                              <p>Materialzuführung</p>
-                            </div>
-                          </div>
-                          <div className={st.MMBGridContent}>
-                            <div className={st.MMBGridRight}>
-                              <h6>Sicherheits- technik</h6>
-                              <p>Schalter</p>
-                              <p>Lichtgitter</p>
-                              <p>Messgerät</p>
-                              <p>Radarsensor</p>
-                            </div>
-                          </div>
-                          <div className={st.MMBGridContent}>
-                            <div className={st.MMBGridRight}>
-                              <h6>Tragestruktur</h6>
-                              <p>Sockel</p>
-                            </div>
-                          </div>
-                          <div className={st.MMBGridContent}>
-                            <div className={st.MMBGridRight}>
-                              <h6>Steuerungs- technik</h6>
-                              <p>Industrie PC</p>
-                            </div>
-                          </div>
-                          <div className={st.MMBGridContent}>
-                            <div className={st.MMBGridRight}>
-                              <h6>Teaching Kit</h6>
+                            <div className={st.MMBGridContent}>
+                              <div className={st.MMBGridRight}>
+                                <h6>Dienstleistungen</h6>
+                                <p>Simulation</p>
+                                <p>CAD Design</p>
+                                <p>CE Zertifizierung</p>
+                                <p>Robot Programming</p>
+                                <p>Robot Installation</p>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div className={st.ProdukteRightContent}>
-                        <h4>Lösungen</h4>
-                        <div className={st.MMBottomTopContent}>
+                      <div className={st.ProdukteAllButton}>
+                        <h6>Alle Produkte</h6>
+                        <ArrowRight color="#1BC074" />
+                      </div>
+                    </div>
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="a2">
+                    <div className={st.ProdukteMainContent}>
+                      <div className={st.ProdukteContent}>
+                        <div className={st.MMBottomTopContent4}>
                           <div className={st.MMBGridContent}>
                             <div className={st.MMBGridRight}>
-                              <h6>Turnkey Pakete</h6>
-                              <p>Palletierer</p>
-                              <p>Depalettierer</p>
-                              <p>Case Erector</p>
-                              <p>Starter Kits</p>
+                              <h6>ABB</h6>
+                              <p>Universal Robots</p>
+                              <p>Omron</p>
+                              <p>Doosan Robotics</p>
+                              <p>Schunk</p>
                             </div>
                           </div>
                           <div className={st.MMBGridContent}>
                             <div className={st.MMBGridRight}>
-                              <h6>Dienstleistungen</h6>
-                              <p>Simulation</p>
-                              <p>CAD Design</p>
-                              <p>CE Zertifizierung</p>
-                              <p>Robot Programming</p>
-                              <p>Robot Installation</p>
+                              <h6>Alexander Bürkle</h6>
+                              <p>PIAB</p>
+                              <p>Tesseract Solutions</p>
+                              <p>Mitsubishi Electric</p>
+                              <p>GRIP GmbH</p>
+                            </div>
+                          </div>
+                          <div className={st.MMBGridContent}>
+                            <div className={st.MMBGridRight}>
+                              <h6>FORMHAND Automation</h6>
+                              <p>CONWEX</p>
+                              <p>FANUC</p>
+                              <p>Hans Weber</p>
+                              <p>Made4CNC</p>
+                            </div>
+                          </div>
+                          <div className={st.MMBGridContent}>
+                            <div className={st.MMBGridRight}>
+                              <h6>Hanwha Robotics</h6>
+                              <p>Mitsubishi Electric</p>
+                              <p>Lorenscheit</p>
+                              <p>ifm electronic</p>
+                              <p>Janz Tec</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className={st.ProdukteAllButton}>
+                        <h6>Alle Hersteller</h6>
+                        <ArrowRight color="#1BC074" />
+                      </div>
+                    </div>
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="a3">
+                    <div className={st.ProdukteMainContent}>
+                      <div className={st.ProdukteContent}>
+                        <div className={st.MMBottomTopContent4}>
+                          <div className={st.MMBGridContent}>
+                            <div className={st.MMBGridRight}>
+                              <p>Automobil</p>
+                              <p>Pharma</p>
+                              <p>Elektrotechnik</p>
+                              <p>Maschinenbau</p>
+                              <p>Lebensmittel</p>
+                              <p>Chemie</p>
+                              <p>Druck</p>
+                              <p>Metall</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className={st.ProdukteAllButton}>
+                        <h6>Alle Industrien</h6>
+                        <ArrowRight color="#1BC074" />
+                      </div>
+                    </div>
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="a4">
+                    <div className={st.ProdukteMainContent}>
+                      <div className={st.ProdukteContent}>
+                        <div className={st.MMBottomTopContent4}>
+                          <div className={st.MMBGridContent}>
+                            <div className={st.MMBGridRight}>
+                              <p>UnchainedTV</p>
+                              <p>Konfigurator</p>
+                              <p>Whitepaper</p>
+                              <p>Case Studies</p>
+                              <p>Roboter ROI-Berechnung</p>
+                              <p>Robotics News</p>
+                              <p>FAQ</p>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div className={st.ProdukteAllButton}>
-                      <h6>Alle Produkte</h6>
-                      <ArrowRight color="#1BC074" />
-                    </div>
-                  </div>
-                </Tab.Pane>
-                <Tab.Pane eventKey="a2">
-                  <div className={st.ProdukteMainContent}>
-                    <div className={st.ProdukteContent}>
-                      <div className={st.MMBottomTopContent4}>
-                        <div className={st.MMBGridContent}>
-                          <div className={st.MMBGridRight}>
-                            <h6>ABB</h6>
-                            <p>Universal Robots</p>
-                            <p>Omron</p>
-                            <p>Doosan Robotics</p>
-                            <p>Schunk</p>
-                          </div>
-                        </div>
-                        <div className={st.MMBGridContent}>
-                          <div className={st.MMBGridRight}>
-                            <h6>Alexander Bürkle</h6>
-                            <p>PIAB</p>
-                            <p>Tesseract Solutions</p>
-                            <p>Mitsubishi Electric</p>
-                            <p>GRIP GmbH</p>
-                          </div>
-                        </div>
-                        <div className={st.MMBGridContent}>
-                          <div className={st.MMBGridRight}>
-                            <h6>FORMHAND Automation</h6>
-                            <p>CONWEX</p>
-                            <p>FANUC</p>
-                            <p>Hans Weber</p>
-                            <p>Made4CNC</p>
-                          </div>
-                        </div>
-                        <div className={st.MMBGridContent}>
-                          <div className={st.MMBGridRight}>
-                            <h6>Hanwha Robotics</h6>
-                            <p>Mitsubishi Electric</p>
-                            <p>Lorenscheit</p>
-                            <p>ifm electronic</p>
-                            <p>Janz Tec</p>
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="a5">
+                    <div className={st.ProdukteMainContent}>
+                      <div className={st.ProdukteContent}>
+                        <div className={st.MMBottomTopContent4}>
+                          <div className={st.MMBGridContent}>
+                            <div className={st.MMBGridRight}>
+                              <p>About</p>
+                              <p>Blog</p>
+                              <p>Kontakt</p>
+                              <p>Presse</p>
+                              <p>Karriere</p>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div className={st.ProdukteAllButton}>
-                      <h6>Alle Hersteller</h6>
-                      <ArrowRight color="#1BC074" />
-                    </div>
-                  </div>
-                </Tab.Pane>
-                <Tab.Pane eventKey="a3">
-                  <div className={st.ProdukteMainContent}>
-                    <div className={st.ProdukteContent}>
-                      <div className={st.MMBottomTopContent4}>
-                        <div className={st.MMBGridContent}>
-                          <div className={st.MMBGridRight}>
-                            <p>Automobil</p>
-                            <p>Pharma</p>
-                            <p>Elektrotechnik</p>
-                            <p>Maschinenbau</p>
-                            <p>Lebensmittel</p>
-                            <p>Chemie</p>
-                            <p>Druck</p>
-                            <p>Metall</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className={st.ProdukteAllButton}>
-                      <h6>Alle Industrien</h6>
-                      <ArrowRight color="#1BC074" />
-                    </div>
-                  </div>
-                </Tab.Pane>
-                <Tab.Pane eventKey="a4">
-                  <div className={st.ProdukteMainContent}>
-                    <div className={st.ProdukteContent}>
-                      <div className={st.MMBottomTopContent4}>
-                        <div className={st.MMBGridContent}>
-                          <div className={st.MMBGridRight}>
-                            <p>UnchainedTV</p>
-                            <p>Konfigurator</p>
-                            <p>Whitepaper</p>
-                            <p>Case Studies</p>
-                            <p>Roboter ROI-Berechnung</p>
-                            <p>Robotics News</p>
-                            <p>FAQ</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Tab.Pane>
-                <Tab.Pane eventKey="a5">
-                  <div className={st.ProdukteMainContent}>
-                    <div className={st.ProdukteContent}>
-                      <div className={st.MMBottomTopContent4}>
-                        <div className={st.MMBGridContent}>
-                          <div className={st.MMBGridRight}>
-                            <p>About</p>
-                            <p>Blog</p>
-                            <p>Kontakt</p>
-                            <p>Presse</p>
-                            <p>Karriere</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Tab.Pane>
-              </Tab.Content>
-            </Tab.Container>
+                  </Tab.Pane>
+                </Tab.Content>
+              </Tab.Container>
+            </div>
           </div>
         </div>
       ) : null}

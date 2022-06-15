@@ -68,6 +68,126 @@
   align-items: center;
   justify-content: center;
 }
+.headerSearchBarBox
+{
+  width: 100%;
+  position: relative;
+  z-index: 100005;
+}
+
+.SearchBarResultBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(0, 100%);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.SearchBarResultContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+}
+.SearchBarResultContent h5 {
+  font-size: 1.2rem;
+  color: #828282;
+  font-weight: 400;
+}
+.SearchBarResultsScroll {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1.5rem;
+  padding: 1.5rem;
+  flex-direction: column;
+  overflow-y: scroll;
+  max-height: 35rem;
+  width: 100%;
+}
+.SBRMainBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  cursor: pointer;
+  transition: var(--trns2);
+  cursor: pointer;
+  padding: 1.5rem 0;
+}
+.SBRMainBox:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.075);
+}
+.SBRMainBox img {
+  width: 7.5rem;
+  height: 7.5rem;
+}
+.SBRMainPara {
+  margin: 0 0 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.SBRMainPara h6 {
+  font-size: 1.6rem;
+  color: #313130;
+  font-weight: 400;
+  text-decoration: underline !important;
+  transition: var(--trns2);
+}
+.SBRMainPara p {
+  font-size: 1.4rem;
+  color: #313130;
+  font-weight: 700;
+  margin: 0.5rem 0 0 0 !important;
+}
+.SBRMainBox:hover h6 {
+  color: var(--green700);
+}
+
+.SearchNotFoundBox {
+  width: 77rem;
+  height: 42rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.SearchNotFoundContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.SearchNotFoundContent img {
+  width: 15rem;
+  height: 15rem;
+}
+.SearchNotFoundContent h5 {
+  margin: 3rem 0 2rem 0 !important;
+  font-size: 1.8rem;
+  color: #313130;
+  font-weight: 500;
+}
+.SearchNotFoundContent p {
+  font-size: 1.4rem;
+  color: #828282;
+  font-weight: 400;
+  width: 30%;
+  text-align: center;
+}
+
 @media screen and (max-width: 1050px) {
   .header {
     padding: 0 2.5rem;
@@ -111,9 +231,8 @@
   flex-direction: column;
   width: 100%;
   padding: 2rem 0 0 0;
-  position: sticky;
-  top: 0;
-  left: 0;
+  /* position: sticky;
+  top: 0; */
   height: 16.75rem;
   z-index: 10000;
   background-color: #fff;
@@ -652,6 +771,14 @@
   justify-content: flex-start;
   background-color: #fff;
   display: flex;
+  position: relative;
+}
+.MMBottomDropdownContent1Box{
+  width: 100%;
+  position: absolute;
+  top: 11.75rem;
+  left: 0;
+  z-index: 10002;
 }
 .MMBottomDropdownContent2 {
   width: 100%;
