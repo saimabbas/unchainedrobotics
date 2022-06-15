@@ -16,12 +16,14 @@ import BookmarkOutlined from "../../public/assets/icons/BookmarkOutlined";
 import Envelope from "../../public/assets/icons/Envelope";
 import { Dropdown } from "react-bootstrap";
 import LanuagesMobModal from "../../components/Theme/LanuagesMobModal";
+import SearchMobModal from "../../components/Theme/SearchMobModal";
 import $ from "jquery";
 import { Tab, Nav } from "react-bootstrap";
 const Header = () => {
   const [showMainDrop, setShowMainDrop] = useState(false);
   const [showMobHeader, setShowMobHeader] = useState(false);
   const [lanMobModal, setLanMobModal] = useState(false);
+  const [SeaMobModal, setSearchMobModal] = useState(true);
   return (
     <header className={st.MainMenuHeader + " " + "headerMain"}>
       <div className="box-lg">
@@ -1530,6 +1532,13 @@ const Header = () => {
         <LanuagesMobModal
           closelanmobModal={() => {
             setLanMobModal(false);
+          }}
+        />
+      ) : null}
+      {SeaMobModal ? (
+        <SearchMobModal
+          closelanmobModal={() => {
+            setSearchMobModal(false);
           }}
         />
       ) : null}
