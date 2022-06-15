@@ -152,53 +152,56 @@ const Press = () => {
                     </p>
                     <br />
                     <br />
-                    {mladenExtraText ? (
-                      <p>
-                        Bereits vor dem Studium angefangen als Freelancer im
-                        Bereich Vertrieb/Marketing zu arbeiten. Damals den
-                        ersten Arbeitgeber im Schülerjob zum ersten Kunden
-                        gemacht (2012) Während des Studiums im
-                        Wirtschaftsingenieurwesen als Freelancer
-                        weitergearbeitet und dort aber auch an Softwareprodukten
-                        gearbeitet, welche letztlich bis zum Go-to-Market
-                        begleitet wurden (2012-2018) Die Produktionshallen waren
-                        immer schon ein Teil meines Interessensfeldes und so
-                        habe ich auch u.a. bei Diebold Nixdorf
-                        Produktionsprozesse mit Technologie verbessert
-                        (2016/2017) Mit 22 wurde ich Aufsichtsrat der Campus
-                        Consult Projektmanagement GmbH, einer Talent Agency für
-                        junge Absolventen mit Consulting Background, die nach
-                        dem Studium ihre Karriere in spannenden und
-                        herausfordernden Projekten starten wollen (2015-2019)
-                        Die Erfahrung in Produktionshallen und meine
-                        Aufsichtsratst tigkeit haben mich dann nach China
-                        (Beijing) geführt, wo ich Logistikprozesse innerhalb der
-                        Fertigungshallen eines deutschchinesischen Joint
-                        Ventures optimieren durfte (2018) In China entstanden
-                        die ersten Ideen zu Unchained Robotics, wobei dann alles
-                        nach Rückkehr konkret wurde, als ich dann auch mit Kevin
-                        zusammenkam (2019) Mit Abschluss des Studiums in 2019
-                        kam auch die Gründung von Unchained Robotics (12/2019)
-                      </p>
-                    ) : null}
+                    <div className={st.mladenExText}>
+                      {mladenExtraText ? (
+                        <p>
+                          Bereits vor dem Studium angefangen als Freelancer im
+                          Bereich Vertrieb/Marketing zu arbeiten. Damals den
+                          ersten Arbeitgeber im Schülerjob zum ersten Kunden
+                          gemacht (2012) Während des Studiums im
+                          Wirtschaftsingenieurwesen als Freelancer
+                          weitergearbeitet und dort aber auch an
+                          Softwareprodukten gearbeitet, welche letztlich bis zum
+                          Go-to-Market begleitet wurden (2012-2018) Die
+                          Produktionshallen waren immer schon ein Teil meines
+                          Interessensfeldes und so habe ich auch u.a. bei
+                          Diebold Nixdorf Produktionsprozesse mit Technologie
+                          verbessert (2016/2017) Mit 22 wurde ich Aufsichtsrat
+                          der Campus Consult Projektmanagement GmbH, einer
+                          Talent Agency für junge Absolventen mit Consulting
+                          Background, die nach dem Studium ihre Karriere in
+                          spannenden und herausfordernden Projekten starten
+                          wollen (2015-2019) Die Erfahrung in Produktionshallen
+                          und meine Aufsichtsratst tigkeit haben mich dann nach
+                          China (Beijing) geführt, wo ich Logistikprozesse
+                          innerhalb der Fertigungshallen eines
+                          deutschchinesischen Joint Ventures optimieren durfte
+                          (2018) In China entstanden die ersten Ideen zu
+                          Unchained Robotics, wobei dann alles nach Rückkehr
+                          konkret wurde, als ich dann auch mit Kevin zusammenkam
+                          (2019) Mit Abschluss des Studiums in 2019 kam auch die
+                          Gründung von Unchained Robotics (12/2019)
+                        </p>
+                      ) : null}
+                      {mladenExtraText ? (
+                        <h6
+                          onClick={() => {
+                            setMladenExtraText(false);
+                          }}
+                        >
+                          <ArrowUp /> Hide Text
+                        </h6>
+                      ) : (
+                        <h6
+                          onClick={() => {
+                            setMladenExtraText(true);
+                          }}
+                        >
+                          <ArrowDown /> Show Text
+                        </h6>
+                      )}
+                    </div>
                   </div>
-                  {mladenExtraText ? (
-                    <h6
-                      onClick={() => {
-                        setMladenExtraText(false);
-                      }}
-                    >
-                      <ArrowUp /> Hide Text
-                    </h6>
-                  ) : (
-                    <h6
-                      onClick={() => {
-                        setMladenExtraText(true);
-                      }}
-                    >
-                      <ArrowDown /> Show Text
-                    </h6>
-                  )}
                 </div>
               </div>
               <div className={st.PMRImgBox}>
@@ -214,53 +217,56 @@ const Press = () => {
                       brauchen wir innovative Lösungen und die Zusammenarbeit
                       von Mensch und Maschine.”
                     </p>
-                    {kevinExtraText ? (
-                      <p>
-                        Bereits vor dem Studium angefangen als Freelancer im
-                        Bereich Vertrieb/Marketing zu arbeiten. Damals den
-                        ersten Arbeitgeber im Schülerjob zum ersten Kunden
-                        gemacht (2012) Während des Studiums im
-                        Wirtschaftsingenieurwesen als Freelancer
-                        weitergearbeitet und dort aber auch an Softwareprodukten
-                        gearbeitet, welche letztlich bis zum Go-to-Market
-                        begleitet wurden (2012-2018) Die Produktionshallen waren
-                        immer schon ein Teil meines Interessensfeldes und so
-                        habe ich auch u.a. bei Diebold Nixdorf
-                        Produktionsprozesse mit Technologie verbessert
-                        (2016/2017) Mit 22 wurde ich Aufsichtsrat der Campus
-                        Consult Projektmanagement GmbH, einer Talent Agency für
-                        junge Absolventen mit Consulting Background, die nach
-                        dem Studium ihre Karriere in spannenden und
-                        herausfordernden Projekten starten wollen (2015-2019)
-                        Die Erfahrung in Produktionshallen und meine
-                        Aufsichtsratst tigkeit haben mich dann nach China
-                        (Beijing) geführt, wo ich Logistikprozesse innerhalb der
-                        Fertigungshallen eines deutschchinesischen Joint
-                        Ventures optimieren durfte (2018) In China entstanden
-                        die ersten Ideen zu Unchained Robotics, wobei dann alles
-                        nach Rückkehr konkret wurde, als ich dann auch mit Kevin
-                        zusammenkam (2019) Mit Abschluss des Studiums in 2019
-                        kam auch die Gründung von Unchained Robotics (12/2019)
-                      </p>
-                    ) : null}
+                    <div className={st.kevinExText}>
+                      {kevinExtraText ? (
+                        <p>
+                          Bereits vor dem Studium angefangen als Freelancer im
+                          Bereich Vertrieb/Marketing zu arbeiten. Damals den
+                          ersten Arbeitgeber im Schülerjob zum ersten Kunden
+                          gemacht (2012) Während des Studiums im
+                          Wirtschaftsingenieurwesen als Freelancer
+                          weitergearbeitet und dort aber auch an
+                          Softwareprodukten gearbeitet, welche letztlich bis zum
+                          Go-to-Market begleitet wurden (2012-2018) Die
+                          Produktionshallen waren immer schon ein Teil meines
+                          Interessensfeldes und so habe ich auch u.a. bei
+                          Diebold Nixdorf Produktionsprozesse mit Technologie
+                          verbessert (2016/2017) Mit 22 wurde ich Aufsichtsrat
+                          der Campus Consult Projektmanagement GmbH, einer
+                          Talent Agency für junge Absolventen mit Consulting
+                          Background, die nach dem Studium ihre Karriere in
+                          spannenden und herausfordernden Projekten starten
+                          wollen (2015-2019) Die Erfahrung in Produktionshallen
+                          und meine Aufsichtsratst tigkeit haben mich dann nach
+                          China (Beijing) geführt, wo ich Logistikprozesse
+                          innerhalb der Fertigungshallen eines
+                          deutschchinesischen Joint Ventures optimieren durfte
+                          (2018) In China entstanden die ersten Ideen zu
+                          Unchained Robotics, wobei dann alles nach Rückkehr
+                          konkret wurde, als ich dann auch mit Kevin zusammenkam
+                          (2019) Mit Abschluss des Studiums in 2019 kam auch die
+                          Gründung von Unchained Robotics (12/2019)
+                        </p>
+                      ) : null}
+                      {kevinExtraText ? (
+                        <h6
+                          onClick={() => {
+                            setKevinExtraText(false);
+                          }}
+                        >
+                          <ArrowUp /> Hide Text
+                        </h6>
+                      ) : (
+                        <h6
+                          onClick={() => {
+                            setKevinExtraText(true);
+                          }}
+                        >
+                          <ArrowDown /> Show Text
+                        </h6>
+                      )}
+                    </div>
                   </div>
-                  {kevinExtraText ? (
-                    <h6
-                      onClick={() => {
-                        setKevinExtraText(false);
-                      }}
-                    >
-                      <ArrowUp /> Hide Text
-                    </h6>
-                  ) : (
-                    <h6
-                      onClick={() => {
-                        setKevinExtraText(true);
-                      }}
-                    >
-                      <ArrowDown /> Show Text
-                    </h6>
-                  )}
                 </div>
               </div>
             </div>
