@@ -15,6 +15,7 @@ import ArrowDown from "../public/assets/icons/ArrowDown";
 import Download from "../public/assets/icons/Download";
 import ArrowUp from "../public/assets/icons/ArrowUp";
 import Downloadsm from "../public/assets/icons/Downloadsm";
+import ScrollspyNav from "react-scrollspy-nav";
 
 const Press = () => {
   const [mladenExtraText, setMladenExtraText] = useState(false);
@@ -57,9 +58,9 @@ const Press = () => {
         <div className={st.PressMainBox}>
           <div className={st.productSectionalDetails}>
             <ProductDetailsMenu>
-              <Scrollspy
-                offset={0}
-                items={[
+              <ScrollspyNav
+                offset={-200}
+                scrollTargetIds={[
                   "mission",
                   "dieköpfehinter",
                   "unternehmensfakten",
@@ -70,7 +71,8 @@ const Press = () => {
                   "kevinfreise",
                   "pressespiegel",
                 ]}
-                currentClassName="active"
+                activeNavClass="active"
+                scrollDuration="350"
               >
                 <li>
                   <a href="#mission">Unsere Mission</a>
@@ -110,7 +112,7 @@ const Press = () => {
                 <li>
                   <a href="#pressespiegel">Pressspiegel</a>
                 </li>
-              </Scrollspy>
+              </ScrollspyNav>
             </ProductDetailsMenu>
           </div>
           <div className={st.PressMainBoxRight}>

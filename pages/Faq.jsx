@@ -11,6 +11,7 @@ import FAQCard from "../components/Pages/ProductPage/FAQCard";
 import FAQSection from "../components/Pages/ProductPage/FAQSection";
 import Scrollspy from "react-scrollspy";
 import { Accordion } from "react-bootstrap";
+import ScrollspyNav from "react-scrollspy-nav";
 
 const Faq = () => {
   return (
@@ -37,10 +38,11 @@ const Faq = () => {
           <div className={st.FaqSectionLeft}>
             <div className={st.productSectionalDetails}>
               <ProductDetailsMenu>
-                <Scrollspy
-                  offset={125}
-                  items={["step-by-step", "compare", "inthebox"]}
-                  currentClassName="active"
+                <ScrollspyNav
+                  offset={-200}
+                  scrollTargetIds={["step-by-step", "compare", "inthebox"]}
+                  activeNavClass="active"
+                  scrollDuration="350"
                 >
                   <li>
                     <h6>Table of Content</h6>
@@ -54,7 +56,7 @@ const Faq = () => {
                   <li>
                     <a href="#inthebox">Process-related</a>
                   </li>
-                </Scrollspy>
+                </ScrollspyNav>
               </ProductDetailsMenu>
             </div>
           </div>

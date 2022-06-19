@@ -151,6 +151,9 @@ body {
   margin: 0 auto;
   padding: 0 3.5rem;
 }
+header{
+  /* opacity: 0.54; */
+}
 input {
   border: 0;
   outline: 0;

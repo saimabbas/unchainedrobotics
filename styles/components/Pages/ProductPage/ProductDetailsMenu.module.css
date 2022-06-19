@@ -11,8 +11,7 @@
   justify-content: flex-start;
   padding: 0;
 }
-.productDetailsMenu a,
-.productDetailsMenu a:focus {
+.productDetailsMenu a {
   font-size: 1.65rem;
   color: var(--gray400) !important;
 }

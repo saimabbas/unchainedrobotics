@@ -28,6 +28,7 @@ import EnquireNowBtn from "../components/Pages/ProductPage/ProductDetailsSection
 import ProductThumbsGallery from "../components/Pages/ProductPage/ProductDetailsSection/ProductThumbsGallery";
 import Plus from "../public/assets/icons/Plus";
 import Handshake from "../public/assets/icons/Handshake";
+import ScrollspyNav from "react-scrollspy-nav";
 const ProductPage = () => {
   return (
     <div className={customGlobals.app}>
@@ -86,9 +87,9 @@ const ProductPage = () => {
             </div>
             <div className={st.productSectionalDetails}>
               <ProductDetailsMenu>
-                <Scrollspy
-                  offset={-25}
-                  items={[
+                <ScrollspyNav
+                  offset={750}
+                  scrollTargetIds={[
                     "overview",
                     "compare",
                     "inthebox",
@@ -98,7 +99,8 @@ const ProductPage = () => {
                     "faq",
                     "similarrobots",
                   ]}
-                  currentClassName="active"
+                  activeNavClass="active"
+                  scrollDuration="350"
                 >
                   <li>
                     <a href="#overview">Overview</a>
@@ -133,20 +135,22 @@ const ProductPage = () => {
                   <li>
                     <a href="#similarrobots">Similar cobats</a>
                   </li>
-                </Scrollspy>
+                </ScrollspyNav>
               </ProductDetailsMenu>
               <div className={st.productDetailsContentContainer}>
                 <div className={st.overview}>
-                  <Accordion>
-                    <Accordion.Item>
-                      <Accordion.Header>
-                        <ProductDescriptionAccHeader headertext="Overview" />
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <OverviewSection />
-                      </Accordion.Body>
-                    </Accordion.Item>
-                  </Accordion>
+                  <div id="overview">
+                    <Accordion>
+                      <Accordion.Item>
+                        <Accordion.Header>
+                          <ProductDescriptionAccHeader headertext="Overview" />
+                        </Accordion.Header>
+                        <Accordion.Body>
+                          <OverviewSection />
+                        </Accordion.Body>
+                      </Accordion.Item>
+                    </Accordion>
+                  </div>
                 </div>
 
                 <div className={st.technicalData} id="technicalData">
