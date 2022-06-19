@@ -38,15 +38,15 @@ const Faq = () => {
             <div className={st.productSectionalDetails}>
               <ProductDetailsMenu>
                 <Scrollspy
-                  offset={-25}
-                  items={["overview", "compare", "inthebox"]}
+                  offset={125}
+                  items={["step-by-step", "compare", "inthebox"]}
                   currentClassName="active"
                 >
                   <li>
                     <h6>Table of Content</h6>
                   </li>
                   <li>
-                    <a href="#overview">Step by Step</a>
+                    <a href="#step-by-step">Step by Step</a>
                   </li>
                   <li>
                     <a href="#compare">Industry-related</a>
@@ -60,7 +60,7 @@ const Faq = () => {
           </div>
           <div className={st.FaqSectionRight}>
             <div className={st.productDetailsContentContainer}>
-              <div className={st.faq} id="overview">
+              <div className={st.faq} id="step-by-step">
                 <h4>Step by Step</h4>
                 <div className={st.faqContent}>
                   <Accordion alwaysOpen>

@@ -8,9 +8,9 @@
   grid-template-rows: auto;
   grid-gap: 0;
 }
-.compareGrid > * {
+/* .compareGrid > * {
   padding: 0 0 1.5rem 0;
-}
+} */
 .CStabDescription {
   font-size: 1.5rem;
   font-weight: 400;

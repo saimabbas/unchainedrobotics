@@ -230,8 +230,6 @@
   flex-direction: column;
   width: 100%;
   padding: 2rem 0 0 0;
-  position: sticky;
-  top: 0;
   height: 16.75rem;
   z-index: 10000;
   background-color: #fff;
@@ -373,7 +371,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 10003;
   padding: 2.5rem 0 0 0;
   display: none;
 }
@@ -400,7 +398,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 10003;
   padding: 2.5rem 0 0 0;
   display: none;
 }
@@ -699,6 +697,7 @@
   grid-template-rows: auto;
   grid-gap: 5rem 9rem;
   padding: 0 0 3rem 0;
+  width: 100%;
 }
 .MMBottomTopContent3 {
   display: grid;
@@ -796,15 +795,17 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  background-color: #fff;
   display: flex;
-  position: relative;
+  position: relative; 
+  background-color: #fff;
 }
 .MMBottomDropdownContent1Box {
   width: 100%;
   position: absolute;
   top: 11.75rem;
   left: 0;
+  min-height: 200vh;
+  background-color: rgba(1, 21, 11, 0.2);
   z-index: 10002;
 }
 .MMBottomDropdownContent2 {
@@ -812,12 +813,15 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  background-color: #fff;
   display: flex;
   padding: 3.5rem;
 }
 .MMBottomDropdownTabs2 {
-  width: 100%;
+  width: 100;
+  margin: 0 auto;
+  max-height: calc(100vh - 11.75rem);
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .MMBottomDropdownTabs {
   width: 100%;
@@ -1120,4 +1124,21 @@
 }
 .mobHeaderOpenBoxContainer > * {
   width: 100%;
+
+}
+@media screen and (max-width: 1250px) {
+.ProdukteContent{
+  flex-direction: column;
+  align-items: flex-start;
+}
+.ProdukteLeftContent {
+  width: 100%;
+  border-right: 0;
+  border-bottom: 1px solid var(--gray200);
+  padding: 0;
+  margin: 0 0 3rem 0;
+}
+.MMBottomTopContent2{
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 }
