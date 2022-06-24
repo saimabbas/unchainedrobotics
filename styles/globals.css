@@ -131,7 +131,7 @@ body {
 .app {
   width: 100%;
 }
-.no-scroll{
+.no-scroll {
   overflow: hidden;
 }
 .box-xs {
@@ -151,7 +151,7 @@ body {
   margin: 0 auto;
   padding: 0 3.5rem;
 }
-header{
+header {
   /* opacity: 0.54; */
 }
 input {
@@ -368,12 +368,11 @@ textarea {
   box-shadow: 0 0 0 0.25rem #8fedc1;
   border-bottom: 1px solid transparent;
 }
-.ds-input-label-box
-{
+.ds-input-label-box {
   width: 100%;
 }
 .ds-input-label-box label {
-  margin:  0 0 0.5rem 0;
+  margin: 0 0 0.5rem 0;
 }
 /* Buttons */
 .button {
@@ -784,9 +783,8 @@ textarea {
 .shop-page-tabs-slider .nav-tabs {
   border-bottom: 0px solid var(--gray200) !important;
 }
-.ds-tabs
-{
- width: 100%;
+.ds-tabs {
+  width: 100%;
 }
 .ds-tabs .nav-tabs {
   border-bottom: 1px solid var(--gray200) !important;
@@ -852,10 +850,10 @@ textarea {
 }
 .dropdown-reset .btn-primary {
   color: unset;
-    background-color: unset;
-    border-color: unset;
-    border: 0;
-    padding: 0;
+  background-color: unset;
+  border-color: unset;
+  border: 0;
+  padding: 0;
 }
 .dropdown-reset .btn-primary:hover,
 .dropdown-reset .btn-primary:focus,
@@ -864,7 +862,11 @@ textarea {
   color: unset;
   box-shadow: unset;
 }
-.dropdown-reset .btn-check:active+.btn-primary, .dropdown-reset .btn-check:checked+.btn-primary, .dropdown-reset .btn-primary.active, .dropdown-reset .btn-primary:active, .dropdown-reset .show>.btn-primary.dropdown-toggle{
+.dropdown-reset .btn-check:active + .btn-primary,
+.dropdown-reset .btn-check:checked + .btn-primary,
+.dropdown-reset .btn-primary.active,
+.dropdown-reset .btn-primary:active,
+.dropdown-reset .show > .btn-primary.dropdown-toggle {
   color: unset !important;
   background-color: unset !important;
   border-color: unset !important;
@@ -882,39 +884,39 @@ transform: rotate(180deg);
 .dropdown-reset .dropdown-toggle::after {
   display: none;
 }
-.dropdown-reset .dropdown-reset-content  {
+.dropdown-reset .dropdown-reset-content {
   display: none;
 }
-.dropdown-reset:hover .dropdown-reset-content  {
+.dropdown-reset:hover .dropdown-reset-content {
   display: block;
 }
 .dropdown-reset .dropdown-menu {
   position: absolute;
-    top: 0;
-    left: 0;
-    right: unset;
-    bottom: unset;
-    transform: translate(0%, 0rem) !important;
-    border: 0;
-    border-radius: 0;
-    color: unset;
-    background-color: unset;
-    padding: 3rem 0 0 0 !important;
+  top: 0;
+  left: 0;
+  right: unset;
+  bottom: unset;
+  transform: translate(0%, 0rem) !important;
+  border: 0;
+  border-radius: 0;
+  color: unset;
+  background-color: unset;
+  padding: 3rem 0 0 0 !important;
 }
-.dropdown-reset .dropdown-item
-{
+.dropdown-reset .dropdown-item {
   background-color: unset !important;
 }
-.dropdown-reset .dropdown-item:focus, .dropdown-reset .dropdown-item:hover{
-background-color: unset !important;
+.dropdown-reset .dropdown-item:focus,
+.dropdown-reset .dropdown-item:hover {
+  background-color: unset !important;
 }
-.dropdown-reset .dropdown .dropdown-menu{
+.dropdown-reset .dropdown .dropdown-menu {
   display: none !important;
 }
 .dropdown-reset .dropdown:hover .dropdown-menu {
   display: block !important;
 }
-.header-menu-link-active{
+.header-menu-link-active {
   padding: 0.65rem 0.85rem;
   background-color: var(--gray800);
   border-radius: 1000px;
@@ -1042,6 +1044,26 @@ li.active a {
 .configuratorActiveStep {
   background-color: var(--green700) !important;
 }
+.all-brands-tabs .nav-tabs {
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.all-brands-tabs .nav-tabs .nav-item {
+  margin: 0 0 1.5rem 0;
+}
+.all-brands-tabs .nav-tabs .nav-item a {
+  padding: 0 !important;
+  margin: 0 !important;
+  color: var(--gray700) !important;
+}
+.all-brands-tabs .nav-tabs .nav-item .nav-link.active {
+  background-color: unset !important;
+  color: var(--gray700) !important;
+  text-decoration: underline !important;
+}
 @media screen and (max-width: 850px) {
   .ds-product-categories-slider {
     display: block;
@@ -1120,8 +1142,7 @@ li.active a {
   height: 1.5rem !important;
   margin: 0 1.5rem 0 0 !important;
 }
-.leading-icon.button-md.vorsvg
-{
+.leading-icon.button-md.vorsvg {
   padding: 0.5rem 3.5rem !important;
   display: flex;
   justify-content: center;
@@ -1129,29 +1150,26 @@ li.active a {
   white-space: nowrap;
 }
 @media screen and (max-width: 650px) {
-.leading-icon.button-md.vorsvg
-{
-  border-radius: 50% !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 !important;
-  min-width: 4rem;
-  max-width: 4rem;
-  min-height: 4rem;
-  max-height: 4rem;
+  .leading-icon.button-md.vorsvg {
+    border-radius: 50% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+    min-width: 4rem;
+    max-width: 4rem;
+    min-height: 4rem;
+    max-height: 4rem;
+  }
+  .leading-icon.button-md.vorsvg span {
+    display: none;
+  }
+  .leading-icon.button-md.vorsvg svg {
+    margin: 0 !important;
+  }
 }
-.leading-icon.button-md.vorsvg span 
-{
-  display: none;
-}
-.leading-icon.button-md.vorsvg svg
-{
-  margin: 0 !important;
-}
-}
-.MMBottomDDTab .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link
-{
+.MMBottomDDTab .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link {
   font-size: 1.3rem !important;
   color: var(--gray800) !important;
   font-weight: 500 !important;
@@ -1163,12 +1181,12 @@ li.active a {
   justify-content: center !important;
   align-items: center !important;
 }
-.MMBottomDDTab .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+.MMBottomDDTab .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
   background-color: var(--green50) !important;
   color: var(--green700) !important;
 }
-.MMBottomDDTab .nav-tabs
-{
+.MMBottomDDTab .nav-tabs {
   border-bottom: 1px solid var(--gray200);
   width: 100%;
   display: flex;
@@ -1178,10 +1196,8 @@ li.active a {
   padding: 1.5rem 0;
 }
 
-
-
-.MMBottomDDTab2b .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link
-{
+.MMBottomDDTab2b .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link {
   font-size: 1.4rem !important;
   color: var(--gray400) !important;
   font-weight: 500 !important;
@@ -1193,12 +1209,12 @@ li.active a {
   justify-content: center !important;
   align-items: center !important;
 }
-.MMBottomDDTab2b .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+.MMBottomDDTab2b .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
   background-color: var(--green700) !important;
   color: var(--white) !important;
 }
-.MMBottomDDTab2b .nav-tabs
-{
+.MMBottomDDTab2b .nav-tabs {
   width: 100%;
   display: flex;
   justify-content: flex-start;
