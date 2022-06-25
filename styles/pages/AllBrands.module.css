@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   width: 90%;
-  margin: 5rem auto 10rem auto;
+  margin: 5rem auto;
 }
 .FaqHeading h4 {
   font-size: 3rem;
@@ -76,12 +76,106 @@
 .AllBrandsGridCard:hover img {
   filter: saturate(1);
 }
+.TextInfoGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 5rem;
+}
+.reachMoreCustomers {
+  margin: 10rem 0 0 0;
+}
+.reachMoreCustomers img {
+  width: 55%;
+  object-fit: contain;
+}
+.reachMoreCustomersBoxContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  transform: translate(0, -10rem);
+}
+.reachMoreCustomersBox {
+  width: 60%;
+  background-color: #fff;
+  padding: 5rem;
+  border-radius: 0.5rem;
+}
+.reachMoreCustomersBox span {
+  font-size: 1.15rem;
+  color: var(--gray300);
+}
+.reachMoreCustomersBox h3 {
+  font-size: 2.5rem;
+  color: var(--gray800);
+  margin: 1rem 0 2.5rem 0 !important;
+  font-weight: 700;
+}
+.reachMoreCustomersBox p {
+  font-size: 1.5rem;
+  color: var(--gray800);
+}
+.reachMoreCustomersBox ul {
+  margin: 2.5rem 0 !important;
+}
+.reachMoreCustomersBox ul li {
+  font-size: 1.5rem;
+  color: var(--gray800);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0 0 1rem 0;
+}
+.reachMoreCustomersBox ul li img {
+  width: 2rem;
+  object-fit: contain;
+  margin: 0 1rem 0 0;
+}
+.becomePartnerSection {
+  background-color: rgba(245, 246, 250, 0.5);
+  padding: 5rem 0;
+}
+.AllBrandsMainGridLeftMob {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .AllBrandsGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5rem;
+  }
+  .TextInfoGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .reachMoreCustomersBox {
+    width: 75%;
+    padding: 3.5rem;
+  }
+}
 @media screen and (max-width: 850px) {
   .FaqHeading {
     margin-top: 0;
   }
   .FaqHeading h6 {
     width: 80%;
+  }
+  .AllBrandsGrid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem 2.5rem;
+  }
+  .AllBrandsMainGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 0;
+  }
+  .AllBrandsMainGridLeft {
+    display: none;
+  }
+  .AllBrandsMainGridLeftMob {
+    display: block;
+    width: 100%;
+    margin: 0 0 5rem 0;
   }
 }
 @media screen and (max-width: 650px) {
@@ -93,5 +187,12 @@
   }
   .FaqHeading span br {
     display: block;
+  }
+  .reachMoreCustomers {
+    display: none;
+  }
+  .TextInfoGrid {
+    grid-template-columns: 1fr;
+    margin: 0 0 7.5rem 0;
   }
 }

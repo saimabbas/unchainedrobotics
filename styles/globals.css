@@ -1064,6 +1064,23 @@ li.active a {
   color: var(--gray700) !important;
   text-decoration: underline !important;
 }
+.TextInfoGridCard {
+  width: 100%;
+}
+.TextInfoGridCard img {
+  width: 5rem;
+  object-fit: contain;
+}
+.TextInfoGridCard h2 {
+  font-size: 1.75rem;
+  color: var(--gray800);
+  margin: 2.5rem 0 1.5rem 0 !important;
+  font-weight: 600;
+}
+.TextInfoGridCard p {
+  font-size: 1.5rem;
+  color: var(--gray800);
+}
 @media screen and (max-width: 850px) {
   .ds-product-categories-slider {
     display: block;
@@ -1073,6 +1090,13 @@ li.active a {
   }
 }
 @media screen and (max-width: 650px) {
+  .TextInfoGridCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
   .box-sm {
     padding: 0 2rem;
   }

@@ -206,6 +206,9 @@
   margin: 17rem auto;
   width: 90%;
 }
+.ChatBox.ChatBox2 {
+  margin: 0 auto;
+}
 .ChatLeft {
   display: flex;
   flex-direction: column;
