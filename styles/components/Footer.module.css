@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
   margin: 15rem 0 0 0;
-  padding: 0 7.5%;
+  /* padding: 0 7.5%; */
 }
 .footerTopGrid {
   width: 100%;
@@ -143,9 +143,6 @@
   .footerBottomGrid > * {
     margin: 0 0 1.5rem 0 !important;
   }
-  .footer {
-    padding: 0 4.5%;
-  }
   .footerCenterGridLeft main {
     flex-direction: column;
   }
@@ -154,6 +151,9 @@
   }
   .footerCenterGridLeft main button {
     width: 50%;
+  }
+  .theProcessBoxCenterText {
+    width: 100%;
   }
 }
 @media screen and (max-width: 650px) {

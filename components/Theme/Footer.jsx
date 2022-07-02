@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <>
       <footer className={st.footer}>
-        <div className="box-slg">
+        <div className="box-sm">
           <div className={st.footerTopGrid}>
             <main className={st.FooterEmail}>
               <div className={st.footerCenterGrid}>

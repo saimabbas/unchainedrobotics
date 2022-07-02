@@ -1,0 +1,465 @@
+.leaseHeroSection {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 5rem;
+  padding: 7.5rem 0;
+}
+.leaseHeroSectionLeft {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.leaseHeroSectionLeft img {
+  width: 50rem;
+  object-fit: contain;
+}
+.leaseHeroSectionRight {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.leaseHeroSectionRight h6 {
+  font-size: 1.35rem;
+  color: var(--gray500);
+  font-weight: 400;
+}
+.leaseHeroSectionRight h2 {
+  font-size: 3rem;
+  color: var(--gray800);
+  font-weight: 700;
+  margin: 1.5rem 0 1.5rem 0 !important;
+}
+.leaseHeroSectionRight p {
+  font-size: 1.5rem;
+  color: var(--gray800);
+  font-weight: 400;
+  margin: 0 0 2.5rem 0 !important;
+}
+.anchorsBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 3.5rem 0;
+}
+.anchorsBox a {
+  font-size: 1.35rem;
+  color: var(--gray800);
+  margin: 0 2.5rem 0 0 !important;
+  padding: 0.25rem 0;
+  transition: var(--trns1);
+  border-bottom: 3px solid transparent;
+  width: max-content;
+  white-space: nowrap;
+}
+.anchorsBox a:hover {
+  border-bottom: 3px solid var(--green500);
+}
+.benefitsSections {
+  width: 100%;
+  padding: 5rem 0;
+  background-color: var(--green100);
+}
+.leaseheadingBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.leaseheadingBox h3 {
+  font-size: 2.5rem;
+  color: var(--gray800);
+  font-weight: 700;
+  text-align: center;
+}
+.leaseheadingBox h4 {
+  font-size: 4.5rem;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--gray800);
+  font-weight: 600;
+  text-align: center;
+}
+.leaseheadingBox h5 {
+  font-size: 4.5rem;
+  color: var(--gray800);
+  font-weight: 600;
+  text-align: center;
+}
+.leasebenefitsTabsBox {
+  margin: 5rem 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.benefitsGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 2.5rem;
+}
+.benefitsGridCard {
+  width: 100%;
+  height: max-content;
+  padding: 3.5rem;
+  border-radius: 0.25rem;
+  background-color: #fff;
+}
+.benefitsGridCard h3 {
+  font-size: 2.25rem;
+  color: var(--gray800);
+  font-weight: 700;
+  margin: 0 0 1.5rem 0 !important;
+}
+.benefitsGridCard p {
+  font-size: 1.5rem;
+  color: var(--gray800);
+}
+.comparisonSection {
+  width: 100%;
+  padding: 7.5rem 0;
+  background-color: #fafbfc;
+}
+.comparisonGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 0;
+  margin: 10rem 0 0 0;
+}
+.comparisonGridHeadBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.comparisonGridHeadBox p {
+  width: 100%;
+  font-size: 1.5rem;
+  color: var(--gray800);
+  min-height: 7.5rem;
+  display: flex;
+  align-items: center;
+}
+.comparisonGridDetailsBox {
+  width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.comparisonGridDetailsBox span {
+  width: 100%;
+  min-height: 7.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.comparisonGridDetailsBox span:not(:last-child),
+.comparisonGridHeadBox p:not(:last-child) {
+  border-bottom: 1px solid var(--gray200);
+}
+.comparisonGridDetailsBox h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--gray800);
+  text-align: center;
+  margin: 1.5rem 0 !important;
+  width: 100%;
+  padding: 0 1.5rem !important;
+}
+.comparisonGridDetailsBox h4 {
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: var(--gray800);
+  text-align: center;
+  margin: 1.5rem 0 !important;
+  width: 100%;
+  padding: 0 1.5rem !important;
+}
+.comparisonBrandsBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2.5rem 0 0 0;
+}
+.comparisonBrandsBox img {
+  width: 3rem;
+  object-fit: contain;
+  margin: 0 1rem;
+}
+.comparisonGridDetailsBox2 {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 1rem;
+}
+.leaseChatBox {
+  width: 100%;
+  margin: 7.5rem 0;
+}
+.theProcessBox {
+  width: 75%;
+  position: relative;
+  margin: 7.5rem auto 0 auto;
+}
+.theProcessBoxLine {
+  width: 1px;
+  height: 100%;
+  background-color: #5768f3;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.theProcessBoxRight {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 0 5rem 0;
+}
+.theProcessBoxRightContent {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.theProcessBoxLeft {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 0 5rem 0;
+}
+.theProcessBoxLeftContent {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.theProcessBoxCircleBox {
+  min-width: 2.5rem;
+  max-width: 2.5rem;
+  max-height: 2.5rem;
+  min-height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid #5768f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+.theProcessBoxCircleBoxInner {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #5768f3;
+}
+.theProcessBoxRight .theProcessBoxCircleBox {
+  transform: translate(-50%, 0);
+}
+.theProcessBoxLeft .theProcessBoxCircleBox {
+  transform: translate(50%, 0);
+}
+.theProcessBoxTextBox {
+  width: 90%;
+  background-color: #f5f6f7;
+  border-radius: 0.5rem;
+  padding: 3.5rem;
+}
+.theProcessBoxTextBox h3,
+.theProcessBoxCenterText h3 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--gray800);
+}
+.theProcessBoxTextBox p,
+.theProcessBoxCenterText p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--gray800);
+}
+.theProcessBoxTextBox span {
+  font-size: 1.25rem;
+  color: var(--gray500);
+  margin: 0.75rem 0;
+  display: block;
+}
+.theProcessBoxCenter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.theProcessBoxCenterText {
+  width: 40%;
+  text-align: center;
+}
+.marketLeaderSection {
+  width: 100%;
+  margin: 10rem 0 0 0;
+}
+.marketLeaderSection iframe {
+  width: 55%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+.marketLeaderSectionBoxContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  transform: translate(0, -10rem);
+}
+.marketLeaderSectionBox {
+  width: 60%;
+  background-color: #fff;
+  padding: 3.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.1);
+}
+.marketLeaderSectionBox span {
+  font-size: 1.25rem;
+  color: var(--gray500);
+}
+.marketLeaderlogoBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1.5rem 0 2.5rem 0;
+}
+.marketLeaderlogoBox img {
+  width: 3.25rem;
+  object-fit: contain;
+  margin: 0 1.5rem 0 0;
+}
+.marketLeaderlogoBox h3 {
+  font-size: 2.25rem;
+  color: var(--gray800);
+  font-weight: 700;
+}
+.marketLeaderSectionBox h4 {
+  font-size: 1.75rem;
+  color: var(--gray600);
+  font-weight: 600;
+}
+.marketLeaderSectionBox p {
+  font-size: 1.5rem;
+  margin: 1rem 0 0 0 !important;
+  color: var(--gray700);
+}
+.leaseFaqContent {
+  width: 75%;
+  margin: 7.5rem auto 0 auto;
+}
+@media screen and (max-width: 1000px) {
+  .leaseFaqContent,
+  .theProcessBox {
+    width: 100%;
+  }
+  .benefitsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .benefitsGridCard {
+    height: auto;
+    padding: 2.5rem;
+  }
+  .theProcessBoxTextBox {
+    padding: 2.5rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .leaseHeroSection {
+    grid-template-columns: 1fr;
+    padding: 1.5rem 0 5rem 0;
+  }
+  .leaseHeroSectionLeft {
+    order: 2;
+  }
+  .leaseHeroSectionRight {
+    order: 1;
+  }
+  .marketLeaderSection iframe {
+    width: 100%;
+  }
+  .marketLeaderSectionBoxContainer {
+    width: 100%;
+    transform: translate(0, 0);
+    margin: 5rem 0;
+  }
+  .marketLeaderSectionBox {
+    width: 100%;
+    padding: 2.5rem;
+  }
+  .leaseHeroSectionRight {
+    width: 100%;
+  }
+  .leaseHeroSectionRight h2 {
+    font-size: 2.5rem;
+  }
+  .leaseheadingBox h4,
+  .leaseheadingBox h3,
+  .leaseheadingBox h5 {
+    font-size: 2.5rem;
+    color: var(--gray800);
+    -webkit-text-stroke: 0 black;
+    font-weight: 700;
+    text-align: left;
+  }
+  .leaseheadingBox {
+    align-items: flex-start;
+  }
+  .leasebenefitsTabsBox {
+    margin: 3.5rem 0;
+    justify-content: flex-start;
+  }
+  .theProcessBoxCenterText {
+    width: 100%;
+  }
+  .comparisonGrid {
+    display: none;
+  }
+  .comparisonGridMob {
+    display: block;
+  }
+}
+@media screen and (max-width: 650px) {
+  .benefitsGrid {
+    grid-template-columns: 1fr;
+  }
+  .theProcessBoxLine {
+    left: 0;
+    transform: translate(1.25rem, 0);
+  }
+  .theProcessBoxRightContent {
+    width: 100%;
+  }
+  .theProcessBoxTextBox {
+    width: 95%;
+  }
+  .theProcessBoxLeftContent {
+    width: 100%;
+  }
+  .theProcessBoxLeftContent .theProcessBoxTextBox {
+    order: 2;
+  }
+  .theProcessBoxLeftContent .theProcessBoxCircleBox {
+    order: 1;
+    transform: translate(-50%, 0);
+  }
+  .theProcessBox {
+    padding: 0 0 0 1.25rem;
+  }
+}
