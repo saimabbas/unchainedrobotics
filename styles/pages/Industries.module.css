@@ -232,9 +232,9 @@
   margin: 1.5rem 0 0 0;
 }
 .IndSolImgContent img {
-  width: 6rem;
-  height: 6rem;
-  margin: 0 2rem 0 0;
+  width: 6rem !important;
+  height: 6rem !important;
+  margin: 0 2rem 0 0 !important;
 }
 .ISContent {
   display: flex;
@@ -374,6 +374,7 @@
   color: #313130;
   font-weight: 700;
   stroke: #313130;
+  text-align: center;
 }
 .IndPallStories h5 {
   font-size: 2.4rem;
@@ -516,4 +517,152 @@
   margin: 3rem 0 0 0 !important;
   text-align: center;
   height: 4rem;
+}
+
+@media screen and (max-width: 1040px) {
+  .IndustriesHeroSection {
+    grid-template-columns: 1fr 1fr;
+  }
+  .PioneerBox {
+    margin: 10rem auto 10rem 0;
+  }
+  .PioneerBox p {
+    width: 80%;
+  }
+  .IndCollabHeading h4 {
+    width: 80%;
+  }
+  .IndPallContent {
+    width: 100%;
+  }
+  .IndPalGridContent {
+    padding: 2.5rem;
+  }
+  .IPStoriesGrid {
+    grid-gap: 4rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .IndustriesHeroSection {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+  .IndustriesHeroSection img {
+    order: 2;
+  }
+  .PioneerBox h4 {
+    width: 80%;
+    text-align: center;
+  }
+  .IndCollabGrid {
+    grid-gap: 5rem;
+  }
+  .IndPalletizingBox {
+    grid-template-columns: 1fr;
+  }
+  .IndPalletizingBox img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .IndPallHeading h4 {
+    width: 70%;
+  }
+  .IndPallPack h4 {
+    width: 80%;
+  }
+  .IndPallPack p {
+    width: 80%;
+  }
+  .IPStoriesGrid {
+    width: 100%;
+    grid-gap: 3rem;
+  }
+  .IPCSBox {
+    width: 34%;
+  }
+  .IndCustomSolution img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .IndCSText p {
+    width: 100%;
+  }
+  .IndCustomSolution {
+    grid-template-columns: 1fr;
+  }
+  .IndMoreIndContent {
+    width: 100%;
+  }
+  .IMPGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .IndPallContent {
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .IPStoriesGrid {
+    grid-template-columns: 1fr;
+    margin: 4rem auto 0 auto;
+  }
+  .IMPGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .IMPGridContent {
+    padding: 1.5rem;
+  }
+  .IndCollabGrid {
+    grid-template-columns: 1fr;
+  }
+  .IndPallPack h4 {
+    width: 100%;
+    font-size: 2.8rem;
+  }
+  .IndPallPack p {
+    width: 100%;
+  }
+  .IndPallPack h5 {
+    width: 100%;
+  }
+  .IPCSBox {
+    width: 100%;
+  }
+  .IndCustomSolution img {
+    width: 100%;
+  }
+  .IndPallReqGrid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .IndCollabHeading h4 {
+    width: 100%;
+    font-size: 2.8rem;
+  }
+  .PioneerBox p {
+    width: 100%;
+  }
+  .PioneerBox h4 {
+    width: 100%;
+    font-size: 2.8rem;
+  }
+  .IndCollabGridContent {
+    text-align: center;
+    align-items: center;
+  }
+  .IndHeroPoints {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .IndHeroPoints h6 {
+    margin: 0 0 1rem 0 !important;
+  }
+  .IndHeroContent h4 {
+    font-size: 2.8rem;
+  }
+  .IndPallHeading h4 {
+    width: 100%;
+    font-size: 2.8rem;
+  }
 }
