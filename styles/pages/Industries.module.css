@@ -1,0 +1,519 @@
+.IndustriesHeroSection {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: auto;
+  margin: 4rem;
+}
+.IndHeroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 3rem 0 0 0;
+}
+.IndHeroContent p {
+  color: #828282;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.IndHeroContent h4 {
+  color: #313130;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 1rem 0 2.5rem 0 !important;
+  width: 90%;
+}
+.IndHeroPoints {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2.5rem 0;
+  width: 90%;
+}
+.IndHeroPoints h6 {
+  font-size: 1.6rem;
+  color: #313130;
+  font-weight: 400;
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+.PioneerBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto 10rem 0;
+}
+.PioneerBox h4 {
+  color: #313130;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.PioneerBox p {
+  color: #313130;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 2.5rem 0 0 0 !important;
+  text-align: center;
+  width: 52%;
+  margin: 0 auto;
+}
+.IndCollabBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  margin: 0rem 0 10rem 0 !important;
+}
+.IndCollabHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.IndCollabHeading h4 {
+  color: #313130;
+  font-size: 3rem;
+  font-weight: 700;
+  width: 42%;
+  text-align: center;
+}
+.IndCollabHeading p {
+  color: #313130;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 1rem 0 0 0 !important;
+  text-align: center;
+}
+.IndCollabGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 8rem;
+  margin: 6rem 0 0 0;
+}
+.IndCollabGridContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+.IndCollabGridContent h6 {
+  color: #313130;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 2rem 0 !important;
+}
+.IndCollabGridContent p {
+  color: #313130;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.IndPalletizingBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 2.5rem;
+  padding: 0 0 8rem 0;
+  border-bottom: 0.5px solid #bdbdbd;
+}
+.IndPallContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 4rem 0 0 0;
+  width: 85%;
+}
+.IndPallHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+.IndPallHeading h4 {
+  color: #313130;
+  font-size: 3rem;
+  font-weight: 700;
+  width: 50%;
+}
+.IndPallHeading p {
+  color: #313130;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 1.5rem 0 0 0 !important;
+  width: 100%;
+}
+.IndPallReq {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 5rem 0;
+}
+.IndPallReq h5 {
+  color: #313130;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.IndPallReq p {
+  color: #313130;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 1.5rem 0 !important;
+}
+.IndPallReqGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2.5rem;
+  grid-template-rows: auto;
+}
+.IndPalGridContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafbfc;
+  padding: 3.5rem;
+}
+.IndPalGridContent span {
+  font-size: 1.2rem;
+  color: #828282;
+  font-weight: 400;
+  text-align: center;
+}
+.IndPalGridContent h5 {
+  color: #313130;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 2.5rem 0 !important;
+  text-align: center;
+}
+.IndPalGridContent p {
+  color: #313130;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0 !important;
+  text-align: center;
+}
+.IndPallSolution {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.IndPallSolution h5 {
+  color: #313130;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.IndpalSolMain {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 3rem 0;
+  border-bottom: 0.5px solid #bdbdbd;
+}
+.IPNoBorder {
+  border-bottom: unset;
+}
+.IndSolImgContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin: 1.5rem 0 0 0;
+}
+.IndSolImgContent img {
+  width: 6rem;
+  height: 6rem;
+  margin: 0 2rem 0 0;
+}
+.ISContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.ISContent p {
+  font-size: 1.6rem;
+  color: #313130;
+  font-weight: 400;
+  text-decoration: underline !important;
+}
+.ISContent h3 {
+  font-size: 1.4rem;
+  color: #313130;
+  font-weight: 700;
+  margin: 1rem 0 !important;
+}
+.ISContent span {
+  font-size: 1.2rem;
+  color: #bdbdbd;
+  font-weight: 400;
+}
+.IndPalSolText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 4rem 0 0 0;
+}
+.IndPalSolText h6 {
+  color: #313130;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.IndPalSolText p {
+  color: #313130;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 1.5rem 0 0 0 !important;
+}
+.IndPallUseCase {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 6rem 0 0 0;
+}
+.IndPallUseCase h5 {
+  color: #313130;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.IndPallUseCase p {
+  color: #313130;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 1.5rem 0 !important;
+}
+.IPUseCasePoints {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.IPUCPointText {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin: 0 0 1.5rem 0;
+}
+.IPUCPointText p {
+  margin: 0 0 0 1rem !important;
+}
+.IndPallUseCase button {
+  margin: 1.5rem 0 2.5rem 0 !important;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.IndPallUseCase h2 {
+  font-size: 1.4rem;
+  color: #313130;
+  font-weight: 400;
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+.IndPallUseCase h2 svg {
+  margin: 0 0 0 0.5rem;
+}
+.IndPallPack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12rem 0;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 0.5px solid #bdbdbd;
+}
+.IndPallPack h4 {
+  color: #313130;
+  font-size: 3rem;
+  font-weight: 700;
+  width: 48%;
+  text-align: center;
+}
+.IndPallPack p {
+  color: #313130;
+  font-size: 1.6rem;
+  font-weight: 400;
+  width: 48%;
+  margin: 1.5rem 0 !important;
+  text-align: center;
+}
+.IndPallPack h5 {
+  color: #313130;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 4.5rem 0 0 0 !important;
+  width: 48%;
+  text-align: center;
+}
+.IndPallPack button {
+  margin: 2rem 0 0 0 !important;
+}
+.IndPallStories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10rem 0;
+}
+.IndPallStories h4 {
+  font-size: 4.8rem;
+  color: #313130;
+  font-weight: 700;
+  stroke: #313130;
+}
+.IndPallStories h5 {
+  font-size: 2.4rem;
+  color: #313130;
+  font-weight: 700;
+}
+.IPStoriesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 8rem;
+  grid-template-rows: auto;
+  width: 90%;
+  margin: 8rem auto 0 auto;
+}
+.IPStoryContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+.IPStoryContent img {
+  width: 100%;
+}
+.IPStoryText {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #f2f2f2;
+  border-radius: 0.5rem;
+  box-shadow: var(--card-box-shadow);
+  width: 90%;
+  margin: -4rem auto 0 auto;
+  padding: 2rem;
+}
+.IPStoryText span {
+  color: #828282;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.IPStoryText h5 {
+  color: #313130;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem 0 0 0 !important;
+}
+.IndPallCaseStudy {
+  background-color: #ebfff5;
+}
+.IPCStudyContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10rem 0;
+}
+.IPCStudyContent h4 {
+  font-size: 4.8rem;
+  color: #313130;
+  font-weight: 700;
+  stroke: #313130;
+}
+.IPCSBox {
+  width: 26%;
+  margin: 6rem auto 0 auto;
+}
+.IndCustomSolution {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8rem;
+  grid-template-rows: auto;
+  margin: 12rem 0;
+}
+.IndCSText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 6rem 0 0 0;
+}
+.IndCSText h4 {
+  font-size: 3.2rem;
+  color: #313130;
+  font-weight: 700;
+}
+.IndCSText h5 {
+  font-size: 3.2rem;
+  color: #313130;
+  font-weight: 700;
+}
+.IndCSText p {
+  font-size: 1.6rem;
+  color: #4f4f4f;
+  font-weight: 400;
+  margin: 2rem 0 !important;
+  width: 80%;
+}
+.IndMoreInd {
+  background-color: #313130;
+}
+.IndMoreIndContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 75%;
+  margin: 0 auto;
+  padding: 6rem 0;
+}
+.IndMoreIndContent h5 {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 700;
+}
+.IMPGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 3rem;
+  margin: 8rem 0 0 0;
+}
+.IMPGridContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 2.5rem;
+}
+.IMPGridContent:hover {
+  background-color: #4f4f4f;
+  border-radius: 0.5rem;
+}
+.IMPGridContent p {
+  font-size: 1.6rem;
+  color: #ffffff;
+  font-weight: 500;
+  margin: 3rem 0 0 0 !important;
+  text-align: center;
+  height: 4rem;
+}

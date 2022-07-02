@@ -1261,3 +1261,27 @@ li.active a {
   padding: 1.5rem 3.5rem;
   border: unset;
 }
+
+.comparisonGridMobStyles .nav-tabs {
+  border-bottom: unset;
+  margin: 3rem 0 0 0 !important;
+}
+.comparisonGridMobStyles .nav-tabs .nav-link {
+  border-radius: 0.5rem !important;
+  background-color: #f2f2f2 !important;
+  color: #828282 !important;
+  font-weight: 400 !important;
+  font-size: 1.2rem !important;
+  text-decoration: underline !important;
+  text-align: center;
+  margin: 0 !important;
+  padding: 2rem !important;
+  cursor: pointer;
+}
+.comparisonGridMobStyles .nav-tabs .nav-link.active {
+  background-color: unset !important;
+  font-weight: 700 !important;
+  color: #313130 !important;
+  margin: 0 1rem 0 0 !important;
+  text-decoration: unset !important;
+}

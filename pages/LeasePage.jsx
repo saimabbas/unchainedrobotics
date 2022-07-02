@@ -261,36 +261,40 @@ const LeasePage = () => {
                   </Nav>
                   <Tab.Content>
                     <Tab.Pane eventKey="b1">
-                      <div className={st.leaseMobComparisonGrid}>
-                        <div className={st.leaseMobComparisonGridCard}>
-                          <p>
-                            Financing requests independent of your house bank
-                          </p>
-                          <CheckIcon color="#1FDB84" />
+                      <div className={st.leaseMobContentMain}>
+                        <div className={st.leaseMobComImg}>
+                          <img src="./assets/img/Union.png" alt="" />
+                          <img src="./assets/img/YellowV.png" alt="" />
                         </div>
-                        <div className={st.leaseMobComparisonGridCard}>
-                          <p>
-                            Financing requests independent of your house bank
-                          </p>
-                          <CheckIcon color="#1FDB84" />
-                        </div>
-                        <div className={st.leaseMobComparisonGridCard}>
-                          <p>
-                            Financing requests independent of your house bank
-                          </p>
-                          <CheckIcon color="#1FDB84" />
-                        </div>
-                        <div className={st.leaseMobComparisonGridCard}>
-                          <p>
-                            Financing requests independent of your house bank
-                          </p>
-                          <CheckIcon color="#1FDB84" />
-                        </div>
-                        <div className={st.leaseMobComparisonGridCard}>
-                          <p>
-                            Financing requests independent of your house bank
-                          </p>
-                          <CheckIcon color="#1FDB84" />
+                        <div className={st.leaseMobComparisonGrid}>
+                          <div className={st.leaseMobComparisonGridCard}>
+                            <p>
+                              Financing requests independent of your house bank
+                            </p>
+                            <CheckIcon color="#1FDB84" />
+                          </div>
+                          <div className={st.leaseMobComparisonGridCard}>
+                            <p>
+                              Direct financing check with several financial
+                              institutions
+                            </p>
+                            <CheckIcon color="#1FDB84" />
+                          </div>
+                          <div className={st.leaseMobComparisonGridCard}>
+                            <p>Multiple financing offers to choose from</p>
+                            <CheckIcon color="#1FDB84" />
+                          </div>
+                          <div className={st.leaseMobComparisonGridCard}>
+                            <p>
+                              Quick financing commitment for the planned
+                              investment
+                            </p>
+                            <CheckIcon color="#1FDB84" />
+                          </div>
+                          <div className={st.leaseMobComparisonGridCard}>
+                            <p>Individual term</p>
+                            <CheckIcon color="#1FDB84" />
+                          </div>
                         </div>
                       </div>
                     </Tab.Pane>

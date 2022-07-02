@@ -364,6 +364,9 @@
   width: 75%;
   margin: 7.5rem auto 0 auto;
 }
+.comparisonGridMob {
+  display: none;
+}
 @media screen and (max-width: 1000px) {
   .leaseFaqContent,
   .theProcessBox {
@@ -433,6 +436,46 @@
   }
   .comparisonGridMob {
     display: block;
+  }
+  .leaseMobContentMain {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 3rem 2.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    box-shadow: var(--card-box-shadow);
+  }
+  .leaseMobComImg {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+  .leaseMobComImg img {
+    margin: 0 1.5rem 0 0;
+  }
+  .leaseMobComparisonGrid {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+  }
+  .leaseMobComparisonGridCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 0 0 0;
+  }
+  .leaseMobComparisonGridCard p {
+    font-size: 1.25rem;
+    color: #4f4f4f;
+    font-weight: 500;
+    width: 80%;
   }
 }
 @media screen and (max-width: 650px) {
