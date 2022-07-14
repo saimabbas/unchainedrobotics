@@ -1,0 +1,263 @@
+.IndPalletizingBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 2.5rem;
+  padding: 0 0 8rem 0;
+  position: relative;
+  height: 100%;
+}
+.IndPalletizingBox img {
+  position: sticky;
+  top: 25%;
+}
+.IndPallContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 4rem 0 0 0;
+  width: 85%;
+  height: max-content;
+}
+.IndPallHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+.IndPallHeading h4 {
+  color: #313130;
+  font-size: 3rem;
+  font-weight: 700;
+  width: 50%;
+}
+.IndPallHeading p {
+  color: #313130;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 1.5rem 0 0 0 !important;
+  width: 100%;
+}
+.IndPallReq {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 5rem 0;
+}
+.IndPallReq h5 {
+  color: #313130;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.IndPallReq p {
+  color: #313130;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 1.5rem 0 !important;
+}
+.IndPallReqGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2.5rem;
+  grid-template-rows: auto;
+}
+.IndPalGridContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafbfc;
+  padding: 3.5rem;
+}
+.IndPalGridContent span {
+  font-size: 1.2rem;
+  color: #828282;
+  font-weight: 400;
+  text-align: center;
+}
+.IndPalGridContent h5 {
+  color: #313130;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 2.5rem 0 !important;
+  text-align: center;
+}
+.IndPalGridContent p {
+  color: #313130;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0 !important;
+  text-align: center;
+}
+.IndPallSolution {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.IndPallSolution h5 {
+  color: #313130;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.IndpalSolMain {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 3rem 0;
+  border-bottom: 0.5px solid #bdbdbd;
+}
+.IPNoBorder {
+  border-bottom: unset;
+}
+.IndSolImgContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin: 1.5rem 0 0 0;
+}
+.IndSolImgContent img {
+  width: 6rem !important;
+  height: 6rem !important;
+  margin: 0 2rem 0 0 !important;
+}
+.ISContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.ISContent p {
+  font-size: 1.6rem;
+  color: #313130;
+  font-weight: 400;
+  text-decoration: underline !important;
+}
+.ISContent h3 {
+  font-size: 1.4rem;
+  color: #313130;
+  font-weight: 700;
+  margin: 1rem 0 !important;
+}
+.ISContent span {
+  font-size: 1.2rem;
+  color: #bdbdbd;
+  font-weight: 400;
+}
+.IndPalSolText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 4rem 0 0 0;
+}
+.IndPalSolText h6 {
+  color: #313130;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.IndPalSolText p {
+  color: #313130;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 1.5rem 0 0 0 !important;
+}
+.IndPallUseCase {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 6rem 0 0 0;
+}
+.IndPallUseCase h5 {
+  color: #313130;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.IndPallUseCase p {
+  color: #313130;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 1.5rem 0 !important;
+}
+.IPUseCasePoints {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.IPUCPointText {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin: 0 0 1.5rem 0;
+}
+.IPUCPointText p {
+  margin: 0 0 0 1rem !important;
+}
+.IndPallUseCase button {
+  margin: 1.5rem 0 2.5rem 0 !important;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.IndPallUseCase h2 {
+  font-size: 1.4rem;
+  color: #313130;
+  font-weight: 400;
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+.IndPallUseCase h2 svg {
+  margin: 0 0 0 0.5rem;
+}
+
+@media screen and (max-width: 1040px) {
+  .IndPallContent {
+    width: 100%;
+  }
+  .IndPalGridContent {
+    padding: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .IndPalletizingBox {
+    grid-template-columns: 1fr;
+  }
+  .IndPalletizingBox img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .IndPallHeading h4 {
+    width: 70%;
+  }
+  .IndPallContent {
+    order: 2;
+  }
+  .IndPalletizingBox img {
+    position: unset;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .IndCollabGrid {
+    grid-template-columns: 1fr;
+  }
+  .IndPallReqGrid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .IndPallHeading h4 {
+    width: 100%;
+    font-size: 2.8rem;
+  }
+  .IndPalletizingBox img {
+    position: unset;
+  }
+}

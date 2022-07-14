@@ -1,0 +1,58 @@
+.IndPallPack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12rem 0;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 0.5px solid #bdbdbd;
+}
+.IndPallPack h4 {
+  color: #313130;
+  font-size: 3rem;
+  font-weight: 700;
+  width: 48%;
+  text-align: center;
+}
+.IndPallPack p {
+  color: #313130;
+  font-size: 1.6rem;
+  font-weight: 400;
+  width: 48%;
+  margin: 1.5rem 0 !important;
+  text-align: center;
+}
+.IndPallPack h5 {
+  color: #313130;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 4.5rem 0 0 0 !important;
+  width: 48%;
+  text-align: center;
+}
+.IndPallPack button {
+  margin: 2rem 0 0 0 !important;
+}
+
+@media screen and (max-width: 850px) {
+  .IndPallPack h4 {
+    width: 80%;
+  }
+  .IndPallPack p {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .IndPallPack h4 {
+    width: 100%;
+    font-size: 2.8rem;
+  }
+  .IndPallPack p {
+    width: 100%;
+  }
+  .IndPallPack h5 {
+    width: 100%;
+  }
+}

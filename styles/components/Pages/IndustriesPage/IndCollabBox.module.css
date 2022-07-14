@@ -1,0 +1,41 @@
+.IndCollabBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  margin: 0rem 0 10rem 0 !important;
+}
+.IndCollabHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.IndCollabHeading h4 {
+  color: #313130;
+  font-size: 3rem;
+  font-weight: 700;
+  width: 42%;
+  text-align: center;
+}
+.IndCollabHeading p {
+  color: #313130;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 1rem 0 0 0 !important;
+  text-align: center;
+}
+
+@media screen and (max-width: 1040px) {
+  .IndCollabHeading h4 {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .IndCollabHeading h4 {
+    width: 100%;
+    font-size: 2.8rem;
+  }
+}

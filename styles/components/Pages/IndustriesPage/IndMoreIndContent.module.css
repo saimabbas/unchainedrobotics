@@ -1,0 +1,59 @@
+.IndMoreIndContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 75%;
+  margin: 0 auto;
+  padding: 6rem 0;
+}
+.IndMoreIndContent h5 {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 700;
+}
+.IMPGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 3rem;
+  margin: 8rem 0 0 0;
+}
+.IMPGridContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 2.5rem;
+}
+.IMPGridContent:hover {
+  background-color: #4f4f4f;
+  border-radius: 0.5rem;
+}
+.IMPGridContent p {
+  font-size: 1.6rem;
+  color: #ffffff;
+  font-weight: 500;
+  margin: 3rem 0 0 0 !important;
+  text-align: center;
+  height: 4rem;
+}
+
+@media screen and (max-width: 850px) {
+  .IndMoreIndContent {
+    width: 100%;
+  }
+  .IMPGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .IMPGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .IMPGridContent {
+    padding: 1.5rem;
+  }
+}

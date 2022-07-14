@@ -1,0 +1,69 @@
+.IndustriesHeroSection {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: auto;
+  margin: 4rem;
+}
+.IndHeroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 3rem 0 0 0;
+}
+.IndHeroContent p {
+  color: #828282;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.IndHeroContent h4 {
+  color: #313130;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 1rem 0 2.5rem 0 !important;
+  width: 90%;
+}
+.IndHeroPoints {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2.5rem 0;
+  width: 90%;
+}
+.IndHeroPoints h6 {
+  font-size: 1.6rem;
+  color: #313130;
+  font-weight: 400;
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1040px) {
+  .IndustriesHeroSection {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .IndustriesHeroSection {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+  .IndustriesHeroSection img {
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .IndHeroPoints {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .IndHeroPoints h6 {
+    margin: 0 0 1rem 0 !important;
+  }
+  .IndHeroContent h4 {
+    font-size: 2.8rem;
+  }
+}

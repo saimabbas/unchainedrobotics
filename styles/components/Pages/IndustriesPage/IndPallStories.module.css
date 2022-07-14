@@ -1,0 +1,80 @@
+.IndPallStories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10rem 0;
+}
+.IndPallStories h4 {
+  font-size: 4.8rem;
+  color: #313130;
+  font-weight: 700;
+  text-align: center;
+}
+.IndPallStories h5 {
+  font-size: 2.4rem;
+  color: #313130;
+  font-weight: 700;
+}
+.IPStoriesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 8rem;
+  grid-template-rows: auto;
+  width: 90%;
+  margin: 8rem auto 0 auto;
+}
+.IPStoryContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+.IPStoryContent img {
+  width: 100%;
+}
+.IPStoryText {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #f2f2f2;
+  border-radius: 0.5rem;
+  box-shadow: var(--card-box-shadow);
+  width: 90%;
+  margin: -4rem auto 0 auto;
+  padding: 2rem;
+}
+.IPStoryText span {
+  color: #828282;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.IPStoryText h5 {
+  color: #313130;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem 0 0 0 !important;
+}
+
+@media screen and (max-width: 1040px) {
+  .IPStoriesGrid {
+    grid-gap: 4rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .IPStoriesGrid {
+    width: 100%;
+    grid-gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .IPStoriesGrid {
+    grid-template-columns: 1fr;
+    margin: 4rem auto 0 auto;
+  }
+}
