@@ -242,7 +242,7 @@
   .IndPallContent {
     order: 2;
   }
-  .IndPalletizingBox img {
+  .IndPalletizingBoxSticky {
     position: unset;
   }
 }
@@ -259,7 +259,7 @@
     width: 100%;
     font-size: 2.8rem;
   }
-  .IndPalletizingBox img {
+  .IndPalletizingBoxSticky {
     position: unset;
   }
 }
