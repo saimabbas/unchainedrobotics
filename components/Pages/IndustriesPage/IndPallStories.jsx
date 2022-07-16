@@ -1,5 +1,6 @@
 import React from "react";
 import st from "../../../styles/components/Pages/IndustriesPage/IndPallStories.module.css";
+import Image from "next/image";
 
 const IndPallStories = () => {
   return (
@@ -8,7 +9,12 @@ const IndPallStories = () => {
       <h5>from our partner</h5>
       <div className={st.IPStoriesGrid}>
         <div className={st.IPStoryContent}>
-          <img src="./assets/img/SS1.png" alt="" />
+          <Image
+            src="/assets/img/SS1.png"
+            alt=" Img"
+            width="600"
+            height="340"
+          />
           <div className={st.IPStoryText}>
             <span>Use Cases</span>
             <h5>
@@ -17,7 +23,12 @@ const IndPallStories = () => {
           </div>
         </div>
         <div className={st.IPStoryContent}>
-          <img src="./assets/img/SS2.png" alt="" />
+          <Image
+            src="/assets/img/SS2.png"
+            alt=" Img"
+            width="600"
+            height="340"
+          />
           <div className={st.IPStoryText}>
             <span>Use Cases</span>
             <h5>
@@ -26,7 +37,12 @@ const IndPallStories = () => {
           </div>
         </div>
         <div className={st.IPStoryContent}>
-          <img src="./assets/img/SS3.png" alt="" />
+          <Image
+            src="/assets/img/SS3.png"
+            alt=" Img"
+            width="600"
+            height="340"
+          />
           <div className={st.IPStoryText}>
             <span>Use Cases</span>
             <h5>Digital transformation at local printing business in Siegen</h5>

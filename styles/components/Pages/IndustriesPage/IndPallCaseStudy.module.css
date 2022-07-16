@@ -34,6 +34,7 @@
   width: 90%;
   margin: -4rem auto 0 auto;
   padding: 2rem;
+  z-index: 10;
 }
 .IPStoryText span {
   color: #828282;

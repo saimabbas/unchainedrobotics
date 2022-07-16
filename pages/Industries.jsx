@@ -16,6 +16,7 @@ import IndPallStories from "../components/Pages/IndustriesPage/IndPallStories";
 import IndPallCaseStudy from "../components/Pages/IndustriesPage/IndPallCaseStudy";
 import IndCustomSolution from "../components/Pages/IndustriesPage/IndCustomSolution";
 import IndMoreIndContent from "../components/Pages/IndustriesPage/IndMoreIndContent";
+import Image from "next/image";
 
 const Industries = () => {
   return (

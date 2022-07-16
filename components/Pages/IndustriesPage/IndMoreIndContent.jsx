@@ -7,6 +7,7 @@ import Chemical from "../../../public/assets/icons/Chemical";
 import Metal from "../../../public/assets/icons/Metal";
 import Food from "../../../public/assets/icons/Food";
 import st from "../../../styles/components/Pages/IndustriesPage/IndMoreIndContent.module.css";
+import Image from "next/image";
 
 const IndMoreIndContent = () => {
   return (

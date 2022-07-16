@@ -1,7 +1,7 @@
 import React from "react";
 import ArrowRight from "../../../public/assets/icons/ArrowRight";
 import st from "../../../styles/components/Pages/IndustriesPage/IndCustomSolution.module.css";
-
+import Image from "next/image";
 const IndCustomSolution = () => {
   return (
     <div className={st.IndCustomSolution}>
@@ -16,7 +16,7 @@ const IndCustomSolution = () => {
           Find your solution <ArrowRight color="#fff" />
         </button>
       </div>
-      <img src="./assets/img/IC.jpg" alt="" />
+      <Image src="/assets/img/IC.jpg" alt=" Img" width="600" height="500" />
     </div>
   );
 };

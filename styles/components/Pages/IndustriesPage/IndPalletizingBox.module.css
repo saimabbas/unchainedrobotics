@@ -7,9 +7,11 @@
   position: relative;
   height: 100%;
 }
-.IndPalletizingBox img {
+.IndPalletizingBoxSticky {
   position: sticky;
   top: 25%;
+  width: 100%;
+  height: max-content;
 }
 .IndPallContent {
   display: flex;

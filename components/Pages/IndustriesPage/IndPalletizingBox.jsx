@@ -3,7 +3,7 @@ import TickCircle from "../../../public/assets/icons/TickCircle";
 import Calendar from "../../../public/assets/icons/Calendar";
 import ArrowRight from "../../../public/assets/icons/ArrowRight";
 import st from "../../../styles/components/Pages/IndustriesPage/IndPalletizingBox.module.css";
-
+import Image from "next/image";
 const IndPalletizingBox = () => {
   return (
     <div className={st.IndPalletizingBox}>
@@ -44,7 +44,12 @@ const IndPalletizingBox = () => {
           <h5>Proposed Solution</h5>
           <div className={st.IndpalSolMain}>
             <div className={st.IndSolImgContent}>
-              <img src="./assets/img/PSol.png" alt="" />
+              <Image
+                src="/assets/img/PSol.png"
+                alt="usecase img"
+                width="150"
+                height="150"
+              />
               <div className={st.ISContent}>
                 <p>Doosan Robotics H2017</p>
                 <h3>€ 44.000</h3>
@@ -62,7 +67,12 @@ const IndPalletizingBox = () => {
           </div>
           <div className={st.IndpalSolMain}>
             <div className={st.IndSolImgContent}>
-              <img src="./assets/img/material.png" alt="" />
+              <Image
+                src="/assets/img/material.png"
+                alt="usecase img"
+                width="150"
+                height="150"
+              />
               <div className={st.ISContent}>
                 <p>OnRobot VGP20</p>
                 <h3>€ 4.289</h3>
@@ -80,7 +90,12 @@ const IndPalletizingBox = () => {
           </div>
           <div className={st.IndpalSolMain + " " + st.IPNoBorder}>
             <div className={st.IndSolImgContent}>
-              <img src="./assets/img/Kamera.png" alt="" />
+              <Image
+                src="/assets/img/Kamera.png"
+                alt="usecase img"
+                width="150"
+                height="150"
+              />
               <div className={st.ISContent}>
                 <p>FRAMOS Industrial Depth Camera D435e Starter Kit</p>
                 <h3>€ 899</h3>
@@ -126,7 +141,14 @@ const IndPalletizingBox = () => {
           </h2>
         </div>
       </div>
-      <img src="./assets/img/Palletizing.jpg" alt="" />
+      <div className={st.IndPalletizingBoxSticky}>
+        <Image
+          src="/assets/img/Palletizing.jpg"
+          alt="Palletizing"
+          width="500"
+          height="500"
+        />
+      </div>
     </div>
   );
 };

@@ -1,10 +1,16 @@
 import React from "react";
 import st from "../../../styles/components/Pages/IndustriesPage/IndustriesHeroSection.module.css";
+import Image from "next/image";
 
 const IndustriesHeroSection = () => {
   return (
     <div className={st.IndustriesHeroSection}>
-      <img src="./assets/img/IndHero.png" alt="" />
+      <Image
+        src="/assets/img/IndHero.png"
+        alt="Hero Img"
+        width="500"
+        height="500"
+      />
       <div className={st.IndHeroContent}>
         <p>Automation solution for Printing Industry</p>
         <h4>
