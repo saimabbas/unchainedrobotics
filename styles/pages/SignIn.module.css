@@ -1,0 +1,84 @@
+.SignInBox {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-gap: 33rem;
+  width: 100%;
+  height: 100vh;
+}
+.SignInLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 3.5rem 0 0 0;
+}
+.SignInLeft h2 {
+  font-size: 3.5rem;
+  color: var(--gray800);
+  font-weight: 700;
+  margin: 3.5rem 0 2.5rem 0 !important;
+}
+.SignInLeft p {
+  font-size: 1.4rem;
+  color: #4f4f4f;
+  font-weight: 500;
+}
+.SignInLeft p span {
+  color: #1bc074;
+}
+.SignInRight {
+  display: flex;
+}
+.SignInRight img {
+  width: 100%;
+  height: 100%;
+}
+.SIInput {
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 3rem 0;
+}
+.SIInput label {
+  color: var(--gray800);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0 0 0.65rem 0;
+}
+.SIInput input {
+  width: 100% !important;
+  border: 0;
+  border: 1px solid #d20404;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--gray800);
+  outline: 0;
+  background-color: #fff;
+  transition: var(--trns1);
+  position: relative;
+  height: 4rem;
+}
+.SIInput input:hover {
+  color: var(--gray700);
+}
+.SIInput p {
+  color: #d20404;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0.65rem 0 0 0 !important;
+}
+.SignInLeft button {
+  background-color: #01150b;
+  width: 100%;
+  margin: 0 0 1.5rem 0;
+}
+.SignInLeft span {
+  font-size: 1.4rem;
+  color: #1bc074;
+  font-weight: 500;
+  cursor: pointer;
+}
