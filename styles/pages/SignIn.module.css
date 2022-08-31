@@ -11,6 +11,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   padding: 3.5rem 0 0 0;
+  height: 100vh;
 }
 .SignInLeft h2 {
   font-size: 3.5rem;
@@ -46,6 +47,9 @@
   font-size: 1.5rem;
   font-weight: 500;
   margin: 0 0 0.65rem 0;
+}
+.SIInput label span {
+  color: #d20404;
 }
 .SIInput input {
   width: 100% !important;
@@ -132,4 +136,116 @@
 .RegisterBottom img {
   width: 80%;
   height: 100%;
+}
+.RegisterStepsBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+.RegisterSteps {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 3rem 0;
+  width: 100%;
+}
+.RegFirstStep {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 47%;
+}
+.RegFirstStep p {
+  color: #9c9c9c;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0 0 0.65rem 0 !important;
+}
+.RFSPre {
+  border-radius: 1000px;
+  background-color: #e0e0e0;
+  width: 100%;
+  height: 0.85rem;
+}
+.RegSecondStep {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 47%;
+  justify-content: flex-start;
+}
+.RegSecondStep p {
+  color: #1bc074;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0 0 0.65rem 0 !important;
+}
+.RFSPost {
+  border-radius: 1000px;
+  background-color: #1bc074;
+  width: 100%;
+  height: 0.85rem;
+}
+.RegisterStepsBox .SIInput {
+  margin: 0 0 3rem 0 !important;
+}
+.BackAccountBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 3rem 0;
+  width: 100%;
+}
+.BABackOpt {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+.BABackOpt svg {
+  color: #313130;
+}
+.BABackOpt p {
+  font-size: 1.6rem;
+  color: #313130;
+  font-weight: 400;
+  margin: 0 0 0 1.5rem !important;
+}
+.BackAccountBtn button {
+  width: 45%;
+  margin: 0 !important;
+}
+.VerifyEmailBox {
+  margin: 5rem 0 0 0;
+}
+.VerifyEmailBox img {
+  width: 20%;
+  height: 100%;
+}
+.VerifyEmailBox h3 {
+  font-size: 2.4rem;
+  color: #4f4f4f;
+  font-weight: 700;
+  margin: 2rem 0 !important;
+}
+.VerifyEmailBox p {
+  color: #4f4f4f;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+.VerifyLine {
+  background-color: #bdbdbd;
+  width: 25%;
+  height: 0.2rem;
+  margin: 3rem 0;
+}
+.VerifyEmailBox p span {
+  color: #1bc074;
+}
+.VerifyEmailBox button {
+  width: 30%;
+  margin: 2rem 0;
 }
