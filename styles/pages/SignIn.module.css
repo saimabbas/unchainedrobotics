@@ -27,6 +27,12 @@
 .SignInLeft p span {
   color: #1bc074;
 }
+.SignInLeft h5 {
+  margin: 3rem 0 0 0 !important;
+  font-size: 1.4rem;
+  color: #d20404;
+  font-weight: 500;
+}
 .SignInRight {
   display: flex;
 }
@@ -248,4 +254,48 @@
 .VerifyEmailBox button {
   width: 30%;
   margin: 2rem 0;
+}
+.EmailButton {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 3rem 0 0 0;
+}
+.EmailButton button {
+  background-color: transparent !important;
+  width: 100%;
+  margin: 0 0 3rem 0 !important;
+}
+.EmailButton .button-secondary-gray svg path {
+  fill: unset !important;
+}
+
+.SetNewPassword {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+.SetNewPassword .SIInput {
+  margin: 3rem 0 0 0;
+}
+.SetNewPassword button {
+  margin: 3rem 0;
+}
+.SetNewPassword .SIInput.noerror input {
+  border: 1px solid #bdbdbd;
+}
+.PasswordSet {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+.PasswordSet button {
+  width: 30%;
+  margin: 0 0 2rem 0;
 }
