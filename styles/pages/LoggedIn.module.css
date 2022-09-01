@@ -1,0 +1,180 @@
+.LoggedInBox {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5rem;
+  margin: 10rem 0 0 0;
+}
+.LoggedInLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.LITabContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 32%;
+}
+.LITabContent h3 {
+  font-size: 2.4rem;
+  color: #313130;
+  font-weight: 500;
+}
+.LITabContent h5 {
+  font-size: 1.8rem;
+  color: #313130;
+  margin: 3.25rem 0 1.5rem 0 !important;
+  font-weight: 700;
+}
+.LITabContent p {
+  font-size: 1.4rem;
+  color: #313130;
+  font-weight: 400;
+}
+.LITabContent button {
+  background-color: #01150b;
+  margin: 3rem 0 0 0;
+}
+.AccountContent {
+  width: 100%;
+}
+.AccountContent button {
+  margin: 0;
+}
+.LITInput {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+  width: 100%;
+  text-align: center;
+}
+.LIInput {
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0 0 3rem 0;
+  width: 100%;
+}
+.LIInput label {
+  color: var(--gray800);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0 0 0.65rem 0;
+}
+.LIInput label span {
+  color: #d20404;
+}
+.LIInput input {
+  width: 100% !important;
+  border: 0;
+  border: 1px solid #d20404;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--gray800);
+  outline: 0;
+  background-color: #fff;
+  transition: var(--trns1);
+  position: relative;
+  height: 4rem;
+}
+.LIInput input:hover {
+  color: var(--gray700);
+}
+.LIInput h4 {
+  color: #d20404;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0.65rem 0 0 0 !important;
+}
+.LIInput.noerror input {
+  border: 1px solid #bdbdbd;
+}
+.AccountInfoBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 3rem 0;
+  padding: 3rem 0 2rem 0;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+.AccountInfoBox h5 {
+  font-size: 1.8rem;
+  color: #313130;
+  margin: 0 0 1.5rem 0 !important;
+  font-weight: 700;
+}
+.AccountInfoBox p {
+  font-size: 1.4rem;
+  color: #313130;
+  font-weight: 400;
+}
+.AccountInfoBox h6 {
+  font-size: 1.6rem;
+  color: #313130;
+  font-weight: 700;
+  margin: 0.75rem 0 2rem 0 !important;
+}
+.AccountInfoBox span {
+  font-size: 1.4rem;
+  color: #1bc074;
+  font-weight: 500;
+  cursor: pointer;
+}
+.PasswordOpt {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 48%;
+}
+.PasswordOpt .LIInput input {
+  background-color: #f2f2f2;
+}
+.PasswordOpt span {
+  font-size: 1.6rem;
+  color: #1bc074;
+  font-weight: 500;
+}
+.SCCancelBtn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.SCCancelBtn button {
+  margin: 0 2rem 0 0;
+}
+.SCCancelBtn button:nth-child(2) {
+  background-color: unset;
+}
+.EmailChangeOpt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: 1px solid #1bc074;
+  border-radius: 0.5rem;
+  padding: 3rem;
+  width: 100%;
+}
+.EmailChangeOpt ul {
+  padding: 0 0 0 3rem !important;
+}
+.EmailChangeOpt li {
+  font-size: 1.4rem;
+  color: #313130;
+  font-weight: 400;
+  margin: 1rem 0 0 0;
+  list-style-type: disc;
+}
+.EmailChangeOpt li span {
+  color: #1bc074;
+}

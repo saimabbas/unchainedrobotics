@@ -1,4 +1,4 @@
-import Page from "./ForgotPassword";
+import Page from "./LoggedIn";
 
 export default function Home() {
   return <Page />;
