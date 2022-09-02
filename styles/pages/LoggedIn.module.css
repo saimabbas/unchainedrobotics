@@ -16,6 +16,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  width: 65%;
 }
 .LITabContent h3 {
   font-size: 2.4rem;
@@ -48,7 +49,6 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 3rem;
   width: 100%;
-  text-align: center;
 }
 .LIInput {
   width: 100% !important;
@@ -194,4 +194,66 @@
 }
 .LoggedInTabBox span {
   color: #4f4f4f;
+}
+.LoggedInSelect {
+  display: none;
+}
+
+/* RESPONSIVENESS  */
+@media screen and (max-width: 1040px) {
+  .LITInput {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+}
+@media screen and (max-width: 850px) {
+  .LoggedInBox {
+    margin: 3rem 0 0 0;
+  }
+  .LITabContent {
+    width: 100%;
+  }
+  .LITInput {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+  .LITabContent button {
+    margin: 3rem 0 0 0 !important;
+  }
+  .LITInput {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+  .SCCancelBtn button {
+    margin: 0 3rem 0 0 !important;
+  }
+  .EmailChangeOpt {
+    padding: 2rem 1.5rem;
+  }
+  .PasswordOpt {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .LoggedInBox {
+    margin: 1rem 0 0 0;
+    grid-template-columns: 1fr;
+  }
+  .LoggedInSelect {
+    display: block;
+  }
+  .LoggedInSelect {
+    width: 100% !important;
+    border: 1px solid #bdbdbd;
+    padding: 0.75rem 1rem;
+    border-radius: 1000px;
+    font-size: 1.5rem;
+    color: #828282;
+    outline: 0;
+    background-color: #ffffff;
+    transition: var(--trns1);
+    position: relative;
+    height: 4rem;
+  }
 }

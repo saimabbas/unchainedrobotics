@@ -8,6 +8,10 @@ import ArrowRight from "../public/assets/icons/ArrowRight";
 import DSRadioButton from "../components/Theme/DSRadioButton";
 import DSCheckBox from "../components/Theme/DSCheckBox";
 import DashboardIcon from "../public/assets/icons/DashboardIcon";
+import Store from "../public/assets/icons/Store";
+import Paper from "../public/assets/icons/Paper";
+import Person from "../public/assets/icons/Person";
+import BookmarkOutlined from "../public/assets/icons/BookmarkOutlined";
 
 const LoggedIn = () => {
   return (
@@ -17,6 +21,14 @@ const LoggedIn = () => {
         <div className={st.LoggedInBox}>
           <Tab.Container defaultActiveKey="a1">
             <div className={st.LoggedInLeft + " " + "loggedInLeftTabs"}>
+              <select className={st.LoggedInSelect} name="" id="">
+                <option value="Overview">
+                  <p>Overview</p>
+                </option>
+                <option value="Universal Robots Kit">
+                  Universal Robots Kit
+                </option>
+              </select>
               <Nav variant="tabs">
                 <Nav.Item>
                   <Nav.Link eventKey="a1">
@@ -26,16 +38,32 @@ const LoggedIn = () => {
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="a2">Manage your store ↗</Nav.Link>
+                  <Nav.Link eventKey="a2">
+                    <div className={st.LoggedInTabBox}>
+                      <Store /> <span>Manage your store ↗</span>
+                    </div>
+                  </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="a3">Newsletter</Nav.Link>
+                  <Nav.Link eventKey="a3">
+                    <div className={st.LoggedInTabBox}>
+                      <Paper /> <span>Newsletter</span>
+                    </div>
+                  </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="a4">Saved</Nav.Link>
+                  <Nav.Link eventKey="a4">
+                    <div className={st.LoggedInTabBox}>
+                      <BookmarkOutlined /> <span>Saved</span>
+                    </div>
+                  </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="a5">Account settings</Nav.Link>
+                  <Nav.Link eventKey="a5">
+                    <div className={st.LoggedInTabBox}>
+                      <Person /> <span>Account settings</span>
+                    </div>
+                  </Nav.Link>
                 </Nav.Item>
               </Nav>
             </div>
@@ -116,7 +144,9 @@ const LoggedIn = () => {
                         <div className={st.LIInput + " " + st.noerror}>
                           <label htmlFor="">New email address</label>
                           <input placeholder="New email address" type="text" />
-                          <h4>Invalid email address format.</h4>
+                          <h4 className={st.errMsg}>
+                            Invalid email address format.
+                          </h4>
                         </div>
                         <div className={st.LIInput + " " + st.noerror}>
                           <label htmlFor="">Current password</label>
