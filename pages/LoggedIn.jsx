@@ -39,9 +39,11 @@ const LoggedIn = () => {
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey="a2">
-                    <div className={st.LoggedInTabBox}>
-                      <Store /> <span>Manage your store ↗</span>
-                    </div>
+                    <a href="https://webexhaust.com/">
+                      <div className={st.LoggedInTabBox}>
+                        <Store /> <span>Manage your store ↗</span>
+                      </div>
+                    </a>
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
