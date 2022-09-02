@@ -7,6 +7,7 @@ import { Tab, Nav } from "react-bootstrap";
 import ArrowRight from "../public/assets/icons/ArrowRight";
 import DSRadioButton from "../components/Theme/DSRadioButton";
 import DSCheckBox from "../components/Theme/DSCheckBox";
+import DashboardIcon from "../public/assets/icons/DashboardIcon";
 
 const LoggedIn = () => {
   return (
@@ -15,10 +16,14 @@ const LoggedIn = () => {
       <div className="box-sm">
         <div className={st.LoggedInBox}>
           <Tab.Container defaultActiveKey="a1">
-            <div className={st.LoggedInLeft}>
+            <div className={st.LoggedInLeft + " " + "loggedInLeftTabs"}>
               <Nav variant="tabs">
                 <Nav.Item>
-                  <Nav.Link eventKey="a1">Overview</Nav.Link>
+                  <Nav.Link eventKey="a1">
+                    <div className={st.LoggedInTabBox}>
+                      <DashboardIcon /> <span>Overview</span>
+                    </div>
+                  </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey="a2">Manage your store ↗</Nav.Link>

@@ -1,8 +1,9 @@
 .LoggedInBox {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: max-content 1fr;
   grid-gap: 5rem;
   margin: 10rem 0 0 0;
+  min-height: calc(100vh - 35rem);
 }
 .LoggedInLeft {
   display: flex;
@@ -15,7 +16,6 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 32%;
 }
 .LITabContent h3 {
   font-size: 2.4rem;
@@ -177,4 +177,21 @@
 }
 .EmailChangeOpt li span {
   color: #1bc074;
+}
+
+.LoggedInTabBox {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.LoggedInTabBox svg {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  margin: 0 1rem 0 0;
+  fill: #4f4f4f !important;
+}
+.LoggedInTabBox span {
+  color: #4f4f4f;
 }

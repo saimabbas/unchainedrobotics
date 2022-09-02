@@ -1207,8 +1207,7 @@ li.active a {
     margin: 0 !important;
   }
 }
-.MMBottomDDTab .nav-tabs .nav-item.show .nav-link,
-.nav-tabs .nav-link {
+.MMBottomDDTab .nav-tabs .nav-item.show .nav-link {
   font-size: 1.3rem !important;
   color: var(--gray800) !important;
   font-weight: 500 !important;
@@ -1235,8 +1234,7 @@ li.active a {
   padding: 1.5rem 0;
 }
 
-.MMBottomDDTab2b .nav-tabs .nav-item.show .nav-link,
-.nav-tabs .nav-link {
+.MMBottomDDTab2b .nav-tabs .nav-item.show .nav-link {
   font-size: 1.4rem !important;
   color: var(--gray400) !important;
   font-weight: 500 !important;
@@ -1248,8 +1246,7 @@ li.active a {
   justify-content: center !important;
   align-items: center !important;
 }
-.MMBottomDDTab2b .nav-tabs .nav-item.show .nav-link,
-.nav-tabs .nav-link.active {
+.MMBottomDDTab2b .nav-tabs .nav-item.show .nav-link {
   background-color: var(--green700) !important;
   color: var(--white) !important;
 }
@@ -1281,7 +1278,36 @@ li.active a {
 .comparisonGridMobStyles .nav-tabs .nav-link.active {
   background-color: unset !important;
   font-weight: 700 !important;
-  color: #313130 !important;
+  color: #4f4f4f !important;
   margin: 0 1rem 0 0 !important;
   text-decoration: unset !important;
+}
+.loggedInLeftTabs .nav {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: 0;
+  min-width: 25rem;
+}
+.loggedInLeftTabs .nav-tabs .nav-item.show .nav-link,
+.loggedInLeftTabs .nav-tabs .nav-link.active {
+  background-color: #ebfff5 !important;
+  color: #1bc074 !important;
+}
+.loggedInLeftTabs .nav-item {
+  width: 100%;
+}
+.loggedInLeftTabs .nav-tabs .nav-link {
+  justify-content: flex-start !important;
+  font-size: 1.65rem !important;
+  padding: 1rem 2.5rem !important;
+  color: #313130 !important;
+  border-radius: 10000px !important;
+  margin: 0 0 1.5rem 0 !important;
+}
+.loggedInLeftTabs .nav-link.active svg {
+  fill: #1bc074 !important;
+}
+.loggedInLeftTabs .nav-link.active span {
+  color: #1bc074;
 }
