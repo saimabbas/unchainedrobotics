@@ -16,3 +16,7 @@
 .app a:hover {
   color: unset;
 }
+.app {
+  width: 100%;
+  overflow-x: hidden;
+}

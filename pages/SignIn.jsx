@@ -13,10 +13,10 @@ const SignIn = () => {
             <p>
               Don’t have an account yet? <span>Register</span>
             </p>
-            <div className={st.SIInput}>
-              <label htmlFor="">Email address</label>
+            <div className={st.SIInput + " " + st.noerror}>
+              <label htmlFor="">Email address ass</label>
               <input placeholder="Email address" type="text" />
-              <p>Email address must not be empty.</p>
+              <p className={st.errMsg}>Email address must not be empty.</p>
             </div>
             <div className={st.SIInput}>
               <label htmlFor="">Password</label>

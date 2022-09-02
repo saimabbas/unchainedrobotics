@@ -8,9 +8,9 @@ import ChevronLeft from "../public/assets/icons/ChevronLeft";
 const Register = () => {
   return (
     <div className={customGlobals.app}>
-      <div className={st.SignInBox}>
-        <div className={st.SignInLeft}>
-          <div className="box-lg">
+      <div className="box-lg">
+        <div className={st.SignInBox}>
+          <div className={st.SignInLeft}>
             <img src="/assets/img/Logo.png" alt="" />
             <h2>Register</h2>
             <p>
@@ -32,7 +32,7 @@ const Register = () => {
               </p>
             </div>
             <button class="button button-lg button-primary-gray">Next</button>
-            <h6>Email address has already been taken.</h6>
+            {/* <h6>Email address has already been taken.</h6> */}
             <div className={st.RegisterStepsBox}>
               <div className={st.RegisterSteps}>
                 <div className={st.RegFirstStep}>
@@ -116,24 +116,24 @@ const Register = () => {
               </button>
             </div>
           </div>
-        </div>
-        <div className={st.RegisterRight}>
-          <div className={st.RegisterRTop}>
-            <p>Register for free to: </p>
-            <div className={st.RTopPoints}>
-              <div className={st.RPoint}>
-                <TickCircle /> <h5>save your favorite robots & components</h5>
-              </div>
-              <div className={st.RPoint}>
-                <TickCircle /> <h5>get updates on new products</h5>
-              </div>
-              <div className={st.RPoint}>
-                <TickCircle /> <h5>download STEP files of 200++ products</h5>
+          <div className={st.RegisterRight}>
+            <div className={st.RegisterRTop}>
+              <p>Register for free to: </p>
+              <div className={st.RTopPoints}>
+                <div className={st.RPoint}>
+                  <TickCircle /> <h5>save your favorite robots & components</h5>
+                </div>
+                <div className={st.RPoint}>
+                  <TickCircle /> <h5>get updates on new products</h5>
+                </div>
+                <div className={st.RPoint}>
+                  <TickCircle /> <h5>download STEP files of 200++ products</h5>
+                </div>
               </div>
             </div>
-          </div>
-          <div className={st.RegisterBottom}>
-            <img src="/assets/img/registerpic.png" alt="" />
+            <div className={st.RegisterBottom}>
+              <img src="/assets/img/registerpic.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
