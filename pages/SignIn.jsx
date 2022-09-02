@@ -18,18 +18,18 @@ const SignIn = () => {
               <input placeholder="Email address" type="text" />
               <p className={st.errMsg}>Email address must not be empty.</p>
             </div>
-            <div className={st.SIInput}>
+            <div className={st.SIInput + " " + st.noerror}>
               <label htmlFor="">Password</label>
               <input placeholder="Password" type="text" />
-              <p>Email address must not be empty.</p>
+              <p className={st.errMsg}>Email address must not be empty.</p>
             </div>
             <button class="button button-lg button-primary-gray">
               Sign in
             </button>
             <span>Forgot password?</span>
-            <h5>
+            {/* <h5>
               Your email address or password is incorrect. Please try again.
-            </h5>
+            </h5> */}
           </div>
         </div>
         <div className={st.SignInRight}>

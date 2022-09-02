@@ -16,15 +16,15 @@ const Register = () => {
             <p>
               Already have an account?<span> Sign in</span>
             </p>
-            <div className={st.SIInput}>
+            <div className={st.SIInput + " " + st.noerror}>
               <label htmlFor="">Work email address</label>
               <input placeholder="Work email address" type="text" />
-              <p>Invalid email address format.</p>
+              <p className={st.errMsg}>Invalid email address format.</p>
             </div>
-            <div className={st.SIInput}>
+            <div className={st.SIInput + " " + st.noerror}>
               <label htmlFor="">Password</label>
               <input placeholder="Password" type="text" />
-              <p>
+              <p className={st.errMsg}>
                 Password needs to be between x-y characters, contain at least
                 one uppercase and one lowercase letter (A, z), one numeric
                 character (0-9), and one special character (such as !, %, @, or
@@ -44,28 +44,28 @@ const Register = () => {
                   <div className={st.RFSPost}></div>
                 </div>
               </div>
-              <div className={st.SIInput}>
+              <div className={st.SIInput + " " + st.noerror}>
                 <label htmlFor="">
                   First name <span>*</span>
                 </label>
                 <input placeholder="First name" type="text" />
-                <p>First name required.</p>
+                <p className={st.errMsg}>First name required.</p>
               </div>
-              <div className={st.SIInput}>
+              <div className={st.SIInput + " " + st.noerror}>
                 <label htmlFor="">
                   Last name <span>*</span>
                 </label>
                 <input placeholder="Last name" type="text" />
-                <p>Last name required.</p>
+                <p className={st.errMsg}>Last name required.</p>
               </div>
-              <div className={st.SIInput}>
+              <div className={st.SIInput + " " + st.noerror}>
                 <label htmlFor="">
                   Company <span>*</span>
                 </label>
                 <input placeholder="Company" type="text" />
-                <p>Company required.</p>
+                <p className={st.errMsg}>Company required.</p>
               </div>
-              <div className={st.SIInput}>
+              <div className={st.SIInput + " " + st.noerror}>
                 <label htmlFor="">Phone number</label>
                 <input placeholder="E.g. +4912345678910" type="text" />
               </div>
@@ -93,27 +93,6 @@ const Register = () => {
                   Create an account
                 </button>
               </div>
-            </div>
-            <div className={st.VerifyEmailBox}>
-              <img src="/assets/img/verifyemail.png" alt="" />
-              <h3>Verify your email</h3>
-              <p>
-                An account activation link has been sent to{" "}
-                <b>dyahpalupi@hotmail.com</b> <br /> Please click on the link to
-                activate your account.
-              </p>
-              <div className={st.VerifyLine}></div>
-              <p>
-                Didn’t get the mail? <span> Send it again</span>
-              </p>
-            </div>
-            <div className={st.VerifyEmailBox}>
-              <img src="/assets/img/verifytick.png" alt="" />
-              <h3>Registration success</h3>
-              <p>Dyah, welcome to Unchained Robotics marketplace.</p>
-              <button class="button button-md button-primary-gray">
-                Sign in
-              </button>
             </div>
           </div>
           <div className={st.RegisterRight}>

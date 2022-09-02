@@ -49,7 +49,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  margin: 3rem 0;
+  margin: 3rem 0 0 0;
 }
 .SIInput label {
   color: var(--gray800);
@@ -87,7 +87,7 @@
 .SignInLeft button {
   background-color: #01150b;
   width: 100%;
-  margin: 0 0 1.5rem 0;
+  margin: 3rem 0 1.5rem 0;
 }
 .SignInLeft span {
   font-size: 1.4rem;
@@ -242,10 +242,9 @@
   margin: 0 !important;
 }
 .VerifyEmailBox {
-  margin: 5rem 0 0 0;
+  margin: 8rem 0 0 0;
 }
 .VerifyEmailBox img {
-  width: 20%;
   object-fit: contain;
 }
 .VerifyEmailBox h3 {
@@ -311,6 +310,7 @@
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
+  margin: 8rem 0 0 0;
 }
 .PasswordSet button {
   width: 30%;
@@ -318,4 +318,37 @@
 }
 .noerror .errMsg {
   display: none;
+}
+
+/* RESPONSIVENESS  */
+
+@media screen and (max-width: 1040px) {
+  .SignInBox {
+    grid-gap: 5rem;
+  }
+  .BackAccountBtn button {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .SignInBox {
+    grid-gap: 0rem;
+    grid-template-columns: 1fr 1.25fr;
+  }
+  .BackAccountBtn button {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .SignInBox {
+    grid-gap: 0rem;
+    grid-template-columns: 1fr;
+  }
+  .SignInRight {
+    display: none;
+  }
+  .RegisterRight {
+    display: none;
+  }
 }
