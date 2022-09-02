@@ -2,6 +2,7 @@ import React from "react";
 import TickCircle from "../public/assets/icons/TickCircle";
 import customGlobals from "../styles/CustomGlobals.module.css";
 import st from "../styles/pages/SignIn.module.css";
+import Image from "next/image";
 
 const VerifyYourAccount = () => {
   return (
@@ -9,7 +10,12 @@ const VerifyYourAccount = () => {
       <div className="box-lg">
         <div className={st.SignInBox}>
           <div className={st.SignInLeft}>
-            <img src="/assets/img/Logo.png" alt="" />
+            <Image
+              src="/assets/img/Logo.png"
+              alt="Logo"
+              width="150"
+              height="50"
+            />
             <div className={st.VerifyEmailBox}>
               <img src="/assets/img/verifyemail.png" alt="" />
               <h3>Verify your email</h3>
@@ -40,7 +46,12 @@ const VerifyYourAccount = () => {
               </div>
             </div>
             <div className={st.RegisterBottom}>
-              <img src="/assets/img/registerpic.png" alt="" />
+              <Image
+                src="/assets/img/registerpic.png"
+                alt=""
+                width="600"
+                height="400"
+              />
             </div>
           </div>
         </div>

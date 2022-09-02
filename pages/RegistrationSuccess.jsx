@@ -41,7 +41,12 @@ const RegistrationSuccess = () => {
               </div>
             </div>
             <div className={st.RegisterBottom}>
-              <img src="/assets/img/registerpic.png" alt="" />
+              <Image
+                src="/assets/img/registerpic.png"
+                alt=""
+                width="600"
+                height="400"
+              />
             </div>
           </div>
         </div>

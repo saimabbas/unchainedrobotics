@@ -1,6 +1,7 @@
 import React from "react";
 import customGlobals from "../styles/CustomGlobals.module.css";
 import st from "../styles/pages/SignIn.module.css";
+import Image from "next/image";
 
 const SignIn = () => {
   return (
@@ -8,7 +9,12 @@ const SignIn = () => {
       <div className={st.SignInBox}>
         <div className={st.SignInLeft}>
           <div className="box-lg">
-            <img src="/assets/img/Logo.png" alt="" />
+            <Image
+              src="/assets/img/Logo.png"
+              alt="Logo"
+              width="150"
+              height="50"
+            />
             <h2>Sign in</h2>
             <p>
               Don’t have an account yet? <span>Register</span>
@@ -33,7 +39,12 @@ const SignIn = () => {
           </div>
         </div>
         <div className={st.SignInRight}>
-          <img src="/assets/img/SignIn.png" alt="" />
+          <Image
+            src="/assets/img/SignIn.png"
+            alt="Sign In"
+            width="1000"
+            height="820"
+          />
         </div>
       </div>
     </div>

@@ -4,6 +4,7 @@ import st from "../styles/pages/SignIn.module.css";
 import Google from "../public/assets/icons/Google";
 import Webde from "../public/assets/icons/Webde";
 import GMXde from "../public/assets/icons/GMXde";
+import Image from "next/image";
 
 const ForgotPassword2 = () => {
   return (
@@ -11,7 +12,12 @@ const ForgotPassword2 = () => {
       <div className={st.SignInBox}>
         <div className={st.SignInLeft}>
           <div className="box-lg">
-            <img src="/assets/img/Logo.png" alt="" />
+            <Image
+              src="/assets/img/Logo.png"
+              alt="Logo"
+              width="150"
+              height="50"
+            />
             <div className={st.VerifyEmailBox}>
               <img src="/assets/img/verifyemail.png" alt="" />
               <h3>Check your email</h3>
@@ -38,7 +44,12 @@ const ForgotPassword2 = () => {
           </div>
         </div>
         <div className={st.SignInRight}>
-          <img src="/assets/img/SignIn.png" alt="" />
+          <Image
+            src="/assets/img/SignIn.png"
+            alt="Sign In"
+            width="1000"
+            height="820"
+          />
         </div>
       </div>
     </div>

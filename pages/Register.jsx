@@ -4,6 +4,7 @@ import customGlobals from "../styles/CustomGlobals.module.css";
 import st from "../styles/pages/SignIn.module.css";
 import DSCheckBox from "../components/Theme/DSCheckBox";
 import ChevronLeft from "../public/assets/icons/ChevronLeft";
+import Image from "next/image";
 
 const Register = () => {
   return (
@@ -11,7 +12,12 @@ const Register = () => {
       <div className="box-lg">
         <div className={st.SignInBox}>
           <div className={st.SignInLeft}>
-            <img src="/assets/img/Logo.png" alt="" />
+            <Image
+              src="/assets/img/Logo.png"
+              alt="Logo"
+              width="150"
+              height="50"
+            />
             <h2>Register</h2>
             <p>
               Already have an account?<span> Sign in</span>
@@ -111,7 +117,12 @@ const Register = () => {
               </div>
             </div>
             <div className={st.RegisterBottom}>
-              <img src="/assets/img/registerpic.png" alt="" />
+              <Image
+                src="/assets/img/registerpic.png"
+                alt=""
+                width="600"
+                height="400"
+              />
             </div>
           </div>
         </div>
