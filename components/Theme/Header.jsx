@@ -20,6 +20,7 @@ import SearchMobModal from "../../components/Theme/SearchMobModal";
 import $ from "jquery";
 import { Tab, Nav } from "react-bootstrap";
 import HamburgerMenu from "./HamburgerMenu";
+import DashboardIcon from "../../public/assets/icons/DashboardIcon";
 const Header = () => {
   const [showMainDrop, setShowMainDrop] = useState(false);
   const [showMobHeader, setShowMobHeader] = useState(false);
@@ -215,12 +216,23 @@ const Header = () => {
                 </div>
               </div>
             </span>
-            <span className={st.headerLinksBoth}>
-              <Link href="#">
-                <a className={st.headerLink}>
-                  <User color="#313130" />
-                </a>
-              </Link>
+            <span className={st.MMCRessourcen}>
+              <a className={st.headerLink}>
+                <User color="#313130" /> Dyah
+              </a>
+              <div className={st.RessourcenLoggedIn}>
+                <div className={st.RessourcenOptions}>
+                  <div className={st.RessourcenOptionsLoggedIn}>
+                    <a href="#">
+                      <DashboardIcon color="#4f4f4f" /> Overview
+                    </a>
+                    <a href="#">EN (English)</a>
+                  </div>
+                  <div className={st.RessourcenOptionsLoggedOut}>
+                    <button>abc</button>
+                  </div>
+                </div>
+              </div>
             </span>
             <span className={st.headerLinksBoth}>
               <Link href="#">

@@ -375,7 +375,17 @@
   padding: 2.5rem 0 0 0;
   display: none;
 }
+.RessourcenLoggedIn {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10003;
+  padding: 2.5rem 0 0 0;
+  display: none;
+}
 .MMCRessourcen:hover > .RessourcenOptionsBox,
+.MMCRessourcen:hover > .RessourcenLoggedIn,
 .MMCRessourcen:hover > .RessourcenOptionsCart {
   display: block;
 }
@@ -672,8 +682,8 @@
   display: none;
 }
 .HMegaDropDown:hover > .MainMenuBottomDropdown,
-.HMegaDropDown .MainMenuBottomDropdown:hover + .MainMenuBottomBackDrop, 
-.HMegaDropDown h5:hover + .MainMenuBottomDropdown + .MainMenuBottomBackDrop{
+.HMegaDropDown .MainMenuBottomDropdown:hover + .MainMenuBottomBackDrop,
+.HMegaDropDown h5:hover + .MainMenuBottomDropdown + .MainMenuBottomBackDrop {
   display: flex;
 }
 .MMBottomTopContent {
@@ -796,7 +806,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   display: flex;
-  position: relative; 
+  position: relative;
   background-color: #fff;
 }
 .MMBottomDropdownContent1Box {
@@ -909,8 +919,7 @@
   font-weight: 500;
   margin: 0 2rem 0 0 !important;
 }
-.SMMModal
-{
+.SMMModal {
   display: none;
 }
 
@@ -1098,8 +1107,7 @@
     width: 100%;
     background-color: var(--white) !important;
   }
-  .SearchBarResultContent
-  {
+  .SearchBarResultContent {
     padding: 0;
   }
   .SearchBarResultBox {
@@ -1110,12 +1118,11 @@
     box-shadow: unset;
     padding: 0 !important;
   }
-  .SMMModal
-  {
+  .SMMModal {
     display: flex;
   }
 }
-.mobHeaderOpenBoxContainer{
+.mobHeaderOpenBoxContainer {
   width: 100%;
   position: absolute;
   left: 0;
@@ -1124,21 +1131,20 @@
 }
 .mobHeaderOpenBoxContainer > * {
   width: 100%;
-
 }
 @media screen and (max-width: 1250px) {
-.ProdukteContent{
-  flex-direction: column;
-  align-items: flex-start;
-}
-.ProdukteLeftContent {
-  width: 100%;
-  border-right: 0;
-  border-bottom: 1px solid var(--gray200);
-  padding: 0;
-  margin: 0 0 3rem 0;
-}
-.MMBottomTopContent2{
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
+  .ProdukteContent {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .ProdukteLeftContent {
+    width: 100%;
+    border-right: 0;
+    border-bottom: 1px solid var(--gray200);
+    padding: 0;
+    margin: 0 0 3rem 0;
+  }
+  .MMBottomTopContent2 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
