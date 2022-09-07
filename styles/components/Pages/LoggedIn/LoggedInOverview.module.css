@@ -1,0 +1,37 @@
+.LITabContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 65%;
+}
+.LITabContent h3 {
+  font-size: 2.4rem;
+  color: #313130;
+  font-weight: 500;
+}
+.LITabContent h5 {
+  font-size: 1.8rem;
+  color: #313130;
+  margin: 3.25rem 0 1.5rem 0 !important;
+  font-weight: 700;
+}
+.LITabContent p {
+  font-size: 1.4rem;
+  color: #313130;
+  font-weight: 400;
+}
+.LITabContent button {
+  background-color: #01150b;
+  margin: 3rem 0 0 0;
+}
+
+/* RESPONSIVENESS  */
+@media screen and (max-width: 850px) {
+  .LITabContent {
+    width: 100%;
+  }
+  .LITabContent button {
+    margin: 3rem 0 0 0 !important;
+  }
+}
