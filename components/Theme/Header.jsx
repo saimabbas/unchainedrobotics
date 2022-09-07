@@ -21,6 +21,9 @@ import $ from "jquery";
 import { Tab, Nav } from "react-bootstrap";
 import HamburgerMenu from "./HamburgerMenu";
 import DashboardIcon from "../../public/assets/icons/DashboardIcon";
+import Store from "../../public/assets/icons/Store";
+import Paper from "../../public/assets/icons/Paper";
+import Person from "../../public/assets/icons/Person";
 const Header = () => {
   const [showMainDrop, setShowMainDrop] = useState(false);
   const [showMobHeader, setShowMobHeader] = useState(false);
@@ -226,10 +229,40 @@ const Header = () => {
                     <a href="#">
                       <DashboardIcon color="#4f4f4f" /> Overview
                     </a>
-                    <a href="#">EN (English)</a>
+                    <a href="#">
+                      <Store color="#4f4f4f" />
+                      Manage your shop ↗
+                    </a>
+                    <a href="#">
+                      <Paper color="#4f4f4f" />
+                      Newsletter
+                    </a>
+                    <a href="#">
+                      <BookmarkOutlined color="#4f4f4f" />
+                      Saved
+                    </a>
+                    <a href="#">
+                      {" "}
+                      <Person color="#4f4f4f" />
+                      Account settings
+                    </a>
+                    <a href="#" className={st.ROLOut}>
+                      Log out
+                    </a>
                   </div>
                   <div className={st.RessourcenOptionsLoggedOut}>
-                    <button>abc</button>
+                    <button className="button button-md button-primary-gray">
+                      Log in
+                    </button>
+                    <button
+                      class={
+                        st.ROLBtn +
+                        " " +
+                        "button button-md button-secondary-gray"
+                      }
+                    >
+                      Register
+                    </button>
                   </div>
                 </div>
               </div>
