@@ -44,6 +44,7 @@ const SignIn = () => {
             alt="Sign In"
             width="1000"
             height="820"
+            layout="fill"
           />
         </div>
       </div>
